@@ -1,0 +1,342 @@
+[
+  {
+    "id": "aphrodite", "name": "Aphrodite", "tradition": "Greek", "type": "deity",
+    "description": "Greek goddess of love, beauty, desire, and pleasure. Associated with the sea, roses, and the planet Venus.",
+    "tags": ["love", "beauty", "desire", "romance", "pleasure", "Venus", "passion", "attraction"],
+    "sphere": "Venus"
+  },
+  {
+    "id": "ares", "name": "Ares", "tradition": "Greek", "type": "deity",
+    "description": "Greek god of war, courage, and conflict. Associated with strength, martial valor, and the planet Mars.",
+    "tags": ["war", "courage", "strength", "conflict", "Mars", "battle", "protection"],
+    "sphere": "Mars"
+  },
+  {
+    "id": "hermes", "name": "Hermes", "tradition": "Greek", "type": "deity",
+    "description": "Greek god of travelers, thieves, merchants, and messengers. Guide of souls to the underworld. Associated with communication and Mercury.",
+    "tags": ["communication", "travel", "messages", "Mercury", "trade", "crossroads", "trickster"],
+    "sphere": "Mercury"
+  },
+  {
+    "id": "hekate", "name": "Hekate", "tradition": "Greek", "type": "deity",
+    "description": "Goddess of magic, witchcraft, the moon, crossroads, and the underworld. Keeper of keys and guardian of thresholds.",
+    "tags": ["magic", "witchcraft", "moon", "crossroads", "underworld", "protection", "keys", "liminal"],
+    "sphere": "Moon"
+  },
+  {
+    "id": "persephone", "name": "Persephone", "tradition": "Greek", "type": "deity",
+    "description": "Goddess of the underworld and spring. Her journey between worlds embodies themes of transformation, death, and renewal.",
+    "tags": ["underworld", "spring", "transformation", "rebirth", "death", "renewal", "seasons"],
+    "sphere": "Saturn"
+  },
+  {
+    "id": "apollo", "name": "Apollo", "tradition": "Greek", "type": "deity",
+    "description": "God of the sun, music, poetry, prophecy, and healing. Patron of the arts and the oracle at Delphi.",
+    "tags": ["sun", "music", "poetry", "prophecy", "healing", "arts", "divination", "light"],
+    "sphere": "Sun"
+  },
+  {
+    "id": "artemis", "name": "Artemis", "tradition": "Greek", "type": "deity",
+    "description": "Goddess of the hunt, wilderness, and the moon. Protector of women, children, and wild creatures.",
+    "tags": ["hunt", "moon", "wilderness", "protection", "women", "animals", "independence"],
+    "sphere": "Moon"
+  },
+  {
+    "id": "athena", "name": "Athena", "tradition": "Greek", "type": "deity",
+    "description": "Goddess of wisdom, strategic warfare, crafts, and civilization. Patron of Athens and emblem of just leadership.",
+    "tags": ["wisdom", "strategy", "craft", "justice", "intelligence", "leadership", "protection"],
+    "sphere": "Mercury"
+  },
+  {
+    "id": "poseidon", "name": "Poseidon", "tradition": "Greek", "type": "deity",
+    "description": "God of the sea, earthquakes, and horses. Master of the deep waters and forces of nature.",
+    "tags": ["sea", "ocean", "water", "earthquakes", "power", "storms", "nature"],
+    "sphere": "Neptune"
+  },
+  {
+    "id": "zeus", "name": "Zeus", "tradition": "Greek", "type": "deity",
+    "description": "King of the Olympian gods, ruler of sky and thunder. Associated with authority, justice, and leadership.",
+    "tags": ["authority", "thunder", "sky", "justice", "leadership", "king", "power"],
+    "sphere": "Jupiter"
+  },
+  {
+    "id": "dionysus", "name": "Dionysus", "tradition": "Greek", "type": "deity",
+    "description": "God of wine, ecstasy, theater, and fertility. Embodies the liberating power of altered states and creative madness.",
+    "tags": ["wine", "ecstasy", "creativity", "theater", "transformation", "liberation", "joy"],
+    "sphere": "Jupiter"
+  },
+  {
+    "id": "hephaestus", "name": "Hephaestus", "tradition": "Greek", "type": "deity",
+    "description": "God of the forge, fire, and craftsmanship. Master craftsman and maker of divine weapons and tools.",
+    "tags": ["forge", "fire", "craft", "making", "creation", "artisan", "metal"],
+    "sphere": "Mars"
+  },
+  {
+    "id": "demeter", "name": "Demeter", "tradition": "Greek", "type": "deity",
+    "description": "Goddess of grain, harvest, and the fertile earth. Her grief at Persephone's abduction brings winter to the world.",
+    "tags": ["harvest", "grain", "earth", "fertility", "abundance", "nature", "agriculture"],
+    "sphere": "Earth"
+  },
+  {
+    "id": "eros", "name": "Eros", "tradition": "Greek", "type": "deity",
+    "description": "Primordial god of love and desire. Embodiment of creative and erotic love that moves through all of existence.",
+    "tags": ["love", "desire", "eros", "attraction", "passion", "creativity", "connection"],
+    "sphere": "Venus"
+  },
+  {
+    "id": "isis", "name": "Isis", "tradition": "Egyptian", "type": "deity",
+    "description": "Great Egyptian goddess of magic, healing, and motherhood. Powerful magician and devoted protector of the vulnerable.",
+    "tags": ["magic", "healing", "motherhood", "protection", "wisdom", "spells", "resurrection"],
+    "sphere": "Moon"
+  },
+  {
+    "id": "osiris", "name": "Osiris", "tradition": "Egyptian", "type": "deity",
+    "description": "Egyptian god of the afterlife, resurrection, and agriculture. His story of death and rebirth embodies transformative cycles.",
+    "tags": ["afterlife", "resurrection", "death", "rebirth", "agriculture", "judgment", "transformation"],
+    "sphere": "Saturn"
+  },
+  {
+    "id": "thoth", "name": "Thoth", "tradition": "Egyptian", "type": "deity",
+    "description": "Egyptian god of writing, knowledge, magic, and the moon. Keeper of sacred records and master of occult wisdom.",
+    "tags": ["writing", "knowledge", "magic", "wisdom", "moon", "science", "communication", "divination"],
+    "sphere": "Mercury"
+  },
+  {
+    "id": "anubis", "name": "Anubis", "tradition": "Egyptian", "type": "deity",
+    "description": "Egyptian god of the dead and embalming. Guide of souls through the afterlife and guardian of tombs.",
+    "tags": ["death", "afterlife", "embalming", "guide", "protection", "judgment", "transition"],
+    "sphere": "Saturn"
+  },
+  {
+    "id": "ra", "name": "Ra", "tradition": "Egyptian", "type": "deity",
+    "description": "Egyptian sun god and king of the gods. His daily journey across the sky represents the triumph of light over darkness.",
+    "tags": ["sun", "light", "king", "victory", "power", "creation", "warmth"],
+    "sphere": "Sun"
+  },
+  {
+    "id": "bastet", "name": "Bastet", "tradition": "Egyptian", "type": "deity",
+    "description": "Egyptian cat goddess of protection, joy, and the home. Associated with feminine power, sensuality, and guardian energy.",
+    "tags": ["cats", "protection", "joy", "home", "feminine", "sensuality", "health"],
+    "sphere": "Moon"
+  },
+  {
+    "id": "sekhmet", "name": "Sekhmet", "tradition": "Egyptian", "type": "deity",
+    "description": "Lioness goddess of war, fire, and healing. She embodies both destruction and the power to heal great wounds.",
+    "tags": ["war", "fire", "healing", "power", "courage", "strength", "protection"],
+    "sphere": "Sun"
+  },
+  {
+    "id": "hathor", "name": "Hathor", "tradition": "Egyptian", "type": "deity",
+    "description": "Egyptian goddess of love, beauty, music, and motherhood. Embodies joy, abundance, and celestial love.",
+    "tags": ["love", "beauty", "music", "motherhood", "joy", "abundance", "Venus"],
+    "sphere": "Venus"
+  },
+  {
+    "id": "maat", "name": "Ma'at", "tradition": "Egyptian", "type": "deity",
+    "description": "Egyptian goddess of truth, justice, and cosmic order. Her feather weighs against the heart of the deceased.",
+    "tags": ["truth", "justice", "balance", "cosmic order", "judgment", "harmony", "law"],
+    "sphere": "Saturn"
+  },
+  {
+    "id": "nephthys", "name": "Nephthys", "tradition": "Egyptian", "type": "deity",
+    "description": "Egyptian goddess of death, night, and mourning. Sister of Isis and companion of the dead.",
+    "tags": ["death", "night", "mourning", "protection", "hidden", "mystery", "transition"],
+    "sphere": "Saturn"
+  },
+  {
+    "id": "odin", "name": "Odin", "tradition": "Norse", "type": "deity",
+    "description": "Allfather of the Norse gods. God of wisdom, war, poetry, and magic. Seeker of hidden knowledge at great personal cost.",
+    "tags": ["wisdom", "war", "poetry", "magic", "knowledge", "sacrifice", "runes", "journeys"],
+    "sphere": "Mercury"
+  },
+  {
+    "id": "freya", "name": "Freyja", "tradition": "Norse", "type": "deity",
+    "description": "Norse goddess of love, beauty, war, and seidr magic. Leader of the Valkyries and keeper of the dead.",
+    "tags": ["love", "beauty", "war", "magic", "seidr", "cats", "fertility", "gold"],
+    "sphere": "Venus"
+  },
+  {
+    "id": "thor", "name": "Thor", "tradition": "Norse", "type": "deity",
+    "description": "Norse god of thunder, strength, and protection of humanity. Wielder of Mjolnir, the divine hammer.",
+    "tags": ["thunder", "strength", "protection", "lightning", "storms", "hammer", "defense"],
+    "sphere": "Mars"
+  },
+  {
+    "id": "loki", "name": "Loki", "tradition": "Norse", "type": "deity",
+    "description": "Norse trickster god of change and transformation. Shape-shifter who catalyzes necessary chaos and creative upheaval.",
+    "tags": ["trickster", "change", "chaos", "creativity", "shapeshifting", "cunning", "transformation"],
+    "sphere": "Mercury"
+  },
+  {
+    "id": "frigg", "name": "Frigg", "tradition": "Norse", "type": "deity",
+    "description": "Norse queen of the gods, goddess of marriage, motherhood, and foresight. Weaver of fate and keeper of hearth.",
+    "tags": ["marriage", "motherhood", "home", "foresight", "fate", "weaving", "family"],
+    "sphere": "Venus"
+  },
+  {
+    "id": "tyr", "name": "Tyr", "tradition": "Norse", "type": "deity",
+    "description": "Norse god of law, justice, and righteous combat. He sacrificed his hand to bind Fenrir for the good of all.",
+    "tags": ["law", "justice", "sacrifice", "courage", "honor", "war", "righteousness"],
+    "sphere": "Mars"
+  },
+  {
+    "id": "baldur", "name": "Baldur", "tradition": "Norse", "type": "deity",
+    "description": "Norse god of light, beauty, and purity. His death and eventual return symbolize the cycles of light and rebirth.",
+    "tags": ["light", "beauty", "purity", "love", "rebirth", "hope", "peace"],
+    "sphere": "Sun"
+  },
+  {
+    "id": "hel", "name": "Hel", "tradition": "Norse", "type": "deity",
+    "description": "Norse ruler of the realm of the dead. Daughter of Loki who governs those who die of illness, old age, or natural causes.",
+    "tags": ["death", "underworld", "afterlife", "ancestors", "transition", "night", "hidden"],
+    "sphere": "Saturn"
+  },
+  {
+    "id": "the_morrigan", "name": "The Morrígan", "tradition": "Celtic", "type": "deity",
+    "description": "Irish triple goddess of fate, war, and sovereignty. Shapeshifter who appears as crow, wolf, and eel. Prophetess of battle outcomes.",
+    "tags": ["fate", "war", "sovereignty", "shapeshifting", "prophecy", "crow", "death", "power"],
+    "sphere": "Mars"
+  },
+  {
+    "id": "brigid", "name": "Brigid", "tradition": "Celtic", "type": "deity",
+    "description": "Irish goddess of healing, poetry, and the forge. Associated with Imbolc, her sacred flame is tended continuously.",
+    "tags": ["healing", "poetry", "forge", "fire", "spring", "creativity", "inspiration"],
+    "sphere": "Sun"
+  },
+  {
+    "id": "cernunnos", "name": "Cernunnos", "tradition": "Celtic", "type": "deity",
+    "description": "Celtic horned god of nature, wild animals, and the cycle of life. Master of the forest and the liminal spaces between worlds.",
+    "tags": ["nature", "animals", "wilderness", "cycles", "forest", "fertility", "life", "earth"],
+    "sphere": "Earth"
+  },
+  {
+    "id": "lugh", "name": "Lugh", "tradition": "Celtic", "type": "deity",
+    "description": "Irish god of the sun, skill, and craftsmanship. Patron of all arts and the harvest festival of Lughnasadh.",
+    "tags": ["sun", "skill", "craft", "harvest", "light", "victory", "arts", "abundance"],
+    "sphere": "Sun"
+  },
+  {
+    "id": "inanna", "name": "Inanna", "tradition": "Sumerian", "type": "deity",
+    "description": "Sumerian goddess of love, war, justice, and political power. Her descent and return from the underworld is among humanity's oldest myths.",
+    "tags": ["love", "war", "justice", "power", "underworld", "descent", "transformation", "sexuality"],
+    "sphere": "Venus"
+  },
+  {
+    "id": "kali", "name": "Kali", "tradition": "Hindu", "type": "deity",
+    "description": "Hindu goddess of time, destruction, and liberation. Her fierce aspect dissolves ego and illusion, freeing the soul.",
+    "tags": ["destruction", "liberation", "time", "transformation", "power", "protection", "fierce"],
+    "sphere": "Saturn"
+  },
+  {
+    "id": "lakshmi", "name": "Lakshmi", "tradition": "Hindu", "type": "deity",
+    "description": "Hindu goddess of wealth, fortune, and beauty. She embodies auspiciousness and is celebrated at Diwali.",
+    "tags": ["wealth", "fortune", "beauty", "abundance", "prosperity", "auspiciousness", "lotus"],
+    "sphere": "Venus"
+  },
+  {
+    "id": "saraswati", "name": "Saraswati", "tradition": "Hindu", "type": "deity",
+    "description": "Hindu goddess of knowledge, music, the arts, and wisdom. Patron of learning and eloquence.",
+    "tags": ["knowledge", "music", "arts", "wisdom", "learning", "eloquence", "creativity"],
+    "sphere": "Mercury"
+  },
+  {
+    "id": "ganesha", "name": "Ganesha", "tradition": "Hindu", "type": "deity",
+    "description": "Hindu elephant-headed deity of beginnings and removal of obstacles. Invoked at the start of any important undertaking.",
+    "tags": ["beginnings", "obstacles", "success", "wisdom", "new starts", "journeys", "abundance"],
+    "sphere": "Jupiter"
+  },
+  {
+    "id": "shiva", "name": "Shiva", "tradition": "Hindu", "type": "deity",
+    "description": "Hindu god of destruction and transformation. The destroyer of ego and illusion who makes way for new creation.",
+    "tags": ["destruction", "transformation", "meditation", "asceticism", "power", "liberation", "cosmos"],
+    "sphere": "Saturn"
+  },
+  {
+    "id": "durga", "name": "Durga", "tradition": "Hindu", "type": "deity",
+    "description": "Hindu warrior goddess and protector. Her fierce power defeats demons and protects the righteous.",
+    "tags": ["protection", "warrior", "strength", "victory", "divine feminine", "courage", "fierce"],
+    "sphere": "Mars"
+  },
+  {
+    "id": "michael", "name": "Archangel Michael", "tradition": "Abrahamic", "type": "angel",
+    "description": "Prince of the heavenly armies and chief of the archangels. Associated with protection, truth, and divine justice.",
+    "tags": ["protection", "truth", "justice", "strength", "warrior", "courage", "fire"],
+    "sphere": "Sun"
+  },
+  {
+    "id": "gabriel", "name": "Archangel Gabriel", "tradition": "Abrahamic", "type": "angel",
+    "description": "The divine messenger archangel. Associated with communication, revelation, purification, and new beginnings.",
+    "tags": ["communication", "messages", "revelation", "moon", "water", "dreams", "purity"],
+    "sphere": "Moon"
+  },
+  {
+    "id": "raphael", "name": "Archangel Raphael", "tradition": "Abrahamic", "type": "angel",
+    "description": "The healing archangel. Oversees physical and emotional healing, travel, and spiritual guidance.",
+    "tags": ["healing", "health", "travel", "guidance", "air", "communication", "recovery"],
+    "sphere": "Mercury"
+  },
+  {
+    "id": "uriel", "name": "Archangel Uriel", "tradition": "Abrahamic", "type": "angel",
+    "description": "Angel of wisdom and illumination. Associated with the earth, natural forces, and bringing divine light to darkness.",
+    "tags": ["wisdom", "illumination", "earth", "grounding", "fire", "knowledge", "transformation"],
+    "sphere": "Earth"
+  },
+  {
+    "id": "metatron", "name": "Metatron", "tradition": "Kabbalistic", "type": "angel",
+    "description": "Highest of the angels in Kabbalistic tradition. Scribe of God and mediator between the divine and human realms.",
+    "tags": ["sacred geometry", "Kabbalah", "divine wisdom", "ascension", "cosmic order", "light", "transformation"],
+    "sphere": "Kether"
+  },
+  {
+    "id": "bune", "name": "Bune", "tradition": "Goetia", "type": "demon",
+    "description": "72nd spirit of the Goetia, appearing as a three-headed dragon. Associated with wealth, eloquence, and communication with the departed.",
+    "tags": ["wealth", "eloquence", "communication", "wisdom", "prosperity", "spirit communication"],
+    "sphere": "Venus"
+  },
+  {
+    "id": "dantalion", "name": "Dantalion", "tradition": "Goetia", "type": "demon",
+    "description": "71st spirit of the Goetia. Depicted with many faces. Associated with knowledge of thoughts, influencing minds, and hidden wisdom.",
+    "tags": ["minds", "thoughts", "knowledge", "influence", "telepathy", "hidden wisdom", "understanding"],
+    "sphere": "Moon"
+  },
+  {
+    "id": "sallos", "name": "Sallos", "tradition": "Goetia", "type": "demon",
+    "description": "19th spirit of the Goetia. Said to promote love between men and women and to bring peace between adversaries.",
+    "tags": ["love", "peace", "romance", "harmony", "relationships", "attraction"],
+    "sphere": "Venus"
+  },
+  {
+    "id": "marbas", "name": "Marbas", "tradition": "Goetia", "type": "demon",
+    "description": "5th spirit of the Goetia. Associated with healing, knowledge of hidden things, and mechanical arts.",
+    "tags": ["healing", "hidden knowledge", "craft", "transformation", "diseases"],
+    "sphere": "Mercury"
+  },
+  {
+    "id": "batman_archetype", "name": "The Dark Knight Archetype", "tradition": "Pop Culture", "type": "pop-culture",
+    "description": "Archetypal figure of the wounded protector who channels grief and trauma into fierce justice and nocturnal vigilance.",
+    "tags": ["protection", "justice", "shadow work", "grief", "strength", "night", "determination"],
+    "isPopCulture": true,
+    "sphere": "Saturn"
+  },
+  {
+    "id": "jedi_archetype", "name": "The Jedi Archetype", "tradition": "Pop Culture", "type": "pop-culture",
+    "description": "Archetypal figure of the mindful warrior who balances the inner light and shadow. Embodies discipline, service, and the Force.",
+    "tags": ["balance", "mindfulness", "discipline", "service", "light", "shadow", "peace", "wisdom"],
+    "isPopCulture": true,
+    "sphere": "Sun"
+  },
+  {
+    "id": "hermione_archetype", "name": "The Brilliant Witch Archetype", "tradition": "Pop Culture", "type": "pop-culture",
+    "description": "Archetypal figure of the studious magical practitioner who combines intellect, empathy, and fierce loyalty in service of good.",
+    "tags": ["wisdom", "knowledge", "magic", "study", "courage", "loyalty", "cleverness"],
+    "isPopCulture": true,
+    "sphere": "Mercury"
+  },
+  {
+    "id": "gandalf_archetype", "name": "The Wise Mage Archetype", "tradition": "Pop Culture", "type": "pop-culture",
+    "description": "Archetypal figure of the ancient, wandering wizard who guides others through darkness toward their greatest potential.",
+    "tags": ["wisdom", "guidance", "transformation", "light", "magic", "journeys", "mystery"],
+    "isPopCulture": true,
+    "sphere": "Jupiter"
+  }
+]
