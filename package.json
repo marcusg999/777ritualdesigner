@@ -1,4 +1,3 @@
-cat > package.json <<'JSON'
 {
   "name": "777ritualdesigner",
   "version": "0.1.0",
@@ -35,4 +34,3 @@ cat > package.json <<'JSON'
     "typescript": "^5"
   }
 }
-JSON
