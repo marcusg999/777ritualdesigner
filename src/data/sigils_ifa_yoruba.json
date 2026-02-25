@@ -1,0 +1,65 @@
+[
+  {
+    "entityId": "obatala",
+    "symbolName": "Equal-Armed Cross in Circle",
+    "symbolDescription": "An equal-armed cross inscribed within a circle, representing Obatala's dominion over the four cardinal directions, divine purity, and the sacred act of creation.",
+    "svgContent": "<circle cx=\"50\" cy=\"50\" r=\"44\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"50\" y1=\"6\" x2=\"50\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><line x1=\"6\" y1=\"50\" x2=\"94\" y2=\"50\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>",
+    "viewBox": "0 0 100 100"
+  },
+  {
+    "entityId": "yemaya",
+    "symbolName": "Moon Over Ocean Waves",
+    "symbolDescription": "A crescent circle representing the moon, hovering above the rolling waves of the sea — symbols of Yemaya's dominion over the ocean, cycles of time, and the nurturing depths of the deep water.",
+    "svgContent": "<circle cx=\"50\" cy=\"18\" r=\"13\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><path d=\"M5,55 C18,40 32,40 45,55 C58,70 72,70 95,55\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><path d=\"M5,74 C18,59 32,59 45,74 C58,89 72,89 95,74\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>",
+    "viewBox": "0 0 100 100"
+  },
+  {
+    "entityId": "shango",
+    "symbolName": "Oshe Shango (Double-Headed Axe)",
+    "symbolDescription": "The Oshe Shango — the iconic double-headed ceremonial axe — is the primary symbol of Shango, embodying his power over thunder and lightning, royal authority, and fierce justice.",
+    "svgContent": "<line x1=\"50\" y1=\"5\" x2=\"50\" y2=\"95\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><path d=\"M50,42 C35,42 15,26 22,13 C30,5 70,5 78,13 C85,26 65,42 50,42 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><path d=\"M50,58 C35,58 15,74 22,87 C30,95 70,95 78,87 C85,74 65,58 50,58 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>",
+    "viewBox": "0 0 100 100"
+  },
+  {
+    "entityId": "ogun",
+    "symbolName": "Crossed Iron Tools",
+    "symbolDescription": "Two iron implements crossed in an X — representing Ogun's mastery over iron, metalwork, and all cutting tools. The crossing symbolizes the intersection of labor, war, and the clearing of obstacles.",
+    "svgContent": "<line x1=\"15\" y1=\"15\" x2=\"85\" y2=\"85\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"85\" y1=\"15\" x2=\"15\" y2=\"85\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"/><rect x=\"40\" y=\"3\" width=\"20\" height=\"10\" rx=\"3\" fill=\"currentColor\"/>",
+    "viewBox": "0 0 100 100"
+  },
+  {
+    "entityId": "eshu",
+    "symbolName": "Crossroads with Hooked Staff",
+    "symbolDescription": "A crossroads mark — the meeting of horizontal and vertical paths — with a hooked crook at the top, representing Eshu's role as the keeper of roads, the divine messenger, and the gatekeeper between the human and spiritual worlds.",
+    "svgContent": "<line x1=\"50\" y1=\"18\" x2=\"50\" y2=\"95\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><line x1=\"8\" y1=\"52\" x2=\"92\" y2=\"52\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><path d=\"M50,18 Q50,5 62,5 Q74,5 74,16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><circle cx=\"50\" cy=\"52\" r=\"6\" fill=\"currentColor\"/>",
+    "viewBox": "0 0 100 100"
+  },
+  {
+    "entityId": "oshun",
+    "symbolName": "Peacock Fan",
+    "symbolDescription": "A spread fan with radiating lines — the fan is among the most sacred objects of Oshun, embodying her grace, beauty, love, and sovereignty over fresh waters, fertility, and prosperity.",
+    "svgContent": "<line x1=\"50\" y1=\"82\" x2=\"20\" y2=\"30\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><line x1=\"50\" y1=\"82\" x2=\"34\" y2=\"22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><line x1=\"50\" y1=\"82\" x2=\"50\" y2=\"18\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><line x1=\"50\" y1=\"82\" x2=\"66\" y2=\"22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><line x1=\"50\" y1=\"82\" x2=\"80\" y2=\"30\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><path d=\"M20,30 Q35,16 50,18 Q65,16 80,30\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><circle cx=\"50\" cy=\"82\" r=\"5\" fill=\"currentColor\"/>",
+    "viewBox": "0 0 100 100"
+  },
+  {
+    "entityId": "ifa",
+    "symbolName": "Opón Ifá (Divination Tray)",
+    "symbolDescription": "The Opón Ifá — the sacred divination tray — divided into four quadrants by a cross, with four marking dots. This tray is the central tool of Ifá divination, representing the four corners of existence and Ifá's role as witness to all of creation.",
+    "svgContent": "<rect x=\"8\" y=\"8\" width=\"84\" height=\"84\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"50\" y1=\"8\" x2=\"50\" y2=\"92\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"8\" y1=\"50\" x2=\"92\" y2=\"50\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"29\" cy=\"29\" r=\"5\" fill=\"currentColor\"/><circle cx=\"71\" cy=\"29\" r=\"5\" fill=\"currentColor\"/><circle cx=\"29\" cy=\"71\" r=\"5\" fill=\"currentColor\"/><circle cx=\"71\" cy=\"71\" r=\"5\" fill=\"currentColor\"/>",
+    "viewBox": "0 0 100 100"
+  },
+  {
+    "entityId": "oya",
+    "symbolName": "Whirlwind Spiral",
+    "symbolDescription": "An outward-expanding spiral representing the whirlwind — Oya's breath of transformation. The spiral embodies radical change, the winds of storm, and Oya's sovereignty over the passage between life and death.",
+    "svgContent": "<path d=\"M50,50 C60,38 76,40 76,52 C76,66 60,74 48,74 C31,74 18,61 18,48 C18,30 35,16 55,16 C76,16 92,34 92,55 C92,76 73,92 50,92\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><circle cx=\"50\" cy=\"50\" r=\"4\" fill=\"currentColor\"/>",
+    "viewBox": "0 0 100 100"
+  },
+  {
+    "entityId": "orunmila",
+    "symbolName": "Opele Chain",
+    "symbolDescription": "Five seed-pod discs connected in a chain — the Opele is the divination chain of Orunmila, each pod representing one of the paired sides used to cast Ifá verses. The chain symbolizes Orunmila's omniscience and his role as keeper of fate.",
+    "svgContent": "<circle cx=\"13\" cy=\"50\" r=\"9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"31\" cy=\"50\" r=\"9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"50\" cy=\"50\" r=\"9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"69\" cy=\"50\" r=\"9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"87\" cy=\"50\" r=\"9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"22\" y1=\"50\" x2=\"22\" y2=\"50\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"40\" y1=\"50\" x2=\"41\" y2=\"50\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"59\" y1=\"50\" x2=\"60\" y2=\"50\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"78\" y1=\"50\" x2=\"78\" y2=\"50\" stroke=\"currentColor\" stroke-width=\"2\"/>",
+    "viewBox": "0 0 100 100"
+  }
+]
