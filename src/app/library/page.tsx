@@ -2,13 +2,14 @@
 
 import { useState, useMemo } from 'react';
 import type { Intent, Entity } from '@/lib/types';
+import { getSigilByEntityId } from '@/lib/sigils';
 import intentsData from '@/data/intents.json';
 import entitiesData from '@/data/entities.json';
 
 const intents = intentsData as Intent[];
 const entities = entitiesData as Entity[];
 
-const traditions = ['All', 'Greek', 'Egyptian', 'Norse', 'Celtic', 'Sumerian', 'Hindu', 'Abrahamic', 'Kabbalistic', 'Goetia', 'Pop Culture'];
+const traditions = ['All', 'Greek', 'Egyptian', 'Norse', 'Celtic', 'Sumerian', 'Hindu', 'Abrahamic', 'Kabbalistic', 'Goetia', 'Ifá/Yorùbá', 'Pop Culture'];
 
 export default function LibraryPage() {
   const [search, setSearch] = useState('');
@@ -94,7 +95,9 @@ export default function LibraryPage() {
       {/* Entities Grid */}
       {tab === 'entities' && (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {filteredEntities.map((entity) => (
+          {filteredEntities.map((entity) => {
+            const sigil = getSigilByEntityId(entity.id);
+            return (
             <div key={entity.id} className="card space-y-2 hover:border-gold/30 transition-colors">
               {entity.isPopCulture && (
                 <span className="text-xs px-2 py-0.5 bg-purple-500/20 border border-purple-500/30 rounded text-purple-300">
@@ -106,21 +109,41 @@ export default function LibraryPage() {
                   Initiatory Tradition
                 </span>
               )}
-              <div className="flex items-start justify-between gap-2">
-                <h3 className="font-serif text-gold font-semibold">{entity.name}</h3>
-                {entity.sphere && (
-                  <span className="text-xs text-foreground/30 shrink-0">{entity.sphere}</span>
+              <div className="flex items-start justify-between gap-3">
+                <div className="flex-1 min-w-0">
+                  <div className="flex items-center justify-between gap-2">
+                    <h3 className="font-serif text-gold font-semibold">{entity.name}</h3>
+                    {entity.sphere && (
+                      <span className="text-xs text-foreground/30 shrink-0">{entity.sphere}</span>
+                    )}
+                  </div>
+                  <p className="text-xs text-foreground/40">{entity.tradition} · {entity.type}</p>
+                </div>
+                {sigil && (
+                  <div className="shrink-0" title={sigil.symbolName}>
+                    <svg
+                      viewBox={sigil.viewBox}
+                      width="44"
+                      height="44"
+                      className="text-gold/60 hover:text-gold transition-colors"
+                      aria-label={sigil.symbolName}
+                      dangerouslySetInnerHTML={{ __html: sigil.svgContent }}
+                    />
+                  </div>
                 )}
               </div>
-              <p className="text-xs text-foreground/40">{entity.tradition} · {entity.type}</p>
               <p className="text-sm text-foreground/70 leading-relaxed">{entity.description}</p>
+              {sigil && (
+                <p className="text-xs text-foreground/40 italic">{sigil.symbolName}</p>
+              )}
               <div className="flex flex-wrap gap-1 pt-1">
                 {entity.tags.slice(0, 5).map((tag) => (
                   <span key={tag} className="text-xs px-1.5 py-0.5 bg-white/5 rounded text-foreground/40">{tag}</span>
                 ))}
               </div>
             </div>
-          ))}
+            );
+          })}
           {filteredEntities.length === 0 && (
             <div className="col-span-full text-center text-foreground/40 py-12">
               No entities found matching your search.

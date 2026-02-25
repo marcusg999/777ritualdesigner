@@ -1,0 +1,394 @@
+[
+  {
+    "entityId": "aphrodite",
+    "symbolName": "Venus Symbol (♀)",
+    "symbolDescription": "The Venus symbol — a circle above a cross — is the universal symbol of Aphrodite and feminine love, inherited from her identification with the planet Venus.",
+    "svgContent": "<circle cx=\"50\" cy=\"34\" r=\"24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"50\" y1=\"58\" x2=\"50\" y2=\"90\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><line x1=\"32\" y1=\"74\" x2=\"68\" y2=\"74\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>",
+    "viewBox": "0 0 100 100"
+  },
+  {
+    "entityId": "ares",
+    "symbolName": "Mars Symbol (♂)",
+    "symbolDescription": "The Mars symbol — a circle with an arrow pointing to the upper right — represents Ares as the embodiment of masculine martial energy and the planet Mars.",
+    "svgContent": "<circle cx=\"40\" cy=\"58\" r=\"24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"58\" y1=\"40\" x2=\"88\" y2=\"10\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><polyline points=\"68,10 88,10 88,30\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>",
+    "viewBox": "0 0 100 100"
+  },
+  {
+    "entityId": "hermes",
+    "symbolName": "Caduceus",
+    "symbolDescription": "The caduceus — a winged staff entwined by two serpents — is the primary symbol of Hermes, representing his roles as divine messenger, guide of souls, and lord of commerce and communication.",
+    "svgContent": "<line x1=\"50\" y1=\"8\" x2=\"50\" y2=\"95\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><path d=\"M50,30 C36,37 36,52 50,58 C64,64 64,76 50,82\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M50,30 C64,37 64,52 50,58 C36,64 36,76 50,82\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M34,20 Q42,14 50,20 Q58,14 66,20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"/><circle cx=\"36\" cy=\"24\" r=\"4\" fill=\"currentColor\"/><circle cx=\"64\" cy=\"24\" r=\"4\" fill=\"currentColor\"/>",
+    "viewBox": "0 0 100 100"
+  },
+  {
+    "entityId": "hekate",
+    "symbolName": "The Key of Hekate",
+    "symbolDescription": "The key is one of Hekate's most sacred symbols, representing her role as guardian of thresholds, keeper of gates between the worlds, and mistress of the crossroads.",
+    "svgContent": "<circle cx=\"50\" cy=\"30\" r=\"20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"50\" cy=\"30\" r=\"8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"50\" y1=\"50\" x2=\"50\" y2=\"92\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><line x1=\"50\" y1=\"70\" x2=\"65\" y2=\"70\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><line x1=\"50\" y1=\"84\" x2=\"65\" y2=\"84\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>",
+    "viewBox": "0 0 100 100"
+  },
+  {
+    "entityId": "persephone",
+    "symbolName": "Pomegranate",
+    "symbolDescription": "The pomegranate — fruit of the underworld — is Persephone's enduring symbol. Each seed she consumed bound her to Hades for part of the year, giving the world its seasons.",
+    "svgContent": "<circle cx=\"50\" cy=\"60\" r=\"30\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><path d=\"M36,32 Q43,20 50,24 Q57,20 64,32\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><line x1=\"50\" y1=\"20\" x2=\"50\" y2=\"30\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><circle cx=\"42\" cy=\"54\" r=\"5\" fill=\"currentColor\"/><circle cx=\"58\" cy=\"54\" r=\"5\" fill=\"currentColor\"/><circle cx=\"50\" cy=\"66\" r=\"5\" fill=\"currentColor\"/><circle cx=\"40\" cy=\"67\" r=\"4\" fill=\"currentColor\"/><circle cx=\"60\" cy=\"67\" r=\"4\" fill=\"currentColor\"/>",
+    "viewBox": "0 0 100 100"
+  },
+  {
+    "entityId": "apollo",
+    "symbolName": "Lyre",
+    "symbolDescription": "The lyre is the primary instrument and symbol of Apollo, representing his dominion over music, poetry, prophecy, and the harmony of the cosmos.",
+    "svgContent": "<path d=\"M25,72 L25,38 Q26,14 50,14 Q74,14 75,38 L75,72\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><line x1=\"22\" y1=\"72\" x2=\"78\" y2=\"72\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><line x1=\"35\" y1=\"72\" x2=\"36\" y2=\"30\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"44\" y1=\"72\" x2=\"45\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"56\" y1=\"72\" x2=\"55\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"65\" y1=\"72\" x2=\"64\" y2=\"30\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"/>",
+    "viewBox": "0 0 100 100"
+  },
+  {
+    "entityId": "artemis",
+    "symbolName": "Bow and Arrow",
+    "symbolDescription": "The bow and arrow of Artemis represent her mastery of the hunt, her swift and unerring aim, and her fierce independence as goddess of the wilderness and the crescent moon.",
+    "svgContent": "<path d=\"M22,78 Q50,8 78,78\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><line x1=\"22\" y1=\"78\" x2=\"78\" y2=\"78\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"50\" y1=\"8\" x2=\"50\" y2=\"90\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><polyline points=\"44,20 50,8 56,20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>",
+    "viewBox": "0 0 100 100"
+  },
+  {
+    "entityId": "athena",
+    "symbolName": "Owl of Athena",
+    "symbolDescription": "The owl — particularly the little owl (Athena noctua) — is the most sacred animal and symbol of Athena, embodying her gifts of wisdom, keen sight, and the ability to see clearly in the dark.",
+    "svgContent": "<ellipse cx=\"50\" cy=\"60\" rx=\"26\" ry=\"30\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"38\" cy=\"48\" r=\"9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"62\" cy=\"48\" r=\"9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"38\" cy=\"48\" r=\"4\" fill=\"currentColor\"/><circle cx=\"62\" cy=\"48\" r=\"4\" fill=\"currentColor\"/><path d=\"M44,66 Q50,72 56,66\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M33,30 Q38,23 43,30\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M57,30 Q62,23 67,30\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"/>",
+    "viewBox": "0 0 100 100"
+  },
+  {
+    "entityId": "poseidon",
+    "symbolName": "Trident",
+    "symbolDescription": "The trident is the supreme symbol of Poseidon — a three-pronged spear that commands the seas, triggers earthquakes, and strikes the earth to bring forth springs.",
+    "svgContent": "<line x1=\"50\" y1=\"22\" x2=\"50\" y2=\"95\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><line x1=\"25\" y1=\"46\" x2=\"25\" y2=\"22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><line x1=\"75\" y1=\"46\" x2=\"75\" y2=\"22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><line x1=\"25\" y1=\"46\" x2=\"75\" y2=\"46\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><polyline points=\"20,34 25,22 30,34\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><polyline points=\"45,34 50,22 55,34\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><polyline points=\"70,34 75,22 80,34\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>",
+    "viewBox": "0 0 100 100"
+  },
+  {
+    "entityId": "zeus",
+    "symbolName": "Thunderbolt",
+    "symbolDescription": "The thunderbolt (keraunos) is the supreme weapon and symbol of Zeus — his divine authority made manifest as a bolt of lightning hurled from the heavens.",
+    "svgContent": "<path d=\"M62,5 L30,50 L55,50 L38,95 L72,42 L47,42 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>",
+    "viewBox": "0 0 100 100"
+  },
+  {
+    "entityId": "dionysus",
+    "symbolName": "Thyrsus",
+    "symbolDescription": "The thyrsus — a fennel staff crowned with a pine cone — is the sacred emblem of Dionysus, representing the untamed life-force of nature, ecstatic liberation, and divine madness.",
+    "svgContent": "<line x1=\"50\" y1=\"42\" x2=\"50\" y2=\"95\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><path d=\"M50,42 C38,38 33,26 40,16 C44,10 56,10 60,16 C67,26 62,38 50,42 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"32\" y1=\"65\" x2=\"68\" y2=\"65\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"28\" y1=\"76\" x2=\"72\" y2=\"76\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\"/>",
+    "viewBox": "0 0 100 100"
+  },
+  {
+    "entityId": "hephaestus",
+    "symbolName": "Hammer",
+    "symbolDescription": "The hammer is the primary tool and symbol of Hephaestus, representing divine craftsmanship, the creative power of fire, and the forging of all things sacred and profane.",
+    "svgContent": "<rect x=\"28\" y=\"8\" width=\"44\" height=\"30\" rx=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"50\" y1=\"38\" x2=\"50\" y2=\"92\" stroke=\"currentColor\" stroke-width=\"5\" stroke-linecap=\"round\"/>",
+    "viewBox": "0 0 100 100"
+  },
+  {
+    "entityId": "demeter",
+    "symbolName": "Wheat Sheaf",
+    "symbolDescription": "The wheat sheaf is the central symbol of Demeter, embodying the abundance of the harvest, the fertility of the earth, and the cycles of growth and loss that she governs.",
+    "svgContent": "<line x1=\"50\" y1=\"88\" x2=\"50\" y2=\"32\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><path d=\"M50,55 Q34,48 30,34 Q39,28 50,42\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"M50,55 Q66,48 70,34 Q61,28 50,42\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"M50,42 Q32,35 30,20 Q39,14 50,28\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"M50,42 Q68,35 70,20 Q61,14 50,28\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><ellipse cx=\"50\" cy=\"25\" rx=\"6\" ry=\"12\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"35\" y1=\"72\" x2=\"65\" y2=\"72\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"/>",
+    "viewBox": "0 0 100 100"
+  },
+  {
+    "entityId": "eros",
+    "symbolName": "Heart Pierced by Arrow",
+    "symbolDescription": "A heart pierced by an arrow — the universal symbol of love's power to wound and transform — represents Eros as the primal force of desire that moves through all of existence.",
+    "svgContent": "<path d=\"M50,75 Q18,54 18,36 Q18,18 34,16 Q44,15 50,26 Q56,15 66,16 Q82,18 82,36 Q82,54 50,75 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"18\" y1=\"22\" x2=\"82\" y2=\"76\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><polyline points=\"74,68 82,76 72,80\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>",
+    "viewBox": "0 0 100 100"
+  },
+  {
+    "entityId": "isis",
+    "symbolName": "Ankh",
+    "symbolDescription": "The ankh — the Egyptian cross of life — is one of the primary symbols of Isis, representing her mastery over life, death, and resurrection, and her role as the great magician who restores the dead.",
+    "svgContent": "<circle cx=\"50\" cy=\"28\" r=\"18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"50\" y1=\"46\" x2=\"50\" y2=\"90\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><line x1=\"22\" y1=\"60\" x2=\"78\" y2=\"60\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>",
+    "viewBox": "0 0 100 100"
+  },
+  {
+    "entityId": "osiris",
+    "symbolName": "Djed Pillar",
+    "symbolDescription": "The Djed pillar represents Osiris's backbone and his resurrection — a column of stability rising through the planes, symbolizing endurance, renewal, and the eternal cycle of death and rebirth.",
+    "svgContent": "<line x1=\"38\" y1=\"90\" x2=\"62\" y2=\"90\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><line x1=\"38\" y1=\"90\" x2=\"36\" y2=\"52\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><line x1=\"62\" y1=\"90\" x2=\"64\" y2=\"52\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><line x1=\"26\" y1=\"52\" x2=\"74\" y2=\"52\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><line x1=\"26\" y1=\"62\" x2=\"74\" y2=\"62\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><line x1=\"26\" y1=\"72\" x2=\"74\" y2=\"72\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><path d=\"M36,52 Q50,36 64,52\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><path d=\"M39,42 Q50,28 61,42\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><path d=\"M43,32 Q50,20 57,32\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>",
+    "viewBox": "0 0 100 100"
+  },
+  {
+    "entityId": "thoth",
+    "symbolName": "Sacred Ibis",
+    "symbolDescription": "The ibis — Thoth's sacred bird — embodies his role as the divine scribe, master of knowledge, and keeper of cosmic records. The ibis's curved beak resembles the crescent moon, linking Thoth to both writing and lunar wisdom.",
+    "svgContent": "<circle cx=\"35\" cy=\"25\" r=\"16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><path d=\"M50,18 Q72,8 88,22\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><path d=\"M35,41 Q42,56 50,70 Q54,80 48,90\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><path d=\"M50,70 Q36,72 25,68\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>",
+    "viewBox": "0 0 100 100"
+  },
+  {
+    "entityId": "anubis",
+    "symbolName": "Scales of Ma'at",
+    "symbolDescription": "The scales of Ma'at are Anubis's instrument of judgment — used to weigh the heart of the deceased against the feather of truth, determining their passage through the afterlife.",
+    "svgContent": "<line x1=\"50\" y1=\"12\" x2=\"50\" y2=\"82\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><line x1=\"12\" y1=\"36\" x2=\"88\" y2=\"36\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><line x1=\"12\" y1=\"36\" x2=\"12\" y2=\"58\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"88\" y1=\"36\" x2=\"88\" y2=\"58\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M2,58 Q12,50 22,58 Q12,68 2,58 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><path d=\"M78,58 Q88,50 98,58 Q88,68 78,58 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polyline points=\"38,84 50,82 62,84\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>",
+    "viewBox": "0 0 100 100"
+  },
+  {
+    "entityId": "ra",
+    "symbolName": "Solar Disk with Uraeus",
+    "symbolDescription": "The sun disk crowned with the uraeus (sacred cobra) is the defining symbol of Ra — the solar barque of the sun god crossing the sky, protected by the cobra of divine kingship.",
+    "svgContent": "<circle cx=\"50\" cy=\"44\" r=\"28\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"50\" cy=\"44\" r=\"16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><path d=\"M50,16 Q56,6 64,10 Q72,15 62,22 Q56,26 50,22\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><line x1=\"50\" y1=\"72\" x2=\"50\" y2=\"90\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>",
+    "viewBox": "0 0 100 100"
+  },
+  {
+    "entityId": "bastet",
+    "symbolName": "Sistrum",
+    "symbolDescription": "The sistrum — a sacred rattle instrument — is the most iconic object of Bastet, used in her worship to ward off evil, summon her protective power, and celebrate joy.",
+    "svgContent": "<line x1=\"50\" y1=\"95\" x2=\"50\" y2=\"62\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><path d=\"M28,62 Q28,18 50,18 Q72,18 72,62 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"28\" y1=\"34\" x2=\"72\" y2=\"34\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"28\" y1=\"48\" x2=\"72\" y2=\"48\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"/>",
+    "viewBox": "0 0 100 100"
+  },
+  {
+    "entityId": "sekhmet",
+    "symbolName": "Sun Disk above Lioness",
+    "symbolDescription": "The solar disk above a lioness face is the defining symbol of Sekhmet — warrior goddess of the sun, whose fierce heat destroys enemies and whose roar shakes the heavens.",
+    "svgContent": "<circle cx=\"50\" cy=\"22\" r=\"14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><ellipse cx=\"50\" cy=\"65\" rx=\"22\" ry=\"26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"42\" cy=\"58\" r=\"4\" fill=\"currentColor\"/><circle cx=\"58\" cy=\"58\" r=\"4\" fill=\"currentColor\"/><path d=\"M44,70 Q50,76 56,70\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"50\" y1=\"36\" x2=\"50\" y2=\"39\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>",
+    "viewBox": "0 0 100 100"
+  },
+  {
+    "entityId": "hathor",
+    "symbolName": "Cow Horns with Sun Disk",
+    "symbolDescription": "Hathor is depicted wearing cow horns cradling the solar disk — a symbol of her cosmic motherhood, the celestial sky cow who nourishes the world with joy, love, and abundance.",
+    "svgContent": "<circle cx=\"50\" cy=\"50\" r=\"18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><path d=\"M22,50 Q14,30 24,16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><path d=\"M78,50 Q86,30 76,16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><path d=\"M24,16 Q50,6 76,16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><line x1=\"50\" y1=\"68\" x2=\"50\" y2=\"90\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"/>",
+    "viewBox": "0 0 100 100"
+  },
+  {
+    "entityId": "maat",
+    "symbolName": "Feather of Truth",
+    "symbolDescription": "The single ostrich feather is Ma'at's defining symbol — the standard of cosmic justice against which the heart of every soul is weighed. It represents truth, balance, and the divine order that underlies all existence.",
+    "svgContent": "<line x1=\"50\" y1=\"88\" x2=\"50\" y2=\"12\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><path d=\"M50,20 Q28,30 22,52 Q25,68 50,70 Q75,68 78,52 Q72,30 50,20 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"34\" y1=\"42\" x2=\"66\" y2=\"42\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"30\" y1=\"52\" x2=\"70\" y2=\"52\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"32\" y1=\"62\" x2=\"68\" y2=\"62\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\"/>",
+    "viewBox": "0 0 100 100"
+  },
+  {
+    "entityId": "nephthys",
+    "symbolName": "Headdress Hieroglyph",
+    "symbolDescription": "Nephthys's hieroglyphic name-symbol — a basket (nbt, meaning 'lady') atop a house or platform — appears as her crown, identifying her as 'Lady of the House' and guardian of the dead.",
+    "svgContent": "<rect x=\"20\" y=\"62\" width=\"60\" height=\"28\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><rect x=\"30\" y=\"44\" width=\"40\" height=\"20\" rx=\"2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><rect x=\"38\" y=\"24\" width=\"24\" height=\"22\" rx=\"2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><path d=\"M42,24 Q50,12 58,24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>",
+    "viewBox": "0 0 100 100"
+  },
+  {
+    "entityId": "odin",
+    "symbolName": "Valknut (Three Triangles)",
+    "symbolDescription": "The Valknut — three interlocked triangles — is Odin's most sacred symbol, found carved near fallen warriors. It represents the knot of the slain, the nine worlds, and the mysteries of death, fate, and the mind.",
+    "svgContent": "<polygon points=\"50,8 34,36 66,36\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polygon points=\"22,74 6,46 38,46\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polygon points=\"78,74 62,46 94,46\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"34\" y1=\"36\" x2=\"22\" y2=\"46\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"66\" y1=\"36\" x2=\"78\" y2=\"46\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"38\" y1=\"74\" x2=\"62\" y2=\"74\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\"/>",
+    "viewBox": "0 0 100 100"
+  },
+  {
+    "entityId": "freya",
+    "symbolName": "Fehu Rune",
+    "symbolDescription": "The Fehu rune — representing cattle, wealth, and fertile abundance — is sacred to Freyja as goddess of love, gold, and the Vanir. It embodies her gifts of prosperity, vitality, and the power of feminine magic (seidr).",
+    "svgContent": "<line x1=\"30\" y1=\"10\" x2=\"30\" y2=\"90\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><line x1=\"30\" y1=\"30\" x2=\"70\" y2=\"16\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><line x1=\"30\" y1=\"52\" x2=\"70\" y2=\"38\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>",
+    "viewBox": "0 0 100 100"
+  },
+  {
+    "entityId": "thor",
+    "symbolName": "Mjolnir",
+    "symbolDescription": "Mjolnir — Thor's divine hammer — is the most iconic Norse symbol, representing protection, hallowing, strength, and the thunderstorm. It was worn as an amulet by Norse people for protection and blessing.",
+    "svgContent": "<rect x=\"18\" y=\"14\" width=\"64\" height=\"30\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"50\" y1=\"44\" x2=\"50\" y2=\"90\" stroke=\"currentColor\" stroke-width=\"6\" stroke-linecap=\"round\"/>",
+    "viewBox": "0 0 100 100"
+  },
+  {
+    "entityId": "loki",
+    "symbolName": "Serpent",
+    "symbolDescription": "The serpent is Loki's most enduring symbol — he is the father of the Midgard Serpent Jörmungandr, was bound with serpents in punishment, and embodies the sinuous, unpredictable nature of trickery and transformation.",
+    "svgContent": "<path d=\"M50,8 C80,8 80,30 50,30 C20,30 20,55 50,55 C80,55 80,78 50,78 C20,78 20,92 35,92\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"/><circle cx=\"50\" cy=\"8\" r=\"6\" fill=\"currentColor\"/>",
+    "viewBox": "0 0 100 100"
+  },
+  {
+    "entityId": "frigg",
+    "symbolName": "Distaff",
+    "symbolDescription": "The distaff — the spindle used for spinning thread — is the symbol of Frigg, who spins the fates of mortals and gods alike. It represents her mastery of weaving, foresight, and the domestic mysteries of the Norse hearth.",
+    "svgContent": "<line x1=\"50\" y1=\"95\" x2=\"50\" y2=\"22\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><path d=\"M50,22 C38,22 30,14 38,8 C42,5 48,10 50,22\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"32\" y1=\"45\" x2=\"68\" y2=\"45\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-dasharray=\"4,3\"/><line x1=\"30\" y1=\"56\" x2=\"70\" y2=\"56\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-dasharray=\"4,3\"/>",
+    "viewBox": "0 0 100 100"
+  },
+  {
+    "entityId": "tyr",
+    "symbolName": "Tiwaz Rune (↑)",
+    "symbolDescription": "The Tiwaz rune — an upward-pointing arrow — is Tyr's own rune, representing justice, righteous sacrifice, victory in battle, and the unwavering courage of the one-handed god of law.",
+    "svgContent": "<line x1=\"50\" y1=\"90\" x2=\"50\" y2=\"10\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><polyline points=\"22,38 50,10 78,38\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><line x1=\"30\" y1=\"90\" x2=\"70\" y2=\"90\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>",
+    "viewBox": "0 0 100 100"
+  },
+  {
+    "entityId": "baldur",
+    "symbolName": "Sun with Rays",
+    "symbolDescription": "The radiant sun with eight rays is the symbol of Baldur, the shinning god of light, purity, and beauty — whose luminous presence brings peace, joy, and the promise of renewal after darkness.",
+    "svgContent": "<circle cx=\"50\" cy=\"50\" r=\"18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"50\" y1=\"8\" x2=\"50\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><line x1=\"50\" y1=\"74\" x2=\"50\" y2=\"92\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><line x1=\"8\" y1=\"50\" x2=\"26\" y2=\"50\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><line x1=\"74\" y1=\"50\" x2=\"92\" y2=\"50\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><line x1=\"20\" y1=\"20\" x2=\"33\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><line x1=\"80\" y1=\"20\" x2=\"67\" y2=\"33\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><line x1=\"20\" y1=\"80\" x2=\"33\" y2=\"67\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><line x1=\"80\" y1=\"80\" x2=\"67\" y2=\"67\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>",
+    "viewBox": "0 0 100 100"
+  },
+  {
+    "entityId": "hel",
+    "symbolName": "Half-Light, Half-Dark Circle",
+    "symbolDescription": "A circle divided half-light and half-dark represents Hel's own nature — her face and body are said to be half the color of living flesh and half the blue-black of death, governing the realm between.",
+    "svgContent": "<circle cx=\"50\" cy=\"50\" r=\"40\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><path d=\"M50,10 A40,40 0 0 1 50,90 L50,10 Z\" fill=\"currentColor\"/><line x1=\"50\" y1=\"10\" x2=\"50\" y2=\"90\" stroke=\"currentColor\" stroke-width=\"2.5\"/>",
+    "viewBox": "0 0 100 100"
+  },
+  {
+    "entityId": "the_morrigan",
+    "symbolName": "Triskelion",
+    "symbolDescription": "The triskelion — three interlocking spirals — is the Celtic symbol of the triple goddess, representing the Morrígan's triple nature as Badb, Macha, and Nemain: past, present, and future; life, death, and rebirth.",
+    "svgContent": "<path d=\"M50,50 C50,36 60,22 72,28 C82,34 82,50 70,56 C62,60 52,56 50,50\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><path d=\"M50,50 C38,42 28,48 26,60 C24,72 34,80 44,76 C54,72 56,60 50,50\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><path d=\"M50,50 C52,38 60,28 60,18 C60,8 50,5 42,12 C34,20 36,34 50,50\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><circle cx=\"50\" cy=\"50\" r=\"4\" fill=\"currentColor\"/>",
+    "viewBox": "0 0 100 100"
+  },
+  {
+    "entityId": "brigid",
+    "symbolName": "Brigid's Cross",
+    "symbolDescription": "Brigid's cross — woven from rushes in an equal-armed pattern with a square center — is the most sacred symbol of the goddess Brigid, placed in homes for protection and to welcome her at Imbolc.",
+    "svgContent": "<rect x=\"38\" y=\"38\" width=\"24\" height=\"24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><path d=\"M38,38 L20,20 L20,38\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M62,38 L80,20 L62,20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M62,62 L80,80 L80,62\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M38,62 L20,80 L38,80\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>",
+    "viewBox": "0 0 100 100"
+  },
+  {
+    "entityId": "cernunnos",
+    "symbolName": "Stag Antlers",
+    "symbolDescription": "The great branching antlers are the defining symbol of Cernunnos — the Horned One of the Celtic world — representing the wild cycle of nature, the forest realm, masculine fertility, and the lord of animals.",
+    "svgContent": "<line x1=\"50\" y1=\"70\" x2=\"50\" y2=\"42\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"/><path d=\"M50,42 Q42,32 30,28 Q24,28 20,20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><path d=\"M50,42 Q58,32 70,28 Q76,28 80,20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><path d=\"M36,33 Q36,22 42,18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><path d=\"M64,33 Q64,22 58,18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><path d=\"M26,26 Q22,18 26,12\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><path d=\"M74,26 Q78,18 74,12\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><circle cx=\"50\" cy=\"78\" r=\"10\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/>",
+    "viewBox": "0 0 100 100"
+  },
+  {
+    "entityId": "lugh",
+    "symbolName": "Sacred Spear",
+    "symbolDescription": "The Luin of Celtchar — Lugh's invincible magical spear — is his defining weapon and symbol, representing his mastery of skill, the unstoppable light of the sun, and divine sovereignty over all arts.",
+    "svgContent": "<line x1=\"50\" y1=\"30\" x2=\"50\" y2=\"95\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><path d=\"M50,8 L38,32 L50,26 L62,32 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><line x1=\"35\" y1=\"60\" x2=\"65\" y2=\"60\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\"/>",
+    "viewBox": "0 0 100 100"
+  },
+  {
+    "entityId": "inanna",
+    "symbolName": "Eight-Pointed Star of Venus",
+    "symbolDescription": "The eight-pointed star (the Dingir star symbol) is the primary symbol of Inanna/Ishtar, representing the planet Venus in its eight-year cycle and her dominion over love, war, and the divine feminine power of creation.",
+    "svgContent": "<line x1=\"50\" y1=\"8\" x2=\"50\" y2=\"92\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><line x1=\"8\" y1=\"50\" x2=\"92\" y2=\"50\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><line x1=\"20\" y1=\"20\" x2=\"80\" y2=\"80\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><line x1=\"80\" y1=\"20\" x2=\"20\" y2=\"80\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><circle cx=\"50\" cy=\"50\" r=\"10\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/>",
+    "viewBox": "0 0 100 100"
+  },
+  {
+    "entityId": "kali",
+    "symbolName": "Crossed Swords in Circle",
+    "symbolDescription": "Two crossed swords within a circle represent Kali's fierce, dual nature — the destroyer of illusion and the liberator of souls. The circle represents the endless cycle of time over which she presides.",
+    "svgContent": "<circle cx=\"50\" cy=\"50\" r=\"38\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"18\" y1=\"18\" x2=\"82\" y2=\"82\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><line x1=\"82\" y1=\"18\" x2=\"18\" y2=\"82\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><polyline points=\"76,18 82,18 82,24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><polyline points=\"24,82 18,82 18,76\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>",
+    "viewBox": "0 0 100 100"
+  },
+  {
+    "entityId": "lakshmi",
+    "symbolName": "Lotus Flower",
+    "symbolDescription": "The lotus is the sacred symbol of Lakshmi — rising from the murky depths to bloom in perfect purity, it represents beauty, spiritual perfection, divine grace, and the abundance that blossoms from inner clarity.",
+    "svgContent": "<circle cx=\"50\" cy=\"58\" r=\"14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><path d=\"M50,44 Q40,28 28,34 Q22,40 36,50\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"M50,44 Q60,28 72,34 Q78,40 64,50\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"M36,50 Q18,52 18,62 Q18,72 36,72\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"M64,50 Q82,52 82,62 Q82,72 64,72\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"M36,72 Q38,82 50,88 Q62,82 64,72\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"M50,44 L50,22\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M50,22 Q42,14 40,8\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M50,22 Q58,14 60,8\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\"/>",
+    "viewBox": "0 0 100 100"
+  },
+  {
+    "entityId": "saraswati",
+    "symbolName": "Veena (Sacred Lute)",
+    "symbolDescription": "The veena — a classical Indian string instrument — is Saraswati's most sacred symbol, representing the mastery of music, the harmonics of language, and the creative intelligence that underlies all knowledge and art.",
+    "svgContent": "<ellipse cx=\"50\" cy=\"70\" rx=\"24\" ry=\"18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"50\" y1=\"52\" x2=\"50\" y2=\"8\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><rect x=\"40\" y=\"5\" width=\"20\" height=\"10\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"40\" y1=\"50\" x2=\"40\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"46\" y1=\"51\" x2=\"46\" y2=\"14\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"54\" y1=\"51\" x2=\"54\" y2=\"14\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"60\" y1=\"50\" x2=\"60\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"1.5\"/>",
+    "viewBox": "0 0 100 100"
+  },
+  {
+    "entityId": "ganesha",
+    "symbolName": "Elephant Head",
+    "symbolDescription": "Ganesha's elephant head is his most recognizable symbol — his large ears hear all prayers, his trunk removes obstacles with ease, and his tusks (one broken) represent the sacrifice needed to transcribe sacred wisdom.",
+    "svgContent": "<circle cx=\"50\" cy=\"34\" r=\"24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><ellipse cx=\"50\" cy=\"72\" rx=\"20\" ry=\"18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><path d=\"M28,42 Q14,44 12,58 Q10,72 26,74\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><path d=\"M26,74 Q24,82 32,82\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><circle cx=\"40\" cy=\"28\" r=\"4\" fill=\"currentColor\"/><circle cx=\"60\" cy=\"28\" r=\"4\" fill=\"currentColor\"/><path d=\"M32,22 Q26,12 28,5\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M68,22 Q74,12 72,5\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\"/>",
+    "viewBox": "0 0 100 100"
+  },
+  {
+    "entityId": "shiva",
+    "symbolName": "Shivalinga with Crescent",
+    "symbolDescription": "The Shivalinga — an oval lingam rising from a yoni base — combined with the crescent moon that Shiva wears in his hair, represents the totality of creation, the union of cosmic forces, and Shiva's role as the ascetic lord of transformation.",
+    "svgContent": "<ellipse cx=\"50\" cy=\"55\" rx=\"18\" ry=\"24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><ellipse cx=\"50\" cy=\"78\" rx=\"26\" ry=\"8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><path d=\"M32,25 A22,22 0 0 1 68,25\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><path d=\"M38,18 Q50,8 62,18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>",
+    "viewBox": "0 0 100 100"
+  },
+  {
+    "entityId": "durga",
+    "symbolName": "Eight-Spoked Chakra Wheel",
+    "symbolDescription": "The Sudarshana Chakra — a spinning discus with eight spokes — is one of Durga's many sacred weapons, representing cosmic order, the cycles of time, divine protection, and the annihilation of evil.",
+    "svgContent": "<circle cx=\"50\" cy=\"50\" r=\"38\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"50\" cy=\"50\" r=\"14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"50\" y1=\"12\" x2=\"50\" y2=\"36\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><line x1=\"50\" y1=\"64\" x2=\"50\" y2=\"88\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><line x1=\"12\" y1=\"50\" x2=\"36\" y2=\"50\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><line x1=\"64\" y1=\"50\" x2=\"88\" y2=\"50\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><line x1=\"23\" y1=\"23\" x2=\"40\" y2=\"40\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><line x1=\"77\" y1=\"23\" x2=\"60\" y2=\"40\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><line x1=\"23\" y1=\"77\" x2=\"40\" y2=\"60\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><line x1=\"77\" y1=\"77\" x2=\"60\" y2=\"60\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>",
+    "viewBox": "0 0 100 100"
+  },
+  {
+    "entityId": "michael",
+    "symbolName": "Flaming Sword",
+    "symbolDescription": "The flaming sword of Archangel Michael represents divine justice, spiritual warfare against darkness, and the guardian power of the heavenly armies — a blade of holy fire that separates truth from falsehood.",
+    "svgContent": "<line x1=\"50\" y1=\"95\" x2=\"50\" y2=\"35\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"28\" y1=\"58\" x2=\"72\" y2=\"58\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><path d=\"M50,35 L42,22 Q50,5 58,22 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><path d=\"M44,18 Q50,8 56,18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"/>",
+    "viewBox": "0 0 100 100"
+  },
+  {
+    "entityId": "gabriel",
+    "symbolName": "White Lily",
+    "symbolDescription": "The white lily is the symbol of Archangel Gabriel — the messenger of divine annunciation, purity of spirit, and the creative word of God made manifest through revelation and sacred communication.",
+    "svgContent": "<line x1=\"50\" y1=\"90\" x2=\"50\" y2=\"50\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><path d=\"M50,50 Q38,32 32,18 Q42,14 50,28 Q58,14 68,18 Q62,32 50,50 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><path d=\"M50,42 Q28,38 18,28 Q22,18 38,28\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"M50,42 Q72,38 82,28 Q78,18 62,28\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/>",
+    "viewBox": "0 0 100 100"
+  },
+  {
+    "entityId": "raphael",
+    "symbolName": "Staff with Fish",
+    "symbolDescription": "Raphael's pilgrim staff with a fish refers to the Book of Tobit, where Raphael — disguised as a traveler — guided Tobias on a healing journey, using a fish to cure blindness. It represents divine healing through guidance.",
+    "svgContent": "<line x1=\"38\" y1=\"8\" x2=\"38\" y2=\"95\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><path d=\"M38,8 Q48,12 52,22 Q46,28 38,22\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><path d=\"M55,55 Q70,42 82,52 Q72,65 55,55 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"76\" cy=\"50\" r=\"2.5\" fill=\"currentColor\"/>",
+    "viewBox": "0 0 100 100"
+  },
+  {
+    "entityId": "uriel",
+    "symbolName": "Open Book with Flame",
+    "symbolDescription": "An open book surmounted by a flame is the symbol of Archangel Uriel — the angel of wisdom and illumination who brings divine light into the darkness of ignorance and reveals the fire of sacred knowledge.",
+    "svgContent": "<path d=\"M10,30 Q50,20 90,30 L90,80 Q50,70 10,80 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"50\" y1=\"25\" x2=\"50\" y2=\"75\" stroke=\"currentColor\" stroke-width=\"1.5\"/><path d=\"M50,20 Q44,10 46,5 Q50,2 54,5 Q56,10 50,20 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><line x1=\"22\" y1=\"48\" x2=\"48\" y2=\"44\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"22\" y1=\"58\" x2=\"48\" y2=\"54\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\"/>",
+    "viewBox": "0 0 100 100"
+  },
+  {
+    "entityId": "metatron",
+    "symbolName": "Metatron's Cube",
+    "symbolDescription": "Metatron's Cube — a hexagram (Star of David) inscribed in a circle, containing the five Platonic solids — represents the divine geometric blueprint of creation over which Metatron presides as celestial scribe and guardian of the Tree of Life.",
+    "svgContent": "<circle cx=\"50\" cy=\"50\" r=\"42\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><polygon points=\"50,10 82,64 18,64\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><polygon points=\"50,90 18,36 82,36\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"50\" cy=\"50\" r=\"14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/>",
+    "viewBox": "0 0 100 100"
+  },
+  {
+    "entityId": "bune",
+    "symbolName": "Triple Circle Sigil",
+    "symbolDescription": "Bune — the 26th spirit of the Goetia, appearing as a three-headed dragon — is represented here by three interlocked circles, each head embodying one of the three faces: man, griffin, and dragon, governing wealth, eloquence, and the dead.",
+    "svgContent": "<circle cx=\"30\" cy=\"42\" r=\"18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"70\" cy=\"42\" r=\"18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"50\" cy=\"20\" r=\"18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><path d=\"M30,60 Q50,76 70,60\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>",
+    "viewBox": "0 0 100 100"
+  },
+  {
+    "entityId": "dantalion",
+    "symbolName": "Many-Faced Circle",
+    "symbolDescription": "Dantalion — the 71st spirit of the Goetia — manifests with the faces of all men and women upon his form, represented here as a central face surrounded by three lesser circles, symbolizing his knowledge of the thoughts of all people.",
+    "svgContent": "<circle cx=\"50\" cy=\"50\" r=\"24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"50\" cy=\"50\" r=\"8\" fill=\"currentColor\" opacity=\"0.4\"/><circle cx=\"18\" cy=\"36\" r=\"14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"82\" cy=\"36\" r=\"14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"50\" cy=\"82\" r=\"14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/>",
+    "viewBox": "0 0 100 100"
+  },
+  {
+    "entityId": "sallos",
+    "symbolName": "Heart with Olive Branch",
+    "symbolDescription": "Sallos — the 19th spirit of the Goetia — promotes love and peaceful accord between people. A heart combined with the olive branch of peace represents his gentle power to draw hearts together and resolve enmity.",
+    "svgContent": "<path d=\"M50,74 Q22,54 22,36 Q22,18 36,16 Q44,15 50,25 Q56,15 64,16 Q78,18 78,36 Q78,54 50,74 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><path d=\"M28,38 Q38,20 50,25\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M62,20 Q76,28 72,40\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"/>",
+    "viewBox": "0 0 100 100"
+  },
+  {
+    "entityId": "marbas",
+    "symbolName": "Lion Face",
+    "symbolDescription": "Marbas — the 5th spirit of the Goetia — manifests as a great lion, representing his mastery over hidden knowledge, the healing and causing of disease, and the transformation of shape and form.",
+    "svgContent": "<circle cx=\"50\" cy=\"45\" r=\"28\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"40\" cy=\"40\" r=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"60\" cy=\"40\" r=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"40\" cy=\"40\" r=\"3\" fill=\"currentColor\"/><circle cx=\"60\" cy=\"40\" r=\"3\" fill=\"currentColor\"/><path d=\"M43,55 Q50,62 57,55\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M22,45 Q10,40 14,28 Q18,18 28,24\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M78,45 Q90,40 86,28 Q82,18 72,24\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\"/>",
+    "viewBox": "0 0 100 100"
+  },
+  {
+    "entityId": "batman_archetype",
+    "symbolName": "Bat Wings",
+    "symbolDescription": "The bat silhouette is the defining symbol of the Dark Knight archetype — creature of the night, feared protector, and embodiment of the shadow transformed into a force for justice.",
+    "svgContent": "<path d=\"M50,40 Q36,20 20,25 Q8,30 5,50 Q12,46 24,50 Q18,62 28,75 Q38,64 50,68 Q62,64 72,75 Q82,62 76,50 Q88,46 95,50 Q92,30 80,25 Q64,20 50,40 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><circle cx=\"50\" cy=\"56\" r=\"8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/>",
+    "viewBox": "0 0 100 100"
+  },
+  {
+    "entityId": "jedi_archetype",
+    "symbolName": "Lightsaber",
+    "symbolDescription": "The lightsaber is the iconic symbol of the Jedi archetype — a blade of focused energy representing the disciplined mind, the balance of the Force, and the commitment to defend peace through mindful action.",
+    "svgContent": "<line x1=\"50\" y1=\"5\" x2=\"50\" y2=\"70\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"28\" y1=\"72\" x2=\"72\" y2=\"72\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"28\" y1=\"72\" x2=\"28\" y2=\"82\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"72\" y1=\"72\" x2=\"72\" y2=\"82\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"/><rect x=\"46\" y=\"70\" width=\"8\" height=\"25\" rx=\"3\" fill=\"currentColor\"/>",
+    "viewBox": "0 0 100 100"
+  },
+  {
+    "entityId": "hermione_archetype",
+    "symbolName": "Wand with Spark",
+    "symbolDescription": "A wand tipped with a radiating spark represents the archetype of the brilliant magical practitioner — the power of intellect married to magic, precision of thought, and the spark of transformation through knowledge.",
+    "svgContent": "<line x1=\"20\" y1=\"88\" x2=\"70\" y2=\"28\" stroke=\"currentColor\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"70\" y1=\"28\" x2=\"78\" y2=\"18\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"/><circle cx=\"80\" cy=\"15\" r=\"5\" fill=\"currentColor\"/><line x1=\"80\" y1=\"5\" x2=\"80\" y2=\"11\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"90\" y1=\"15\" x2=\"96\" y2=\"15\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"86\" y1=\"8\" x2=\"91\" y2=\"3\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"86\" y1=\"22\" x2=\"91\" y2=\"27\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"/>",
+    "viewBox": "0 0 100 100"
+  },
+  {
+    "entityId": "gandalf_archetype",
+    "symbolName": "Wizard's Hat and Staff",
+    "symbolDescription": "The pointed wizard's hat and staff are the symbols of the Wise Mage archetype — the ancient wanderer whose deep knowledge of the world and command of hidden power guides others through the darkest passages.",
+    "svgContent": "<line x1=\"30\" y1=\"95\" x2=\"75\" y2=\"18\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><path d=\"M22,82 Q42,62 55,28 Q58,18 55,12 Q52,8 50,10 Q40,15 36,35 Q30,56 22,82 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"/><path d=\"M20,80 Q32,76 46,80\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>",
+    "viewBox": "0 0 100 100"
+  }
+]
