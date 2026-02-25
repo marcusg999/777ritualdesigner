@@ -338,5 +338,59 @@
     "tags": ["wisdom", "guidance", "transformation", "light", "magic", "journeys", "mystery"],
     "isPopCulture": true,
     "sphere": "Jupiter"
+  },
+  {
+    "id": "obatala", "name": "Obatala", "tradition": "Ifá/Yorùbá", "type": "deity",
+    "description": "Orisha of purity, clarity, and creation. Father of all Orishas and molder of human bodies, associated with white, wisdom, and peaceful authority.",
+    "tags": ["purity", "clarity", "wisdom", "creation", "peace", "white", "authority", "healing"],
+    "sphere": "Moon"
+  },
+  {
+    "id": "yemaya", "name": "Yemaya", "tradition": "Ifá/Yorùbá", "type": "deity",
+    "description": "Orisha of the ocean and motherhood. Nurturing protector of women and children, governing the depths of the sea and the mysteries of life.",
+    "tags": ["sea", "ocean", "motherhood", "nurturing", "water", "protection", "fertility", "moon"],
+    "sphere": "Moon"
+  },
+  {
+    "id": "shango", "name": "Shango", "tradition": "Ifá/Yorùbá", "type": "deity",
+    "description": "Orisha of thunder, lightning, and justice. Embodies fierce power, passion, and kingship. Patron of warriors and those who seek strength.",
+    "tags": ["thunder", "lightning", "power", "strength", "passion", "justice", "fire", "warrior"],
+    "sphere": "Jupiter"
+  },
+  {
+    "id": "ogun", "name": "Ogun", "tradition": "Ifá/Yorùbá", "type": "deity",
+    "description": "Orisha of iron, labor, and war. Patron of blacksmiths, hunters, and warriors, governing all things made of iron and the clearing of obstacles.",
+    "tags": ["iron", "war", "labor", "hunting", "obstacles", "strength", "craftsmanship", "protection"],
+    "sphere": "Mars"
+  },
+  {
+    "id": "eshu", "name": "Eshu", "tradition": "Ifá/Yorùbá", "type": "deity",
+    "description": "Orisha of crossroads, communication, and chance. Messenger between the divine and human realms, opener of paths and guardian of thresholds.",
+    "tags": ["crossroads", "communication", "trickster", "roads", "messenger", "beginnings", "chance", "liminal"],
+    "sphere": "Mercury"
+  },
+  {
+    "id": "oshun", "name": "Oshun", "tradition": "Ifá/Yorùbá", "type": "deity",
+    "description": "Orisha of rivers, love, fertility, and prosperity. Embodiment of feminine sweetness, beauty, and abundance. Governs fresh water and matters of the heart.",
+    "tags": ["love", "fertility", "prosperity", "rivers", "water", "beauty", "abundance", "healing"],
+    "sphere": "Venus"
+  },
+  {
+    "id": "ifa", "name": "Ifá", "tradition": "Ifá/Yorùbá", "type": "deity",
+    "description": "Orisha of wisdom and divination. The body of knowledge and divine oracle through which the Orishas communicate fate and guidance to humanity.",
+    "tags": ["wisdom", "divination", "oracle", "fate", "knowledge", "balance", "prophecy", "truth"],
+    "sphere": "Mercury"
+  },
+  {
+    "id": "oya", "name": "Oya", "tradition": "Ifá/Yorùbá", "type": "deity",
+    "description": "Orisha of winds, storms, and transformation. Guardian of the cemetery and the passage between life and death, embodying radical change and fierce feminine power.",
+    "tags": ["wind", "storms", "change", "transformation", "death", "transition", "power", "warrior"],
+    "sphere": "Saturn"
+  },
+  {
+    "id": "orunmila", "name": "Orunmila", "tradition": "Ifá/Yorùbá", "type": "deity",
+    "description": "Orisha of knowledge, fate, and divination. Witness to all creation, Orunmila embodies the highest wisdom of the Ifá oracle and guides souls toward their destiny.",
+    "tags": ["knowledge", "fate", "divination", "destiny", "wisdom", "prophecy", "balance", "truth"],
+    "sphere": "Mercury"
   }
 ]

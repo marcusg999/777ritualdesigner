@@ -5,6 +5,8 @@ import type { CorrespondenceResult, EnrichmentData } from '@/lib/types';
 import CorrespondenceCard from '@/components/CorrespondenceCard';
 import RitualOutline from '@/components/RitualOutline';
 import CulturalContextBanner from '@/components/CulturalContextBanner';
+import OfferingsCard from '@/components/OfferingsCard';
+import { getOfferingsForEntities } from '@/lib/offerings';
 import intentsData from '@/data/intents.json';
 import entitiesData from '@/data/entities.json';
 import type { Intent, Entity } from '@/lib/types';
@@ -191,6 +193,11 @@ export default function HomePage() {
             <CorrespondenceCard correspondences={result.correspondences} enrichment={enrichment} />
             <RitualOutline steps={result.ritualOutline} disclaimer={result.disclaimer} enrichment={enrichment} />
           </div>
+
+          {(() => {
+            const ifaOfferings = getOfferingsForEntities(result.matchedEntities.map((e) => e.id));
+            return ifaOfferings.length > 0 ? <OfferingsCard offerings={ifaOfferings} /> : null;
+          })()}
         </div>
       )}
     </div>

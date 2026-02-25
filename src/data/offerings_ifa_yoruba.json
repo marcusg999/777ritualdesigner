@@ -1,0 +1,74 @@
+[
+  {
+    "entityId": "obatala",
+    "tradition": "Ifá/Yorùbá",
+    "commonOfferings": ["White rice", "Eggs", "Coconut", "White flowers", "Shea butter", "Cascarilla (eggshell powder)"],
+    "symbolism": ["Purity", "Clarity", "Wisdom", "Peaceful authority", "Creation of human form"],
+    "ritualObjects": ["White cloth", "White crown", "Sacred white staff (opasoro)", "White beads", "Silver"],
+    "cautions": ["Offerings and practices vary widely across lineages and houses; always seek guidance from an initiated practitioner or elder before approaching Obatala. Avoid attempting restricted rites without proper initiation."]
+  },
+  {
+    "entityId": "yemaya",
+    "tradition": "Ifá/Yorùbá",
+    "commonOfferings": ["Blue flowers", "Seashells", "Fish", "Fruits", "Sweets", "Molasses", "Watermelon"],
+    "symbolism": ["Nurturing", "Motherhood", "The sea and its depths", "Emotional healing", "Feminine mysteries"],
+    "ritualObjects": ["Mirrors", "Water vessels", "Images of fish", "Blue and clear beads", "Fans"],
+    "cautions": ["Specific colors, rhythms, and offerings differ by lineage. Ceremonial work with Yemaya should be undertaken only with proper guidance from a trained practitioner. Avoid restricted rites without initiation."]
+  },
+  {
+    "entityId": "shango",
+    "tradition": "Ifá/Yorùbá",
+    "commonOfferings": ["Hot peppers", "Cornmeal (akassa)", "Red fruits", "Palm wine", "Bananas", "Okra"],
+    "symbolism": ["Power", "Strength", "Passion", "Justice", "Royal authority", "Thunder and lightning"],
+    "ritualObjects": ["Double-headed axe (oshe)", "Thunderstones (edun ara)", "Drumming instruments", "Red and white beads", "Mortar"],
+    "cautions": ["Shango's rites are highly initiatory and lineage-specific. Ceremonial drumming and specific offerings require the oversight of a knowledgeable elder or priest/priestess. Avoid restricted rites without initiation."]
+  },
+  {
+    "entityId": "ogun",
+    "tradition": "Ifá/Yorùbá",
+    "commonOfferings": ["Iron tools", "Dogs (in traditional contexts)", "Green vegetables", "Rum", "Palm oil", "Roasted yam"],
+    "symbolism": ["War", "Iron and metalwork", "Labor and hard work", "Clearing of obstacles", "Primal force"],
+    "ritualObjects": ["Iron implements", "Machete", "Blacksmith's tools", "Green and black beads", "Chains"],
+    "cautions": ["Offerings to Ogun, particularly animal offerings, are strictly lineage-dependent. Consult an initiated practitioner before working with Ogun. Avoid restricted rites without initiation."]
+  },
+  {
+    "entityId": "eshu",
+    "tradition": "Ifá/Yorùbá",
+    "commonOfferings": ["Spicy foods", "Smoked fish", "Rum", "Palm oil", "Small coins", "Candy"],
+    "symbolism": ["Communication", "Crossroads and new paths", "Chance and unpredictability", "The meeting of worlds", "Beginnings"],
+    "ritualObjects": ["Wooden figure (eshu statue)", "Shrine at the door or crossroads", "A calabash", "Red and black beads", "Staff"],
+    "cautions": ["Eshu (also known as Elegba or Legba in related traditions) must always be acknowledged first in ceremony. Approaches to Eshu are highly tradition-specific. Consult a knowledgeable practitioner and avoid restricted rites without initiation."]
+  },
+  {
+    "entityId": "oshun",
+    "tradition": "Ifá/Yorùbá",
+    "commonOfferings": ["Honey", "Oranges", "Cinnamon", "Gold-colored items", "Pumpkin", "River water", "Yellow flowers"],
+    "symbolism": ["Love", "Fertility", "Prosperity", "Sweetness and beauty", "Fresh water and rivers"],
+    "ritualObjects": ["Gold jewelry", "Mirrors", "River stones", "Yellow and gold fans", "Amber beads", "Peacock feathers"],
+    "cautions": ["Honey should be tasted before offering to Oshun in traditional practice; always research lineage-specific protocols. Avoid restricted rites without guidance from an initiated practitioner."]
+  },
+  {
+    "entityId": "ifa",
+    "tradition": "Ifá/Yorùbá",
+    "commonOfferings": ["White yam", "Snails", "Palm oil", "Kola nuts", "Obi abata (bitter kola)", "Coconut"],
+    "symbolism": ["Wisdom", "Divination and prophecy", "Balance", "Truth", "The sacred oral tradition"],
+    "ritualObjects": ["Divination tray (opon Ifá)", "Ikin (palm nuts)", "Opele (divination chain)", "White and green beads", "Iroke (divination tapper)"],
+    "cautions": ["Ifá divination is a sacred and highly specialized practice requiring years of study and initiation. Do not attempt to conduct Ifá divination without proper training. Consult a trained babalawo or iyanifa for guidance."]
+  },
+  {
+    "entityId": "oya",
+    "tradition": "Ifá/Yorùbá",
+    "commonOfferings": ["Eggplants", "Dry pepper", "Red wine", "Items of iron", "Nine different fruits", "Mariwó (palm fronds)"],
+    "symbolism": ["Change and transformation", "Winds and storms", "The passage between life and death", "Feminine warrior energy", "Lightning"],
+    "ritualObjects": ["Whip (irukerè)", "Sword", "Sacred objects related to the wind", "Copper and burgundy beads", "Buffalo horns"],
+    "cautions": ["Oya's connection to the dead and the cemetery means her ceremonies require great care and lineage-specific knowledge. Do not approach cemetery or mortuary rites without initiation and elder guidance. Avoid restricted rites without initiation."]
+  },
+  {
+    "entityId": "orunmila",
+    "tradition": "Ifá/Yorùbá",
+    "commonOfferings": ["White foods", "Various fruits", "Kola nuts", "Obi abata (bitter kola)", "Palm wine", "Orogbo (bitter kola)"],
+    "symbolism": ["Knowledge", "Divination and fate", "Destiny", "Cosmic order", "Witness to creation"],
+    "ritualObjects": ["Cowrie shells", "Divination board", "Sacred texts and verses (odu)", "Green and yellow beads", "Ikin (palm nuts)"],
+    "cautions": ["Orunmila is closely identified with the Ifá oracle. Ceremonial and divinatory approaches require initiation and training. Consult a trained babalawo for Ifá-related guidance. Avoid restricted rites without proper initiation."]
+  }
+]
