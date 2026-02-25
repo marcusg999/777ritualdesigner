@@ -5,6 +5,9 @@ import type { CorrespondenceResult, EnrichmentData } from '@/lib/types';
 import CorrespondenceCard from '@/components/CorrespondenceCard';
 import RitualOutline from '@/components/RitualOutline';
 import CulturalContextBanner from '@/components/CulturalContextBanner';
+import OfferingsCard from '@/components/OfferingsCard';
+import { getOfferingsForEntities } from '@/lib/offerings';
+import { getSigilByEntityId } from '@/lib/sigils';
 import intentsData from '@/data/intents.json';
 import entitiesData from '@/data/entities.json';
 import type { Intent, Entity } from '@/lib/types';
@@ -174,8 +177,27 @@ export default function HomePage() {
                       Pop Culture Archetype
                     </span>
                   )}
-                  <h3 className="font-serif text-gold font-semibold">{entity.name}</h3>
-                  <p className="text-xs text-foreground/50">{entity.tradition} · {entity.type}</p>
+                  <div className="flex items-start gap-3">
+                    {(() => {
+                      const sigil = getSigilByEntityId(entity.id);
+                      return sigil ? (
+                        <div className="shrink-0" title={sigil.symbolName}>
+                          <svg
+                            viewBox={sigil.viewBox}
+                            width="48"
+                            height="48"
+                            className="text-gold/60"
+                            aria-label={sigil.symbolName}
+                            dangerouslySetInnerHTML={{ __html: sigil.svgContent }}
+                          />
+                        </div>
+                      ) : null;
+                    })()}
+                    <div className="flex-1 min-w-0">
+                      <h3 className="font-serif text-gold font-semibold">{entity.name}</h3>
+                      <p className="text-xs text-foreground/50">{entity.tradition} · {entity.type}</p>
+                    </div>
+                  </div>
                   <p className="text-sm text-foreground/70 leading-relaxed">{entity.description}</p>
                   <div className="flex flex-wrap gap-1">
                     {entity.tags.slice(0, 4).map((tag) => (
@@ -191,6 +213,11 @@ export default function HomePage() {
             <CorrespondenceCard correspondences={result.correspondences} enrichment={enrichment} />
             <RitualOutline steps={result.ritualOutline} disclaimer={result.disclaimer} enrichment={enrichment} />
           </div>
+
+          {(() => {
+            const ifaOfferings = getOfferingsForEntities(result.matchedEntities.map((e) => e.id));
+            return ifaOfferings.length > 0 ? <OfferingsCard offerings={ifaOfferings} /> : null;
+          })()}
         </div>
       )}
     </div>
