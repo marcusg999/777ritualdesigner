@@ -394,147 +394,147 @@
     "sphere": "Mercury"
   },
   {
-    "id": "jdilla", "name": "J Dilla", "tradition": "Hip-Hop", "type": "archetype",
-    "description": "Detroit beatmaker who revolutionized hip-hop with unquantized drum programming and soulful sample manipulation. His album Donuts, completed while hospitalized, became a sacred text of underground music. Symbol of transcendence through craft and posthumous legacy.",
+    "id": "jdilla", "name": "J Dilla", "tradition": "HipHop", "type": "archetype",
+    "description": "Detroit beatmaker who revolutionized HipHop with unquantized drum programming and soulful sample manipulation. His album Donuts, completed while hospitalized, became a sacred text of underground music. Symbol of transcendence through craft and posthumous legacy.",
     "tags": ["beats", "sampling", "soul", "production", "rhythm", "underground", "legacy", "creativity", "drums", "detroit"],
     "sphere": "Saturn",
     "isPopCulture": true
   },
   {
-    "id": "madlib", "name": "Madlib", "tradition": "Hip-Hop", "type": "archetype",
-    "description": "Prolific producer, rapper, and crate-digger whose alter ego Quasimoto channels psychedelic consciousness through hip-hop. His Beat Konducta series and collaborations with MF DOOM and J Dilla explore the outer dimensions of sound and culture.",
+    "id": "madlib", "name": "Madlib", "tradition": "HipHop", "type": "archetype",
+    "description": "Prolific producer, rapper, and crate-digger whose alter ego Quasimoto channels psychedelic consciousness through HipHop. His Beat Konducta series and collaborations with MF DOOM and J Dilla explore the outer dimensions of sound and culture.",
     "tags": ["production", "crate-digging", "soul", "jazz", "psychedelic", "sampling", "alter-ego", "underground", "creativity", "beats"],
     "sphere": "Mercury",
     "isPopCulture": true
   },
   {
-    "id": "tyler-the-creator", "name": "Tyler, the Creator", "tradition": "Hip-Hop", "type": "archetype",
+    "id": "tyler-the-creator", "name": "Tyler, the Creator", "tradition": "HipHop", "type": "archetype",
     "description": "Odd Future founder and genre-defying artist who evolved from provocateur to visionary producer-vocalist. His albums Flower Boy, Igor, and Call Me If You Get Lost trace an arc of self-discovery, emotional vulnerability, and maximalist artistic freedom.",
     "tags": ["production", "creativity", "self-expression", "identity", "visionary", "maximalism", "odd-future", "transformation", "artistry", "experimental"],
     "sphere": "Mercury",
     "isPopCulture": true
   },
   {
-    "id": "nipsey-hussle", "name": "Nipsey Hussle", "tradition": "Hip-Hop", "type": "archetype",
+    "id": "nipsey-hussle", "name": "Nipsey Hussle", "tradition": "HipHop", "type": "archetype",
     "description": "Crenshaw rapper and community activist who embodied the Marathon Consciousness—a philosophy of self-reliance, long-term vision, and investment in one's community. Posthumously recognized as a symbol of Black entrepreneurship and spiritual legacy.",
     "tags": ["legacy", "community", "marathon", "entrepreneurship", "activism", "crenshaw", "leadership", "service", "hustle", "protection"],
     "sphere": "Sun",
     "isPopCulture": true
   },
   {
-    "id": "myka9", "name": "Myka 9", "tradition": "Hip-Hop", "type": "archetype",
+    "id": "myka9", "name": "Myka 9", "tradition": "HipHop", "type": "archetype",
     "description": "Los Angeles lyricist and Freestyle Fellowship member whose rapid-fire delivery and jazz-influenced flows expanded the boundaries of conscious rap. A practitioner of the verbal arts as a form of higher consciousness and community healing.",
     "tags": ["lyricism", "jazz", "freestyle", "consciousness", "spoken-word", "los-angeles", "healing", "vocal-alchemy", "underground", "poetry"],
     "sphere": "Mercury",
     "isPopCulture": true
   },
   {
-    "id": "sole", "name": "Sole", "tradition": "Hip-Hop", "type": "archetype",
-    "description": "Anti-capitalist rapper and spoken word artist whose DIY ethos and unflinching political critique challenge systems of oppression. Founder of Anticon Records and practitioner of hip-hop as radical social magic.",
+    "id": "sole", "name": "Sole", "tradition": "HipHop", "type": "archetype",
+    "description": "Anti-capitalist rapper and spoken word artist whose DIY ethos and unflinching political critique challenge systems of oppression. Founder of Anticon Records and practitioner of HipHop as radical social magic.",
     "tags": ["activism", "politics", "diy", "anti-capitalism", "spoken-word", "underground", "critique", "community", "resistance", "anarchism"],
     "sphere": "Saturn",
     "isPopCulture": true
   },
   {
-    "id": "mfdoom", "name": "MF DOOM", "tradition": "Hip-Hop", "type": "archetype",
-    "description": "The masked villain rapper who constructed an elaborate mythology of villainy, wordplay, and hidden identity. His intricate internal rhymes, comic-book references, and mask persona made him an archetypal trickster-mage of hip-hop. Operation Doomsday and Madvillainy are his grimoires.",
+    "id": "mfdoom", "name": "MF DOOM", "tradition": "HipHop", "type": "archetype",
+    "description": "The masked villain rapper who constructed an elaborate mythology of villainy, wordplay, and hidden identity. His intricate internal rhymes, comic-book references, and mask persona made him an archetypal trickster-mage of HipHop. Operation Doomsday and Madvillainy are his grimoires.",
     "tags": ["wordplay", "mask", "villainy", "mythology", "lyricism", "trickster", "identity", "underground", "alter-ego", "rhyme"],
     "sphere": "Mercury",
     "isPopCulture": true
   },
   {
-    "id": "rick-ross", "name": "Rick Ross", "tradition": "Hip-Hop", "type": "archetype",
+    "id": "rick-ross", "name": "Rick Ross", "tradition": "HipHop", "type": "archetype",
     "description": "Miami rapper and Maybach Music Group founder who embodies the Boss archetype—a figure of abundance, luxury, and commanding presence. His baroque production style and larger-than-life persona invoke the Jupiterian energy of expansion and material mastery.",
     "tags": ["abundance", "luxury", "boss", "empire", "wealth", "leadership", "miami", "power", "hustle", "expansion"],
     "sphere": "Jupiter",
     "isPopCulture": true
   },
   {
-    "id": "erykah-badu", "name": "Erykah Badu", "tradition": "Hip-Hop", "type": "archetype",
+    "id": "erykah-badu", "name": "Erykah Badu", "tradition": "HipHop", "type": "archetype",
     "description": "Neo-soul queen and afrofuturist priestess whose music channels ancestral memory, cosmic consciousness, and feminine spiritual power. Her Baduizm and Mama's Gun albums initiated a generation into soul music as sacred practice and metaphysical inquiry.",
     "tags": ["neo-soul", "mysticism", "afrofuturism", "femininity", "healing", "consciousness", "soul", "ancestry", "cosmic", "divination"],
     "sphere": "Moon",
     "isPopCulture": true
   },
   {
-    "id": "saul-williams", "name": "Saul Williams", "tradition": "Hip-Hop", "type": "archetype",
-    "description": "Poet, rapper, and actor who bridges spoken word, hip-hop, and industrial music. His work channels Afronautics and radical consciousness, using language as a weapon of liberation. Slam (1998) brought spoken word to mainstream consciousness.",
+    "id": "saul-williams", "name": "Saul Williams", "tradition": "HipHop", "type": "archetype",
+    "description": "Poet, rapper, and actor who bridges spoken word, HipHop, and industrial music. His work channels Afronautics and radical consciousness, using language as a weapon of liberation. Slam (1998) brought spoken word to mainstream consciousness.",
     "tags": ["spoken-word", "poetry", "activism", "consciousness", "afronautics", "liberation", "language", "performance", "resistance", "cosmic"],
     "sphere": "Sun",
     "isPopCulture": true
   },
   {
-    "id": "qbert", "name": "DJ QBert", "tradition": "Hip-Hop", "type": "archetype",
+    "id": "qbert", "name": "DJ QBert", "tradition": "HipHop", "type": "archetype",
     "description": "San Francisco-based turntablist widely considered one of the greatest scratch DJs in history. His Invisibl Skratch Piklz crew pioneered scratch music as a spiritual and martial art, transmuting vinyl into a vehicle of cosmic sound manipulation.",
     "tags": ["turntablism", "scratching", "vinyl", "sound-manipulation", "craft", "mastery", "cosmic", "innovation", "rhythm", "san-francisco"],
     "sphere": "Mercury",
     "isPopCulture": true
   },
   {
-    "id": "lauryn-hill", "name": "Lauryn Hill", "tradition": "Hip-Hop", "type": "archetype",
+    "id": "lauryn-hill", "name": "Lauryn Hill", "tradition": "HipHop", "type": "archetype",
     "description": "Fugees member whose debut solo album The Miseducation of Lauryn Hill fused rap, R&B, and reggae with spiritual awakening and Womanist theology. An archetypal figure of sacred feminine power, redemption, and the courage to speak prophetic truth.",
     "tags": ["soul", "feminism", "spirituality", "reggae", "consciousness", "healing", "prophecy", "r-and-b", "redemption", "sacred"],
     "sphere": "Moon",
     "isPopCulture": true
   },
   {
-    "id": "jay-electronica", "name": "Jay Electronica", "tradition": "Hip-Hop", "type": "archetype",
-    "description": "New Orleans-born rapper whose rare recordings and mystical persona cultivated an esoteric legend. A student of the Five-Percent Nation and later the Nation of Islam, his lyricism weaves sacred geometry, divine mathematics, and urban prophecy into hip-hop.",
+    "id": "jay-electronica", "name": "Jay Electronica", "tradition": "HipHop", "type": "archetype",
+    "description": "New Orleans-born rapper whose rare recordings and mystical persona cultivated an esoteric legend. A student of the Five-Percent Nation and later the Nation of Islam, his lyricism weaves sacred geometry, divine mathematics, and urban prophecy into HipHop.",
     "tags": ["esoteric", "mysticism", "five-percent", "nation-of-islam", "prophecy", "sacred-geometry", "mathematics", "consciousness", "new-orleans", "lyricism"],
     "sphere": "Saturn",
     "isPopCulture": true
   },
   {
-    "id": "tupac", "name": "Tupac Shakur", "tradition": "Hip-Hop", "type": "archetype",
+    "id": "tupac", "name": "Tupac Shakur", "tradition": "HipHop", "type": "archetype",
     "description": "Poet-warrior and cultural martyr whose music addressed police brutality, poverty, and spiritual longing with equal passion. THUG LIFE (The Hate U Give Little Infants F***s Everybody) encodes a philosophy of systemic critique. His posthumous influence is a testament to art as immortality.",
     "tags": ["activism", "poetry", "warrior", "legacy", "social-justice", "consciousness", "martyrdom", "thug-life", "community", "power"],
     "sphere": "Mars",
     "isPopCulture": true
   },
   {
-    "id": "chuck-d", "name": "Chuck D", "tradition": "Hip-Hop", "type": "archetype",
-    "description": "Public Enemy co-founder and architect of hip-hop as political warfare. His booming baritone and Bomb Squad production created sonic monuments of Black resistance. Fight the Power and It Takes a Nation of Millions to Hold Us Back are manifestos disguised as music.",
+    "id": "chuck-d", "name": "Chuck D", "tradition": "HipHop", "type": "archetype",
+    "description": "Public Enemy co-founder and architect of HipHop as political warfare. His booming baritone and Bomb Squad production created sonic monuments of Black resistance. Fight the Power and It Takes a Nation of Millions to Hold Us Back are manifestos disguised as music.",
     "tags": ["activism", "politics", "resistance", "public-enemy", "consciousness", "power", "community", "black-liberation", "leadership", "warfare"],
     "sphere": "Mars",
     "isPopCulture": true
   },
   {
-    "id": "flavor-flav", "name": "Flavor Flav", "tradition": "Hip-Hop", "type": "archetype",
+    "id": "flavor-flav", "name": "Flavor Flav", "tradition": "HipHop", "type": "archetype",
     "description": "Public Enemy hype man and court jester who wears a giant clock as a talisman of time consciousness. His chaotic energy balances Chuck D's gravity, embodying the trickster principle—the sacred fool who disrupts order to reveal deeper truths.",
     "tags": ["trickster", "time", "hype", "chaos", "humor", "public-enemy", "performance", "jester", "consciousness", "disruption"],
     "sphere": "Mercury",
     "isPopCulture": true
   },
   {
-    "id": "kendrick-lamar", "name": "Kendrick Lamar", "tradition": "Hip-Hop", "type": "archetype",
+    "id": "kendrick-lamar", "name": "Kendrick Lamar", "tradition": "HipHop", "type": "archetype",
     "description": "Compton rapper and Pulitzer Prize winner whose albums To Pimp a Butterfly and DAMN. explore Black identity, trauma, prophetic calling, and spiritual wrestling with God. His work is revered as scripture by a generation seeking meaning in sound.",
     "tags": ["consciousness", "storytelling", "identity", "compton", "pulitzer", "scripture", "activism", "spirituality", "mastery", "black-culture"],
     "sphere": "Sun",
     "isPopCulture": true
   },
   {
-    "id": "e40", "name": "E-40", "tradition": "Hip-Hop", "type": "archetype",
+    "id": "e40", "name": "E-40", "tradition": "HipHop", "type": "archetype",
     "description": "Bay Area rap legend and vernacular innovator who coined hundreds of slang terms now embedded in American English. His linguistic creativity, entrepreneurial hustle, and decades-spanning catalog make him a trickster-merchant of language magic.",
     "tags": ["slang", "language", "bay-area", "entrepreneurship", "longevity", "creativity", "trickster", "vernacular", "hustle", "oakland"],
     "sphere": "Mercury",
     "isPopCulture": true
   },
   {
-    "id": "rammellzee", "name": "Rammellzee", "tradition": "Hip-Hop", "type": "archetype",
-    "description": "Bronx-born artist, rapper, and theorist who developed Gothic Futurism and Ikonoklast Panzerism—a philosophy of letter and language as cosmic warfare. His armor sculptures and esoteric rap texts bridge graffiti, hip-hop, and hermetic magic into a unified system of symbolic combat.",
+    "id": "rammellzee", "name": "Rammellzee", "tradition": "HipHop", "type": "archetype",
+    "description": "Bronx-born artist, rapper, and theorist who developed Gothic Futurism and Ikonoklast Panzerism—a philosophy of letter and language as cosmic warfare. His armor sculptures and esoteric rap texts bridge graffiti, HipHop, and hermetic magic into a unified system of symbolic combat.",
     "tags": ["gothic-futurism", "graffiti", "language", "symbolism", "esoteric", "armor", "cosmic", "bronx", "theory", "letter-racing"],
     "sphere": "Saturn",
     "isPopCulture": true
   },
   {
-    "id": "krs-one", "name": "KRS-One", "tradition": "Hip-Hop", "type": "archetype",
-    "description": "The Teacha and Boogie Down Productions founder who declared hip-hop a religion and philosophy, not a genre. His Gospel of Hip Hop codified the nine elements of hip-hop culture. A living archetype of the rapper as griot, philosopher, and spiritual warrior.",
+    "id": "krs-one", "name": "KRS-One", "tradition": "HipHop", "type": "archetype",
+    "description": "The Teacha and Boogie Down Productions founder who declared HipHop a religion and philosophy, not a genre. His Gospel of Hip Hop codified the nine elements of HipHop culture. A living archetype of the rapper as griot, philosopher, and spiritual warrior.",
     "tags": ["philosophy", "education", "consciousness", "boogie-down", "griot", "spirituality", "culture", "warrior", "teaching", "bronx"],
     "sphere": "Sun",
     "isPopCulture": true
   },
   {
-    "id": "kanye-west", "name": "Kanye West", "tradition": "Hip-Hop", "type": "archetype",
+    "id": "kanye-west", "name": "Kanye West", "tradition": "HipHop", "type": "archetype",
     "description": "Chicago producer-rapper whose career arc from College Dropout to Donda traces themes of ego, hubris, divine calling, and breakdown. A maximalist artist whose creative megalomania and gospel-influenced production channel the archetype of the inspired genius at war with limitation.",
     "tags": ["production", "visionary", "ego", "creativity", "gospel", "maximalism", "chicago", "controversy", "artistry", "transformation"],
     "sphere": "Sun",
