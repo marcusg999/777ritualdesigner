@@ -518,5 +518,43 @@
     "description": "Chicago producer-rapper whose career arc from College Dropout to Donda traces themes of ego, hubris, divine calling, and breakdown. A maximalist artist whose creative megalomania and gospel-influenced production channel the archetype of the inspired genius at war with limitation.",
     "tags": ["production", "visionary", "ego", "creativity", "gospel", "maximalism", "chicago", "controversy", "artistry", "transformation"],
     "sphere": "Sun"
+  },
+  {
+    "id": "rick-rubin",
+    "name": "Rick Rubin",
+    "tradition": "HipHop",
+    "type": "archetype",
+    "description": "Legendary producer and minimalist mystic who approaches music as sacred space creation. Co-founded Def Jam and produced landmark albums across genres through the art of reduction and deep listening. Embodies the Hermit archetype—stripping away excess to reveal essence, creating transformative containers through silence, presence, and witness consciousness.",
+    "tags": [
+      "minimalism",
+      "meditation",
+      "presence",
+      "reduction",
+      "sacred-space",
+      "witness",
+      "deep-listening",
+      "spirituality",
+      "simplicity",
+      "essence",
+      "monastery",
+      "consciousness",
+      "cross-genre",
+      "alchemy"
+    ],
+    "sphere": "Saturn/Neptune",
+    "intent_tags": [
+      "meditation",
+      "clarity",
+      "grounding",
+      "spiritual_awakening",
+      "discernment",
+      "elemental_balance",
+      "banishing",
+      "healing",
+      "transformation",
+      "devotion",
+      "higher_self",
+      "wisdom"
+    ]
   }
 ]
