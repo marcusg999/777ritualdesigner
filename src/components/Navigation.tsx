@@ -18,7 +18,7 @@ export default function Navigation() {
       <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2 text-gold font-serif text-xl font-bold tracking-wide hover:opacity-80 transition-opacity">
           <span className="text-2xl">✦</span>
-          <span>777 Ritual Designer</span>
+          <span>The Physics of HipHop Ritual Designer</span>
         </Link>
 
         <div className="flex items-center gap-1 sm:gap-2">
