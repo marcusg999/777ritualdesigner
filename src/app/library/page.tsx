@@ -9,7 +9,7 @@ import entitiesData from '@/data/entities.json';
 const intents = intentsData as Intent[];
 const entities = entitiesData as Entity[];
 
-const traditions = ['All', 'Greek', 'Egyptian', 'Norse', 'Celtic', 'Sumerian', 'Hindu', 'Abrahamic', 'Kabbalistic', 'Goetia', 'Orishas', 'Pop Culture'];
+const traditions = ['All', 'Greek', 'Egyptian', 'Norse', 'Celtic', 'Sumerian', 'Hindu', 'Abrahamic', 'Kabbalistic', 'Goetia', 'Orishas', 'Pop Culture', 'Hip-Hop'];
 
 export default function LibraryPage() {
   const [search, setSearch] = useState('');
