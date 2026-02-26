@@ -1,4 +1,4 @@
-# 777✦ Ritual Designer
+# The Physics of HipHop Ritual Designer
 
 A sleek, dark-themed Progressive Web App for designing ritual outlines and exploring occult correspondences across world traditions. Built with Next.js 16 App Router, TypeScript, Tailwind CSS, and next-themes.
 
