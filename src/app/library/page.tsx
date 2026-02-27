@@ -21,7 +21,7 @@ const traditions = [
   'Abrahamic',
   'Kabbalistic',
   'Goetia',
-  'Orishas',
+  'Ifá/Yorùbá',
   'Pop Culture',
   'HipHop',
 ];
