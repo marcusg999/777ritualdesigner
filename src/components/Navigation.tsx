@@ -14,7 +14,7 @@ export default function Navigation() {
   const pathname = usePathname();
 
   return (
-    <nav className="border-b border-gold/20 bg-surface/80 backdrop-blur-sm sticky top-0 z-50">
+    <nav className="border-b border-gold/20 sticky top-0 z-50" style={{ background: 'rgba(8,6,20,0.78)', backdropFilter: 'blur(20px)', WebkitBackdropFilter: 'blur(20px)' }}>
       <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2 text-gold font-serif text-xl font-bold tracking-wide hover:opacity-80 transition-opacity">
           <span className="text-2xl">✦</span>

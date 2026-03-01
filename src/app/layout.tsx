@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from 'next';
 import { ThemeProvider } from 'next-themes';
 import Navigation from '@/components/Navigation';
+import ConstellationBackground from '@/components/ConstellationBackground';
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -24,12 +25,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <link rel="apple-touch-icon" href="/icons/icon-192.png" />
       </head>
-      <body className="min-h-screen bg-background text-foreground antialiased">
+      <body className="min-h-screen text-foreground antialiased">
+        <ConstellationBackground />
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
-          <Navigation />
-          <main className="max-w-6xl mx-auto px-4 py-8">
-            {children}
-          </main>
+          <div className="relative" style={{ zIndex: 1 }}>
+            <Navigation />
+            <main className="max-w-6xl mx-auto px-4 py-8">
+              {children}
+            </main>
+          </div>
         </ThemeProvider>
       </body>
     </html>
