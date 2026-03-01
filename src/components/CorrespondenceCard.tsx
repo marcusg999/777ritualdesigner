@@ -36,7 +36,7 @@ function TagList({ items }: { items: string[] }) {
   return (
     <div className="flex flex-wrap gap-1.5">
       {items.map((item) => (
-        <span key={item} className="px-2 py-0.5 bg-white/5 border border-white/10 rounded text-xs text-foreground/80">
+        <span key={item} className="px-2 py-0.5 rounded text-xs text-foreground/80" style={{ backgroundColor: 'var(--tag-bg)', border: '1px solid var(--tag-border)' }}>
           {item}
         </span>
       ))}

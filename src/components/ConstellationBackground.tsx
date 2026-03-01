@@ -131,44 +131,68 @@ export default function ConstellationBackground() {
       const cy = h / 2;
       const mx = mouseRef.current.x;
       const my = mouseRef.current.y;
+      const isLight = document.documentElement.classList.contains('light');
 
       // Slow rotation: one full revolution ≈ 8 minutes at 60 fps
       const rotation = frame * 0.00013;
-      // Constellation scale relative to viewport
       const scale = Math.min(w, h) / 820;
 
       ctx.clearRect(0, 0, w, h);
 
-      // ── 1. Deep space gradient ──────────────────────────────────────────
-      const bg = ctx.createRadialGradient(cx, cy * 0.6, 0, cx, cy, Math.max(w, h) * 0.85);
-      bg.addColorStop(0, '#0c0920');
-      bg.addColorStop(0.45, '#080614');
-      bg.addColorStop(1, '#020208');
-      ctx.fillStyle = bg;
-      ctx.fillRect(0, 0, w, h);
+      if (isLight) {
+        // ── DAY MODE: clear blue sky ──────────────────────────────────────
+        const sky = ctx.createLinearGradient(0, 0, 0, h);
+        sky.addColorStop(0,    '#7ab8e8');
+        sky.addColorStop(0.45, '#a8d0f0');
+        sky.addColorStop(1,    '#cce4f7');
+        ctx.fillStyle = sky;
+        ctx.fillRect(0, 0, w, h);
 
-      // ── 2. Galactic rift (Milky Way band) ─────────────────────────────
-      drawGalacticRift(ctx, w, h, mx, my);
+        // Subtle atmospheric haze near horizon
+        const haze = ctx.createLinearGradient(0, h * 0.65, 0, h);
+        haze.addColorStop(0, 'rgba(255,248,230,0)');
+        haze.addColorStop(1, 'rgba(255,248,220,0.38)');
+        ctx.fillStyle = haze;
+        ctx.fillRect(0, h * 0.65, w, h);
 
-      // ── 3. Background star field ───────────────────────────────────────
-      ctx.save();
-      // Rotate the entire star field around canvas centre, with gentle parallax
-      ctx.translate(cx + mx * 12, cy + my * 9);
-      ctx.rotate(rotation * 0.4);
-      ctx.translate(-cx, -cy);
+        // Sun glow (top-right)
+        const sun = ctx.createRadialGradient(w * 0.82 + mx * 15, h * 0.12 + my * 10, 0, w * 0.82 + mx * 15, h * 0.12 + my * 10, h * 0.45);
+        sun.addColorStop(0,    'rgba(255,248,200,0.55)');
+        sun.addColorStop(0.35, 'rgba(255,220,120,0.18)');
+        sun.addColorStop(1,    'rgba(255,255,255,0)');
+        ctx.fillStyle = sun;
+        ctx.fillRect(0, 0, w, h);
 
-      for (const s of starsRef.current) {
-        const sx = s.rx * w;
-        const sy = s.ry * h;
-        const twinkle = Math.sin(frame * s.twinkleSpeed + s.twinklePhase) * 0.28 + 0.72;
-        ctx.beginPath();
-        ctx.arc(sx, sy, s.radius, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(210,205,255,${(s.opacity * twinkle).toFixed(3)})`;
-        ctx.fill();
+      } else {
+        // ── NIGHT MODE: deep space ────────────────────────────────────────
+        const bg = ctx.createRadialGradient(cx, cy * 0.6, 0, cx, cy, Math.max(w, h) * 0.85);
+        bg.addColorStop(0,    '#0c0920');
+        bg.addColorStop(0.45, '#080614');
+        bg.addColorStop(1,    '#020208');
+        ctx.fillStyle = bg;
+        ctx.fillRect(0, 0, w, h);
+
+        // Galactic rift
+        drawGalacticRift(ctx, w, h, mx, my);
+
+        // Background star field
+        ctx.save();
+        ctx.translate(cx + mx * 12, cy + my * 9);
+        ctx.rotate(rotation * 0.4);
+        ctx.translate(-cx, -cy);
+        for (const s of starsRef.current) {
+          const sx = s.rx * w;
+          const sy = s.ry * h;
+          const twinkle = Math.sin(frame * s.twinkleSpeed + s.twinklePhase) * 0.28 + 0.72;
+          ctx.beginPath();
+          ctx.arc(sx, sy, s.radius, 0, Math.PI * 2);
+          ctx.fillStyle = `rgba(210,205,255,${(s.opacity * twinkle).toFixed(3)})`;
+          ctx.fill();
+        }
+        ctx.restore();
       }
-      ctx.restore();
 
-      // ── 4. Zodiac constellations ───────────────────────────────────────
+      // ── Zodiac constellations (both modes) ────────────────────────────
       const orbitRx = w * 0.36;
       const orbitRy = h * 0.30;
 
@@ -178,28 +202,30 @@ export default function ConstellationBackground() {
         const angle = baseAngle + rotation;
         const radiusBoost = 1 + ORBIT_OFFSETS[i];
 
-        // Constellation centre position
         const px = cx + Math.cos(angle) * orbitRx * radiusBoost + mx * 28;
         const py = cy + Math.sin(angle) * orbitRy * radiusBoost + my * 18;
 
-        // Fade constellations that drift near/beyond edges
         const marginX = Math.min(px, w - px) / w;
         const marginY = Math.min(py, h - py) / h;
         const fade = Math.max(0, Math.min(1, Math.min(marginX, marginY) * 7));
         if (fade < 0.02) continue;
 
-        // ── Constellation lines
+        // Line opacity: more visible in day mode (like an astronomy chart)
+        const lineAlpha = isLight ? 0.35 * fade : 0.22 * fade;
+        const lineColor0 = isLight ? '#7a5c10' : '#c9a84c';
+        const lineColor1 = isLight ? '#3a5080' : '#7b5ea7';
+
         ctx.save();
-        ctx.globalAlpha = 0.22 * fade;
-        ctx.lineWidth = 0.75;
+        ctx.globalAlpha = lineAlpha;
+        ctx.lineWidth = isLight ? 1.0 : 0.75;
         for (const [a, b] of c.lines) {
           const ax = px + c.stars[a][0] * scale;
           const ay = py + c.stars[a][1] * scale;
           const bx = px + c.stars[b][0] * scale;
           const by = py + c.stars[b][1] * scale;
           const lg = ctx.createLinearGradient(ax, ay, bx, by);
-          lg.addColorStop(0, '#c9a84c');
-          lg.addColorStop(1, '#7b5ea7');
+          lg.addColorStop(0, lineColor0);
+          lg.addColorStop(1, lineColor1);
           ctx.strokeStyle = lg;
           ctx.beginPath();
           ctx.moveTo(ax, ay);
@@ -208,37 +234,43 @@ export default function ConstellationBackground() {
         }
         ctx.restore();
 
-        // ── Constellation stars
+        // Star dots
         for (const [sx, sy] of c.stars) {
           const starX = px + sx * scale;
           const starY = py + sy * scale;
           const twinkle = Math.sin(frame * 0.028 + starX * 0.009 + starY * 0.007) * 0.25 + 0.75;
           const glowR = 7 * scale;
 
-          // Soft glow
-          const glow = ctx.createRadialGradient(starX, starY, 0, starX, starY, glowR);
-          glow.addColorStop(0, `rgba(201,168,76,${(0.55 * fade * twinkle).toFixed(3)})`);
-          glow.addColorStop(0.5, `rgba(180,140,200,${(0.18 * fade * twinkle).toFixed(3)})`);
-          glow.addColorStop(1, 'rgba(0,0,0,0)');
-          ctx.beginPath();
-          ctx.arc(starX, starY, glowR, 0, Math.PI * 2);
-          ctx.fillStyle = glow;
-          ctx.fill();
+          if (isLight) {
+            // Day: small solid amber dots, no glow
+            ctx.beginPath();
+            ctx.arc(starX, starY, Math.max(1.4, 2.0 * scale), 0, Math.PI * 2);
+            ctx.fillStyle = `rgba(80,55,10,${(0.55 * fade * twinkle).toFixed(3)})`;
+            ctx.fill();
+          } else {
+            // Night: glowing stars
+            const glow = ctx.createRadialGradient(starX, starY, 0, starX, starY, glowR);
+            glow.addColorStop(0,   `rgba(201,168,76,${(0.55 * fade * twinkle).toFixed(3)})`);
+            glow.addColorStop(0.5, `rgba(180,140,200,${(0.18 * fade * twinkle).toFixed(3)})`);
+            glow.addColorStop(1,   'rgba(0,0,0,0)');
+            ctx.beginPath();
+            ctx.arc(starX, starY, glowR, 0, Math.PI * 2);
+            ctx.fillStyle = glow;
+            ctx.fill();
 
-          // Star core
-          ctx.beginPath();
-          ctx.arc(starX, starY, Math.max(1.2, 1.6 * scale), 0, Math.PI * 2);
-          ctx.fillStyle = `rgba(245,235,200,${(0.92 * fade * twinkle).toFixed(3)})`;
-          ctx.fill();
+            ctx.beginPath();
+            ctx.arc(starX, starY, Math.max(1.2, 1.6 * scale), 0, Math.PI * 2);
+            ctx.fillStyle = `rgba(245,235,200,${(0.92 * fade * twinkle).toFixed(3)})`;
+            ctx.fill();
+          }
         }
 
-        // ── Subtle constellation label
+        // Label
         if (fade > 0.6 && scale > 0.7) {
           ctx.save();
-          ctx.globalAlpha = 0.18 * fade;
+          ctx.globalAlpha = isLight ? 0.30 * fade : 0.18 * fade;
           ctx.font = `${Math.round(10 * scale)}px Georgia, serif`;
-          ctx.fillStyle = '#c9a84c';
-          ctx.letterSpacing = '0.08em';
+          ctx.fillStyle = isLight ? '#5a4008' : '#c9a84c';
           ctx.fillText(c.name.toUpperCase(), px + 4, py + 16 * scale);
           ctx.restore();
         }
