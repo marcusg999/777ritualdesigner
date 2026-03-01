@@ -1,4 +1,3 @@
-cat > .gitignore <<'EOF'
 # dependencies
 /node_modules
 /.pnp
