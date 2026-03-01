@@ -12,6 +12,7 @@
   --card-shadow: 0 4px 32px rgba(0, 0, 0, 0.45), inset 0 1px 0 rgba(201, 168, 76, 0.06);
   --tag-bg: rgba(255, 255, 255, 0.05);
   --tag-border: rgba(255, 255, 255, 0.10);
+  --caution-text: #e8e4d9;
 }
 
 .dark {
@@ -26,11 +27,13 @@
   --card-shadow: 0 4px 32px rgba(0, 0, 0, 0.45), inset 0 1px 0 rgba(201, 168, 76, 0.06);
   --tag-bg: rgba(255, 255, 255, 0.05);
   --tag-border: rgba(255, 255, 255, 0.10);
+  --caution-text: #e8e4d9;
 }
 
 .light {
   --background: #f5f0e8;
   --foreground: #1a1a2e;
+  --caution-text: #e5bc40;
   --surface: #ffffff;
   --gold: #7a5c10;
   --gold-light: #9a7218;

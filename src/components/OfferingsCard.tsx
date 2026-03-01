@@ -55,8 +55,9 @@ export default function OfferingsCard({ offerings }: OfferingsCardProps) {
             </Section>
           </div>
           {record.cautions.map((caution, i) => (
-            <div key={i} className="bg-amber-900/10 border border-amber-700/20 rounded-lg px-3 py-2">
-              <p className="text-xs text-amber-200/70 leading-relaxed">⚠ {caution}</p>
+            <div key={i} className="bg-amber-950/60 border border-amber-600/40 rounded-lg px-3 py-2 flex items-start gap-2">
+              <span className="text-amber-400 shrink-0 text-sm">⚠</span>
+              <p className="text-xs leading-relaxed" style={{ color: 'var(--caution-text)' }}>{caution}</p>
             </div>
           ))}
         </div>
