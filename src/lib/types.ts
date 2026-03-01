@@ -35,6 +35,22 @@ export interface Correspondence {
   tarotCards?: string[];
   runeAssociations?: string[];
   numerology?: number;
+  // 777 Correspondences (Crowley)
+  magicalWeapon?: string[];
+  magicalPowers?: string[];
+  virtue?: string;
+  vice?: string;
+  divineName?: string;
+  animals?: string[];
+  alchemicalProcess?: string;
+  bodyPart?: string;
+  // Witcheslore Correspondences
+  flowers?: string[];
+  woods?: string[];
+  candleColor?: string;
+  essentialOils?: string[];
+  direction?: string;
+  moonPhase?: string;
 }
 
 export interface RitualStep {

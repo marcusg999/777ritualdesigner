@@ -21,6 +21,16 @@ function findCorrespondence(intent?: Intent, entities?: Entity[]): Correspondenc
     }
   }
 
+  // Try to find by sphere (entity sphere → any correspondence with matching sphere)
+  if (entities && entities.length > 0) {
+    for (const entity of entities) {
+      if (entity.sphere) {
+        const found = correspondences.find((c) => c.sphere === entity.sphere);
+        if (found) return found;
+      }
+    }
+  }
+
   // Default fallback
   return {
     colors: ['white', 'gold', 'purple'],

@@ -139,6 +139,113 @@ export default function CorrespondenceCard({ correspondences: c, enrichment }: C
         </Section>
       )}
 
+      {(c.flowers || c.woods || c.candleColor || c.essentialOils || c.direction || c.moonPhase) && (
+        <div className="border-t border-gold/20 pt-5 space-y-4">
+          <h4 className="text-xs uppercase tracking-widest text-gold/80 font-semibold">
+            Witch&apos;s Correspondences
+          </h4>
+
+          {(c.candleColor || c.direction || c.moonPhase) && (
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              {c.candleColor && (
+                <Section label="Candle Color">
+                  <p className="text-sm text-foreground/80">{c.candleColor}</p>
+                </Section>
+              )}
+              {c.direction && (
+                <Section label="Direction">
+                  <p className="text-sm text-foreground/80">{c.direction}</p>
+                </Section>
+              )}
+              {c.moonPhase && (
+                <Section label="Moon Phase">
+                  <p className="text-sm text-foreground/80">{c.moonPhase}</p>
+                </Section>
+              )}
+            </div>
+          )}
+
+          {c.flowers && c.flowers.length > 0 && (
+            <Section label="Flowers">
+              <TagList items={c.flowers} />
+            </Section>
+          )}
+
+          {c.woods && c.woods.length > 0 && (
+            <Section label="Sacred Woods">
+              <TagList items={c.woods} />
+            </Section>
+          )}
+
+          {c.essentialOils && c.essentialOils.length > 0 && (
+            <Section label="Essential Oils">
+              <TagList items={c.essentialOils} />
+            </Section>
+          )}
+        </div>
+      )}
+
+      {(c.magicalWeapon || c.magicalPowers || c.virtue || c.vice || c.divineName || c.animals || c.alchemicalProcess || c.bodyPart) && (
+        <div className="border-t border-gold/20 pt-5 space-y-4">
+          <h4 className="text-xs uppercase tracking-widest text-gold/80 font-semibold">
+            777 Correspondences
+          </h4>
+
+          {(c.divineName || c.alchemicalProcess || c.bodyPart) && (
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              {c.divineName && (
+                <Section label="Divine Name">
+                  <p className="text-sm text-foreground/80 font-serif italic">{c.divineName}</p>
+                </Section>
+              )}
+              {c.alchemicalProcess && (
+                <Section label="Alchemical Process">
+                  <p className="text-sm text-foreground/80">{c.alchemicalProcess}</p>
+                </Section>
+              )}
+              {c.bodyPart && (
+                <Section label="Body Correspondence">
+                  <p className="text-sm text-foreground/80">{c.bodyPart}</p>
+                </Section>
+              )}
+            </div>
+          )}
+
+          {(c.virtue || c.vice) && (
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {c.virtue && (
+                <Section label="Virtue">
+                  <p className="text-sm text-foreground/80">{c.virtue}</p>
+                </Section>
+              )}
+              {c.vice && (
+                <Section label="Vice / Shadow">
+                  <p className="text-sm text-foreground/80">{c.vice}</p>
+                </Section>
+              )}
+            </div>
+          )}
+
+          {c.magicalWeapon && c.magicalWeapon.length > 0 && (
+            <Section label="Magical Weapons & Tools">
+              <TagList items={c.magicalWeapon} />
+            </Section>
+          )}
+
+          {c.magicalPowers && c.magicalPowers.length > 0 && (
+            <Section label="Magical Powers & Visions">
+              <TagList items={c.magicalPowers} />
+            </Section>
+          )}
+
+          {c.animals && c.animals.length > 0 && (
+            <Section label="Sacred Animals">
+              <TagList items={c.animals} />
+            </Section>
+          )}
+        </div>
+      )}
+
       {enrichment?.interpretation && (
         <div className="border-t border-gold/20 pt-4">
           <h4 className="text-xs uppercase tracking-widest text-gold/60 font-semibold mb-2">

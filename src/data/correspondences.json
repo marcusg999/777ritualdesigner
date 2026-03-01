@@ -1,495 +1,8261 @@
 [
   {
     "intentId": "love",
-    "colors": ["rose", "red", "pink", "white"],
-    "stones": ["rose quartz", "ruby", "rhodonite", "garnet"],
-    "herbs": ["rose petals", "damiana", "jasmine", "hibiscus"],
-    "metals": ["copper", "gold"],
-    "scents": ["rose", "jasmine", "ylang-ylang", "sandalwood"],
+    "colors": [
+      "rose",
+      "red",
+      "pink",
+      "white"
+    ],
+    "stones": [
+      "rose quartz",
+      "ruby",
+      "rhodonite",
+      "garnet"
+    ],
+    "herbs": [
+      "rose petals",
+      "damiana",
+      "jasmine",
+      "hibiscus"
+    ],
+    "metals": [
+      "copper",
+      "gold"
+    ],
+    "scents": [
+      "rose",
+      "jasmine",
+      "ylang-ylang",
+      "sandalwood"
+    ],
     "timing": "Friday, waxing or full moon, Venus hour",
     "element": "Water",
     "sphere": "Venus",
     "day": "Friday",
     "planet": "Venus",
     "zodiac": "Libra, Taurus",
-    "tarotCards": ["The Lovers", "Two of Cups", "The Empress"],
-    "runeAssociations": ["Gebo", "Wunjo", "Berkano"],
-    "numerology": 6
+    "tarotCards": [
+      "The Lovers",
+      "Two of Cups",
+      "The Empress"
+    ],
+    "runeAssociations": [
+      "Gebo",
+      "Wunjo",
+      "Berkano"
+    ],
+    "numerology": 6,
+    "magicalWeapon": [
+      "Lamp",
+      "Girdle",
+      "Rose"
+    ],
+    "magicalPowers": [
+      "Vision of Beauty Triumphant",
+      "Love Philters",
+      "Power to Cause Love"
+    ],
+    "virtue": "Unselfishness",
+    "vice": "Unchastity, Lust",
+    "divineName": "YHVH Tzabaoth",
+    "animals": [
+      "Lynx",
+      "Sparrow",
+      "Dove",
+      "Swan"
+    ],
+    "alchemicalProcess": "Conjunction",
+    "bodyPart": "Loins, Hips, Legs",
+    "flowers": [
+      "Rose",
+      "Peony",
+      "Jasmine",
+      "Orchid",
+      "Lilac",
+      "Sweet Pea"
+    ],
+    "woods": [
+      "Apple",
+      "Cherry",
+      "Willow",
+      "Sandalwood"
+    ],
+    "candleColor": "Pink or Red",
+    "essentialOils": [
+      "Rose",
+      "Ylang-ylang",
+      "Jasmine",
+      "Patchouli"
+    ],
+    "direction": "West",
+    "moonPhase": "Full Moon, Waxing Moon"
   },
   {
     "intentId": "protection",
-    "colors": ["black", "white", "silver", "blue"],
-    "stones": ["black tourmaline", "obsidian", "labradorite", "hematite"],
-    "herbs": ["rosemary", "nettle", "rue", "angelica"],
-    "metals": ["iron", "silver"],
-    "scents": ["frankincense", "dragon's blood", "cedar", "bay laurel"],
+    "colors": [
+      "black",
+      "white",
+      "silver",
+      "blue"
+    ],
+    "stones": [
+      "black tourmaline",
+      "obsidian",
+      "labradorite",
+      "hematite"
+    ],
+    "herbs": [
+      "rosemary",
+      "nettle",
+      "rue",
+      "angelica"
+    ],
+    "metals": [
+      "iron",
+      "silver"
+    ],
+    "scents": [
+      "frankincense",
+      "dragon's blood",
+      "cedar",
+      "bay laurel"
+    ],
     "timing": "Saturday, waning or dark moon, Saturn hour",
     "element": "Earth",
     "sphere": "Saturn",
     "day": "Saturday",
     "planet": "Saturn",
     "zodiac": "Scorpio, Capricorn",
-    "tarotCards": ["The High Priestess", "The Hermit", "Four of Wands"],
-    "runeAssociations": ["Algiz", "Thurisaz", "Isa"],
-    "numerology": 4
+    "tarotCards": [
+      "The High Priestess",
+      "The Hermit",
+      "Four of Wands"
+    ],
+    "runeAssociations": [
+      "Algiz",
+      "Thurisaz",
+      "Isa"
+    ],
+    "numerology": 4,
+    "magicalWeapon": [
+      "Cup",
+      "Outer Robe of Concealment",
+      "Sickle"
+    ],
+    "magicalPowers": [
+      "Vision of Sorrow",
+      "Works of Malediction and Defense",
+      "Understanding"
+    ],
+    "virtue": "Silence",
+    "vice": "Avarice",
+    "divineName": "YHVH Elohim",
+    "animals": [
+      "Crow",
+      "Owl",
+      "Bee",
+      "Dove"
+    ],
+    "alchemicalProcess": "Putrefaction, Calcination",
+    "bodyPart": "Right Side of Face, Womb",
+    "flowers": [
+      "Thistle",
+      "Snapdragon",
+      "Yarrow",
+      "Heather"
+    ],
+    "woods": [
+      "Oak",
+      "Cedar",
+      "Rowan",
+      "Holly",
+      "Yew"
+    ],
+    "candleColor": "Black or White",
+    "essentialOils": [
+      "Frankincense",
+      "Dragon's Blood",
+      "Cedarwood",
+      "Clove"
+    ],
+    "direction": "North",
+    "moonPhase": "Waning Moon, Dark Moon"
   },
   {
     "intentId": "abundance",
-    "colors": ["green", "gold", "orange", "brown"],
-    "stones": ["citrine", "pyrite", "green aventurine", "peridot"],
-    "herbs": ["basil", "cinnamon", "bay leaf", "clover"],
-    "metals": ["gold", "copper"],
-    "scents": ["cinnamon", "patchouli", "bergamot", "bay laurel"],
+    "colors": [
+      "green",
+      "gold",
+      "orange",
+      "brown"
+    ],
+    "stones": [
+      "citrine",
+      "pyrite",
+      "green aventurine",
+      "peridot"
+    ],
+    "herbs": [
+      "basil",
+      "cinnamon",
+      "bay leaf",
+      "clover"
+    ],
+    "metals": [
+      "gold",
+      "copper"
+    ],
+    "scents": [
+      "cinnamon",
+      "patchouli",
+      "bergamot",
+      "bay laurel"
+    ],
     "timing": "Thursday, waxing or full moon, Jupiter hour",
     "element": "Earth",
     "sphere": "Jupiter",
     "day": "Thursday",
     "planet": "Jupiter",
     "zodiac": "Taurus, Virgo, Capricorn",
-    "tarotCards": ["The Wheel of Fortune", "Ace of Pentacles", "Nine of Pentacles"],
-    "runeAssociations": ["Fehu", "Jera", "Sowilo"],
-    "numerology": 8
+    "tarotCards": [
+      "The Wheel of Fortune",
+      "Ace of Pentacles",
+      "Nine of Pentacles"
+    ],
+    "runeAssociations": [
+      "Fehu",
+      "Jera",
+      "Sowilo"
+    ],
+    "numerology": 8,
+    "magicalWeapon": [
+      "Wand",
+      "Scepter",
+      "Crook",
+      "Orb"
+    ],
+    "magicalPowers": [
+      "Vision of Love",
+      "Clairvoyance",
+      "Prophecy",
+      "Power of Acquiring Wealth"
+    ],
+    "virtue": "Obedience, Generosity",
+    "vice": "Bigotry, Hypocrisy, Gluttony, Tyranny",
+    "divineName": "El",
+    "animals": [
+      "Unicorn",
+      "Eagle",
+      "Dolphin"
+    ],
+    "alchemicalProcess": "Fermentation",
+    "bodyPart": "Left Arm",
+    "flowers": [
+      "Sunflower",
+      "Marigold",
+      "Daffodil",
+      "Honeysuckle",
+      "Chamomile"
+    ],
+    "woods": [
+      "Oak",
+      "Maple",
+      "Cedar",
+      "Laurel"
+    ],
+    "candleColor": "Green or Gold",
+    "essentialOils": [
+      "Cinnamon",
+      "Bergamot",
+      "Patchouli",
+      "Orange"
+    ],
+    "direction": "North",
+    "moonPhase": "Full Moon, Waxing Moon"
   },
   {
     "intentId": "creativity",
-    "colors": ["orange", "yellow", "violet", "gold"],
-    "stones": ["carnelian", "amber", "sunstone", "labradorite"],
-    "herbs": ["lavender", "rosemary", "lemon balm", "spearmint"],
-    "metals": ["gold", "copper"],
-    "scents": ["orange blossom", "neroli", "bergamot", "rosemary"],
+    "colors": [
+      "orange",
+      "yellow",
+      "violet",
+      "gold"
+    ],
+    "stones": [
+      "carnelian",
+      "amber",
+      "sunstone",
+      "labradorite"
+    ],
+    "herbs": [
+      "lavender",
+      "rosemary",
+      "lemon balm",
+      "spearmint"
+    ],
+    "metals": [
+      "gold",
+      "copper"
+    ],
+    "scents": [
+      "orange blossom",
+      "neroli",
+      "bergamot",
+      "rosemary"
+    ],
     "timing": "Wednesday or Sunday, waxing moon, Mercury or Sun hour",
     "element": "Fire",
     "sphere": "Mercury",
     "day": "Wednesday",
     "planet": "Mercury",
     "zodiac": "Gemini, Leo",
-    "tarotCards": ["The Star", "Ace of Wands", "The Magician"],
-    "runeAssociations": ["Ansuz", "Ingwaz", "Wunjo"],
-    "numerology": 3
+    "tarotCards": [
+      "The Star",
+      "Ace of Wands",
+      "The Magician"
+    ],
+    "runeAssociations": [
+      "Ansuz",
+      "Ingwaz",
+      "Wunjo"
+    ],
+    "numerology": 3,
+    "magicalWeapon": [
+      "Wand",
+      "Caduceus",
+      "Apron"
+    ],
+    "magicalPowers": [
+      "Vision of Splendour",
+      "Gift of Tongues",
+      "Making of Talismans",
+      "Miracles of Healing"
+    ],
+    "virtue": "Truthfulness",
+    "vice": "Falsehood, Dishonesty",
+    "divineName": "Elohim Tzabaoth",
+    "animals": [
+      "Hermaphrodite",
+      "Jackal",
+      "Ibis",
+      "Twin Serpents"
+    ],
+    "alchemicalProcess": "Sublimation",
+    "bodyPart": "Loins, Hips (Left)",
+    "flowers": [
+      "Iris",
+      "Morning Glory",
+      "Lavender",
+      "Nasturtium",
+      "Bird of Paradise"
+    ],
+    "woods": [
+      "Hazel",
+      "Ash",
+      "Birch",
+      "Elder"
+    ],
+    "candleColor": "Orange or Yellow",
+    "essentialOils": [
+      "Bergamot",
+      "Rosemary",
+      "Neroli",
+      "Orange"
+    ],
+    "direction": "East",
+    "moonPhase": "Waxing Moon"
   },
   {
     "intentId": "healing",
-    "colors": ["green", "blue", "white", "gold"],
-    "stones": ["clear quartz", "amethyst", "malachite", "green calcite"],
-    "herbs": ["chamomile", "lavender", "calendula", "lemon balm"],
-    "metals": ["silver", "copper"],
-    "scents": ["lavender", "eucalyptus", "chamomile", "peppermint"],
+    "colors": [
+      "green",
+      "blue",
+      "white",
+      "gold"
+    ],
+    "stones": [
+      "clear quartz",
+      "amethyst",
+      "malachite",
+      "green calcite"
+    ],
+    "herbs": [
+      "chamomile",
+      "lavender",
+      "calendula",
+      "lemon balm"
+    ],
+    "metals": [
+      "silver",
+      "copper"
+    ],
+    "scents": [
+      "lavender",
+      "eucalyptus",
+      "chamomile",
+      "peppermint"
+    ],
     "timing": "Sunday or Wednesday, waxing moon, Sun or Mercury hour",
     "element": "Water",
     "sphere": "Sun",
     "day": "Sunday",
     "planet": "Sun",
     "zodiac": "Virgo, Pisces",
-    "tarotCards": ["The Star", "Temperance", "Six of Swords"],
-    "runeAssociations": ["Uruz", "Berkano", "Laguz"],
-    "numerology": 9
+    "tarotCards": [
+      "The Star",
+      "Temperance",
+      "Six of Swords"
+    ],
+    "runeAssociations": [
+      "Uruz",
+      "Berkano",
+      "Laguz"
+    ],
+    "numerology": 9,
+    "magicalWeapon": [
+      "Lamen",
+      "Rosy Cross",
+      "Calvary Cross"
+    ],
+    "magicalPowers": [
+      "Vision of the Harmony of Things",
+      "Miracles of Healing",
+      "Prophecy",
+      "Power of Acquiring Gold"
+    ],
+    "virtue": "Devotion to the Great Work",
+    "vice": "Pride",
+    "divineName": "YHVH Eloah va-Daath",
+    "animals": [
+      "Lion",
+      "Child",
+      "Pelican",
+      "Phoenix",
+      "Eagle",
+      "Lamb"
+    ],
+    "alchemicalProcess": "Projection, Coagulation of Gold",
+    "bodyPart": "Breast, Heart",
+    "flowers": [
+      "Chamomile",
+      "Calendula",
+      "Sunflower",
+      "St. John's Wort",
+      "Lavender"
+    ],
+    "woods": [
+      "Willow",
+      "Apple",
+      "Birch",
+      "Sandalwood"
+    ],
+    "candleColor": "Blue or Green",
+    "essentialOils": [
+      "Lavender",
+      "Eucalyptus",
+      "Chamomile",
+      "Tea Tree"
+    ],
+    "direction": "East",
+    "moonPhase": "Full Moon, Waxing Moon"
   },
   {
     "intentId": "wisdom",
-    "colors": ["deep blue", "purple", "silver", "indigo"],
-    "stones": ["lapis lazuli", "sodalite", "amethyst", "sapphire"],
-    "herbs": ["sage", "bay laurel", "rosemary", "mugwort"],
-    "metals": ["silver", "mercury"],
-    "scents": ["frankincense", "myrrh", "sandalwood", "sage"],
+    "colors": [
+      "deep blue",
+      "purple",
+      "silver",
+      "indigo"
+    ],
+    "stones": [
+      "lapis lazuli",
+      "sodalite",
+      "amethyst",
+      "sapphire"
+    ],
+    "herbs": [
+      "sage",
+      "bay laurel",
+      "rosemary",
+      "mugwort"
+    ],
+    "metals": [
+      "silver",
+      "mercury"
+    ],
+    "scents": [
+      "frankincense",
+      "myrrh",
+      "sandalwood",
+      "sage"
+    ],
     "timing": "Wednesday, waxing moon, Mercury hour",
     "element": "Air",
     "sphere": "Mercury",
     "day": "Wednesday",
     "planet": "Mercury",
     "zodiac": "Sagittarius, Aquarius",
-    "tarotCards": ["The High Priestess", "The Hierophant", "Ace of Swords"],
-    "runeAssociations": ["Ansuz", "Perthro", "Mannaz"],
-    "numerology": 7
+    "tarotCards": [
+      "The High Priestess",
+      "The Hierophant",
+      "Ace of Swords"
+    ],
+    "runeAssociations": [
+      "Ansuz",
+      "Perthro",
+      "Mannaz"
+    ],
+    "numerology": 7,
+    "magicalWeapon": [
+      "Wand",
+      "Caduceus",
+      "Apron"
+    ],
+    "magicalPowers": [
+      "Vision of Splendour",
+      "Gift of Tongues",
+      "Making of Talismans",
+      "Prophecy"
+    ],
+    "virtue": "Truthfulness",
+    "vice": "Falsehood, Dishonesty",
+    "divineName": "Elohim Tzabaoth",
+    "animals": [
+      "Hermaphrodite",
+      "Jackal",
+      "Ibis",
+      "Twin Serpents"
+    ],
+    "alchemicalProcess": "Sublimation",
+    "bodyPart": "Loins, Hips (Left)",
+    "flowers": [
+      "Iris",
+      "Violet",
+      "Forget-Me-Not",
+      "Lavender",
+      "Cosmos"
+    ],
+    "woods": [
+      "Hazel",
+      "Oak",
+      "Elder",
+      "Ash"
+    ],
+    "candleColor": "Purple or Deep Blue",
+    "essentialOils": [
+      "Frankincense",
+      "Sandalwood",
+      "Myrrh",
+      "Sage"
+    ],
+    "direction": "East",
+    "moonPhase": "Full Moon, New Moon"
   },
   {
     "intentId": "justice",
-    "colors": ["yellow", "purple", "black", "white"],
-    "stones": ["lapis lazuli", "tiger's eye", "carnelian", "onyx"],
-    "herbs": ["high john root", "galangal", "cedar", "bay laurel"],
-    "metals": ["gold", "lead"],
-    "scents": ["frankincense", "cedar", "sandalwood", "lemon"],
+    "colors": [
+      "yellow",
+      "purple",
+      "black",
+      "white"
+    ],
+    "stones": [
+      "lapis lazuli",
+      "tiger's eye",
+      "carnelian",
+      "onyx"
+    ],
+    "herbs": [
+      "high john root",
+      "galangal",
+      "cedar",
+      "bay laurel"
+    ],
+    "metals": [
+      "gold",
+      "lead"
+    ],
+    "scents": [
+      "frankincense",
+      "cedar",
+      "sandalwood",
+      "lemon"
+    ],
     "timing": "Saturday or Tuesday, waning moon, Saturn or Mars hour",
     "element": "Air",
     "sphere": "Saturn",
     "day": "Saturday",
     "planet": "Saturn",
     "zodiac": "Libra, Scorpio",
-    "tarotCards": ["Justice", "Judgement", "King of Swords"],
-    "runeAssociations": ["Tiwaz", "Sowilo", "Isa"],
-    "numerology": 11
+    "tarotCards": [
+      "Justice",
+      "Judgement",
+      "King of Swords"
+    ],
+    "runeAssociations": [
+      "Tiwaz",
+      "Sowilo",
+      "Isa"
+    ],
+    "numerology": 11,
+    "magicalWeapon": [
+      "Cup",
+      "Outer Robe of Concealment",
+      "Sickle"
+    ],
+    "magicalPowers": [
+      "Vision of Sorrow",
+      "Works of Malediction and Defense",
+      "Understanding"
+    ],
+    "virtue": "Silence",
+    "vice": "Avarice",
+    "divineName": "YHVH Elohim",
+    "animals": [
+      "Crow",
+      "Owl",
+      "Bee",
+      "Dove"
+    ],
+    "alchemicalProcess": "Putrefaction, Calcination",
+    "bodyPart": "Right Side of Face, Womb",
+    "flowers": [
+      "Marigold",
+      "Thistle",
+      "Cornflower",
+      "Yarrow"
+    ],
+    "woods": [
+      "Oak",
+      "Elder",
+      "Hawthorn",
+      "Cedar"
+    ],
+    "candleColor": "Purple or Yellow",
+    "essentialOils": [
+      "Frankincense",
+      "Cedar",
+      "Lemon",
+      "Myrrh"
+    ],
+    "direction": "East",
+    "moonPhase": "Full Moon, Waning Moon"
   },
   {
     "intentId": "transformation",
-    "colors": ["black", "purple", "deep red", "silver"],
-    "stones": ["obsidian", "moldavite", "labradorite", "smoky quartz"],
-    "herbs": ["black pepper", "wormwood", "mugwort", "myrrh"],
-    "metals": ["iron", "lead", "silver"],
-    "scents": ["myrrh", "patchouli", "cedarwood", "dragon's blood"],
+    "colors": [
+      "black",
+      "purple",
+      "deep red",
+      "silver"
+    ],
+    "stones": [
+      "obsidian",
+      "moldavite",
+      "labradorite",
+      "smoky quartz"
+    ],
+    "herbs": [
+      "black pepper",
+      "wormwood",
+      "mugwort",
+      "myrrh"
+    ],
+    "metals": [
+      "iron",
+      "lead",
+      "silver"
+    ],
+    "scents": [
+      "myrrh",
+      "patchouli",
+      "cedarwood",
+      "dragon's blood"
+    ],
     "timing": "Tuesday, dark moon, Mars or Saturn hour",
     "element": "Fire",
     "sphere": "Pluto",
     "day": "Tuesday",
     "planet": "Pluto",
     "zodiac": "Scorpio",
-    "tarotCards": ["Death", "The Tower", "The Moon"],
-    "runeAssociations": ["Dagaz", "Thurisaz", "Ehwaz"],
-    "numerology": 13
+    "tarotCards": [
+      "Death",
+      "The Tower",
+      "The Moon"
+    ],
+    "runeAssociations": [
+      "Dagaz",
+      "Thurisaz",
+      "Ehwaz"
+    ],
+    "numerology": 13,
+    "magicalWeapon": [
+      "Sword",
+      "Trident",
+      "Scourge"
+    ],
+    "magicalPowers": [
+      "Vision of Power",
+      "Works of Death and Transformation",
+      "Power of the Abyss",
+      "Necromancy"
+    ],
+    "virtue": "Courage in Transformation",
+    "vice": "Cruelty, Obsession",
+    "divineName": "Elohim Gibor",
+    "animals": [
+      "Scorpion",
+      "Eagle",
+      "Phoenix",
+      "Serpent"
+    ],
+    "alchemicalProcess": "Putrefaction, Fermentation",
+    "bodyPart": "Genitals, Colon",
+    "flowers": [
+      "Chrysanthemum",
+      "Lotus",
+      "Passionflower",
+      "Hellebore",
+      "Night Blooming Jasmine"
+    ],
+    "woods": [
+      "Elder",
+      "Yew",
+      "Cypress",
+      "Ebony"
+    ],
+    "candleColor": "Black or Dark Purple",
+    "essentialOils": [
+      "Myrrh",
+      "Patchouli",
+      "Cedarwood",
+      "Dragon's Blood"
+    ],
+    "direction": "West",
+    "moonPhase": "Dark Moon, New Moon"
   },
   {
     "intentId": "clarity",
-    "colors": ["white", "yellow", "light blue", "silver"],
-    "stones": ["clear quartz", "selenite", "fluorite", "howlite"],
-    "herbs": ["peppermint", "rosemary", "lemon grass", "lavender"],
-    "metals": ["silver", "tin"],
-    "scents": ["peppermint", "lemon", "eucalyptus", "rosemary"],
+    "colors": [
+      "white",
+      "yellow",
+      "light blue",
+      "silver"
+    ],
+    "stones": [
+      "clear quartz",
+      "selenite",
+      "fluorite",
+      "howlite"
+    ],
+    "herbs": [
+      "peppermint",
+      "rosemary",
+      "lemon grass",
+      "lavender"
+    ],
+    "metals": [
+      "silver",
+      "tin"
+    ],
+    "scents": [
+      "peppermint",
+      "lemon",
+      "eucalyptus",
+      "rosemary"
+    ],
     "timing": "Wednesday, new or waxing moon, Mercury hour",
     "element": "Air",
     "sphere": "Mercury",
     "day": "Wednesday",
     "planet": "Mercury",
     "zodiac": "Gemini, Virgo",
-    "tarotCards": ["The Sun", "Ace of Swords", "Eight of Swords"],
-    "runeAssociations": ["Raidho", "Dagaz", "Kenaz"],
-    "numerology": 1
+    "tarotCards": [
+      "The Sun",
+      "Ace of Swords",
+      "Eight of Swords"
+    ],
+    "runeAssociations": [
+      "Raidho",
+      "Dagaz",
+      "Kenaz"
+    ],
+    "numerology": 1,
+    "magicalWeapon": [
+      "Wand",
+      "Caduceus",
+      "Apron"
+    ],
+    "magicalPowers": [
+      "Vision of Splendour",
+      "Gift of Tongues",
+      "Making of Talismans"
+    ],
+    "virtue": "Truthfulness",
+    "vice": "Falsehood, Dishonesty",
+    "divineName": "Elohim Tzabaoth",
+    "animals": [
+      "Hermaphrodite",
+      "Jackal",
+      "Ibis",
+      "Twin Serpents"
+    ],
+    "alchemicalProcess": "Sublimation",
+    "bodyPart": "Loins, Hips (Left)",
+    "flowers": [
+      "Lavender",
+      "White Lily",
+      "Baby's Breath",
+      "Chamomile",
+      "Daisy"
+    ],
+    "woods": [
+      "Birch",
+      "Hazel",
+      "Willow",
+      "Silver Birch"
+    ],
+    "candleColor": "White or Yellow",
+    "essentialOils": [
+      "Peppermint",
+      "Lemon",
+      "Eucalyptus",
+      "Rosemary"
+    ],
+    "direction": "East",
+    "moonPhase": "New Moon, Waxing Crescent"
   },
   {
     "intentId": "courage",
-    "colors": ["red", "orange", "gold", "yellow"],
-    "stones": ["carnelian", "red jasper", "bloodstone", "garnet"],
-    "herbs": ["dragon's blood", "ginger", "black pepper", "fennel"],
-    "metals": ["iron", "gold"],
-    "scents": ["ginger", "black pepper", "dragon's blood", "clove"],
+    "colors": [
+      "red",
+      "orange",
+      "gold",
+      "yellow"
+    ],
+    "stones": [
+      "carnelian",
+      "red jasper",
+      "bloodstone",
+      "garnet"
+    ],
+    "herbs": [
+      "dragon's blood",
+      "ginger",
+      "black pepper",
+      "fennel"
+    ],
+    "metals": [
+      "iron",
+      "gold"
+    ],
+    "scents": [
+      "ginger",
+      "black pepper",
+      "dragon's blood",
+      "clove"
+    ],
     "timing": "Tuesday, waxing or full moon, Mars hour",
     "element": "Fire",
     "sphere": "Mars",
     "day": "Tuesday",
     "planet": "Mars",
     "zodiac": "Aries, Leo",
-    "tarotCards": ["Strength", "Seven of Wands", "The Chariot"],
-    "runeAssociations": ["Tiwaz", "Uruz", "Sowilo"],
-    "numerology": 5
+    "tarotCards": [
+      "Strength",
+      "Seven of Wands",
+      "The Chariot"
+    ],
+    "runeAssociations": [
+      "Tiwaz",
+      "Uruz",
+      "Sowilo"
+    ],
+    "numerology": 5,
+    "magicalWeapon": [
+      "Sword",
+      "Spear",
+      "Scourge",
+      "Chain"
+    ],
+    "magicalPowers": [
+      "Vision of Power",
+      "Works of Wrath and Vengeance",
+      "Power of Courage"
+    ],
+    "virtue": "Energy, Courage",
+    "vice": "Cruelty",
+    "divineName": "Elohim Gibor",
+    "animals": [
+      "Basilisk",
+      "Wolf",
+      "Bear",
+      "Horse"
+    ],
+    "alchemicalProcess": "Separation",
+    "bodyPart": "Right Arm",
+    "flowers": [
+      "Red Carnation",
+      "Red Rose",
+      "Tiger Lily",
+      "Snapdragon",
+      "Geranium"
+    ],
+    "woods": [
+      "Oak",
+      "Holly",
+      "Cedar",
+      "Hawthorn"
+    ],
+    "candleColor": "Red or Orange",
+    "essentialOils": [
+      "Ginger",
+      "Black Pepper",
+      "Dragon's Blood",
+      "Clove"
+    ],
+    "direction": "South",
+    "moonPhase": "Full Moon, Waxing Moon"
   },
   {
     "intentId": "travel",
-    "colors": ["yellow", "orange", "silver", "light blue"],
-    "stones": ["turquoise", "aquamarine", "moonstone", "malachite"],
-    "herbs": ["comfrey", "juniper", "bay laurel", "lavender"],
-    "metals": ["silver", "tin"],
-    "scents": ["lavender", "mint", "lemon", "sandalwood"],
+    "colors": [
+      "yellow",
+      "orange",
+      "silver",
+      "light blue"
+    ],
+    "stones": [
+      "turquoise",
+      "aquamarine",
+      "moonstone",
+      "malachite"
+    ],
+    "herbs": [
+      "comfrey",
+      "juniper",
+      "bay laurel",
+      "lavender"
+    ],
+    "metals": [
+      "silver",
+      "tin"
+    ],
+    "scents": [
+      "lavender",
+      "mint",
+      "lemon",
+      "sandalwood"
+    ],
     "timing": "Wednesday or Thursday, waxing moon, Mercury or Jupiter hour",
     "element": "Air",
     "sphere": "Mercury",
     "day": "Wednesday",
     "planet": "Mercury",
     "zodiac": "Sagittarius, Gemini",
-    "tarotCards": ["The Fool", "Six of Swords", "Knight of Wands"],
-    "runeAssociations": ["Raidho", "Ehwaz", "Laguz"],
-    "numerology": 3
+    "tarotCards": [
+      "The Fool",
+      "Six of Swords",
+      "Knight of Wands"
+    ],
+    "runeAssociations": [
+      "Raidho",
+      "Ehwaz",
+      "Laguz"
+    ],
+    "numerology": 3,
+    "magicalWeapon": [
+      "Wand",
+      "Caduceus",
+      "Apron"
+    ],
+    "magicalPowers": [
+      "Vision of Splendour",
+      "Gift of Tongues",
+      "Making of Talismans",
+      "Miracles of Healing"
+    ],
+    "virtue": "Truthfulness",
+    "vice": "Falsehood, Dishonesty",
+    "divineName": "Elohim Tzabaoth",
+    "animals": [
+      "Hermaphrodite",
+      "Jackal",
+      "Ibis",
+      "Twin Serpents"
+    ],
+    "alchemicalProcess": "Sublimation",
+    "bodyPart": "Loins, Hips (Left)",
+    "flowers": [
+      "Lavender",
+      "Heather",
+      "Jasmine",
+      "Daisy",
+      "Freesia"
+    ],
+    "woods": [
+      "Ash",
+      "Hazel",
+      "Rowan",
+      "Birch"
+    ],
+    "candleColor": "Yellow or Orange",
+    "essentialOils": [
+      "Lavender",
+      "Peppermint",
+      "Lemon",
+      "Sandalwood"
+    ],
+    "direction": "East",
+    "moonPhase": "Waxing Moon"
   },
   {
     "intentId": "communication",
-    "colors": ["yellow", "orange", "light blue", "silver"],
-    "stones": ["blue lace agate", "sodalite", "amazonite", "turquoise"],
-    "herbs": ["lavender", "clary sage", "lemongrass", "spearmint"],
-    "metals": ["mercury", "silver"],
-    "scents": ["lavender", "lemon", "bergamot", "peppermint"],
+    "colors": [
+      "yellow",
+      "orange",
+      "light blue",
+      "silver"
+    ],
+    "stones": [
+      "blue lace agate",
+      "sodalite",
+      "amazonite",
+      "turquoise"
+    ],
+    "herbs": [
+      "lavender",
+      "clary sage",
+      "lemongrass",
+      "spearmint"
+    ],
+    "metals": [
+      "mercury",
+      "silver"
+    ],
+    "scents": [
+      "lavender",
+      "lemon",
+      "bergamot",
+      "peppermint"
+    ],
     "timing": "Wednesday, waxing moon, Mercury hour",
     "element": "Air",
     "sphere": "Mercury",
     "day": "Wednesday",
     "planet": "Mercury",
     "zodiac": "Gemini, Virgo",
-    "tarotCards": ["The Magician", "Ace of Swords", "Page of Cups"],
-    "runeAssociations": ["Ansuz", "Raidho", "Wunjo"],
-    "numerology": 5
+    "tarotCards": [
+      "The Magician",
+      "Ace of Swords",
+      "Page of Cups"
+    ],
+    "runeAssociations": [
+      "Ansuz",
+      "Raidho",
+      "Wunjo"
+    ],
+    "numerology": 5,
+    "magicalWeapon": [
+      "Wand",
+      "Caduceus",
+      "Apron"
+    ],
+    "magicalPowers": [
+      "Vision of Splendour",
+      "Gift of Tongues",
+      "Making of Talismans"
+    ],
+    "virtue": "Truthfulness",
+    "vice": "Falsehood, Dishonesty",
+    "divineName": "Elohim Tzabaoth",
+    "animals": [
+      "Hermaphrodite",
+      "Jackal",
+      "Ibis",
+      "Twin Serpents"
+    ],
+    "alchemicalProcess": "Sublimation",
+    "bodyPart": "Loins, Hips (Left)",
+    "flowers": [
+      "Lavender",
+      "Iris",
+      "Blue Violet",
+      "Sweet Pea",
+      "Forget-Me-Not"
+    ],
+    "woods": [
+      "Hazel",
+      "Birch",
+      "Elder",
+      "Ash"
+    ],
+    "candleColor": "Yellow or Light Blue",
+    "essentialOils": [
+      "Lavender",
+      "Bergamot",
+      "Peppermint",
+      "Lemon"
+    ],
+    "direction": "East",
+    "moonPhase": "Waxing Moon"
   },
   {
     "intentId": "dreams",
-    "colors": ["indigo", "deep blue", "purple", "silver"],
-    "stones": ["amethyst", "moonstone", "labradorite", "chrysocolla"],
-    "herbs": ["mugwort", "chamomile", "valerian", "jasmine"],
-    "metals": ["silver"],
-    "scents": ["jasmine", "mugwort", "sandalwood", "lavender"],
+    "colors": [
+      "indigo",
+      "deep blue",
+      "purple",
+      "silver"
+    ],
+    "stones": [
+      "amethyst",
+      "moonstone",
+      "labradorite",
+      "chrysocolla"
+    ],
+    "herbs": [
+      "mugwort",
+      "chamomile",
+      "valerian",
+      "jasmine"
+    ],
+    "metals": [
+      "silver"
+    ],
+    "scents": [
+      "jasmine",
+      "mugwort",
+      "sandalwood",
+      "lavender"
+    ],
     "timing": "Monday, waxing or full moon, Moon hour",
     "element": "Water",
     "sphere": "Moon",
     "day": "Monday",
     "planet": "Moon",
     "zodiac": "Pisces, Cancer",
-    "tarotCards": ["The Moon", "Seven of Cups", "The High Priestess"],
-    "runeAssociations": ["Perthro", "Laguz", "Isa"],
-    "numerology": 9
+    "tarotCards": [
+      "The Moon",
+      "Seven of Cups",
+      "The High Priestess"
+    ],
+    "runeAssociations": [
+      "Perthro",
+      "Laguz",
+      "Isa"
+    ],
+    "numerology": 9,
+    "magicalWeapon": [
+      "Perfumes",
+      "Sandals"
+    ],
+    "magicalPowers": [
+      "Vision of the Machinery of the Universe",
+      "Bewitchments",
+      "Erotic Rites",
+      "Divination"
+    ],
+    "virtue": "Independence",
+    "vice": "Idleness",
+    "divineName": "Shaddai El Chai",
+    "animals": [
+      "Dog",
+      "Beetle",
+      "Elephant",
+      "Tortoise",
+      "Toad"
+    ],
+    "alchemicalProcess": "Dissolution",
+    "bodyPart": "Reproductive System, Genitals",
+    "flowers": [
+      "Jasmine",
+      "Lotus",
+      "Moonflower",
+      "Lavender",
+      "White Lily"
+    ],
+    "woods": [
+      "Willow",
+      "Elder",
+      "Birch",
+      "Silver Birch"
+    ],
+    "candleColor": "Silver or Deep Blue",
+    "essentialOils": [
+      "Jasmine",
+      "Mugwort",
+      "Sandalwood",
+      "Lavender"
+    ],
+    "direction": "West",
+    "moonPhase": "Full Moon, Waxing Gibbous"
   },
   {
     "intentId": "shadow_work",
-    "colors": ["black", "dark purple", "deep indigo", "dark brown"],
-    "stones": ["obsidian", "smoky quartz", "black tourmaline", "jet"],
-    "herbs": ["wormwood", "mandrake", "mugwort", "black pepper"],
-    "metals": ["lead", "iron"],
-    "scents": ["myrrh", "patchouli", "vetiver", "oud"],
+    "colors": [
+      "black",
+      "dark purple",
+      "deep indigo",
+      "dark brown"
+    ],
+    "stones": [
+      "obsidian",
+      "smoky quartz",
+      "black tourmaline",
+      "jet"
+    ],
+    "herbs": [
+      "wormwood",
+      "mandrake",
+      "mugwort",
+      "black pepper"
+    ],
+    "metals": [
+      "lead",
+      "iron"
+    ],
+    "scents": [
+      "myrrh",
+      "patchouli",
+      "vetiver",
+      "oud"
+    ],
     "timing": "Saturday, dark or new moon, Saturn hour",
     "element": "Earth",
     "sphere": "Saturn",
     "day": "Saturday",
     "planet": "Saturn",
     "zodiac": "Scorpio, Capricorn",
-    "tarotCards": ["The Moon", "The Devil", "The Tower"],
-    "runeAssociations": ["Isa", "Perthro", "Hagalaz"],
-    "numerology": 13
+    "tarotCards": [
+      "The Moon",
+      "The Devil",
+      "The Tower"
+    ],
+    "runeAssociations": [
+      "Isa",
+      "Perthro",
+      "Hagalaz"
+    ],
+    "numerology": 13,
+    "magicalWeapon": [
+      "Cup",
+      "Outer Robe of Concealment",
+      "Sickle"
+    ],
+    "magicalPowers": [
+      "Vision of Sorrow",
+      "Works of Malediction and Defense",
+      "Understanding"
+    ],
+    "virtue": "Silence",
+    "vice": "Avarice",
+    "divineName": "YHVH Elohim",
+    "animals": [
+      "Crow",
+      "Owl",
+      "Bee",
+      "Dove"
+    ],
+    "alchemicalProcess": "Putrefaction, Calcination",
+    "bodyPart": "Right Side of Face, Womb",
+    "flowers": [
+      "Hellebore",
+      "Black Rose",
+      "Chrysanthemum",
+      "Night-Blooming Jasmine",
+      "Passionflower"
+    ],
+    "woods": [
+      "Yew",
+      "Elder",
+      "Ebony",
+      "Cypress"
+    ],
+    "candleColor": "Black or Dark Purple",
+    "essentialOils": [
+      "Myrrh",
+      "Patchouli",
+      "Vetiver",
+      "Cedarwood"
+    ],
+    "direction": "North",
+    "moonPhase": "Dark Moon, New Moon"
   },
   {
     "intentId": "grounding",
-    "colors": ["brown", "dark green", "black", "earth tones"],
-    "stones": ["hematite", "smoky quartz", "black tourmaline", "jasper"],
-    "herbs": ["vetiver", "patchouli", "oak bark", "cedar"],
-    "metals": ["lead", "iron"],
-    "scents": ["vetiver", "patchouli", "cedarwood", "sandalwood"],
+    "colors": [
+      "brown",
+      "dark green",
+      "black",
+      "earth tones"
+    ],
+    "stones": [
+      "hematite",
+      "smoky quartz",
+      "black tourmaline",
+      "jasper"
+    ],
+    "herbs": [
+      "vetiver",
+      "patchouli",
+      "oak bark",
+      "cedar"
+    ],
+    "metals": [
+      "lead",
+      "iron"
+    ],
+    "scents": [
+      "vetiver",
+      "patchouli",
+      "cedarwood",
+      "sandalwood"
+    ],
     "timing": "Saturday, any moon phase, Earth hour",
     "element": "Earth",
     "sphere": "Earth",
     "day": "Saturday",
     "planet": "Saturn",
     "zodiac": "Taurus, Virgo, Capricorn",
-    "tarotCards": ["The Emperor", "Four of Pentacles", "The World"],
-    "runeAssociations": ["Ingwaz", "Othala", "Uruz"],
-    "numerology": 4
+    "tarotCards": [
+      "The Emperor",
+      "Four of Pentacles",
+      "The World"
+    ],
+    "runeAssociations": [
+      "Ingwaz",
+      "Othala",
+      "Uruz"
+    ],
+    "numerology": 4,
+    "magicalWeapon": [
+      "Altar",
+      "Pentacle",
+      "Equal-Armed Cross",
+      "Magic Circle"
+    ],
+    "magicalPowers": [
+      "Vision of the Holy Guardian Angel",
+      "Making of the Philosopher's Stone",
+      "Alchemy"
+    ],
+    "virtue": "Discrimination",
+    "vice": "Avarice, Inertia",
+    "divineName": "Adonai ha-Aretz",
+    "animals": [
+      "Sphinx",
+      "Bull",
+      "Ox"
+    ],
+    "alchemicalProcess": "Solidification",
+    "bodyPart": "Feet, Anus",
+    "flowers": [
+      "Daisy",
+      "Primrose",
+      "Violet",
+      "Clover",
+      "Dandelion"
+    ],
+    "woods": [
+      "Oak",
+      "Cedar",
+      "Redwood",
+      "Pine"
+    ],
+    "candleColor": "Brown or Dark Green",
+    "essentialOils": [
+      "Vetiver",
+      "Patchouli",
+      "Cedarwood",
+      "Sandalwood"
+    ],
+    "direction": "North",
+    "moonPhase": "Any, Full Moon preferred"
   },
   {
     "intentId": "banishing",
-    "colors": ["black", "white", "dark blue", "gray"],
-    "stones": ["black tourmaline", "obsidian", "selenite", "black onyx"],
-    "herbs": ["rue", "garlic", "salt", "dragon's blood"],
-    "metals": ["iron", "lead"],
-    "scents": ["frankincense", "dragon's blood", "sage", "salt"],
+    "colors": [
+      "black",
+      "white",
+      "dark blue",
+      "gray"
+    ],
+    "stones": [
+      "black tourmaline",
+      "obsidian",
+      "selenite",
+      "black onyx"
+    ],
+    "herbs": [
+      "rue",
+      "garlic",
+      "salt",
+      "dragon's blood"
+    ],
+    "metals": [
+      "iron",
+      "lead"
+    ],
+    "scents": [
+      "frankincense",
+      "dragon's blood",
+      "sage",
+      "salt"
+    ],
     "timing": "Saturday or Tuesday, waning or dark moon, Saturn or Mars hour",
     "element": "Fire",
     "sphere": "Saturn",
     "day": "Saturday",
     "planet": "Saturn",
     "zodiac": "Scorpio, Aries",
-    "tarotCards": ["The Tower", "Five of Swords", "Eight of Cups"],
-    "runeAssociations": ["Thurisaz", "Isa", "Nauthiz"],
-    "numerology": 7
+    "tarotCards": [
+      "The Tower",
+      "Five of Swords",
+      "Eight of Cups"
+    ],
+    "runeAssociations": [
+      "Thurisaz",
+      "Isa",
+      "Nauthiz"
+    ],
+    "numerology": 7,
+    "magicalWeapon": [
+      "Cup",
+      "Outer Robe of Concealment",
+      "Sickle"
+    ],
+    "magicalPowers": [
+      "Vision of Sorrow",
+      "Works of Malediction and Defense",
+      "Understanding"
+    ],
+    "virtue": "Silence",
+    "vice": "Avarice",
+    "divineName": "YHVH Elohim",
+    "animals": [
+      "Crow",
+      "Owl",
+      "Bee",
+      "Dove"
+    ],
+    "alchemicalProcess": "Putrefaction, Calcination",
+    "bodyPart": "Right Side of Face, Womb",
+    "flowers": [
+      "Thistle",
+      "Nettle",
+      "Wormwood flower",
+      "Snapdragon",
+      "Garlic Flower"
+    ],
+    "woods": [
+      "Cedar",
+      "Rowan",
+      "Hawthorn",
+      "Holly"
+    ],
+    "candleColor": "Black or White",
+    "essentialOils": [
+      "Frankincense",
+      "Dragon's Blood",
+      "Sage",
+      "Clove"
+    ],
+    "direction": "North",
+    "moonPhase": "Waning Moon, Dark Moon"
   },
   {
     "intentId": "manifestation",
-    "colors": ["gold", "green", "orange", "yellow"],
-    "stones": ["citrine", "pyrite", "tiger's eye", "clear quartz"],
-    "herbs": ["bay leaf", "cinnamon", "basil", "clover"],
-    "metals": ["gold", "copper"],
-    "scents": ["bergamot", "cinnamon", "frankincense", "orange"],
+    "colors": [
+      "gold",
+      "green",
+      "orange",
+      "yellow"
+    ],
+    "stones": [
+      "citrine",
+      "pyrite",
+      "tiger's eye",
+      "clear quartz"
+    ],
+    "herbs": [
+      "bay leaf",
+      "cinnamon",
+      "basil",
+      "clover"
+    ],
+    "metals": [
+      "gold",
+      "copper"
+    ],
+    "scents": [
+      "bergamot",
+      "cinnamon",
+      "frankincense",
+      "orange"
+    ],
     "timing": "Sunday or Thursday, waxing or full moon, Sun or Jupiter hour",
     "element": "Fire",
     "sphere": "Sun",
     "day": "Sunday",
     "planet": "Sun",
     "zodiac": "Leo, Sagittarius",
-    "tarotCards": ["The Magician", "The World", "Ace of Pentacles"],
-    "runeAssociations": ["Fehu", "Sowilo", "Ingwaz"],
-    "numerology": 1
+    "tarotCards": [
+      "The Magician",
+      "The World",
+      "Ace of Pentacles"
+    ],
+    "runeAssociations": [
+      "Fehu",
+      "Sowilo",
+      "Ingwaz"
+    ],
+    "numerology": 1,
+    "magicalWeapon": [
+      "Lamen",
+      "Rosy Cross",
+      "Calvary Cross"
+    ],
+    "magicalPowers": [
+      "Vision of the Harmony of Things",
+      "Prophecy",
+      "Power of Acquiring Gold",
+      "Making of the Philosopher's Stone"
+    ],
+    "virtue": "Devotion to the Great Work",
+    "vice": "Pride",
+    "divineName": "YHVH Eloah va-Daath",
+    "animals": [
+      "Lion",
+      "Child",
+      "Pelican",
+      "Phoenix",
+      "Eagle",
+      "Lamb"
+    ],
+    "alchemicalProcess": "Projection, Coagulation of Gold",
+    "bodyPart": "Breast, Heart",
+    "flowers": [
+      "Sunflower",
+      "Marigold",
+      "Calendula",
+      "Daffodil",
+      "Goldenrod"
+    ],
+    "woods": [
+      "Oak",
+      "Ash",
+      "Birch",
+      "Cedar"
+    ],
+    "candleColor": "Gold or Orange",
+    "essentialOils": [
+      "Frankincense",
+      "Cinnamon",
+      "Bergamot",
+      "Orange"
+    ],
+    "direction": "South",
+    "moonPhase": "Full Moon, Waxing Moon"
   },
   {
     "intentId": "success",
-    "colors": ["gold", "orange", "green", "yellow"],
-    "stones": ["citrine", "pyrite", "tiger's eye", "sunstone"],
-    "herbs": ["bay laurel", "high john root", "ginger", "cinnamon"],
-    "metals": ["gold", "tin"],
-    "scents": ["bergamot", "orange", "cinnamon", "frankincense"],
+    "colors": [
+      "gold",
+      "orange",
+      "green",
+      "yellow"
+    ],
+    "stones": [
+      "citrine",
+      "pyrite",
+      "tiger's eye",
+      "sunstone"
+    ],
+    "herbs": [
+      "bay laurel",
+      "high john root",
+      "ginger",
+      "cinnamon"
+    ],
+    "metals": [
+      "gold",
+      "tin"
+    ],
+    "scents": [
+      "bergamot",
+      "orange",
+      "cinnamon",
+      "frankincense"
+    ],
     "timing": "Sunday or Thursday, waxing or full moon, Sun or Jupiter hour",
     "element": "Fire",
     "sphere": "Jupiter",
     "day": "Sunday",
     "planet": "Sun",
     "zodiac": "Leo, Sagittarius, Aries",
-    "tarotCards": ["The Chariot", "Six of Wands", "Ace of Pentacles"],
-    "runeAssociations": ["Sowilo", "Tiwaz", "Fehu"],
-    "numerology": 8
+    "tarotCards": [
+      "The Chariot",
+      "Six of Wands",
+      "Ace of Pentacles"
+    ],
+    "runeAssociations": [
+      "Sowilo",
+      "Tiwaz",
+      "Fehu"
+    ],
+    "numerology": 8,
+    "magicalWeapon": [
+      "Wand",
+      "Scepter",
+      "Crook",
+      "Orb"
+    ],
+    "magicalPowers": [
+      "Vision of Love",
+      "Clairvoyance",
+      "Prophecy",
+      "Power of Acquiring Wealth"
+    ],
+    "virtue": "Obedience, Generosity",
+    "vice": "Bigotry, Hypocrisy, Gluttony, Tyranny",
+    "divineName": "El",
+    "animals": [
+      "Unicorn",
+      "Eagle",
+      "Dolphin"
+    ],
+    "alchemicalProcess": "Fermentation",
+    "bodyPart": "Left Arm",
+    "flowers": [
+      "Sunflower",
+      "Bay Laurel",
+      "Orange Blossom",
+      "Marigold",
+      "Dahlia"
+    ],
+    "woods": [
+      "Oak",
+      "Laurel",
+      "Cedar",
+      "Maple"
+    ],
+    "candleColor": "Gold or Orange",
+    "essentialOils": [
+      "Bergamot",
+      "Orange",
+      "Cinnamon",
+      "Frankincense"
+    ],
+    "direction": "South",
+    "moonPhase": "Full Moon, Waxing Moon"
   },
   {
     "intentId": "intuition",
-    "colors": ["indigo", "deep purple", "silver", "blue"],
-    "stones": ["amethyst", "moonstone", "labradorite", "iolite"],
-    "herbs": ["mugwort", "bay laurel", "yarrow", "jasmine"],
-    "metals": ["silver"],
-    "scents": ["mugwort", "frankincense", "sandalwood", "jasmine"],
+    "colors": [
+      "indigo",
+      "deep purple",
+      "silver",
+      "blue"
+    ],
+    "stones": [
+      "amethyst",
+      "moonstone",
+      "labradorite",
+      "iolite"
+    ],
+    "herbs": [
+      "mugwort",
+      "bay laurel",
+      "yarrow",
+      "jasmine"
+    ],
+    "metals": [
+      "silver"
+    ],
+    "scents": [
+      "mugwort",
+      "frankincense",
+      "sandalwood",
+      "jasmine"
+    ],
     "timing": "Monday, waxing or full moon, Moon hour",
     "element": "Water",
     "sphere": "Moon",
     "day": "Monday",
     "planet": "Moon",
     "zodiac": "Pisces, Cancer, Scorpio",
-    "tarotCards": ["The High Priestess", "The Moon", "Ace of Cups"],
-    "runeAssociations": ["Laguz", "Perthro", "Hagalaz"],
-    "numerology": 2
+    "tarotCards": [
+      "The High Priestess",
+      "The Moon",
+      "Ace of Cups"
+    ],
+    "runeAssociations": [
+      "Laguz",
+      "Perthro",
+      "Hagalaz"
+    ],
+    "numerology": 2,
+    "magicalWeapon": [
+      "Perfumes",
+      "Sandals"
+    ],
+    "magicalPowers": [
+      "Vision of the Machinery of the Universe",
+      "Divination",
+      "Bewitchments",
+      "Erotic Rites"
+    ],
+    "virtue": "Independence",
+    "vice": "Idleness",
+    "divineName": "Shaddai El Chai",
+    "animals": [
+      "Dog",
+      "Beetle",
+      "Elephant",
+      "Tortoise",
+      "Toad"
+    ],
+    "alchemicalProcess": "Dissolution",
+    "bodyPart": "Reproductive System, Genitals",
+    "flowers": [
+      "Moonflower",
+      "Jasmine",
+      "Lotus",
+      "Lavender",
+      "Night-Blooming Cereus"
+    ],
+    "woods": [
+      "Willow",
+      "Elder",
+      "Yew",
+      "Silver Birch"
+    ],
+    "candleColor": "Silver or Indigo",
+    "essentialOils": [
+      "Mugwort",
+      "Frankincense",
+      "Sandalwood",
+      "Jasmine"
+    ],
+    "direction": "West",
+    "moonPhase": "Full Moon, Waxing Gibbous"
   },
   {
     "intentId": "spiritual_awakening",
-    "colors": ["violet", "white", "gold", "deep purple"],
-    "stones": ["amethyst", "selenite", "clear quartz", "moldavite"],
-    "herbs": ["frankincense", "myrrh", "lotus", "rose"],
-    "metals": ["gold", "silver"],
-    "scents": ["frankincense", "myrrh", "sandalwood", "lotus"],
+    "colors": [
+      "violet",
+      "white",
+      "gold",
+      "deep purple"
+    ],
+    "stones": [
+      "amethyst",
+      "selenite",
+      "clear quartz",
+      "moldavite"
+    ],
+    "herbs": [
+      "frankincense",
+      "myrrh",
+      "lotus",
+      "rose"
+    ],
+    "metals": [
+      "gold",
+      "silver"
+    ],
+    "scents": [
+      "frankincense",
+      "myrrh",
+      "sandalwood",
+      "lotus"
+    ],
     "timing": "Sunday, full moon, equinox or solstice, Sun hour",
     "element": "Spirit",
     "sphere": "Kether",
     "day": "Sunday",
     "planet": "Uranus",
     "zodiac": "Aquarius, Sagittarius, Pisces",
-    "tarotCards": ["The World", "The Fool", "Judgement"],
-    "runeAssociations": ["Dagaz", "Mannaz", "Sowilo"],
-    "numerology": 22
+    "tarotCards": [
+      "The World",
+      "The Fool",
+      "Judgement"
+    ],
+    "runeAssociations": [
+      "Dagaz",
+      "Mannaz",
+      "Sowilo"
+    ],
+    "numerology": 22,
+    "magicalWeapon": [
+      "Crown",
+      "Swastika",
+      "Lamp"
+    ],
+    "magicalPowers": [
+      "Union with God",
+      "Conversation with the Holy Guardian Angel",
+      "Attainment",
+      "The Highest Trance"
+    ],
+    "virtue": "Attainment, Completion of the Great Work",
+    "vice": "None — all vice falls away",
+    "divineName": "Eheieh",
+    "animals": [
+      "God",
+      "Man"
+    ],
+    "alchemicalProcess": "Projection",
+    "bodyPart": "Crown of the Head",
+    "flowers": [
+      "Lotus",
+      "White Lily",
+      "Rose",
+      "Jasmine",
+      "Orchid"
+    ],
+    "woods": [
+      "Sandalwood",
+      "Frankincense tree",
+      "Cedar",
+      "Palo Santo"
+    ],
+    "candleColor": "White or Violet",
+    "essentialOils": [
+      "Frankincense",
+      "Myrrh",
+      "Sandalwood",
+      "Lotus"
+    ],
+    "direction": "Center/Above",
+    "moonPhase": "Full Moon, New Moon, Solstice"
   },
   {
-    "entityId": "aphrodite",
-    "colors": ["rose", "pink", "gold", "sky blue"],
-    "stones": ["rose quartz", "pearl", "emerald", "turquoise"],
-    "herbs": ["rose", "myrtle", "jasmine", "anemone"],
-    "metals": ["copper", "gold"],
-    "scents": ["rose", "jasmine", "myrtle", "ylang-ylang"],
-    "timing": "Friday, Venus hour, waxing moon",
+    "intentId": "past_lives",
+    "colors": [
+      "silver",
+      "deep purple",
+      "midnight blue",
+      "gray"
+    ],
+    "stones": [
+      "amethyst",
+      "labradorite",
+      "moonstone",
+      "obsidian"
+    ],
+    "herbs": [
+      "mugwort",
+      "angelica",
+      "yarrow",
+      "sandalwood"
+    ],
+    "metals": [
+      "silver",
+      "lead"
+    ],
+    "scents": [
+      "sandalwood",
+      "myrrh",
+      "frankincense",
+      "mugwort"
+    ],
+    "timing": "Saturday or Monday, dark or waning moon, Saturn or Moon hour",
     "element": "Water",
-    "sphere": "Venus",
-    "day": "Friday",
-    "planet": "Venus",
-    "zodiac": "Libra, Taurus",
-    "tarotCards": ["The Empress", "The Lovers", "Two of Cups"],
-    "runeAssociations": ["Gebo", "Wunjo"],
-    "numerology": 6
-  },
-  {
-    "entityId": "hekate",
-    "colors": ["black", "silver", "dark red", "dark purple"],
-    "stones": ["black tourmaline", "moonstone", "obsidian", "labradorite"],
-    "herbs": ["mugwort", "rue", "yew", "mandrake"],
-    "metals": ["silver", "iron"],
-    "scents": ["myrrh", "cypress", "dragon's blood", "oud"],
-    "timing": "Saturday, dark moon, Saturn or Moon hour",
-    "element": "Earth",
-    "sphere": "Moon",
-    "day": "Saturday",
-    "planet": "Moon",
-    "zodiac": "Scorpio, Cancer",
-    "tarotCards": ["The High Priestess", "The Moon", "The World"],
-    "runeAssociations": ["Isa", "Algiz", "Hagalaz"],
-    "numerology": 3
-  },
-  {
-    "entityId": "thoth",
-    "colors": ["blue", "gold", "white", "deep teal"],
-    "stones": ["lapis lazuli", "blue calcite", "sodalite", "carnelian"],
-    "herbs": ["papyrus", "frankincense", "lotus", "iris"],
-    "metals": ["mercury", "silver"],
-    "scents": ["frankincense", "lotus", "kyphi", "jasmine"],
-    "timing": "Wednesday, any moon phase, Mercury hour",
-    "element": "Air",
-    "sphere": "Mercury",
-    "day": "Wednesday",
-    "planet": "Mercury",
-    "zodiac": "Gemini, Virgo",
-    "tarotCards": ["The Magician", "The Hermit", "Ace of Swords"],
-    "runeAssociations": ["Ansuz", "Kenaz", "Raidho"],
-    "numerology": 5
-  },
-  {
-    "entityId": "isis",
-    "colors": ["blue", "green", "gold", "white"],
-    "stones": ["lapis lazuli", "turquoise", "carnelian", "moonstone"],
-    "herbs": ["rose", "lotus", "myrrh", "cedar"],
-    "metals": ["gold", "silver"],
-    "scents": ["myrrh", "frankincense", "lotus", "rose"],
-    "timing": "Monday, waxing or full moon, Moon hour",
-    "element": "Water",
-    "sphere": "Moon",
-    "day": "Monday",
-    "planet": "Moon",
-    "zodiac": "Cancer, Virgo",
-    "tarotCards": ["The High Priestess", "The Empress", "The Star"],
-    "runeAssociations": ["Berkano", "Laguz", "Ingwaz"],
-    "numerology": 9
-  },
-  {
-    "entityId": "odin",
-    "colors": ["deep blue", "gray", "black", "gold"],
-    "stones": ["sapphire", "labradorite", "obsidian", "tiger's eye"],
-    "herbs": ["oak", "ash", "mugwort", "valerian"],
-    "metals": ["iron", "gold"],
-    "scents": ["oakmoss", "pine", "sage", "tobacco"],
-    "timing": "Wednesday, waxing moon, Mercury hour",
-    "element": "Air",
-    "sphere": "Mercury",
-    "day": "Wednesday",
-    "planet": "Mercury",
-    "zodiac": "Sagittarius, Aquarius",
-    "tarotCards": ["The Hanged Man", "The Hermit", "The Fool"],
-    "runeAssociations": ["Ansuz", "Raidho", "Othala"],
-    "numerology": 9
-  },
-  {
-    "entityId": "freya",
-    "colors": ["green", "gold", "amber", "rose"],
-    "stones": ["amber", "rose quartz", "emerald", "garnet"],
-    "herbs": ["rose", "cowslip", "primrose", "yarrow"],
-    "metals": ["gold", "copper"],
-    "scents": ["rose", "sandalwood", "apple blossom", "amber"],
-    "timing": "Friday, waxing or full moon, Venus hour",
-    "element": "Earth",
-    "sphere": "Venus",
-    "day": "Friday",
-    "planet": "Venus",
-    "zodiac": "Taurus, Scorpio",
-    "tarotCards": ["The Empress", "The Lovers", "Nine of Cups"],
-    "runeAssociations": ["Fehu", "Sowilo", "Berkano"],
-    "numerology": 6
-  },
-  {
-    "entityId": "kali",
-    "colors": ["black", "deep red", "crimson", "purple"],
-    "stones": ["obsidian", "black tourmaline", "garnet", "ruby"],
-    "herbs": ["hibiscus", "neem", "turmeric", "black sesame"],
-    "metals": ["iron", "lead"],
-    "scents": ["oud", "patchouli", "jasmine", "champaka"],
-    "timing": "Saturday, dark or new moon, Saturn hour",
-    "element": "Fire",
     "sphere": "Saturn",
     "day": "Saturday",
     "planet": "Saturn",
-    "zodiac": "Scorpio, Capricorn",
-    "tarotCards": ["Death", "The Tower", "Judgement"],
-    "runeAssociations": ["Hagalaz", "Thurisaz", "Isa"],
-    "numerology": 10
+    "zodiac": "Pisces, Scorpio, Cancer",
+    "tarotCards": [
+      "The Wheel of Fortune",
+      "The Moon",
+      "Judgement"
+    ],
+    "runeAssociations": [
+      "Perthro",
+      "Dagaz",
+      "Isa"
+    ],
+    "numerology": 9,
+    "magicalWeapon": [
+      "Cup",
+      "Outer Robe of Concealment",
+      "Sickle"
+    ],
+    "magicalPowers": [
+      "Vision of Sorrow",
+      "Works of Malediction and Defense",
+      "Understanding"
+    ],
+    "virtue": "Silence",
+    "vice": "Avarice",
+    "divineName": "YHVH Elohim",
+    "animals": [
+      "Crow",
+      "Owl",
+      "Bee",
+      "Dove"
+    ],
+    "alchemicalProcess": "Putrefaction, Calcination",
+    "bodyPart": "Right Side of Face, Womb",
+    "flowers": [
+      "Chrysanthemum",
+      "White Lily",
+      "Forget-Me-Not",
+      "Lotus"
+    ],
+    "woods": [
+      "Willow",
+      "Elder",
+      "Yew",
+      "Sandalwood"
+    ],
+    "candleColor": "Silver or Indigo",
+    "essentialOils": [
+      "Sandalwood",
+      "Myrrh",
+      "Mugwort",
+      "Frankincense"
+    ],
+    "direction": "West",
+    "moonPhase": "Dark Moon, Waning Moon"
   },
   {
-    "entityId": "michael",
-    "colors": ["royal blue", "gold", "white", "red"],
-    "stones": ["sapphire", "clear quartz", "sunstone", "garnet"],
-    "herbs": ["frankincense", "angelica", "dragon's blood", "bay laurel"],
-    "metals": ["gold", "iron"],
-    "scents": ["frankincense", "dragon's blood", "orange", "cinnamon"],
+    "intentId": "fertility",
+    "colors": [
+      "green",
+      "pink",
+      "white",
+      "gold"
+    ],
+    "stones": [
+      "moonstone",
+      "rose quartz",
+      "green aventurine",
+      "carnelian"
+    ],
+    "herbs": [
+      "red raspberry leaf",
+      "motherwort",
+      "nettle",
+      "ashwagandha"
+    ],
+    "metals": [
+      "silver",
+      "copper"
+    ],
+    "scents": [
+      "jasmine",
+      "rose",
+      "ylang-ylang",
+      "patchouli"
+    ],
+    "timing": "Monday or Friday, waxing or full moon, Moon or Venus hour",
+    "element": "Earth",
+    "sphere": "Moon",
+    "day": "Friday",
+    "planet": "Moon",
+    "zodiac": "Cancer, Taurus, Pisces",
+    "tarotCards": [
+      "The Empress",
+      "Ace of Cups",
+      "Three of Cups"
+    ],
+    "runeAssociations": [
+      "Berkano",
+      "Ingwaz",
+      "Fehu"
+    ],
+    "numerology": 3,
+    "magicalWeapon": [
+      "Perfumes",
+      "Sandals"
+    ],
+    "magicalPowers": [
+      "Vision of the Machinery of the Universe",
+      "Bewitchments",
+      "Erotic Rites",
+      "Divination"
+    ],
+    "virtue": "Independence",
+    "vice": "Idleness",
+    "divineName": "Shaddai El Chai",
+    "animals": [
+      "Dog",
+      "Beetle",
+      "Elephant",
+      "Tortoise",
+      "Toad"
+    ],
+    "alchemicalProcess": "Dissolution",
+    "bodyPart": "Reproductive System, Genitals",
+    "flowers": [
+      "Lily",
+      "Rose",
+      "Lotus",
+      "Primrose",
+      "Bleeding Heart"
+    ],
+    "woods": [
+      "Apple",
+      "Willow",
+      "Myrtle",
+      "Cherry"
+    ],
+    "candleColor": "Green or White",
+    "essentialOils": [
+      "Jasmine",
+      "Ylang-ylang",
+      "Patchouli",
+      "Rose"
+    ],
+    "direction": "West",
+    "moonPhase": "Full Moon, Waxing Moon"
+  },
+  {
+    "intentId": "peace",
+    "colors": [
+      "blue",
+      "white",
+      "lavender",
+      "soft pink"
+    ],
+    "stones": [
+      "blue lace agate",
+      "aquamarine",
+      "selenite",
+      "lepidolite"
+    ],
+    "herbs": [
+      "lavender",
+      "chamomile",
+      "passionflower",
+      "lemon balm"
+    ],
+    "metals": [
+      "silver",
+      "copper"
+    ],
+    "scents": [
+      "lavender",
+      "chamomile",
+      "sandalwood",
+      "jasmine"
+    ],
+    "timing": "Friday or Monday, waxing or full moon, Venus or Moon hour",
+    "element": "Water",
+    "sphere": "Venus",
+    "day": "Friday",
+    "planet": "Moon",
+    "zodiac": "Libra, Pisces, Cancer",
+    "tarotCards": [
+      "Temperance",
+      "The Star",
+      "Two of Cups"
+    ],
+    "runeAssociations": [
+      "Wunjo",
+      "Laguz",
+      "Berkano"
+    ],
+    "numerology": 6,
+    "magicalWeapon": [
+      "Lamp",
+      "Girdle",
+      "Rose"
+    ],
+    "magicalPowers": [
+      "Vision of Beauty Triumphant",
+      "Love Philters",
+      "Power to Cause Love"
+    ],
+    "virtue": "Unselfishness",
+    "vice": "Unchastity, Lust",
+    "divineName": "YHVH Tzabaoth",
+    "animals": [
+      "Lynx",
+      "Sparrow",
+      "Dove",
+      "Swan"
+    ],
+    "alchemicalProcess": "Conjunction",
+    "bodyPart": "Loins, Hips, Legs",
+    "flowers": [
+      "Lavender",
+      "White Lily",
+      "Jasmine",
+      "Baby's Breath",
+      "Sweet Pea"
+    ],
+    "woods": [
+      "Willow",
+      "Apple",
+      "Birch",
+      "Sandalwood"
+    ],
+    "candleColor": "Blue or White",
+    "essentialOils": [
+      "Lavender",
+      "Sandalwood",
+      "Jasmine",
+      "Chamomile"
+    ],
+    "direction": "West",
+    "moonPhase": "Full Moon, Waxing Moon"
+  },
+  {
+    "intentId": "strength",
+    "colors": [
+      "red",
+      "gold",
+      "orange",
+      "black"
+    ],
+    "stones": [
+      "red jasper",
+      "carnelian",
+      "tiger's eye",
+      "onyx"
+    ],
+    "herbs": [
+      "dragon's blood",
+      "ginger",
+      "nettle",
+      "ashwagandha"
+    ],
+    "metals": [
+      "iron",
+      "gold"
+    ],
+    "scents": [
+      "dragon's blood",
+      "ginger",
+      "black pepper",
+      "sandalwood"
+    ],
+    "timing": "Tuesday or Sunday, waxing or full moon, Mars or Sun hour",
+    "element": "Fire",
+    "sphere": "Mars",
+    "day": "Tuesday",
+    "planet": "Mars",
+    "zodiac": "Aries, Leo, Scorpio",
+    "tarotCards": [
+      "Strength",
+      "The Chariot",
+      "Ace of Wands"
+    ],
+    "runeAssociations": [
+      "Uruz",
+      "Tiwaz",
+      "Sowilo"
+    ],
+    "numerology": 8,
+    "magicalWeapon": [
+      "Sword",
+      "Spear",
+      "Scourge",
+      "Chain"
+    ],
+    "magicalPowers": [
+      "Vision of Power",
+      "Works of Wrath and Vengeance",
+      "Power of Courage"
+    ],
+    "virtue": "Energy, Courage",
+    "vice": "Cruelty",
+    "divineName": "Elohim Gibor",
+    "animals": [
+      "Basilisk",
+      "Wolf",
+      "Bear",
+      "Horse"
+    ],
+    "alchemicalProcess": "Separation",
+    "bodyPart": "Right Arm",
+    "flowers": [
+      "Red Carnation",
+      "Sunflower",
+      "Tiger Lily",
+      "Protea",
+      "Goldenrod"
+    ],
+    "woods": [
+      "Oak",
+      "Cedar",
+      "Ash",
+      "Holly"
+    ],
+    "candleColor": "Red or Gold",
+    "essentialOils": [
+      "Ginger",
+      "Dragon's Blood",
+      "Black Pepper",
+      "Frankincense"
+    ],
+    "direction": "South",
+    "moonPhase": "Full Moon, Waxing Moon"
+  },
+  {
+    "intentId": "confidence",
+    "colors": [
+      "yellow",
+      "gold",
+      "orange",
+      "bright white"
+    ],
+    "stones": [
+      "citrine",
+      "sunstone",
+      "tiger's eye",
+      "pyrite"
+    ],
+    "herbs": [
+      "bay laurel",
+      "St. John's wort",
+      "bergamot",
+      "chamomile"
+    ],
+    "metals": [
+      "gold",
+      "tin"
+    ],
+    "scents": [
+      "bergamot",
+      "orange",
+      "lemon",
+      "frankincense"
+    ],
     "timing": "Sunday, waxing or full moon, Sun hour",
     "element": "Fire",
     "sphere": "Sun",
     "day": "Sunday",
     "planet": "Sun",
     "zodiac": "Leo, Aries",
-    "tarotCards": ["Judgement", "Strength", "The Sun"],
-    "runeAssociations": ["Sowilo", "Tiwaz", "Algiz"],
-    "numerology": 5
+    "tarotCards": [
+      "The Sun",
+      "Strength",
+      "King of Wands"
+    ],
+    "runeAssociations": [
+      "Sowilo",
+      "Uruz",
+      "Kenaz"
+    ],
+    "numerology": 1,
+    "magicalWeapon": [
+      "Lamen",
+      "Rosy Cross",
+      "Calvary Cross"
+    ],
+    "magicalPowers": [
+      "Vision of the Harmony of Things",
+      "Miracles of Healing",
+      "Prophecy",
+      "Power of Acquiring Gold"
+    ],
+    "virtue": "Devotion to the Great Work",
+    "vice": "Pride",
+    "divineName": "YHVH Eloah va-Daath",
+    "animals": [
+      "Lion",
+      "Child",
+      "Pelican",
+      "Phoenix",
+      "Eagle",
+      "Lamb"
+    ],
+    "alchemicalProcess": "Projection, Coagulation of Gold",
+    "bodyPart": "Breast, Heart",
+    "flowers": [
+      "Sunflower",
+      "Daffodil",
+      "Marigold",
+      "Tulip",
+      "Zinnia"
+    ],
+    "woods": [
+      "Oak",
+      "Bay Laurel",
+      "Ash",
+      "Sandalwood"
+    ],
+    "candleColor": "Yellow or Gold",
+    "essentialOils": [
+      "Bergamot",
+      "Orange",
+      "Frankincense",
+      "Lemon"
+    ],
+    "direction": "South",
+    "moonPhase": "Waxing Moon, Full Moon"
+  },
+  {
+    "intentId": "grief",
+    "colors": [
+      "gray",
+      "dark blue",
+      "silver",
+      "white"
+    ],
+    "stones": [
+      "moonstone",
+      "smoky quartz",
+      "rose quartz",
+      "obsidian"
+    ],
+    "herbs": [
+      "rose",
+      "valerian",
+      "chamomile",
+      "lemon balm"
+    ],
+    "metals": [
+      "silver",
+      "lead"
+    ],
+    "scents": [
+      "rose",
+      "cypress",
+      "myrrh",
+      "sandalwood"
+    ],
+    "timing": "Monday or Saturday, waning moon, Moon or Saturn hour",
+    "element": "Water",
+    "sphere": "Saturn",
+    "day": "Saturday",
+    "planet": "Saturn",
+    "zodiac": "Cancer, Scorpio, Pisces",
+    "tarotCards": [
+      "The Moon",
+      "Five of Cups",
+      "The Star"
+    ],
+    "runeAssociations": [
+      "Isa",
+      "Hagalaz",
+      "Laguz"
+    ],
+    "numerology": 9,
+    "magicalWeapon": [
+      "Cup",
+      "Outer Robe of Concealment",
+      "Sickle"
+    ],
+    "magicalPowers": [
+      "Vision of Sorrow",
+      "Works of Malediction and Defense",
+      "Understanding"
+    ],
+    "virtue": "Silence",
+    "vice": "Avarice",
+    "divineName": "YHVH Elohim",
+    "animals": [
+      "Crow",
+      "Owl",
+      "Bee",
+      "Dove"
+    ],
+    "alchemicalProcess": "Putrefaction, Calcination",
+    "bodyPart": "Right Side of Face, Womb",
+    "flowers": [
+      "Chrysanthemum",
+      "Forget-Me-Not",
+      "White Lily",
+      "Iris",
+      "Weeping Willow flower"
+    ],
+    "woods": [
+      "Willow",
+      "Cypress",
+      "Elder",
+      "Birch"
+    ],
+    "candleColor": "Gray or Dark Blue",
+    "essentialOils": [
+      "Cypress",
+      "Myrrh",
+      "Rose",
+      "Sandalwood"
+    ],
+    "direction": "West",
+    "moonPhase": "Waning Moon, Dark Moon"
+  },
+  {
+    "intentId": "release",
+    "colors": [
+      "white",
+      "black",
+      "silver",
+      "light gray"
+    ],
+    "stones": [
+      "obsidian",
+      "selenite",
+      "apache tear",
+      "lepidolite"
+    ],
+    "herbs": [
+      "lavender",
+      "sage",
+      "white willow bark",
+      "mugwort"
+    ],
+    "metals": [
+      "silver",
+      "lead"
+    ],
+    "scents": [
+      "sage",
+      "lavender",
+      "myrrh",
+      "eucalyptus"
+    ],
+    "timing": "Saturday, waning or dark moon, Saturn hour",
+    "element": "Water",
+    "sphere": "Saturn",
+    "day": "Saturday",
+    "planet": "Moon",
+    "zodiac": "Scorpio, Pisces, Sagittarius",
+    "tarotCards": [
+      "The Tower",
+      "Eight of Cups",
+      "The Fool"
+    ],
+    "runeAssociations": [
+      "Isa",
+      "Dagaz",
+      "Othala"
+    ],
+    "numerology": 7,
+    "magicalWeapon": [
+      "Cup",
+      "Outer Robe of Concealment",
+      "Sickle"
+    ],
+    "magicalPowers": [
+      "Vision of Sorrow",
+      "Works of Malediction and Defense",
+      "Understanding"
+    ],
+    "virtue": "Silence",
+    "vice": "Avarice",
+    "divineName": "YHVH Elohim",
+    "animals": [
+      "Crow",
+      "Owl",
+      "Bee",
+      "Dove"
+    ],
+    "alchemicalProcess": "Putrefaction, Calcination",
+    "bodyPart": "Right Side of Face, Womb",
+    "flowers": [
+      "Lavender",
+      "White Lily",
+      "Forget-Me-Not",
+      "Dandelion",
+      "Morning Glory"
+    ],
+    "woods": [
+      "Willow",
+      "Elder",
+      "Birch",
+      "Poplar"
+    ],
+    "candleColor": "White or Silver",
+    "essentialOils": [
+      "Lavender",
+      "Sage",
+      "Myrrh",
+      "Eucalyptus"
+    ],
+    "direction": "West",
+    "moonPhase": "Waning Moon, Dark Moon"
+  },
+  {
+    "intentId": "renewal",
+    "colors": [
+      "white",
+      "green",
+      "pink",
+      "gold"
+    ],
+    "stones": [
+      "clear quartz",
+      "rose quartz",
+      "green aventurine",
+      "chrysoprase"
+    ],
+    "herbs": [
+      "fresh mint",
+      "rose",
+      "chamomile",
+      "calendula"
+    ],
+    "metals": [
+      "silver",
+      "gold"
+    ],
+    "scents": [
+      "rose",
+      "bergamot",
+      "lavender",
+      "mint"
+    ],
+    "timing": "Sunday or Friday, new moon or spring, Sun or Venus hour",
+    "element": "Air",
+    "sphere": "Sun",
+    "day": "Sunday",
+    "planet": "Sun",
+    "zodiac": "Aries, Libra, Aquarius",
+    "tarotCards": [
+      "The Fool",
+      "The World",
+      "Ace of Cups"
+    ],
+    "runeAssociations": [
+      "Dagaz",
+      "Berkano",
+      "Fehu"
+    ],
+    "numerology": 1,
+    "magicalWeapon": [
+      "Lamen",
+      "Rosy Cross",
+      "Calvary Cross"
+    ],
+    "magicalPowers": [
+      "Vision of the Harmony of Things",
+      "Miracles of Healing",
+      "Prophecy",
+      "Power of Acquiring Gold"
+    ],
+    "virtue": "Devotion to the Great Work",
+    "vice": "Pride",
+    "divineName": "YHVH Eloah va-Daath",
+    "animals": [
+      "Lion",
+      "Child",
+      "Pelican",
+      "Phoenix",
+      "Eagle",
+      "Lamb"
+    ],
+    "alchemicalProcess": "Projection, Coagulation of Gold",
+    "bodyPart": "Breast, Heart",
+    "flowers": [
+      "Crocus",
+      "Daffodil",
+      "Tulip",
+      "Cherry Blossom",
+      "Lily of the Valley"
+    ],
+    "woods": [
+      "Apple",
+      "Birch",
+      "Cherry",
+      "Willow"
+    ],
+    "candleColor": "White or Pale Pink",
+    "essentialOils": [
+      "Rose",
+      "Bergamot",
+      "Lavender",
+      "Mint"
+    ],
+    "direction": "East",
+    "moonPhase": "New Moon, Waxing Crescent"
+  },
+  {
+    "intentId": "truth",
+    "colors": [
+      "white",
+      "blue",
+      "silver",
+      "yellow"
+    ],
+    "stones": [
+      "blue kyanite",
+      "lapis lazuli",
+      "sodalite",
+      "clear quartz"
+    ],
+    "herbs": [
+      "hyssop",
+      "angelica",
+      "sage",
+      "vervain"
+    ],
+    "metals": [
+      "silver",
+      "gold"
+    ],
+    "scents": [
+      "frankincense",
+      "lemon",
+      "mint",
+      "sage"
+    ],
+    "timing": "Wednesday or Sunday, waxing moon, Mercury or Sun hour",
+    "element": "Air",
+    "sphere": "Mercury",
+    "day": "Wednesday",
+    "planet": "Mercury",
+    "zodiac": "Sagittarius, Gemini, Aquarius",
+    "tarotCards": [
+      "Justice",
+      "The High Priestess",
+      "Ace of Swords"
+    ],
+    "runeAssociations": [
+      "Tiwaz",
+      "Ansuz",
+      "Kenaz"
+    ],
+    "numerology": 11,
+    "magicalWeapon": [
+      "Wand",
+      "Caduceus",
+      "Apron"
+    ],
+    "magicalPowers": [
+      "Vision of Splendour",
+      "Gift of Tongues",
+      "Making of Talismans",
+      "Miracles of Healing"
+    ],
+    "virtue": "Truthfulness",
+    "vice": "Falsehood, Dishonesty",
+    "divineName": "Elohim Tzabaoth",
+    "animals": [
+      "Hermaphrodite",
+      "Jackal",
+      "Ibis",
+      "Twin Serpents"
+    ],
+    "alchemicalProcess": "Sublimation",
+    "bodyPart": "Loins, Hips (Left)",
+    "flowers": [
+      "Iris",
+      "Lavender",
+      "White Lily",
+      "Forget-Me-Not",
+      "Violet"
+    ],
+    "woods": [
+      "Hazel",
+      "Bay Laurel",
+      "Birch",
+      "Ash"
+    ],
+    "candleColor": "White or Blue",
+    "essentialOils": [
+      "Frankincense",
+      "Peppermint",
+      "Sage",
+      "Lemon"
+    ],
+    "direction": "East",
+    "moonPhase": "Full Moon, Waxing Moon"
+  },
+  {
+    "intentId": "career",
+    "colors": [
+      "gold",
+      "orange",
+      "green",
+      "yellow"
+    ],
+    "stones": [
+      "citrine",
+      "tiger's eye",
+      "pyrite",
+      "peridot"
+    ],
+    "herbs": [
+      "bay laurel",
+      "cinnamon",
+      "ginger",
+      "basil"
+    ],
+    "metals": [
+      "gold",
+      "tin"
+    ],
+    "scents": [
+      "bergamot",
+      "frankincense",
+      "orange",
+      "cinnamon"
+    ],
+    "timing": "Thursday or Sunday, waxing or full moon, Jupiter or Sun hour",
+    "element": "Fire",
+    "sphere": "Jupiter",
+    "day": "Thursday",
+    "planet": "Jupiter",
+    "zodiac": "Capricorn, Sagittarius, Leo",
+    "tarotCards": [
+      "The Chariot",
+      "The World",
+      "Six of Wands"
+    ],
+    "runeAssociations": [
+      "Fehu",
+      "Tiwaz",
+      "Sowilo"
+    ],
+    "numerology": 8,
+    "magicalWeapon": [
+      "Wand",
+      "Scepter",
+      "Crook",
+      "Orb"
+    ],
+    "magicalPowers": [
+      "Vision of Love",
+      "Clairvoyance",
+      "Prophecy",
+      "Power of Acquiring Wealth"
+    ],
+    "virtue": "Obedience, Generosity",
+    "vice": "Bigotry, Hypocrisy, Gluttony, Tyranny",
+    "divineName": "El",
+    "animals": [
+      "Unicorn",
+      "Eagle",
+      "Dolphin"
+    ],
+    "alchemicalProcess": "Fermentation",
+    "bodyPart": "Left Arm",
+    "flowers": [
+      "Sunflower",
+      "Bay Laurel",
+      "Marigold",
+      "Goldenrod",
+      "Chrysanthemum"
+    ],
+    "woods": [
+      "Oak",
+      "Laurel",
+      "Cedar",
+      "Ash"
+    ],
+    "candleColor": "Gold or Green",
+    "essentialOils": [
+      "Bergamot",
+      "Cinnamon",
+      "Frankincense",
+      "Orange"
+    ],
+    "direction": "South",
+    "moonPhase": "Waxing Moon, Full Moon"
+  },
+  {
+    "intentId": "money",
+    "colors": [
+      "green",
+      "gold",
+      "orange",
+      "brown"
+    ],
+    "stones": [
+      "citrine",
+      "green jade",
+      "pyrite",
+      "malachite"
+    ],
+    "herbs": [
+      "cinnamon",
+      "basil",
+      "mint",
+      "clover"
+    ],
+    "metals": [
+      "gold",
+      "copper"
+    ],
+    "scents": [
+      "cinnamon",
+      "patchouli",
+      "bergamot",
+      "mint"
+    ],
+    "timing": "Thursday, waxing or full moon, Jupiter hour",
+    "element": "Earth",
+    "sphere": "Jupiter",
+    "day": "Thursday",
+    "planet": "Jupiter",
+    "zodiac": "Taurus, Capricorn, Virgo",
+    "tarotCards": [
+      "Ace of Pentacles",
+      "Nine of Pentacles",
+      "The Wheel of Fortune"
+    ],
+    "runeAssociations": [
+      "Fehu",
+      "Jera",
+      "Othala"
+    ],
+    "numerology": 8,
+    "magicalWeapon": [
+      "Wand",
+      "Scepter",
+      "Crook",
+      "Orb"
+    ],
+    "magicalPowers": [
+      "Vision of Love",
+      "Clairvoyance",
+      "Prophecy",
+      "Power of Acquiring Wealth"
+    ],
+    "virtue": "Obedience, Generosity",
+    "vice": "Bigotry, Hypocrisy, Gluttony, Tyranny",
+    "divineName": "El",
+    "animals": [
+      "Unicorn",
+      "Eagle",
+      "Dolphin"
+    ],
+    "alchemicalProcess": "Fermentation",
+    "bodyPart": "Left Arm",
+    "flowers": [
+      "Daffodil",
+      "Honeysuckle",
+      "Chamomile",
+      "Sunflower",
+      "Marigold"
+    ],
+    "woods": [
+      "Oak",
+      "Cedar",
+      "Maple",
+      "Walnut"
+    ],
+    "candleColor": "Green or Gold",
+    "essentialOils": [
+      "Patchouli",
+      "Cinnamon",
+      "Bergamot",
+      "Pine"
+    ],
+    "direction": "North",
+    "moonPhase": "Full Moon, Waxing Moon"
+  },
+  {
+    "intentId": "friendship",
+    "colors": [
+      "pink",
+      "yellow",
+      "orange",
+      "green"
+    ],
+    "stones": [
+      "rose quartz",
+      "rhodonite",
+      "yellow calcite",
+      "green aventurine"
+    ],
+    "herbs": [
+      "rose",
+      "lavender",
+      "lemon balm",
+      "chamomile"
+    ],
+    "metals": [
+      "copper",
+      "gold"
+    ],
+    "scents": [
+      "rose",
+      "lavender",
+      "bergamot",
+      "jasmine"
+    ],
+    "timing": "Friday or Thursday, waxing moon, Venus or Jupiter hour",
+    "element": "Air",
+    "sphere": "Venus",
+    "day": "Friday",
+    "planet": "Venus",
+    "zodiac": "Libra, Gemini, Aquarius",
+    "tarotCards": [
+      "Three of Cups",
+      "The Lovers",
+      "Six of Cups"
+    ],
+    "runeAssociations": [
+      "Wunjo",
+      "Gebo",
+      "Berkano"
+    ],
+    "numerology": 3,
+    "magicalWeapon": [
+      "Lamp",
+      "Girdle",
+      "Rose"
+    ],
+    "magicalPowers": [
+      "Vision of Beauty Triumphant",
+      "Love Philters",
+      "Power to Cause Love"
+    ],
+    "virtue": "Unselfishness",
+    "vice": "Unchastity, Lust",
+    "divineName": "YHVH Tzabaoth",
+    "animals": [
+      "Lynx",
+      "Sparrow",
+      "Dove",
+      "Swan"
+    ],
+    "alchemicalProcess": "Conjunction",
+    "bodyPart": "Loins, Hips, Legs",
+    "flowers": [
+      "Rose",
+      "Daisy",
+      "Violet",
+      "Sunflower",
+      "Forget-Me-Not"
+    ],
+    "woods": [
+      "Apple",
+      "Maple",
+      "Cherry",
+      "Birch"
+    ],
+    "candleColor": "Pink or Yellow",
+    "essentialOils": [
+      "Rose",
+      "Bergamot",
+      "Lavender",
+      "Jasmine"
+    ],
+    "direction": "East",
+    "moonPhase": "Waxing Moon, Full Moon"
+  },
+  {
+    "intentId": "family",
+    "colors": [
+      "white",
+      "green",
+      "brown",
+      "soft pink"
+    ],
+    "stones": [
+      "moonstone",
+      "rose quartz",
+      "jade",
+      "chrysocolla"
+    ],
+    "herbs": [
+      "rose",
+      "chamomile",
+      "lavender",
+      "thyme"
+    ],
+    "metals": [
+      "silver",
+      "copper"
+    ],
+    "scents": [
+      "rose",
+      "sandalwood",
+      "vanilla",
+      "chamomile"
+    ],
+    "timing": "Monday or Friday, waxing or full moon, Moon or Venus hour",
+    "element": "Earth",
+    "sphere": "Moon",
+    "day": "Monday",
+    "planet": "Moon",
+    "zodiac": "Cancer, Taurus, Capricorn",
+    "tarotCards": [
+      "The Empress",
+      "Ten of Pentacles",
+      "Six of Cups"
+    ],
+    "runeAssociations": [
+      "Berkano",
+      "Othala",
+      "Ingwaz"
+    ],
+    "numerology": 6,
+    "magicalWeapon": [
+      "Perfumes",
+      "Sandals"
+    ],
+    "magicalPowers": [
+      "Vision of the Machinery of the Universe",
+      "Bewitchments",
+      "Erotic Rites",
+      "Divination"
+    ],
+    "virtue": "Independence",
+    "vice": "Idleness",
+    "divineName": "Shaddai El Chai",
+    "animals": [
+      "Dog",
+      "Beetle",
+      "Elephant",
+      "Tortoise",
+      "Toad"
+    ],
+    "alchemicalProcess": "Dissolution",
+    "bodyPart": "Reproductive System, Genitals",
+    "flowers": [
+      "Chrysanthemum",
+      "Marigold",
+      "Rose",
+      "Heather",
+      "Primrose"
+    ],
+    "woods": [
+      "Apple",
+      "Oak",
+      "Willow",
+      "Cherry"
+    ],
+    "candleColor": "White or Soft Green",
+    "essentialOils": [
+      "Rose",
+      "Sandalwood",
+      "Vanilla",
+      "Chamomile"
+    ],
+    "direction": "North",
+    "moonPhase": "Full Moon, Waxing Moon"
+  },
+  {
+    "intentId": "divination",
+    "colors": [
+      "purple",
+      "silver",
+      "indigo",
+      "midnight blue"
+    ],
+    "stones": [
+      "amethyst",
+      "labradorite",
+      "moonstone",
+      "obsidian"
+    ],
+    "herbs": [
+      "mugwort",
+      "yarrow",
+      "bay laurel",
+      "dandelion root"
+    ],
+    "metals": [
+      "silver",
+      "mercury"
+    ],
+    "scents": [
+      "mugwort",
+      "frankincense",
+      "sandalwood",
+      "star anise"
+    ],
+    "timing": "Monday or Wednesday, full or dark moon, Moon or Mercury hour",
+    "element": "Water",
+    "sphere": "Moon",
+    "day": "Monday",
+    "planet": "Moon",
+    "zodiac": "Pisces, Scorpio, Cancer",
+    "tarotCards": [
+      "The High Priestess",
+      "The Moon",
+      "The Hermit"
+    ],
+    "runeAssociations": [
+      "Perthro",
+      "Laguz",
+      "Ansuz"
+    ],
+    "numerology": 2,
+    "magicalWeapon": [
+      "Perfumes",
+      "Sandals"
+    ],
+    "magicalPowers": [
+      "Vision of the Machinery of the Universe",
+      "Bewitchments",
+      "Erotic Rites",
+      "Divination"
+    ],
+    "virtue": "Independence",
+    "vice": "Idleness",
+    "divineName": "Shaddai El Chai",
+    "animals": [
+      "Dog",
+      "Beetle",
+      "Elephant",
+      "Tortoise",
+      "Toad"
+    ],
+    "alchemicalProcess": "Dissolution",
+    "bodyPart": "Reproductive System, Genitals",
+    "flowers": [
+      "Moonflower",
+      "Mugwort flower",
+      "Yarrow",
+      "Lotus",
+      "Night-Blooming Jasmine"
+    ],
+    "woods": [
+      "Hazel",
+      "Elder",
+      "Willow",
+      "Yew"
+    ],
+    "candleColor": "Purple or Indigo",
+    "essentialOils": [
+      "Mugwort",
+      "Frankincense",
+      "Sandalwood",
+      "Star Anise"
+    ],
+    "direction": "West",
+    "moonPhase": "Full Moon, Dark Moon"
+  },
+  {
+    "intentId": "psychic_development",
+    "colors": [
+      "indigo",
+      "violet",
+      "silver",
+      "deep blue"
+    ],
+    "stones": [
+      "iolite",
+      "labradorite",
+      "amethyst",
+      "tanzanite"
+    ],
+    "herbs": [
+      "mugwort",
+      "blue lotus",
+      "eyebright",
+      "calamus"
+    ],
+    "metals": [
+      "silver",
+      "copper"
+    ],
+    "scents": [
+      "mugwort",
+      "frankincense",
+      "lavender",
+      "myrrh"
+    ],
+    "timing": "Monday, waxing or full moon, Moon hour",
+    "element": "Water",
+    "sphere": "Moon",
+    "day": "Monday",
+    "planet": "Neptune",
+    "zodiac": "Pisces, Cancer, Scorpio",
+    "tarotCards": [
+      "The High Priestess",
+      "The Moon",
+      "Ace of Cups"
+    ],
+    "runeAssociations": [
+      "Laguz",
+      "Perthro",
+      "Hagalaz"
+    ],
+    "numerology": 2,
+    "magicalWeapon": [
+      "Perfumes",
+      "Sandals"
+    ],
+    "magicalPowers": [
+      "Vision of the Machinery of the Universe",
+      "Bewitchments",
+      "Erotic Rites",
+      "Divination"
+    ],
+    "virtue": "Independence",
+    "vice": "Idleness",
+    "divineName": "Shaddai El Chai",
+    "animals": [
+      "Dog",
+      "Beetle",
+      "Elephant",
+      "Tortoise",
+      "Toad"
+    ],
+    "alchemicalProcess": "Dissolution",
+    "bodyPart": "Reproductive System, Genitals",
+    "flowers": [
+      "Lotus",
+      "Moonflower",
+      "Iris",
+      "Lavender",
+      "Jasmine"
+    ],
+    "woods": [
+      "Willow",
+      "Elder",
+      "Sandalwood",
+      "Birch"
+    ],
+    "candleColor": "Indigo or Violet",
+    "essentialOils": [
+      "Mugwort",
+      "Frankincense",
+      "Lavender",
+      "Myrrh"
+    ],
+    "direction": "West",
+    "moonPhase": "Full Moon, Waxing Moon"
+  },
+  {
+    "intentId": "death_and_dying",
+    "colors": [
+      "black",
+      "white",
+      "dark purple",
+      "silver"
+    ],
+    "stones": [
+      "obsidian",
+      "jet",
+      "black tourmaline",
+      "smoky quartz"
+    ],
+    "herbs": [
+      "yew",
+      "cypress",
+      "mugwort",
+      "myrrh"
+    ],
+    "metals": [
+      "lead",
+      "iron"
+    ],
+    "scents": [
+      "myrrh",
+      "cypress",
+      "frankincense",
+      "oud"
+    ],
+    "timing": "Saturday, dark or new moon, Saturn hour",
+    "element": "Earth",
+    "sphere": "Saturn",
+    "day": "Saturday",
+    "planet": "Saturn",
+    "zodiac": "Scorpio, Capricorn, Pisces",
+    "tarotCards": [
+      "Death",
+      "The Tower",
+      "The Hanged Man"
+    ],
+    "runeAssociations": [
+      "Hagalaz",
+      "Isa",
+      "Ehwaz"
+    ],
+    "numerology": 13,
+    "magicalWeapon": [
+      "Cup",
+      "Outer Robe of Concealment",
+      "Sickle"
+    ],
+    "magicalPowers": [
+      "Vision of Sorrow",
+      "Works of Malediction and Defense",
+      "Understanding"
+    ],
+    "virtue": "Silence",
+    "vice": "Avarice",
+    "divineName": "YHVH Elohim",
+    "animals": [
+      "Crow",
+      "Owl",
+      "Bee",
+      "Dove"
+    ],
+    "alchemicalProcess": "Putrefaction, Calcination",
+    "bodyPart": "Right Side of Face, Womb",
+    "flowers": [
+      "Chrysanthemum",
+      "Hellebore",
+      "White Lily",
+      "Iris",
+      "Asphodel"
+    ],
+    "woods": [
+      "Yew",
+      "Cypress",
+      "Elder",
+      "Ebony"
+    ],
+    "candleColor": "Black or White",
+    "essentialOils": [
+      "Myrrh",
+      "Cypress",
+      "Frankincense",
+      "Sandalwood"
+    ],
+    "direction": "North",
+    "moonPhase": "Dark Moon, Waning Moon"
+  },
+  {
+    "intentId": "astral_travel",
+    "colors": [
+      "silver",
+      "deep blue",
+      "violet",
+      "indigo"
+    ],
+    "stones": [
+      "moonstone",
+      "labradorite",
+      "amethyst",
+      "iolite"
+    ],
+    "herbs": [
+      "mugwort",
+      "valerian",
+      "calamus",
+      "blue lotus"
+    ],
+    "metals": [
+      "silver"
+    ],
+    "scents": [
+      "mugwort",
+      "jasmine",
+      "sandalwood",
+      "lavender"
+    ],
+    "timing": "Monday, full moon, Moon hour, midnight",
+    "element": "Air",
+    "sphere": "Moon",
+    "day": "Monday",
+    "planet": "Neptune",
+    "zodiac": "Pisces, Sagittarius, Aquarius",
+    "tarotCards": [
+      "The Moon",
+      "The Fool",
+      "The Star"
+    ],
+    "runeAssociations": [
+      "Laguz",
+      "Ehwaz",
+      "Perthro"
+    ],
+    "numerology": 7,
+    "magicalWeapon": [
+      "Perfumes",
+      "Sandals"
+    ],
+    "magicalPowers": [
+      "Vision of the Machinery of the Universe",
+      "Bewitchments",
+      "Erotic Rites",
+      "Divination"
+    ],
+    "virtue": "Independence",
+    "vice": "Idleness",
+    "divineName": "Shaddai El Chai",
+    "animals": [
+      "Dog",
+      "Beetle",
+      "Elephant",
+      "Tortoise",
+      "Toad"
+    ],
+    "alchemicalProcess": "Dissolution",
+    "bodyPart": "Reproductive System, Genitals",
+    "flowers": [
+      "Moonflower",
+      "Jasmine",
+      "Lotus",
+      "Night-Blooming Cereus",
+      "Lavender"
+    ],
+    "woods": [
+      "Willow",
+      "Elder",
+      "Sandalwood",
+      "Palo Santo"
+    ],
+    "candleColor": "Silver or Deep Blue",
+    "essentialOils": [
+      "Mugwort",
+      "Jasmine",
+      "Sandalwood",
+      "Lavender"
+    ],
+    "direction": "West",
+    "moonPhase": "Full Moon, Waxing Gibbous"
+  },
+  {
+    "intentId": "moon_magic",
+    "colors": [
+      "silver",
+      "white",
+      "deep blue",
+      "indigo"
+    ],
+    "stones": [
+      "moonstone",
+      "selenite",
+      "pearl",
+      "labradorite"
+    ],
+    "herbs": [
+      "mugwort",
+      "jasmine",
+      "white willow",
+      "lotus"
+    ],
+    "metals": [
+      "silver"
+    ],
+    "scents": [
+      "jasmine",
+      "sandalwood",
+      "mugwort",
+      "white musk"
+    ],
+    "timing": "Monday, full or new moon, Moon hour",
+    "element": "Water",
+    "sphere": "Moon",
+    "day": "Monday",
+    "planet": "Moon",
+    "zodiac": "Cancer, Pisces, Scorpio",
+    "tarotCards": [
+      "The High Priestess",
+      "The Moon",
+      "The Star"
+    ],
+    "runeAssociations": [
+      "Laguz",
+      "Isa",
+      "Perthro"
+    ],
+    "numerology": 2,
+    "magicalWeapon": [
+      "Perfumes",
+      "Sandals"
+    ],
+    "magicalPowers": [
+      "Vision of the Machinery of the Universe",
+      "Bewitchments",
+      "Erotic Rites",
+      "Divination"
+    ],
+    "virtue": "Independence",
+    "vice": "Idleness",
+    "divineName": "Shaddai El Chai",
+    "animals": [
+      "Dog",
+      "Beetle",
+      "Elephant",
+      "Tortoise",
+      "Toad"
+    ],
+    "alchemicalProcess": "Dissolution",
+    "bodyPart": "Reproductive System, Genitals",
+    "flowers": [
+      "Moonflower",
+      "White Lily",
+      "Jasmine",
+      "Lotus",
+      "Gardenia"
+    ],
+    "woods": [
+      "Willow",
+      "Elder",
+      "Silver Birch",
+      "Sandalwood"
+    ],
+    "candleColor": "Silver or White",
+    "essentialOils": [
+      "Jasmine",
+      "Sandalwood",
+      "Mugwort",
+      "Neroli"
+    ],
+    "direction": "West",
+    "moonPhase": "Full Moon, New Moon, Dark Moon"
+  },
+  {
+    "intentId": "sun_magic",
+    "colors": [
+      "yellow",
+      "gold",
+      "orange",
+      "white"
+    ],
+    "stones": [
+      "sunstone",
+      "citrine",
+      "carnelian",
+      "amber"
+    ],
+    "herbs": [
+      "St. John's wort",
+      "calendula",
+      "bay laurel",
+      "sunflower seeds"
+    ],
+    "metals": [
+      "gold"
+    ],
+    "scents": [
+      "frankincense",
+      "orange",
+      "lemon",
+      "saffron"
+    ],
+    "timing": "Sunday, full sun, noon, Sun hour",
+    "element": "Fire",
+    "sphere": "Sun",
+    "day": "Sunday",
+    "planet": "Sun",
+    "zodiac": "Leo, Aries, Sagittarius",
+    "tarotCards": [
+      "The Sun",
+      "Wheel of Fortune",
+      "The Chariot"
+    ],
+    "runeAssociations": [
+      "Sowilo",
+      "Dagaz",
+      "Kenaz"
+    ],
+    "numerology": 6,
+    "magicalWeapon": [
+      "Lamen",
+      "Rosy Cross",
+      "Calvary Cross"
+    ],
+    "magicalPowers": [
+      "Vision of the Harmony of Things",
+      "Miracles of Healing",
+      "Prophecy",
+      "Power of Acquiring Gold"
+    ],
+    "virtue": "Devotion to the Great Work",
+    "vice": "Pride",
+    "divineName": "YHVH Eloah va-Daath",
+    "animals": [
+      "Lion",
+      "Child",
+      "Pelican",
+      "Phoenix",
+      "Eagle",
+      "Lamb"
+    ],
+    "alchemicalProcess": "Projection, Coagulation of Gold",
+    "bodyPart": "Breast, Heart",
+    "flowers": [
+      "Sunflower",
+      "Marigold",
+      "Calendula",
+      "Heliotrope",
+      "St. John's Wort flower"
+    ],
+    "woods": [
+      "Oak",
+      "Bay Laurel",
+      "Ash",
+      "Sandalwood"
+    ],
+    "candleColor": "Gold or Yellow",
+    "essentialOils": [
+      "Frankincense",
+      "Orange",
+      "Lemon",
+      "Bergamot"
+    ],
+    "direction": "South",
+    "moonPhase": "Full Moon, Waxing Moon, Noon"
+  },
+  {
+    "intentId": "fire_magic",
+    "colors": [
+      "red",
+      "orange",
+      "gold",
+      "crimson"
+    ],
+    "stones": [
+      "carnelian",
+      "red jasper",
+      "fire opal",
+      "garnet"
+    ],
+    "herbs": [
+      "dragon's blood",
+      "cinnamon",
+      "basil",
+      "rosemary"
+    ],
+    "metals": [
+      "iron",
+      "gold"
+    ],
+    "scents": [
+      "dragon's blood",
+      "cinnamon",
+      "ginger",
+      "frankincense"
+    ],
+    "timing": "Tuesday or Sunday, waxing moon, Mars or Sun hour",
+    "element": "Fire",
+    "sphere": "Mars",
+    "day": "Tuesday",
+    "planet": "Mars",
+    "zodiac": "Aries, Leo, Sagittarius",
+    "tarotCards": [
+      "The Tower",
+      "Ace of Wands",
+      "The Emperor"
+    ],
+    "runeAssociations": [
+      "Kenaz",
+      "Dagaz",
+      "Tiwaz"
+    ],
+    "numerology": 5,
+    "magicalWeapon": [
+      "Sword",
+      "Spear",
+      "Scourge",
+      "Chain"
+    ],
+    "magicalPowers": [
+      "Vision of Power",
+      "Works of Wrath and Vengeance",
+      "Power of Courage"
+    ],
+    "virtue": "Energy, Courage",
+    "vice": "Cruelty",
+    "divineName": "Elohim Gibor",
+    "animals": [
+      "Basilisk",
+      "Wolf",
+      "Bear",
+      "Horse"
+    ],
+    "alchemicalProcess": "Separation",
+    "bodyPart": "Right Arm",
+    "flowers": [
+      "Red Carnation",
+      "Red Tulip",
+      "Snapdragon",
+      "Geranium",
+      "Calendula"
+    ],
+    "woods": [
+      "Oak",
+      "Ash",
+      "Cedar",
+      "Hawthorn"
+    ],
+    "candleColor": "Red or Orange",
+    "essentialOils": [
+      "Dragon's Blood",
+      "Cinnamon",
+      "Ginger",
+      "Frankincense"
+    ],
+    "direction": "South",
+    "moonPhase": "Waxing Moon, Full Moon"
+  },
+  {
+    "intentId": "water_magic",
+    "colors": [
+      "blue",
+      "teal",
+      "silver",
+      "deep green"
+    ],
+    "stones": [
+      "aquamarine",
+      "blue topaz",
+      "selenite",
+      "labradorite"
+    ],
+    "herbs": [
+      "kelp",
+      "lotus",
+      "passionflower",
+      "jasmine"
+    ],
+    "metals": [
+      "silver",
+      "copper"
+    ],
+    "scents": [
+      "jasmine",
+      "sea salt",
+      "sandalwood",
+      "lotus"
+    ],
+    "timing": "Monday, full or waxing moon, Moon hour",
+    "element": "Water",
+    "sphere": "Moon",
+    "day": "Monday",
+    "planet": "Moon",
+    "zodiac": "Cancer, Pisces, Scorpio",
+    "tarotCards": [
+      "The Moon",
+      "Ace of Cups",
+      "The High Priestess"
+    ],
+    "runeAssociations": [
+      "Laguz",
+      "Isa",
+      "Berkano"
+    ],
+    "numerology": 2,
+    "magicalWeapon": [
+      "Perfumes",
+      "Sandals"
+    ],
+    "magicalPowers": [
+      "Vision of the Machinery of the Universe",
+      "Bewitchments",
+      "Erotic Rites",
+      "Divination"
+    ],
+    "virtue": "Independence",
+    "vice": "Idleness",
+    "divineName": "Shaddai El Chai",
+    "animals": [
+      "Dog",
+      "Beetle",
+      "Elephant",
+      "Tortoise",
+      "Toad"
+    ],
+    "alchemicalProcess": "Dissolution",
+    "bodyPart": "Reproductive System, Genitals",
+    "flowers": [
+      "Lotus",
+      "Water Lily",
+      "Jasmine",
+      "Moonflower",
+      "Iris"
+    ],
+    "woods": [
+      "Willow",
+      "Elder",
+      "Alder",
+      "Driftwood"
+    ],
+    "candleColor": "Blue or Teal",
+    "essentialOils": [
+      "Jasmine",
+      "Sandalwood",
+      "Lotus",
+      "Sea Breeze blend"
+    ],
+    "direction": "West",
+    "moonPhase": "Full Moon, Waxing Moon"
+  },
+  {
+    "intentId": "earth_magic",
+    "colors": [
+      "brown",
+      "green",
+      "black",
+      "dark red"
+    ],
+    "stones": [
+      "hematite",
+      "jasper",
+      "malachite",
+      "smoky quartz"
+    ],
+    "herbs": [
+      "patchouli",
+      "vetiver",
+      "oak bark",
+      "cedar"
+    ],
+    "metals": [
+      "iron",
+      "copper"
+    ],
+    "scents": [
+      "patchouli",
+      "vetiver",
+      "cedarwood",
+      "pine"
+    ],
+    "timing": "Saturday, any moon phase, Earth hour",
+    "element": "Earth",
+    "sphere": "Earth",
+    "day": "Saturday",
+    "planet": "Saturn",
+    "zodiac": "Taurus, Virgo, Capricorn",
+    "tarotCards": [
+      "The Emperor",
+      "The World",
+      "Queen of Pentacles"
+    ],
+    "runeAssociations": [
+      "Ingwaz",
+      "Othala",
+      "Jera"
+    ],
+    "numerology": 4,
+    "magicalWeapon": [
+      "Altar",
+      "Pentacle",
+      "Equal-Armed Cross",
+      "Magic Circle"
+    ],
+    "magicalPowers": [
+      "Vision of the Holy Guardian Angel",
+      "Making of the Philosopher's Stone",
+      "Alchemy"
+    ],
+    "virtue": "Discrimination",
+    "vice": "Avarice, Inertia",
+    "divineName": "Adonai ha-Aretz",
+    "animals": [
+      "Sphinx",
+      "Bull",
+      "Ox"
+    ],
+    "alchemicalProcess": "Solidification",
+    "bodyPart": "Feet, Anus",
+    "flowers": [
+      "Daisy",
+      "Primrose",
+      "Violet",
+      "Clover",
+      "Dandelion"
+    ],
+    "woods": [
+      "Oak",
+      "Cedar",
+      "Pine",
+      "Redwood"
+    ],
+    "candleColor": "Brown or Dark Green",
+    "essentialOils": [
+      "Vetiver",
+      "Patchouli",
+      "Cedarwood",
+      "Pine"
+    ],
+    "direction": "North",
+    "moonPhase": "Any, Full Moon for abundance"
+  },
+  {
+    "intentId": "air_magic",
+    "colors": [
+      "yellow",
+      "white",
+      "light blue",
+      "silver"
+    ],
+    "stones": [
+      "clear quartz",
+      "fluorite",
+      "blue lace agate",
+      "amazonite"
+    ],
+    "herbs": [
+      "lavender",
+      "mint",
+      "lemongrass",
+      "clary sage"
+    ],
+    "metals": [
+      "tin",
+      "silver"
+    ],
+    "scents": [
+      "lavender",
+      "lemon",
+      "peppermint",
+      "eucalyptus"
+    ],
+    "timing": "Wednesday, waxing moon, Mercury hour, dawn",
+    "element": "Air",
+    "sphere": "Mercury",
+    "day": "Wednesday",
+    "planet": "Mercury",
+    "zodiac": "Gemini, Libra, Aquarius",
+    "tarotCards": [
+      "The Fool",
+      "Ace of Swords",
+      "The Star"
+    ],
+    "runeAssociations": [
+      "Ansuz",
+      "Raidho",
+      "Ehwaz"
+    ],
+    "numerology": 3,
+    "magicalWeapon": [
+      "Wand",
+      "Caduceus",
+      "Apron"
+    ],
+    "magicalPowers": [
+      "Vision of Splendour",
+      "Gift of Tongues",
+      "Making of Talismans",
+      "Miracles of Healing"
+    ],
+    "virtue": "Truthfulness",
+    "vice": "Falsehood, Dishonesty",
+    "divineName": "Elohim Tzabaoth",
+    "animals": [
+      "Hermaphrodite",
+      "Jackal",
+      "Ibis",
+      "Twin Serpents"
+    ],
+    "alchemicalProcess": "Sublimation",
+    "bodyPart": "Loins, Hips (Left)",
+    "flowers": [
+      "Lavender",
+      "Violet",
+      "Sweet Pea",
+      "Iris",
+      "Forget-Me-Not"
+    ],
+    "woods": [
+      "Birch",
+      "Hazel",
+      "Ash",
+      "Elder"
+    ],
+    "candleColor": "Yellow or White",
+    "essentialOils": [
+      "Lavender",
+      "Lemon",
+      "Peppermint",
+      "Eucalyptus"
+    ],
+    "direction": "East",
+    "moonPhase": "Waxing Moon, New Moon"
+  },
+  {
+    "intentId": "spirit_communication",
+    "colors": [
+      "white",
+      "gray",
+      "silver",
+      "pale blue"
+    ],
+    "stones": [
+      "selenite",
+      "clear quartz",
+      "obsidian",
+      "labradorite"
+    ],
+    "herbs": [
+      "mugwort",
+      "wormwood",
+      "yarrow",
+      "angelica"
+    ],
+    "metals": [
+      "silver",
+      "iron"
+    ],
+    "scents": [
+      "frankincense",
+      "myrrh",
+      "sandalwood",
+      "copal"
+    ],
+    "timing": "Saturday, dark or full moon, Saturn hour",
+    "element": "Spirit",
+    "sphere": "Saturn",
+    "day": "Saturday",
+    "planet": "Saturn",
+    "zodiac": "Scorpio, Pisces, Cancer",
+    "tarotCards": [
+      "The High Priestess",
+      "The Moon",
+      "Judgement"
+    ],
+    "runeAssociations": [
+      "Perthro",
+      "Algiz",
+      "Isa"
+    ],
+    "numerology": 9,
+    "magicalWeapon": [
+      "Cup",
+      "Outer Robe of Concealment",
+      "Sickle"
+    ],
+    "magicalPowers": [
+      "Vision of Sorrow",
+      "Works of Malediction and Defense",
+      "Understanding"
+    ],
+    "virtue": "Silence",
+    "vice": "Avarice",
+    "divineName": "YHVH Elohim",
+    "animals": [
+      "Crow",
+      "Owl",
+      "Bee",
+      "Dove"
+    ],
+    "alchemicalProcess": "Putrefaction, Calcination",
+    "bodyPart": "Right Side of Face, Womb",
+    "flowers": [
+      "White Chrysanthemum",
+      "Asphodel",
+      "Yarrow",
+      "White Lily",
+      "Lotus"
+    ],
+    "woods": [
+      "Yew",
+      "Elder",
+      "Willow",
+      "Palo Santo"
+    ],
+    "candleColor": "White or Gray",
+    "essentialOils": [
+      "Frankincense",
+      "Myrrh",
+      "Sandalwood",
+      "Copal"
+    ],
+    "direction": "West",
+    "moonPhase": "Full Moon, Dark Moon, Samhain"
+  },
+  {
+    "intentId": "luck",
+    "colors": [
+      "green",
+      "gold",
+      "orange",
+      "yellow"
+    ],
+    "stones": [
+      "citrine",
+      "green aventurine",
+      "tiger's eye",
+      "jade"
+    ],
+    "herbs": [
+      "clover",
+      "lucky hand root",
+      "nutmeg",
+      "chamomile"
+    ],
+    "metals": [
+      "gold",
+      "copper"
+    ],
+    "scents": [
+      "bergamot",
+      "mint",
+      "orange",
+      "patchouli"
+    ],
+    "timing": "Thursday, waxing or full moon, Jupiter hour",
+    "element": "Fire",
+    "sphere": "Jupiter",
+    "day": "Thursday",
+    "planet": "Jupiter",
+    "zodiac": "Sagittarius, Aquarius, Gemini",
+    "tarotCards": [
+      "The Wheel of Fortune",
+      "The Star",
+      "Ace of Pentacles"
+    ],
+    "runeAssociations": [
+      "Fehu",
+      "Wunjo",
+      "Jera"
+    ],
+    "numerology": 3,
+    "magicalWeapon": [
+      "Wand",
+      "Scepter",
+      "Crook",
+      "Orb"
+    ],
+    "magicalPowers": [
+      "Vision of Love",
+      "Clairvoyance",
+      "Prophecy",
+      "Power of Acquiring Wealth"
+    ],
+    "virtue": "Obedience, Generosity",
+    "vice": "Bigotry, Hypocrisy, Gluttony, Tyranny",
+    "divineName": "El",
+    "animals": [
+      "Unicorn",
+      "Eagle",
+      "Dolphin"
+    ],
+    "alchemicalProcess": "Fermentation",
+    "bodyPart": "Left Arm",
+    "flowers": [
+      "Clover",
+      "Honeysuckle",
+      "Chamomile",
+      "Daffodil",
+      "Lucky Clover"
+    ],
+    "woods": [
+      "Oak",
+      "Hazel",
+      "Cedar",
+      "Maple"
+    ],
+    "candleColor": "Green or Gold",
+    "essentialOils": [
+      "Bergamot",
+      "Orange",
+      "Patchouli",
+      "Mint"
+    ],
+    "direction": "East",
+    "moonPhase": "Waxing Moon, Full Moon"
+  },
+  {
+    "intentId": "memory",
+    "colors": [
+      "yellow",
+      "purple",
+      "silver",
+      "white"
+    ],
+    "stones": [
+      "fluorite",
+      "sodalite",
+      "blue calcite",
+      "clear quartz"
+    ],
+    "herbs": [
+      "rosemary",
+      "lemon balm",
+      "sage",
+      "ginkgo"
+    ],
+    "metals": [
+      "silver",
+      "tin"
+    ],
+    "scents": [
+      "rosemary",
+      "peppermint",
+      "lemon",
+      "sage"
+    ],
+    "timing": "Wednesday, waxing moon, Mercury hour",
+    "element": "Air",
+    "sphere": "Mercury",
+    "day": "Wednesday",
+    "planet": "Mercury",
+    "zodiac": "Gemini, Virgo, Aquarius",
+    "tarotCards": [
+      "The High Priestess",
+      "The Hermit",
+      "Ace of Swords"
+    ],
+    "runeAssociations": [
+      "Ansuz",
+      "Perthro",
+      "Raidho"
+    ],
+    "numerology": 7,
+    "magicalWeapon": [
+      "Wand",
+      "Caduceus",
+      "Apron"
+    ],
+    "magicalPowers": [
+      "Vision of Splendour",
+      "Gift of Tongues",
+      "Making of Talismans",
+      "Miracles of Healing"
+    ],
+    "virtue": "Truthfulness",
+    "vice": "Falsehood, Dishonesty",
+    "divineName": "Elohim Tzabaoth",
+    "animals": [
+      "Hermaphrodite",
+      "Jackal",
+      "Ibis",
+      "Twin Serpents"
+    ],
+    "alchemicalProcess": "Sublimation",
+    "bodyPart": "Loins, Hips (Left)",
+    "flowers": [
+      "Rosemary",
+      "Iris",
+      "Forget-Me-Not",
+      "Lavender",
+      "Violet"
+    ],
+    "woods": [
+      "Hazel",
+      "Birch",
+      "Ash",
+      "Rowan"
+    ],
+    "candleColor": "Yellow or Purple",
+    "essentialOils": [
+      "Rosemary",
+      "Peppermint",
+      "Lemon",
+      "Sage"
+    ],
+    "direction": "East",
+    "moonPhase": "Waxing Moon, Full Moon"
+  },
+  {
+    "intentId": "patience",
+    "colors": [
+      "brown",
+      "gray",
+      "dark blue",
+      "earthy green"
+    ],
+    "stones": [
+      "smoky quartz",
+      "jasper",
+      "hematite",
+      "obsidian"
+    ],
+    "herbs": [
+      "comfrey",
+      "Solomon's seal",
+      "valerian",
+      "ashwagandha"
+    ],
+    "metals": [
+      "lead",
+      "iron"
+    ],
+    "scents": [
+      "vetiver",
+      "sandalwood",
+      "cedar",
+      "myrrh"
+    ],
+    "timing": "Saturday, waning moon, Saturn hour",
+    "element": "Earth",
+    "sphere": "Saturn",
+    "day": "Saturday",
+    "planet": "Saturn",
+    "zodiac": "Capricorn, Taurus, Virgo",
+    "tarotCards": [
+      "The Hermit",
+      "The World",
+      "Seven of Cups"
+    ],
+    "runeAssociations": [
+      "Isa",
+      "Nauthiz",
+      "Jera"
+    ],
+    "numerology": 7,
+    "magicalWeapon": [
+      "Cup",
+      "Outer Robe of Concealment",
+      "Sickle"
+    ],
+    "magicalPowers": [
+      "Vision of Sorrow",
+      "Works of Malediction and Defense",
+      "Understanding"
+    ],
+    "virtue": "Silence",
+    "vice": "Avarice",
+    "divineName": "YHVH Elohim",
+    "animals": [
+      "Crow",
+      "Owl",
+      "Bee",
+      "Dove"
+    ],
+    "alchemicalProcess": "Putrefaction, Calcination",
+    "bodyPart": "Right Side of Face, Womb",
+    "flowers": [
+      "Thistle",
+      "Chrysanthemum",
+      "Hellebore",
+      "Primrose",
+      "Yarrow"
+    ],
+    "woods": [
+      "Oak",
+      "Yew",
+      "Cedar",
+      "Pine"
+    ],
+    "candleColor": "Brown or Gray",
+    "essentialOils": [
+      "Vetiver",
+      "Sandalwood",
+      "Cedarwood",
+      "Myrrh"
+    ],
+    "direction": "North",
+    "moonPhase": "Waning Moon, Dark Moon"
+  },
+  {
+    "intentId": "boundaries",
+    "colors": [
+      "black",
+      "red",
+      "dark blue",
+      "gray"
+    ],
+    "stones": [
+      "black tourmaline",
+      "labradorite",
+      "red jasper",
+      "onyx"
+    ],
+    "herbs": [
+      "rue",
+      "nettle",
+      "angelica",
+      "hyssop"
+    ],
+    "metals": [
+      "iron",
+      "lead"
+    ],
+    "scents": [
+      "dragon's blood",
+      "frankincense",
+      "cedar",
+      "black pepper"
+    ],
+    "timing": "Saturday or Tuesday, waning moon, Saturn or Mars hour",
+    "element": "Earth",
+    "sphere": "Saturn",
+    "day": "Saturday",
+    "planet": "Saturn",
+    "zodiac": "Scorpio, Capricorn, Aries",
+    "tarotCards": [
+      "The Emperor",
+      "The Hermit",
+      "Four of Wands"
+    ],
+    "runeAssociations": [
+      "Algiz",
+      "Isa",
+      "Othala"
+    ],
+    "numerology": 4,
+    "magicalWeapon": [
+      "Cup",
+      "Outer Robe of Concealment",
+      "Sickle"
+    ],
+    "magicalPowers": [
+      "Vision of Sorrow",
+      "Works of Malediction and Defense",
+      "Understanding"
+    ],
+    "virtue": "Silence",
+    "vice": "Avarice",
+    "divineName": "YHVH Elohim",
+    "animals": [
+      "Crow",
+      "Owl",
+      "Bee",
+      "Dove"
+    ],
+    "alchemicalProcess": "Putrefaction, Calcination",
+    "bodyPart": "Right Side of Face, Womb",
+    "flowers": [
+      "Thistle",
+      "Snapdragon",
+      "Nettle flower",
+      "Yarrow",
+      "Heather"
+    ],
+    "woods": [
+      "Cedar",
+      "Oak",
+      "Hawthorn",
+      "Holly"
+    ],
+    "candleColor": "Black or Dark Red",
+    "essentialOils": [
+      "Frankincense",
+      "Cedar",
+      "Dragon's Blood",
+      "Black Pepper"
+    ],
+    "direction": "North",
+    "moonPhase": "Waning Moon, Dark Moon"
+  },
+  {
+    "intentId": "abundance_mindset",
+    "colors": [
+      "green",
+      "gold",
+      "purple",
+      "orange"
+    ],
+    "stones": [
+      "citrine",
+      "amethyst",
+      "green aventurine",
+      "tiger's eye"
+    ],
+    "herbs": [
+      "basil",
+      "bay leaf",
+      "cinnamon",
+      "clover"
+    ],
+    "metals": [
+      "gold",
+      "tin"
+    ],
+    "scents": [
+      "bergamot",
+      "cinnamon",
+      "orange",
+      "patchouli"
+    ],
+    "timing": "Thursday, waxing or full moon, Jupiter hour",
+    "element": "Earth",
+    "sphere": "Jupiter",
+    "day": "Thursday",
+    "planet": "Jupiter",
+    "zodiac": "Sagittarius, Leo, Taurus",
+    "tarotCards": [
+      "The Wheel of Fortune",
+      "The Star",
+      "Nine of Pentacles"
+    ],
+    "runeAssociations": [
+      "Fehu",
+      "Sowilo",
+      "Jera"
+    ],
+    "numerology": 4,
+    "magicalWeapon": [
+      "Wand",
+      "Scepter",
+      "Crook",
+      "Orb"
+    ],
+    "magicalPowers": [
+      "Vision of Love",
+      "Clairvoyance",
+      "Prophecy",
+      "Power of Acquiring Wealth"
+    ],
+    "virtue": "Obedience, Generosity",
+    "vice": "Bigotry, Hypocrisy, Gluttony, Tyranny",
+    "divineName": "El",
+    "animals": [
+      "Unicorn",
+      "Eagle",
+      "Dolphin"
+    ],
+    "alchemicalProcess": "Fermentation",
+    "bodyPart": "Left Arm",
+    "flowers": [
+      "Sunflower",
+      "Marigold",
+      "Honeysuckle",
+      "Chamomile",
+      "Goldenrod"
+    ],
+    "woods": [
+      "Oak",
+      "Maple",
+      "Cedar",
+      "Sandalwood"
+    ],
+    "candleColor": "Green or Gold",
+    "essentialOils": [
+      "Bergamot",
+      "Cinnamon",
+      "Patchouli",
+      "Orange"
+    ],
+    "direction": "North",
+    "moonPhase": "Full Moon, Waxing Moon"
+  },
+  {
+    "intentId": "sacred_sexuality",
+    "colors": [
+      "red",
+      "rose",
+      "deep purple",
+      "gold"
+    ],
+    "stones": [
+      "garnet",
+      "ruby",
+      "rose quartz",
+      "carnelian"
+    ],
+    "herbs": [
+      "damiana",
+      "rose",
+      "jasmine",
+      "hibiscus"
+    ],
+    "metals": [
+      "copper",
+      "gold"
+    ],
+    "scents": [
+      "jasmine",
+      "ylang-ylang",
+      "rose",
+      "patchouli"
+    ],
+    "timing": "Friday, waxing or full moon, Venus hour",
+    "element": "Fire",
+    "sphere": "Venus",
+    "day": "Friday",
+    "planet": "Venus",
+    "zodiac": "Scorpio, Taurus, Libra",
+    "tarotCards": [
+      "The Lovers",
+      "The Empress",
+      "Ace of Cups"
+    ],
+    "runeAssociations": [
+      "Gebo",
+      "Wunjo",
+      "Berkano"
+    ],
+    "numerology": 6,
+    "magicalWeapon": [
+      "Lamp",
+      "Girdle",
+      "Rose"
+    ],
+    "magicalPowers": [
+      "Vision of Beauty Triumphant",
+      "Love Philters",
+      "Power to Cause Love"
+    ],
+    "virtue": "Unselfishness",
+    "vice": "Unchastity, Lust",
+    "divineName": "YHVH Tzabaoth",
+    "animals": [
+      "Lynx",
+      "Sparrow",
+      "Dove",
+      "Swan"
+    ],
+    "alchemicalProcess": "Conjunction",
+    "bodyPart": "Loins, Hips, Legs",
+    "flowers": [
+      "Rose",
+      "Orchid",
+      "Jasmine",
+      "Hibiscus",
+      "Passionflower"
+    ],
+    "woods": [
+      "Sandalwood",
+      "Apple",
+      "Cherry",
+      "Cedar"
+    ],
+    "candleColor": "Deep Red or Rose",
+    "essentialOils": [
+      "Jasmine",
+      "Ylang-ylang",
+      "Rose",
+      "Patchouli"
+    ],
+    "direction": "West",
+    "moonPhase": "Full Moon, Waxing Moon"
+  },
+  {
+    "intentId": "elemental_balance",
+    "colors": [
+      "red",
+      "blue",
+      "green",
+      "yellow",
+      "white"
+    ],
+    "stones": [
+      "clear quartz",
+      "obsidian",
+      "selenite",
+      "labradorite"
+    ],
+    "herbs": [
+      "frankincense",
+      "sage",
+      "salt",
+      "lavender"
+    ],
+    "metals": [
+      "gold",
+      "silver",
+      "iron",
+      "copper"
+    ],
+    "scents": [
+      "frankincense",
+      "sandalwood",
+      "sage",
+      "myrrh"
+    ],
+    "timing": "Equinox or cross-quarter days, any moon phase",
+    "element": "Spirit",
+    "sphere": "Earth",
+    "day": "Any",
+    "planet": "Saturn",
+    "zodiac": "All signs",
+    "tarotCards": [
+      "The World",
+      "Temperance",
+      "The Wheel of Fortune"
+    ],
+    "runeAssociations": [
+      "Dagaz",
+      "Isa",
+      "Berkano",
+      "Kenaz"
+    ],
+    "numerology": 4,
+    "magicalWeapon": [
+      "Altar",
+      "Pentacle",
+      "Equal-Armed Cross",
+      "Magic Circle"
+    ],
+    "magicalPowers": [
+      "Vision of the Holy Guardian Angel",
+      "Making of the Philosopher's Stone",
+      "Alchemy"
+    ],
+    "virtue": "Discrimination",
+    "vice": "Avarice, Inertia",
+    "divineName": "Adonai ha-Aretz",
+    "animals": [
+      "Sphinx",
+      "Bull",
+      "Ox"
+    ],
+    "alchemicalProcess": "Solidification",
+    "bodyPart": "Feet, Anus",
+    "flowers": [
+      "Lotus",
+      "Yarrow",
+      "Lavender",
+      "Sunflower",
+      "Violet"
+    ],
+    "woods": [
+      "Oak",
+      "Willow",
+      "Cedar",
+      "Ash"
+    ],
+    "candleColor": "White or All Four Colors",
+    "essentialOils": [
+      "Frankincense",
+      "Sandalwood",
+      "Sage",
+      "Lavender"
+    ],
+    "direction": "Center",
+    "moonPhase": "Equinox, Full Moon"
+  },
+  {
+    "intentId": "shadow_integration",
+    "colors": [
+      "black",
+      "dark purple",
+      "indigo",
+      "silver"
+    ],
+    "stones": [
+      "obsidian",
+      "moldavite",
+      "jet",
+      "smoky quartz"
+    ],
+    "herbs": [
+      "wormwood",
+      "mugwort",
+      "mandrake",
+      "black pepper"
+    ],
+    "metals": [
+      "lead",
+      "iron"
+    ],
+    "scents": [
+      "myrrh",
+      "patchouli",
+      "vetiver",
+      "oud"
+    ],
+    "timing": "Saturday, dark moon, Saturn hour",
+    "element": "Earth",
+    "sphere": "Saturn",
+    "day": "Saturday",
+    "planet": "Saturn",
+    "zodiac": "Scorpio, Capricorn, Pisces",
+    "tarotCards": [
+      "The Moon",
+      "The Devil",
+      "The Hermit"
+    ],
+    "runeAssociations": [
+      "Hagalaz",
+      "Isa",
+      "Perthro"
+    ],
+    "numerology": 13,
+    "magicalWeapon": [
+      "Cup",
+      "Outer Robe of Concealment",
+      "Sickle"
+    ],
+    "magicalPowers": [
+      "Vision of Sorrow",
+      "Works of Malediction and Defense",
+      "Understanding"
+    ],
+    "virtue": "Silence",
+    "vice": "Avarice",
+    "divineName": "YHVH Elohim",
+    "animals": [
+      "Crow",
+      "Owl",
+      "Bee",
+      "Dove"
+    ],
+    "alchemicalProcess": "Putrefaction, Calcination",
+    "bodyPart": "Right Side of Face, Womb",
+    "flowers": [
+      "Hellebore",
+      "Night-Blooming Jasmine",
+      "Black Rose",
+      "Chrysanthemum",
+      "Passionflower"
+    ],
+    "woods": [
+      "Yew",
+      "Elder",
+      "Ebony",
+      "Cypress"
+    ],
+    "candleColor": "Black or Dark Purple",
+    "essentialOils": [
+      "Myrrh",
+      "Patchouli",
+      "Vetiver",
+      "Frankincense"
+    ],
+    "direction": "North",
+    "moonPhase": "Dark Moon, New Moon"
+  },
+  {
+    "intentId": "inner_child",
+    "colors": [
+      "soft pink",
+      "yellow",
+      "sky blue",
+      "white"
+    ],
+    "stones": [
+      "rose quartz",
+      "moonstone",
+      "rhodonite",
+      "chrysoprase"
+    ],
+    "herbs": [
+      "chamomile",
+      "rose",
+      "lavender",
+      "lemon balm"
+    ],
+    "metals": [
+      "silver",
+      "copper"
+    ],
+    "scents": [
+      "rose",
+      "lavender",
+      "vanilla",
+      "chamomile"
+    ],
+    "timing": "Friday or Monday, waxing moon, Venus or Moon hour",
+    "element": "Water",
+    "sphere": "Moon",
+    "day": "Friday",
+    "planet": "Moon",
+    "zodiac": "Cancer, Pisces, Libra",
+    "tarotCards": [
+      "The Sun",
+      "Six of Cups",
+      "The Empress"
+    ],
+    "runeAssociations": [
+      "Wunjo",
+      "Berkano",
+      "Ingwaz"
+    ],
+    "numerology": 3,
+    "magicalWeapon": [
+      "Perfumes",
+      "Sandals"
+    ],
+    "magicalPowers": [
+      "Vision of the Machinery of the Universe",
+      "Bewitchments",
+      "Erotic Rites",
+      "Divination"
+    ],
+    "virtue": "Independence",
+    "vice": "Idleness",
+    "divineName": "Shaddai El Chai",
+    "animals": [
+      "Dog",
+      "Beetle",
+      "Elephant",
+      "Tortoise",
+      "Toad"
+    ],
+    "alchemicalProcess": "Dissolution",
+    "bodyPart": "Reproductive System, Genitals",
+    "flowers": [
+      "Daisy",
+      "Forget-Me-Not",
+      "Primrose",
+      "Violet",
+      "Baby's Breath"
+    ],
+    "woods": [
+      "Apple",
+      "Willow",
+      "Cherry",
+      "Birch"
+    ],
+    "candleColor": "Soft Pink or Yellow",
+    "essentialOils": [
+      "Rose",
+      "Lavender",
+      "Vanilla",
+      "Chamomile"
+    ],
+    "direction": "West",
+    "moonPhase": "Waxing Moon, Full Moon"
+  },
+  {
+    "intentId": "higher_self",
+    "colors": [
+      "gold",
+      "white",
+      "violet",
+      "deep purple"
+    ],
+    "stones": [
+      "clear quartz",
+      "amethyst",
+      "selenite",
+      "moldavite"
+    ],
+    "herbs": [
+      "frankincense",
+      "myrrh",
+      "lotus",
+      "angelica"
+    ],
+    "metals": [
+      "gold",
+      "silver"
+    ],
+    "scents": [
+      "frankincense",
+      "myrrh",
+      "sandalwood",
+      "lotus"
+    ],
+    "timing": "Sunday, full moon or solstice, Sun hour",
+    "element": "Spirit",
+    "sphere": "Kether",
+    "day": "Sunday",
+    "planet": "Sun",
+    "zodiac": "Aquarius, Pisces, Sagittarius",
+    "tarotCards": [
+      "The Star",
+      "The World",
+      "Judgement"
+    ],
+    "runeAssociations": [
+      "Dagaz",
+      "Mannaz",
+      "Sowilo"
+    ],
+    "numerology": 22,
+    "magicalWeapon": [
+      "Crown",
+      "Swastika",
+      "Lamp"
+    ],
+    "magicalPowers": [
+      "Union with God",
+      "Conversation with the Holy Guardian Angel",
+      "Attainment",
+      "The Highest Trance"
+    ],
+    "virtue": "Attainment, Completion of the Great Work",
+    "vice": "None — all vice falls away",
+    "divineName": "Eheieh",
+    "animals": [
+      "God",
+      "Man"
+    ],
+    "alchemicalProcess": "Projection",
+    "bodyPart": "Crown of the Head",
+    "flowers": [
+      "Lotus",
+      "White Orchid",
+      "White Lily",
+      "Jasmine",
+      "Magnolia"
+    ],
+    "woods": [
+      "Sandalwood",
+      "Palo Santo",
+      "Cedar",
+      "Frankincense tree"
+    ],
+    "candleColor": "White or Gold",
+    "essentialOils": [
+      "Frankincense",
+      "Myrrh",
+      "Sandalwood",
+      "Lotus"
+    ],
+    "direction": "Center/Above",
+    "moonPhase": "Full Moon, New Moon, Solstice"
+  },
+  {
+    "intentId": "ancestor_veneration",
+    "colors": [
+      "white",
+      "black",
+      "brown",
+      "gold"
+    ],
+    "stones": [
+      "obsidian",
+      "black tourmaline",
+      "moonstone",
+      "carnelian"
+    ],
+    "herbs": [
+      "mugwort",
+      "wormwood",
+      "yarrow",
+      "tobacco"
+    ],
+    "metals": [
+      "silver",
+      "iron"
+    ],
+    "scents": [
+      "myrrh",
+      "frankincense",
+      "copal",
+      "tobacco"
+    ],
+    "timing": "Saturday, dark moon or Samhain, Saturn hour",
+    "element": "Earth",
+    "sphere": "Saturn",
+    "day": "Saturday",
+    "planet": "Saturn",
+    "zodiac": "Scorpio, Capricorn, Cancer",
+    "tarotCards": [
+      "The High Priestess",
+      "Judgement",
+      "The Moon"
+    ],
+    "runeAssociations": [
+      "Othala",
+      "Algiz",
+      "Isa"
+    ],
+    "numerology": 9,
+    "magicalWeapon": [
+      "Cup",
+      "Outer Robe of Concealment",
+      "Sickle"
+    ],
+    "magicalPowers": [
+      "Vision of Sorrow",
+      "Works of Malediction and Defense",
+      "Understanding"
+    ],
+    "virtue": "Silence",
+    "vice": "Avarice",
+    "divineName": "YHVH Elohim",
+    "animals": [
+      "Crow",
+      "Owl",
+      "Bee",
+      "Dove"
+    ],
+    "alchemicalProcess": "Putrefaction, Calcination",
+    "bodyPart": "Right Side of Face, Womb",
+    "flowers": [
+      "Chrysanthemum",
+      "White Lily",
+      "Marigold",
+      "Forget-Me-Not",
+      "Yarrow"
+    ],
+    "woods": [
+      "Yew",
+      "Elder",
+      "Oak",
+      "Palo Santo"
+    ],
+    "candleColor": "White or Black",
+    "essentialOils": [
+      "Myrrh",
+      "Frankincense",
+      "Copal",
+      "Sandalwood"
+    ],
+    "direction": "North",
+    "moonPhase": "Dark Moon, Samhain, Waning Moon"
+  },
+  {
+    "intentId": "nature_spirits",
+    "colors": [
+      "green",
+      "earth brown",
+      "forest green",
+      "silver"
+    ],
+    "stones": [
+      "green aventurine",
+      "malachite",
+      "moss agate",
+      "jade"
+    ],
+    "herbs": [
+      "oak bark",
+      "cedar",
+      "elder",
+      "pine"
+    ],
+    "metals": [
+      "copper",
+      "iron"
+    ],
+    "scents": [
+      "pine",
+      "cedar",
+      "oakmoss",
+      "petrichor"
+    ],
+    "timing": "Wednesday or Saturday, new moon or dawn, Earth hour",
+    "element": "Earth",
+    "sphere": "Earth",
+    "day": "Wednesday",
+    "planet": "Saturn",
+    "zodiac": "Taurus, Virgo, Gemini",
+    "tarotCards": [
+      "The World",
+      "The Hermit",
+      "The Star"
+    ],
+    "runeAssociations": [
+      "Ingwaz",
+      "Othala",
+      "Berkano"
+    ],
+    "numerology": 7,
+    "magicalWeapon": [
+      "Altar",
+      "Pentacle",
+      "Equal-Armed Cross",
+      "Magic Circle"
+    ],
+    "magicalPowers": [
+      "Vision of the Holy Guardian Angel",
+      "Making of the Philosopher's Stone",
+      "Alchemy"
+    ],
+    "virtue": "Discrimination",
+    "vice": "Avarice, Inertia",
+    "divineName": "Adonai ha-Aretz",
+    "animals": [
+      "Sphinx",
+      "Bull",
+      "Ox"
+    ],
+    "alchemicalProcess": "Solidification",
+    "bodyPart": "Feet, Anus",
+    "flowers": [
+      "Violet",
+      "Cowslip",
+      "Primrose",
+      "Foxglove",
+      "Bluebell"
+    ],
+    "woods": [
+      "Oak",
+      "Elder",
+      "Birch",
+      "Rowan"
+    ],
+    "candleColor": "Green or Brown",
+    "essentialOils": [
+      "Pine",
+      "Cedar",
+      "Oakmoss",
+      "Petrichor blend"
+    ],
+    "direction": "North",
+    "moonPhase": "New Moon, Waxing Crescent"
+  },
+  {
+    "intentId": "cord_cutting",
+    "colors": [
+      "black",
+      "white",
+      "red",
+      "silver"
+    ],
+    "stones": [
+      "black obsidian",
+      "selenite",
+      "red jasper",
+      "apache tear"
+    ],
+    "herbs": [
+      "rue",
+      "black pepper",
+      "dragon's blood",
+      "salt"
+    ],
+    "metals": [
+      "iron",
+      "lead"
+    ],
+    "scents": [
+      "frankincense",
+      "dragon's blood",
+      "sage",
+      "black pepper"
+    ],
+    "timing": "Saturday or Tuesday, waning or dark moon, Saturn or Mars hour",
+    "element": "Fire",
+    "sphere": "Saturn",
+    "day": "Saturday",
+    "planet": "Saturn",
+    "zodiac": "Scorpio, Aries, Capricorn",
+    "tarotCards": [
+      "The Tower",
+      "Eight of Swords",
+      "The Fool"
+    ],
+    "runeAssociations": [
+      "Thurisaz",
+      "Isa",
+      "Dagaz"
+    ],
+    "numerology": 7,
+    "magicalWeapon": [
+      "Cup",
+      "Outer Robe of Concealment",
+      "Sickle"
+    ],
+    "magicalPowers": [
+      "Vision of Sorrow",
+      "Works of Malediction and Defense",
+      "Understanding"
+    ],
+    "virtue": "Silence",
+    "vice": "Avarice",
+    "divineName": "YHVH Elohim",
+    "animals": [
+      "Crow",
+      "Owl",
+      "Bee",
+      "Dove"
+    ],
+    "alchemicalProcess": "Putrefaction, Calcination",
+    "bodyPart": "Right Side of Face, Womb",
+    "flowers": [
+      "Thistle",
+      "Nettle flower",
+      "Snapdragon",
+      "Yarrow",
+      "Wormwood flower"
+    ],
+    "woods": [
+      "Cedar",
+      "Rowan",
+      "Hawthorn",
+      "Iron wood"
+    ],
+    "candleColor": "Black or Red",
+    "essentialOils": [
+      "Frankincense",
+      "Dragon's Blood",
+      "Sage",
+      "Black Pepper"
+    ],
+    "direction": "North",
+    "moonPhase": "Waning Moon, Dark Moon"
+  },
+  {
+    "intentId": "hex_breaking",
+    "colors": [
+      "black",
+      "white",
+      "silver",
+      "deep red"
+    ],
+    "stones": [
+      "black tourmaline",
+      "selenite",
+      "jet",
+      "obsidian"
+    ],
+    "herbs": [
+      "rue",
+      "hyssop",
+      "agrimony",
+      "angelica"
+    ],
+    "metals": [
+      "iron",
+      "silver"
+    ],
+    "scents": [
+      "frankincense",
+      "hyssop",
+      "sage",
+      "dragon's blood"
+    ],
+    "timing": "Saturday, waning or dark moon, Saturn or Mars hour",
+    "element": "Fire",
+    "sphere": "Mars",
+    "day": "Saturday",
+    "planet": "Mars",
+    "zodiac": "Scorpio, Aries, Capricorn",
+    "tarotCards": [
+      "The Tower",
+      "Five of Swords",
+      "The Star"
+    ],
+    "runeAssociations": [
+      "Thurisaz",
+      "Algiz",
+      "Dagaz"
+    ],
+    "numerology": 7,
+    "magicalWeapon": [
+      "Sword",
+      "Spear",
+      "Scourge",
+      "Chain"
+    ],
+    "magicalPowers": [
+      "Vision of Power",
+      "Works of Wrath and Vengeance",
+      "Power of Courage"
+    ],
+    "virtue": "Energy, Courage",
+    "vice": "Cruelty",
+    "divineName": "Elohim Gibor",
+    "animals": [
+      "Basilisk",
+      "Wolf",
+      "Bear",
+      "Horse"
+    ],
+    "alchemicalProcess": "Separation",
+    "bodyPart": "Right Arm",
+    "flowers": [
+      "Yarrow",
+      "Rue flower",
+      "Snapdragon",
+      "Thistle",
+      "Agrimony flower"
+    ],
+    "woods": [
+      "Rowan",
+      "Cedar",
+      "Holly",
+      "Hawthorn"
+    ],
+    "candleColor": "Black or White",
+    "essentialOils": [
+      "Frankincense",
+      "Hyssop",
+      "Sage",
+      "Lemon"
+    ],
+    "direction": "North",
+    "moonPhase": "Waning Moon, Dark Moon"
+  },
+  {
+    "intentId": "road_opening",
+    "colors": [
+      "yellow",
+      "gold",
+      "orange",
+      "green"
+    ],
+    "stones": [
+      "citrine",
+      "tiger's eye",
+      "pyrite",
+      "aventurine"
+    ],
+    "herbs": [
+      "bay leaf",
+      "cinnamon",
+      "lemongrass",
+      "peppermint"
+    ],
+    "metals": [
+      "gold",
+      "copper"
+    ],
+    "scents": [
+      "bergamot",
+      "cinnamon",
+      "lemon",
+      "patchouli"
+    ],
+    "timing": "Wednesday or Thursday, waxing moon, Mercury or Jupiter hour",
+    "element": "Air",
+    "sphere": "Mercury",
+    "day": "Wednesday",
+    "planet": "Mercury",
+    "zodiac": "Gemini, Sagittarius, Aries",
+    "tarotCards": [
+      "The Fool",
+      "The World",
+      "Ace of Wands"
+    ],
+    "runeAssociations": [
+      "Raidho",
+      "Fehu",
+      "Dagaz"
+    ],
+    "numerology": 1,
+    "magicalWeapon": [
+      "Wand",
+      "Caduceus",
+      "Apron"
+    ],
+    "magicalPowers": [
+      "Vision of Splendour",
+      "Gift of Tongues",
+      "Making of Talismans",
+      "Miracles of Healing"
+    ],
+    "virtue": "Truthfulness",
+    "vice": "Falsehood, Dishonesty",
+    "divineName": "Elohim Tzabaoth",
+    "animals": [
+      "Hermaphrodite",
+      "Jackal",
+      "Ibis",
+      "Twin Serpents"
+    ],
+    "alchemicalProcess": "Sublimation",
+    "bodyPart": "Loins, Hips (Left)",
+    "flowers": [
+      "Daffodil",
+      "Sunflower",
+      "Marigold",
+      "Morning Glory",
+      "Goldenrod"
+    ],
+    "woods": [
+      "Ash",
+      "Cedar",
+      "Hazel",
+      "Birch"
+    ],
+    "candleColor": "Yellow or Gold",
+    "essentialOils": [
+      "Bergamot",
+      "Cinnamon",
+      "Lemon",
+      "Peppermint"
+    ],
+    "direction": "East",
+    "moonPhase": "New Moon, Waxing Crescent"
+  },
+  {
+    "intentId": "glamour",
+    "colors": [
+      "rose",
+      "gold",
+      "pink",
+      "crimson"
+    ],
+    "stones": [
+      "rose quartz",
+      "ruby",
+      "moonstone",
+      "garnet"
+    ],
+    "herbs": [
+      "rose",
+      "jasmine",
+      "hibiscus",
+      "damiana"
+    ],
+    "metals": [
+      "copper",
+      "gold"
+    ],
+    "scents": [
+      "rose",
+      "jasmine",
+      "ylang-ylang",
+      "amber"
+    ],
+    "timing": "Friday, waxing or full moon, Venus hour",
+    "element": "Water",
+    "sphere": "Venus",
+    "day": "Friday",
+    "planet": "Venus",
+    "zodiac": "Libra, Taurus, Leo",
+    "tarotCards": [
+      "The Empress",
+      "The Star",
+      "Two of Cups"
+    ],
+    "runeAssociations": [
+      "Gebo",
+      "Wunjo",
+      "Berkano"
+    ],
+    "numerology": 6,
+    "magicalWeapon": [
+      "Lamp",
+      "Girdle",
+      "Rose"
+    ],
+    "magicalPowers": [
+      "Vision of Beauty Triumphant",
+      "Love Philters",
+      "Power to Cause Love"
+    ],
+    "virtue": "Unselfishness",
+    "vice": "Unchastity, Lust",
+    "divineName": "YHVH Tzabaoth",
+    "animals": [
+      "Lynx",
+      "Sparrow",
+      "Dove",
+      "Swan"
+    ],
+    "alchemicalProcess": "Conjunction",
+    "bodyPart": "Loins, Hips, Legs",
+    "flowers": [
+      "Rose",
+      "Orchid",
+      "Jasmine",
+      "Peony",
+      "Hibiscus"
+    ],
+    "woods": [
+      "Apple",
+      "Cherry",
+      "Rosewood",
+      "Sandalwood"
+    ],
+    "candleColor": "Rose or Pink",
+    "essentialOils": [
+      "Rose",
+      "Jasmine",
+      "Ylang-ylang",
+      "Amber"
+    ],
+    "direction": "West",
+    "moonPhase": "Full Moon, Waxing Moon"
+  },
+  {
+    "intentId": "sovereignty",
+    "colors": [
+      "gold",
+      "purple",
+      "deep blue",
+      "crimson"
+    ],
+    "stones": [
+      "tiger's eye",
+      "sunstone",
+      "citrine",
+      "amethyst"
+    ],
+    "herbs": [
+      "bay laurel",
+      "frankincense",
+      "oak bark",
+      "calendula"
+    ],
+    "metals": [
+      "gold",
+      "tin"
+    ],
+    "scents": [
+      "frankincense",
+      "sandalwood",
+      "orange",
+      "bay laurel"
+    ],
+    "timing": "Sunday or Thursday, waxing or full moon, Sun or Jupiter hour",
+    "element": "Fire",
+    "sphere": "Sun",
+    "day": "Sunday",
+    "planet": "Sun",
+    "zodiac": "Leo, Capricorn, Aries",
+    "tarotCards": [
+      "The Emperor",
+      "The Sun",
+      "King of Wands"
+    ],
+    "runeAssociations": [
+      "Tiwaz",
+      "Sowilo",
+      "Othala"
+    ],
+    "numerology": 4,
+    "magicalWeapon": [
+      "Lamen",
+      "Rosy Cross",
+      "Calvary Cross"
+    ],
+    "magicalPowers": [
+      "Vision of the Harmony of Things",
+      "Miracles of Healing",
+      "Prophecy",
+      "Power of Acquiring Gold"
+    ],
+    "virtue": "Devotion to the Great Work",
+    "vice": "Pride",
+    "divineName": "YHVH Eloah va-Daath",
+    "animals": [
+      "Lion",
+      "Child",
+      "Pelican",
+      "Phoenix",
+      "Eagle",
+      "Lamb"
+    ],
+    "alchemicalProcess": "Projection, Coagulation of Gold",
+    "bodyPart": "Breast, Heart",
+    "flowers": [
+      "Sunflower",
+      "Iris",
+      "Goldenrod",
+      "Dahlia",
+      "Bay Laurel"
+    ],
+    "woods": [
+      "Oak",
+      "Laurel",
+      "Ash",
+      "Cedar"
+    ],
+    "candleColor": "Gold or Purple",
+    "essentialOils": [
+      "Frankincense",
+      "Sandalwood",
+      "Orange",
+      "Bay Laurel"
+    ],
+    "direction": "South",
+    "moonPhase": "Full Moon, Waxing Moon"
+  },
+  {
+    "intentId": "winter_solstice",
+    "colors": [
+      "red",
+      "green",
+      "gold",
+      "white"
+    ],
+    "stones": [
+      "garnet",
+      "ruby",
+      "bloodstone",
+      "clear quartz"
+    ],
+    "herbs": [
+      "holly",
+      "ivy",
+      "mistletoe",
+      "pine"
+    ],
+    "metals": [
+      "gold",
+      "iron"
+    ],
+    "scents": [
+      "pine",
+      "frankincense",
+      "cinnamon",
+      "myrrh"
+    ],
+    "timing": "December 21, night of the solstice, Sun hour",
+    "element": "Earth",
+    "sphere": "Saturn",
+    "day": "Saturday",
+    "planet": "Saturn",
+    "zodiac": "Capricorn",
+    "tarotCards": [
+      "The World",
+      "The Sun",
+      "The Hermit"
+    ],
+    "runeAssociations": [
+      "Jera",
+      "Isa",
+      "Sowilo"
+    ],
+    "numerology": 12,
+    "magicalWeapon": [
+      "Cup",
+      "Outer Robe of Concealment",
+      "Sickle"
+    ],
+    "magicalPowers": [
+      "Vision of Sorrow",
+      "Works of Malediction and Defense",
+      "Understanding"
+    ],
+    "virtue": "Silence",
+    "vice": "Avarice",
+    "divineName": "YHVH Elohim",
+    "animals": [
+      "Crow",
+      "Owl",
+      "Bee",
+      "Dove"
+    ],
+    "alchemicalProcess": "Putrefaction, Calcination",
+    "bodyPart": "Right Side of Face, Womb",
+    "flowers": [
+      "Holly berry",
+      "Hellebore",
+      "Poinsettia",
+      "Snowdrop",
+      "Mistletoe"
+    ],
+    "woods": [
+      "Holly",
+      "Oak",
+      "Pine",
+      "Yew",
+      "Birch"
+    ],
+    "candleColor": "Red, Green, or Gold",
+    "essentialOils": [
+      "Pine",
+      "Frankincense",
+      "Cinnamon",
+      "Myrrh"
+    ],
+    "direction": "North",
+    "moonPhase": "New Moon near solstice"
+  },
+  {
+    "intentId": "summer_solstice",
+    "colors": [
+      "gold",
+      "yellow",
+      "orange",
+      "green"
+    ],
+    "stones": [
+      "sunstone",
+      "citrine",
+      "amber",
+      "carnelian"
+    ],
+    "herbs": [
+      "St. John's wort",
+      "calendula",
+      "chamomile",
+      "lavender"
+    ],
+    "metals": [
+      "gold",
+      "copper"
+    ],
+    "scents": [
+      "frankincense",
+      "lavender",
+      "rose",
+      "chamomile"
+    ],
+    "timing": "June 21, noon of the solstice, Sun hour",
+    "element": "Fire",
+    "sphere": "Sun",
+    "day": "Sunday",
+    "planet": "Sun",
+    "zodiac": "Cancer",
+    "tarotCards": [
+      "The Sun",
+      "Strength",
+      "The Chariot"
+    ],
+    "runeAssociations": [
+      "Sowilo",
+      "Dagaz",
+      "Kenaz"
+    ],
+    "numerology": 6,
+    "magicalWeapon": [
+      "Lamen",
+      "Rosy Cross",
+      "Calvary Cross"
+    ],
+    "magicalPowers": [
+      "Vision of the Harmony of Things",
+      "Miracles of Healing",
+      "Prophecy",
+      "Power of Acquiring Gold"
+    ],
+    "virtue": "Devotion to the Great Work",
+    "vice": "Pride",
+    "divineName": "YHVH Eloah va-Daath",
+    "animals": [
+      "Lion",
+      "Child",
+      "Pelican",
+      "Phoenix",
+      "Eagle",
+      "Lamb"
+    ],
+    "alchemicalProcess": "Projection, Coagulation of Gold",
+    "bodyPart": "Breast, Heart",
+    "flowers": [
+      "Sunflower",
+      "St. John's Wort",
+      "Calendula",
+      "Lavender",
+      "Rose"
+    ],
+    "woods": [
+      "Oak",
+      "Ash",
+      "Cedar",
+      "Bay Laurel"
+    ],
+    "candleColor": "Gold or Yellow",
+    "essentialOils": [
+      "Frankincense",
+      "Lavender",
+      "Rose",
+      "Bergamot"
+    ],
+    "direction": "South",
+    "moonPhase": "Full Moon near solstice"
+  },
+  {
+    "intentId": "samhain",
+    "colors": [
+      "black",
+      "orange",
+      "deep red",
+      "dark purple"
+    ],
+    "stones": [
+      "obsidian",
+      "jet",
+      "smoky quartz",
+      "carnelian"
+    ],
+    "herbs": [
+      "mugwort",
+      "wormwood",
+      "yarrow",
+      "tobacco"
+    ],
+    "metals": [
+      "iron",
+      "lead"
+    ],
+    "scents": [
+      "myrrh",
+      "copal",
+      "apple",
+      "cedar"
+    ],
+    "timing": "October 31, dark moon, Saturn hour",
+    "element": "Earth",
+    "sphere": "Saturn",
+    "day": "Saturday",
+    "planet": "Saturn",
+    "zodiac": "Scorpio",
+    "tarotCards": [
+      "Death",
+      "The Moon",
+      "The High Priestess"
+    ],
+    "runeAssociations": [
+      "Hagalaz",
+      "Isa",
+      "Othala"
+    ],
+    "numerology": 13,
+    "magicalWeapon": [
+      "Cup",
+      "Outer Robe of Concealment",
+      "Sickle"
+    ],
+    "magicalPowers": [
+      "Vision of Sorrow",
+      "Works of Malediction and Defense",
+      "Understanding"
+    ],
+    "virtue": "Silence",
+    "vice": "Avarice",
+    "divineName": "YHVH Elohim",
+    "animals": [
+      "Crow",
+      "Owl",
+      "Bee",
+      "Dove"
+    ],
+    "alchemicalProcess": "Putrefaction, Calcination",
+    "bodyPart": "Right Side of Face, Womb",
+    "flowers": [
+      "Chrysanthemum",
+      "Marigold",
+      "Yarrow",
+      "Black Rose",
+      "Wormwood flower"
+    ],
+    "woods": [
+      "Oak",
+      "Elder",
+      "Yew",
+      "Hawthorn"
+    ],
+    "candleColor": "Black or Orange",
+    "essentialOils": [
+      "Myrrh",
+      "Copal",
+      "Apple",
+      "Cedar"
+    ],
+    "direction": "North",
+    "moonPhase": "Dark Moon, New Moon"
+  },
+  {
+    "intentId": "beltane",
+    "colors": [
+      "red",
+      "green",
+      "white",
+      "gold"
+    ],
+    "stones": [
+      "rose quartz",
+      "carnelian",
+      "emerald",
+      "garnet"
+    ],
+    "herbs": [
+      "hawthorn",
+      "clover",
+      "rose",
+      "birch"
+    ],
+    "metals": [
+      "copper",
+      "gold"
+    ],
+    "scents": [
+      "rose",
+      "jasmine",
+      "hawthorn blossom",
+      "lavender"
+    ],
+    "timing": "May 1, waxing or full moon, Venus or Mars hour",
+    "element": "Fire",
+    "sphere": "Venus",
+    "day": "Friday",
+    "planet": "Venus",
+    "zodiac": "Taurus",
+    "tarotCards": [
+      "The Empress",
+      "The Lovers",
+      "Ace of Wands"
+    ],
+    "runeAssociations": [
+      "Berkano",
+      "Fehu",
+      "Gebo"
+    ],
+    "numerology": 5,
+    "magicalWeapon": [
+      "Lamp",
+      "Girdle",
+      "Rose"
+    ],
+    "magicalPowers": [
+      "Vision of Beauty Triumphant",
+      "Love Philters",
+      "Power to Cause Love"
+    ],
+    "virtue": "Unselfishness",
+    "vice": "Unchastity, Lust",
+    "divineName": "YHVH Tzabaoth",
+    "animals": [
+      "Lynx",
+      "Sparrow",
+      "Dove",
+      "Swan"
+    ],
+    "alchemicalProcess": "Conjunction",
+    "bodyPart": "Loins, Hips, Legs",
+    "flowers": [
+      "Hawthorn Blossom",
+      "Rose",
+      "Clover",
+      "Cowslip",
+      "Lily of the Valley"
+    ],
+    "woods": [
+      "Hawthorn",
+      "Apple",
+      "Birch",
+      "Oak"
+    ],
+    "candleColor": "Red or Green",
+    "essentialOils": [
+      "Rose",
+      "Jasmine",
+      "Hawthorn",
+      "Lavender"
+    ],
+    "direction": "East",
+    "moonPhase": "Full Moon near May 1"
+  },
+  {
+    "intentId": "self_love",
+    "colors": [
+      "pink",
+      "rose",
+      "gold",
+      "white"
+    ],
+    "stones": [
+      "rose quartz",
+      "rhodonite",
+      "moonstone",
+      "rhodochrosite"
+    ],
+    "herbs": [
+      "rose",
+      "lavender",
+      "chamomile",
+      "jasmine"
+    ],
+    "metals": [
+      "copper",
+      "silver"
+    ],
+    "scents": [
+      "rose",
+      "jasmine",
+      "vanilla",
+      "ylang-ylang"
+    ],
+    "timing": "Friday, waxing or full moon, Venus hour",
+    "element": "Water",
+    "sphere": "Venus",
+    "day": "Friday",
+    "planet": "Venus",
+    "zodiac": "Taurus, Libra, Cancer",
+    "tarotCards": [
+      "The Empress",
+      "The Star",
+      "Ace of Cups"
+    ],
+    "runeAssociations": [
+      "Wunjo",
+      "Berkano",
+      "Gebo"
+    ],
+    "numerology": 6,
+    "magicalWeapon": [
+      "Lamp",
+      "Girdle",
+      "Rose"
+    ],
+    "magicalPowers": [
+      "Vision of Beauty Triumphant",
+      "Love Philters",
+      "Power to Cause Love"
+    ],
+    "virtue": "Unselfishness",
+    "vice": "Unchastity, Lust",
+    "divineName": "YHVH Tzabaoth",
+    "animals": [
+      "Lynx",
+      "Sparrow",
+      "Dove",
+      "Swan"
+    ],
+    "alchemicalProcess": "Conjunction",
+    "bodyPart": "Loins, Hips, Legs",
+    "flowers": [
+      "Rose",
+      "Peony",
+      "Jasmine",
+      "Orchid",
+      "Pink Lily"
+    ],
+    "woods": [
+      "Apple",
+      "Cherry",
+      "Willow",
+      "Sandalwood"
+    ],
+    "candleColor": "Pink or Rose",
+    "essentialOils": [
+      "Rose",
+      "Ylang-ylang",
+      "Vanilla",
+      "Jasmine"
+    ],
+    "direction": "West",
+    "moonPhase": "Full Moon, Waxing Moon"
+  },
+  {
+    "intentId": "forgiveness",
+    "colors": [
+      "pink",
+      "white",
+      "lavender",
+      "green"
+    ],
+    "stones": [
+      "rose quartz",
+      "rhodonite",
+      "moonstone",
+      "green aventurine"
+    ],
+    "herbs": [
+      "rose",
+      "lavender",
+      "lemon balm",
+      "chamomile"
+    ],
+    "metals": [
+      "copper",
+      "silver"
+    ],
+    "scents": [
+      "rose",
+      "lavender",
+      "sandalwood",
+      "jasmine"
+    ],
+    "timing": "Friday, waxing moon, Venus hour",
+    "element": "Water",
+    "sphere": "Venus",
+    "day": "Friday",
+    "planet": "Moon",
+    "zodiac": "Libra, Pisces, Cancer",
+    "tarotCards": [
+      "The Star",
+      "Six of Cups",
+      "Judgement"
+    ],
+    "runeAssociations": [
+      "Wunjo",
+      "Laguz",
+      "Berkano"
+    ],
+    "numerology": 6,
+    "magicalWeapon": [
+      "Lamp",
+      "Girdle",
+      "Rose"
+    ],
+    "magicalPowers": [
+      "Vision of Beauty Triumphant",
+      "Love Philters",
+      "Power to Cause Love"
+    ],
+    "virtue": "Unselfishness",
+    "vice": "Unchastity, Lust",
+    "divineName": "YHVH Tzabaoth",
+    "animals": [
+      "Lynx",
+      "Sparrow",
+      "Dove",
+      "Swan"
+    ],
+    "alchemicalProcess": "Conjunction",
+    "bodyPart": "Loins, Hips, Legs",
+    "flowers": [
+      "Rose",
+      "Forget-Me-Not",
+      "White Lily",
+      "Lavender",
+      "Sweet Pea"
+    ],
+    "woods": [
+      "Apple",
+      "Willow",
+      "Cherry",
+      "Birch"
+    ],
+    "candleColor": "Pink or White",
+    "essentialOils": [
+      "Rose",
+      "Lavender",
+      "Sandalwood",
+      "Jasmine"
+    ],
+    "direction": "West",
+    "moonPhase": "Full Moon, Waxing Moon"
+  },
+  {
+    "intentId": "prosperity_consciousness",
+    "colors": [
+      "green",
+      "gold",
+      "purple",
+      "amber"
+    ],
+    "stones": [
+      "citrine",
+      "amethyst",
+      "jade",
+      "pyrite"
+    ],
+    "herbs": [
+      "bay leaf",
+      "cinnamon",
+      "nutmeg",
+      "clover"
+    ],
+    "metals": [
+      "gold",
+      "tin"
+    ],
+    "scents": [
+      "frankincense",
+      "patchouli",
+      "bergamot",
+      "cinnamon"
+    ],
+    "timing": "Thursday, waxing or full moon, Jupiter hour",
+    "element": "Earth",
+    "sphere": "Jupiter",
+    "day": "Thursday",
+    "planet": "Jupiter",
+    "zodiac": "Sagittarius, Taurus, Capricorn",
+    "tarotCards": [
+      "The World",
+      "Nine of Pentacles",
+      "The Wheel of Fortune"
+    ],
+    "runeAssociations": [
+      "Fehu",
+      "Jera",
+      "Othala"
+    ],
+    "numerology": 8,
+    "magicalWeapon": [
+      "Wand",
+      "Scepter",
+      "Crook",
+      "Orb"
+    ],
+    "magicalPowers": [
+      "Vision of Love",
+      "Clairvoyance",
+      "Prophecy",
+      "Power of Acquiring Wealth"
+    ],
+    "virtue": "Obedience, Generosity",
+    "vice": "Bigotry, Hypocrisy, Gluttony, Tyranny",
+    "divineName": "El",
+    "animals": [
+      "Unicorn",
+      "Eagle",
+      "Dolphin"
+    ],
+    "alchemicalProcess": "Fermentation",
+    "bodyPart": "Left Arm",
+    "flowers": [
+      "Sunflower",
+      "Marigold",
+      "Chamomile",
+      "Goldenrod",
+      "Honeysuckle"
+    ],
+    "woods": [
+      "Oak",
+      "Maple",
+      "Cedar",
+      "Sandalwood"
+    ],
+    "candleColor": "Green or Purple",
+    "essentialOils": [
+      "Frankincense",
+      "Patchouli",
+      "Bergamot",
+      "Cinnamon"
+    ],
+    "direction": "North",
+    "moonPhase": "Full Moon, Waxing Moon"
+  },
+  {
+    "intentId": "meditation",
+    "colors": [
+      "indigo",
+      "deep purple",
+      "white",
+      "silver"
+    ],
+    "stones": [
+      "amethyst",
+      "selenite",
+      "clear quartz",
+      "labradorite"
+    ],
+    "herbs": [
+      "frankincense",
+      "sandalwood",
+      "lavender",
+      "lotus"
+    ],
+    "metals": [
+      "silver",
+      "gold"
+    ],
+    "scents": [
+      "frankincense",
+      "sandalwood",
+      "myrrh",
+      "lavender"
+    ],
+    "timing": "Monday or Saturday, any moon phase, Moon or Saturn hour",
+    "element": "Spirit",
+    "sphere": "Moon",
+    "day": "Monday",
+    "planet": "Moon",
+    "zodiac": "Pisces, Cancer, Virgo",
+    "tarotCards": [
+      "The Hermit",
+      "The High Priestess",
+      "The World"
+    ],
+    "runeAssociations": [
+      "Laguz",
+      "Isa",
+      "Mannaz"
+    ],
+    "numerology": 7,
+    "magicalWeapon": [
+      "Perfumes",
+      "Sandals"
+    ],
+    "magicalPowers": [
+      "Vision of the Machinery of the Universe",
+      "Bewitchments",
+      "Erotic Rites",
+      "Divination"
+    ],
+    "virtue": "Independence",
+    "vice": "Idleness",
+    "divineName": "Shaddai El Chai",
+    "animals": [
+      "Dog",
+      "Beetle",
+      "Elephant",
+      "Tortoise",
+      "Toad"
+    ],
+    "alchemicalProcess": "Dissolution",
+    "bodyPart": "Reproductive System, Genitals",
+    "flowers": [
+      "Lotus",
+      "Lavender",
+      "White Lily",
+      "Jasmine",
+      "Gardenia"
+    ],
+    "woods": [
+      "Sandalwood",
+      "Cedar",
+      "Palo Santo",
+      "Frankincense tree"
+    ],
+    "candleColor": "Indigo or White",
+    "essentialOils": [
+      "Frankincense",
+      "Sandalwood",
+      "Myrrh",
+      "Lavender"
+    ],
+    "direction": "Center",
+    "moonPhase": "Any"
+  },
+  {
+    "intentId": "shapeshifting",
+    "colors": [
+      "silver",
+      "deep blue",
+      "gray",
+      "iridescent"
+    ],
+    "stones": [
+      "labradorite",
+      "moonstone",
+      "tanzanite",
+      "rainbow obsidian"
+    ],
+    "herbs": [
+      "mugwort",
+      "valerian",
+      "calamus",
+      "fly agaric (caution)"
+    ],
+    "metals": [
+      "silver",
+      "mercury"
+    ],
+    "scents": [
+      "mugwort",
+      "sandalwood",
+      "lavender",
+      "myrrh"
+    ],
+    "timing": "Monday or Wednesday, waxing moon, Moon or Mercury hour",
+    "element": "Water",
+    "sphere": "Moon",
+    "day": "Monday",
+    "planet": "Mercury",
+    "zodiac": "Pisces, Gemini, Scorpio",
+    "tarotCards": [
+      "The Moon",
+      "The Wheel of Fortune",
+      "The Magician"
+    ],
+    "runeAssociations": [
+      "Ehwaz",
+      "Laguz",
+      "Perthro"
+    ],
+    "numerology": 9,
+    "magicalWeapon": [
+      "Perfumes",
+      "Sandals"
+    ],
+    "magicalPowers": [
+      "Vision of the Machinery of the Universe",
+      "Bewitchments",
+      "Erotic Rites",
+      "Divination"
+    ],
+    "virtue": "Independence",
+    "vice": "Idleness",
+    "divineName": "Shaddai El Chai",
+    "animals": [
+      "Dog",
+      "Beetle",
+      "Elephant",
+      "Tortoise",
+      "Toad"
+    ],
+    "alchemicalProcess": "Dissolution",
+    "bodyPart": "Reproductive System, Genitals",
+    "flowers": [
+      "Moonflower",
+      "Iris",
+      "Morning Glory",
+      "Night-Blooming Jasmine",
+      "Lotus"
+    ],
+    "woods": [
+      "Willow",
+      "Elder",
+      "Birch",
+      "Ash"
+    ],
+    "candleColor": "Silver or Indigo",
+    "essentialOils": [
+      "Mugwort",
+      "Sandalwood",
+      "Lavender",
+      "Myrrh"
+    ],
+    "direction": "West",
+    "moonPhase": "Full Moon, Waxing Moon"
+  },
+  {
+    "intentId": "binding",
+    "colors": [
+      "black",
+      "dark red",
+      "dark blue",
+      "gray"
+    ],
+    "stones": [
+      "black tourmaline",
+      "obsidian",
+      "jet",
+      "hematite"
+    ],
+    "herbs": [
+      "rue",
+      "black pepper",
+      "wormwood",
+      "dragon's blood"
+    ],
+    "metals": [
+      "lead",
+      "iron"
+    ],
+    "scents": [
+      "myrrh",
+      "dragon's blood",
+      "frankincense",
+      "black pepper"
+    ],
+    "timing": "Saturday, waning or dark moon, Saturn hour",
+    "element": "Earth",
+    "sphere": "Saturn",
+    "day": "Saturday",
+    "planet": "Saturn",
+    "zodiac": "Scorpio, Capricorn, Aries",
+    "tarotCards": [
+      "The Devil",
+      "The Tower",
+      "Eight of Swords"
+    ],
+    "runeAssociations": [
+      "Isa",
+      "Nauthiz",
+      "Hagalaz"
+    ],
+    "numerology": 8,
+    "magicalWeapon": [
+      "Cup",
+      "Outer Robe of Concealment",
+      "Sickle"
+    ],
+    "magicalPowers": [
+      "Vision of Sorrow",
+      "Works of Malediction and Defense",
+      "Understanding"
+    ],
+    "virtue": "Silence",
+    "vice": "Avarice",
+    "divineName": "YHVH Elohim",
+    "animals": [
+      "Crow",
+      "Owl",
+      "Bee",
+      "Dove"
+    ],
+    "alchemicalProcess": "Putrefaction, Calcination",
+    "bodyPart": "Right Side of Face, Womb",
+    "flowers": [
+      "Thistle",
+      "Nettle",
+      "Wormwood flower",
+      "Snapdragon",
+      "Black Rose"
+    ],
+    "woods": [
+      "Yew",
+      "Cedar",
+      "Hawthorn",
+      "Blackthorn"
+    ],
+    "candleColor": "Black or Dark Red",
+    "essentialOils": [
+      "Myrrh",
+      "Dragon's Blood",
+      "Frankincense",
+      "Black Pepper"
+    ],
+    "direction": "North",
+    "moonPhase": "Waning Moon, Dark Moon"
+  },
+  {
+    "intentId": "opening_doors",
+    "colors": [
+      "yellow",
+      "gold",
+      "orange",
+      "bright green"
+    ],
+    "stones": [
+      "citrine",
+      "tiger's eye",
+      "labradorite",
+      "aventurine"
+    ],
+    "herbs": [
+      "lemongrass",
+      "cinnamon",
+      "bay leaf",
+      "basil"
+    ],
+    "metals": [
+      "gold",
+      "copper"
+    ],
+    "scents": [
+      "bergamot",
+      "lemon",
+      "cinnamon",
+      "orange"
+    ],
+    "timing": "Wednesday or Thursday, new moon or waxing, Mercury or Jupiter hour",
+    "element": "Air",
+    "sphere": "Mercury",
+    "day": "Wednesday",
+    "planet": "Mercury",
+    "zodiac": "Gemini, Sagittarius, Aries",
+    "tarotCards": [
+      "The Fool",
+      "The World",
+      "Ace of Wands"
+    ],
+    "runeAssociations": [
+      "Raidho",
+      "Fehu",
+      "Dagaz"
+    ],
+    "numerology": 1,
+    "magicalWeapon": [
+      "Wand",
+      "Caduceus",
+      "Apron"
+    ],
+    "magicalPowers": [
+      "Vision of Splendour",
+      "Gift of Tongues",
+      "Making of Talismans",
+      "Miracles of Healing"
+    ],
+    "virtue": "Truthfulness",
+    "vice": "Falsehood, Dishonesty",
+    "divineName": "Elohim Tzabaoth",
+    "animals": [
+      "Hermaphrodite",
+      "Jackal",
+      "Ibis",
+      "Twin Serpents"
+    ],
+    "alchemicalProcess": "Sublimation",
+    "bodyPart": "Loins, Hips (Left)",
+    "flowers": [
+      "Daffodil",
+      "Morning Glory",
+      "Sunflower",
+      "Goldenrod",
+      "Chrysanthemum"
+    ],
+    "woods": [
+      "Ash",
+      "Cedar",
+      "Hazel",
+      "Birch"
+    ],
+    "candleColor": "Yellow or Gold",
+    "essentialOils": [
+      "Bergamot",
+      "Lemon",
+      "Cinnamon",
+      "Orange"
+    ],
+    "direction": "East",
+    "moonPhase": "New Moon, Waxing Crescent"
+  },
+  {
+    "intentId": "animal_magic",
+    "colors": [
+      "brown",
+      "earthy green",
+      "tawny",
+      "golden"
+    ],
+    "stones": [
+      "moss agate",
+      "jasper",
+      "tiger's eye",
+      "carnelian"
+    ],
+    "herbs": [
+      "cedar",
+      "oak bark",
+      "pine",
+      "sage"
+    ],
+    "metals": [
+      "copper",
+      "iron"
+    ],
+    "scents": [
+      "pine",
+      "cedar",
+      "musk",
+      "oakmoss"
+    ],
+    "timing": "Wednesday or Monday, waxing moon, Earth hour",
+    "element": "Earth",
+    "sphere": "Earth",
+    "day": "Wednesday",
+    "planet": "Saturn",
+    "zodiac": "Taurus, Virgo, Cancer",
+    "tarotCards": [
+      "The World",
+      "Strength",
+      "The Hermit"
+    ],
+    "runeAssociations": [
+      "Berkano",
+      "Othala",
+      "Ingwaz"
+    ],
+    "numerology": 7,
+    "magicalWeapon": [
+      "Altar",
+      "Pentacle",
+      "Equal-Armed Cross",
+      "Magic Circle"
+    ],
+    "magicalPowers": [
+      "Vision of the Holy Guardian Angel",
+      "Making of the Philosopher's Stone",
+      "Alchemy"
+    ],
+    "virtue": "Discrimination",
+    "vice": "Avarice, Inertia",
+    "divineName": "Adonai ha-Aretz",
+    "animals": [
+      "Sphinx",
+      "Bull",
+      "Ox"
+    ],
+    "alchemicalProcess": "Solidification",
+    "bodyPart": "Feet, Anus",
+    "flowers": [
+      "Dandelion",
+      "Clover",
+      "Violet",
+      "Daisy",
+      "Yarrow"
+    ],
+    "woods": [
+      "Oak",
+      "Cedar",
+      "Pine",
+      "Rowan"
+    ],
+    "candleColor": "Brown or Earthy Green",
+    "essentialOils": [
+      "Cedar",
+      "Pine",
+      "Oakmoss",
+      "Musk"
+    ],
+    "direction": "North",
+    "moonPhase": "Full Moon, Waxing Moon"
+  },
+  {
+    "intentId": "starwork",
+    "colors": [
+      "deep indigo",
+      "silver",
+      "midnight blue",
+      "starlight white"
+    ],
+    "stones": [
+      "moldavite",
+      "tektite",
+      "clear quartz",
+      "sapphire"
+    ],
+    "herbs": [
+      "frankincense",
+      "myrrh",
+      "star anise",
+      "angelica"
+    ],
+    "metals": [
+      "silver",
+      "gold"
+    ],
+    "scents": [
+      "frankincense",
+      "myrrh",
+      "sandalwood",
+      "star anise"
+    ],
+    "timing": "Midnight, clear night, any moon phase, Kether hour",
+    "element": "Spirit",
+    "sphere": "Kether",
+    "day": "Any",
+    "planet": "Uranus",
+    "zodiac": "Aquarius, Pisces, Sagittarius",
+    "tarotCards": [
+      "The Star",
+      "The World",
+      "The Fool"
+    ],
+    "runeAssociations": [
+      "Dagaz",
+      "Mannaz",
+      "Sowilo"
+    ],
+    "numerology": 11,
+    "magicalWeapon": [
+      "Crown",
+      "Swastika",
+      "Lamp"
+    ],
+    "magicalPowers": [
+      "Union with God",
+      "Conversation with the Holy Guardian Angel",
+      "Attainment",
+      "The Highest Trance"
+    ],
+    "virtue": "Attainment, Completion of the Great Work",
+    "vice": "None — all vice falls away",
+    "divineName": "Eheieh",
+    "animals": [
+      "God",
+      "Man"
+    ],
+    "alchemicalProcess": "Projection",
+    "bodyPart": "Crown of the Head",
+    "flowers": [
+      "Lotus",
+      "Star Jasmine",
+      "White Orchid",
+      "Night-Blooming Jasmine",
+      "Jasmine"
+    ],
+    "woods": [
+      "Sandalwood",
+      "Palo Santo",
+      "Cedar",
+      "Frankincense tree"
+    ],
+    "candleColor": "Indigo or Silver",
+    "essentialOils": [
+      "Frankincense",
+      "Myrrh",
+      "Sandalwood",
+      "Star Anise"
+    ],
+    "direction": "Above",
+    "moonPhase": "Full Moon, New Moon, any clear night"
+  },
+  {
+    "intentId": "empowerment",
+    "colors": [
+      "gold",
+      "red",
+      "orange",
+      "bright yellow"
+    ],
+    "stones": [
+      "sunstone",
+      "carnelian",
+      "tiger's eye",
+      "garnet"
+    ],
+    "herbs": [
+      "bay laurel",
+      "ginger",
+      "cinnamon",
+      "dragon's blood"
+    ],
+    "metals": [
+      "gold",
+      "iron"
+    ],
+    "scents": [
+      "frankincense",
+      "ginger",
+      "dragon's blood",
+      "orange"
+    ],
+    "timing": "Sunday or Tuesday, waxing or full moon, Sun or Mars hour",
+    "element": "Fire",
+    "sphere": "Sun",
+    "day": "Sunday",
+    "planet": "Sun",
+    "zodiac": "Leo, Aries, Scorpio",
+    "tarotCards": [
+      "The Sun",
+      "Strength",
+      "The Emperor"
+    ],
+    "runeAssociations": [
+      "Sowilo",
+      "Uruz",
+      "Tiwaz"
+    ],
+    "numerology": 1,
+    "magicalWeapon": [
+      "Lamen",
+      "Rosy Cross",
+      "Calvary Cross"
+    ],
+    "magicalPowers": [
+      "Vision of the Harmony of Things",
+      "Miracles of Healing",
+      "Prophecy",
+      "Power of Acquiring Gold"
+    ],
+    "virtue": "Devotion to the Great Work",
+    "vice": "Pride",
+    "divineName": "YHVH Eloah va-Daath",
+    "animals": [
+      "Lion",
+      "Child",
+      "Pelican",
+      "Phoenix",
+      "Eagle",
+      "Lamb"
+    ],
+    "alchemicalProcess": "Projection, Coagulation of Gold",
+    "bodyPart": "Breast, Heart",
+    "flowers": [
+      "Sunflower",
+      "Red Carnation",
+      "Tiger Lily",
+      "Marigold",
+      "Goldenrod"
+    ],
+    "woods": [
+      "Oak",
+      "Ash",
+      "Cedar",
+      "Laurel"
+    ],
+    "candleColor": "Gold or Red",
+    "essentialOils": [
+      "Frankincense",
+      "Ginger",
+      "Dragon's Blood",
+      "Orange"
+    ],
+    "direction": "South",
+    "moonPhase": "Full Moon, Waxing Moon"
+  },
+  {
+    "intentId": "rebirth",
+    "colors": [
+      "gold",
+      "orange",
+      "deep red",
+      "white"
+    ],
+    "stones": [
+      "sunstone",
+      "carnelian",
+      "moldavite",
+      "phoenix stone"
+    ],
+    "herbs": [
+      "frankincense",
+      "cinnamon",
+      "calendula",
+      "phoenix herb"
+    ],
+    "metals": [
+      "gold",
+      "iron"
+    ],
+    "scents": [
+      "frankincense",
+      "cinnamon",
+      "myrrh",
+      "dragon's blood"
+    ],
+    "timing": "Sunday, new moon or spring equinox, Sun hour",
+    "element": "Fire",
+    "sphere": "Sun",
+    "day": "Sunday",
+    "planet": "Sun",
+    "zodiac": "Aries, Scorpio, Sagittarius",
+    "tarotCards": [
+      "Judgement",
+      "The Sun",
+      "Death"
+    ],
+    "runeAssociations": [
+      "Dagaz",
+      "Kenaz",
+      "Fehu"
+    ],
+    "numerology": 1,
+    "magicalWeapon": [
+      "Lamen",
+      "Rosy Cross",
+      "Calvary Cross"
+    ],
+    "magicalPowers": [
+      "Vision of the Harmony of Things",
+      "Miracles of Healing",
+      "Prophecy",
+      "Power of Acquiring Gold"
+    ],
+    "virtue": "Devotion to the Great Work",
+    "vice": "Pride",
+    "divineName": "YHVH Eloah va-Daath",
+    "animals": [
+      "Lion",
+      "Child",
+      "Pelican",
+      "Phoenix",
+      "Eagle",
+      "Lamb"
+    ],
+    "alchemicalProcess": "Projection, Coagulation of Gold",
+    "bodyPart": "Breast, Heart",
+    "flowers": [
+      "Lotus",
+      "Sunflower",
+      "Daffodil",
+      "Cherry Blossom",
+      "Crocus"
+    ],
+    "woods": [
+      "Phoenix wood",
+      "Cedar",
+      "Oak",
+      "Birch"
+    ],
+    "candleColor": "Orange or Gold",
+    "essentialOils": [
+      "Frankincense",
+      "Cinnamon",
+      "Myrrh",
+      "Orange"
+    ],
+    "direction": "South",
+    "moonPhase": "New Moon, Spring Equinox"
+  },
+  {
+    "intentId": "devotion",
+    "colors": [
+      "rose",
+      "gold",
+      "white",
+      "deep purple"
+    ],
+    "stones": [
+      "rose quartz",
+      "amethyst",
+      "garnet",
+      "citrine"
+    ],
+    "herbs": [
+      "rose",
+      "frankincense",
+      "myrrh",
+      "saffron"
+    ],
+    "metals": [
+      "gold",
+      "copper"
+    ],
+    "scents": [
+      "rose",
+      "frankincense",
+      "myrrh",
+      "saffron"
+    ],
+    "timing": "Friday or Sunday, full moon, Venus or Sun hour",
+    "element": "Water",
+    "sphere": "Venus",
+    "day": "Friday",
+    "planet": "Venus",
+    "zodiac": "Libra, Pisces, Taurus",
+    "tarotCards": [
+      "The Hierophant",
+      "The Lovers",
+      "The High Priestess"
+    ],
+    "runeAssociations": [
+      "Gebo",
+      "Wunjo",
+      "Berkano"
+    ],
+    "numerology": 6,
+    "magicalWeapon": [
+      "Lamp",
+      "Girdle",
+      "Rose"
+    ],
+    "magicalPowers": [
+      "Vision of Beauty Triumphant",
+      "Love Philters",
+      "Power to Cause Love"
+    ],
+    "virtue": "Unselfishness",
+    "vice": "Unchastity, Lust",
+    "divineName": "YHVH Tzabaoth",
+    "animals": [
+      "Lynx",
+      "Sparrow",
+      "Dove",
+      "Swan"
+    ],
+    "alchemicalProcess": "Conjunction",
+    "bodyPart": "Loins, Hips, Legs",
+    "flowers": [
+      "Rose",
+      "White Lily",
+      "Jasmine",
+      "Lotus",
+      "Gardenia"
+    ],
+    "woods": [
+      "Sandalwood",
+      "Rose wood",
+      "Cedar",
+      "Apple"
+    ],
+    "candleColor": "Rose or White",
+    "essentialOils": [
+      "Rose",
+      "Frankincense",
+      "Myrrh",
+      "Saffron"
+    ],
+    "direction": "West",
+    "moonPhase": "Full Moon"
+  },
+  {
+    "intentId": "initiation",
+    "colors": [
+      "black",
+      "gold",
+      "deep purple",
+      "white"
+    ],
+    "stones": [
+      "obsidian",
+      "amethyst",
+      "clear quartz",
+      "moldavite"
+    ],
+    "herbs": [
+      "frankincense",
+      "myrrh",
+      "mugwort",
+      "wormwood"
+    ],
+    "metals": [
+      "gold",
+      "lead"
+    ],
+    "scents": [
+      "frankincense",
+      "myrrh",
+      "sandalwood",
+      "copal"
+    ],
+    "timing": "Saturday or Sunday, dark or new moon, Saturn hour",
+    "element": "Spirit",
+    "sphere": "Saturn",
+    "day": "Saturday",
+    "planet": "Saturn",
+    "zodiac": "Scorpio, Capricorn, Aquarius",
+    "tarotCards": [
+      "The Fool",
+      "The World",
+      "The Tower"
+    ],
+    "runeAssociations": [
+      "Dagaz",
+      "Isa",
+      "Othala"
+    ],
+    "numerology": 13,
+    "magicalWeapon": [
+      "Cup",
+      "Outer Robe of Concealment",
+      "Sickle"
+    ],
+    "magicalPowers": [
+      "Vision of Sorrow",
+      "Works of Malediction and Defense",
+      "Understanding"
+    ],
+    "virtue": "Silence",
+    "vice": "Avarice",
+    "divineName": "YHVH Elohim",
+    "animals": [
+      "Crow",
+      "Owl",
+      "Bee",
+      "Dove"
+    ],
+    "alchemicalProcess": "Putrefaction, Calcination",
+    "bodyPart": "Right Side of Face, Womb",
+    "flowers": [
+      "Lotus",
+      "Chrysanthemum",
+      "White Lily",
+      "Hellebore",
+      "Iris"
+    ],
+    "woods": [
+      "Yew",
+      "Oak",
+      "Palo Santo",
+      "Sandalwood"
+    ],
+    "candleColor": "Black and Gold",
+    "essentialOils": [
+      "Frankincense",
+      "Myrrh",
+      "Sandalwood",
+      "Copal"
+    ],
+    "direction": "Center",
+    "moonPhase": "Dark Moon, New Moon"
+  },
+  {
+    "intentId": "enchantment",
+    "colors": [
+      "rose",
+      "silver",
+      "violet",
+      "gold"
+    ],
+    "stones": [
+      "moonstone",
+      "rose quartz",
+      "labradorite",
+      "amethyst"
+    ],
+    "herbs": [
+      "rose",
+      "jasmine",
+      "verbena",
+      "honeysuckle"
+    ],
+    "metals": [
+      "copper",
+      "silver"
+    ],
+    "scents": [
+      "rose",
+      "jasmine",
+      "ylang-ylang",
+      "bergamot"
+    ],
+    "timing": "Friday, waxing or full moon, Venus hour",
+    "element": "Water",
+    "sphere": "Venus",
+    "day": "Friday",
+    "planet": "Venus",
+    "zodiac": "Libra, Taurus, Gemini",
+    "tarotCards": [
+      "The Magician",
+      "The Empress",
+      "The Star"
+    ],
+    "runeAssociations": [
+      "Gebo",
+      "Berkano",
+      "Wunjo"
+    ],
+    "numerology": 7,
+    "magicalWeapon": [
+      "Lamp",
+      "Girdle",
+      "Rose"
+    ],
+    "magicalPowers": [
+      "Vision of Beauty Triumphant",
+      "Love Philters",
+      "Power to Cause Love"
+    ],
+    "virtue": "Unselfishness",
+    "vice": "Unchastity, Lust",
+    "divineName": "YHVH Tzabaoth",
+    "animals": [
+      "Lynx",
+      "Sparrow",
+      "Dove",
+      "Swan"
+    ],
+    "alchemicalProcess": "Conjunction",
+    "bodyPart": "Loins, Hips, Legs",
+    "flowers": [
+      "Rose",
+      "Jasmine",
+      "Honeysuckle",
+      "Orchid",
+      "Moonflower"
+    ],
+    "woods": [
+      "Apple",
+      "Hazel",
+      "Willow",
+      "Cherry"
+    ],
+    "candleColor": "Rose or Silver",
+    "essentialOils": [
+      "Rose",
+      "Jasmine",
+      "Ylang-ylang",
+      "Bergamot"
+    ],
+    "direction": "West",
+    "moonPhase": "Full Moon, Waxing Moon"
+  },
+  {
+    "intentId": "discernment",
+    "colors": [
+      "white",
+      "silver",
+      "indigo",
+      "clear blue"
+    ],
+    "stones": [
+      "fluorite",
+      "sodalite",
+      "lapis lazuli",
+      "kyanite"
+    ],
+    "herbs": [
+      "sage",
+      "mugwort",
+      "hyssop",
+      "rosemary"
+    ],
+    "metals": [
+      "silver",
+      "tin"
+    ],
+    "scents": [
+      "sage",
+      "frankincense",
+      "lemon",
+      "myrrh"
+    ],
+    "timing": "Wednesday or Saturday, waxing moon, Mercury or Saturn hour",
+    "element": "Air",
+    "sphere": "Mercury",
+    "day": "Wednesday",
+    "planet": "Mercury",
+    "zodiac": "Virgo, Sagittarius, Capricorn",
+    "tarotCards": [
+      "The Hermit",
+      "Justice",
+      "Ace of Swords"
+    ],
+    "runeAssociations": [
+      "Kenaz",
+      "Raidho",
+      "Ansuz"
+    ],
+    "numerology": 7,
+    "magicalWeapon": [
+      "Wand",
+      "Caduceus",
+      "Apron"
+    ],
+    "magicalPowers": [
+      "Vision of Splendour",
+      "Gift of Tongues",
+      "Making of Talismans",
+      "Miracles of Healing"
+    ],
+    "virtue": "Truthfulness",
+    "vice": "Falsehood, Dishonesty",
+    "divineName": "Elohim Tzabaoth",
+    "animals": [
+      "Hermaphrodite",
+      "Jackal",
+      "Ibis",
+      "Twin Serpents"
+    ],
+    "alchemicalProcess": "Sublimation",
+    "bodyPart": "Loins, Hips (Left)",
+    "flowers": [
+      "Iris",
+      "Lavender",
+      "Yarrow",
+      "Forget-Me-Not",
+      "White Violet"
+    ],
+    "woods": [
+      "Hazel",
+      "Birch",
+      "Elder",
+      "Ash"
+    ],
+    "candleColor": "White or Silver",
+    "essentialOils": [
+      "Sage",
+      "Frankincense",
+      "Lemon",
+      "Myrrh"
+    ],
+    "direction": "East",
+    "moonPhase": "Full Moon, Waxing Moon"
+  },
+  {
+    "intentId": "completion",
+    "colors": [
+      "black",
+      "deep indigo",
+      "gray",
+      "gold"
+    ],
+    "stones": [
+      "obsidian",
+      "smoky quartz",
+      "onyx",
+      "citrine"
+    ],
+    "herbs": [
+      "comfrey",
+      "Solomon's seal",
+      "myrrh",
+      "vetiver"
+    ],
+    "metals": [
+      "lead",
+      "gold"
+    ],
+    "scents": [
+      "myrrh",
+      "frankincense",
+      "vetiver",
+      "sandalwood"
+    ],
+    "timing": "Saturday, waning or dark moon, Saturn hour",
+    "element": "Earth",
+    "sphere": "Saturn",
+    "day": "Saturday",
+    "planet": "Saturn",
+    "zodiac": "Capricorn, Scorpio, Pisces",
+    "tarotCards": [
+      "The World",
+      "The Hermit",
+      "Ten of Pentacles"
+    ],
+    "runeAssociations": [
+      "Jera",
+      "Othala",
+      "Isa"
+    ],
+    "numerology": 10,
+    "magicalWeapon": [
+      "Cup",
+      "Outer Robe of Concealment",
+      "Sickle"
+    ],
+    "magicalPowers": [
+      "Vision of Sorrow",
+      "Works of Malediction and Defense",
+      "Understanding"
+    ],
+    "virtue": "Silence",
+    "vice": "Avarice",
+    "divineName": "YHVH Elohim",
+    "animals": [
+      "Crow",
+      "Owl",
+      "Bee",
+      "Dove"
+    ],
+    "alchemicalProcess": "Putrefaction, Calcination",
+    "bodyPart": "Right Side of Face, Womb",
+    "flowers": [
+      "Chrysanthemum",
+      "Hellebore",
+      "Yarrow",
+      "White Lily",
+      "Marigold"
+    ],
+    "woods": [
+      "Oak",
+      "Yew",
+      "Cedar",
+      "Elder"
+    ],
+    "candleColor": "Black or Gold",
+    "essentialOils": [
+      "Myrrh",
+      "Frankincense",
+      "Vetiver",
+      "Sandalwood"
+    ],
+    "direction": "North",
+    "moonPhase": "Waning Moon, Dark Moon"
+  },
+  {
+    "entityId": "aphrodite",
+    "colors": [
+      "rose",
+      "pink",
+      "gold",
+      "sky blue"
+    ],
+    "stones": [
+      "rose quartz",
+      "pearl",
+      "emerald",
+      "turquoise"
+    ],
+    "herbs": [
+      "rose",
+      "myrtle",
+      "jasmine",
+      "anemone"
+    ],
+    "metals": [
+      "copper",
+      "gold"
+    ],
+    "scents": [
+      "rose",
+      "jasmine",
+      "myrtle",
+      "ylang-ylang"
+    ],
+    "timing": "Friday, Venus hour, waxing moon",
+    "element": "Water",
+    "sphere": "Venus",
+    "day": "Friday",
+    "planet": "Venus",
+    "zodiac": "Libra, Taurus",
+    "tarotCards": [
+      "The Empress",
+      "The Lovers",
+      "Two of Cups"
+    ],
+    "runeAssociations": [
+      "Gebo",
+      "Wunjo"
+    ],
+    "numerology": 6,
+    "magicalWeapon": [
+      "Lamp",
+      "Girdle",
+      "Rose"
+    ],
+    "magicalPowers": [
+      "Vision of Beauty Triumphant",
+      "Love Philters",
+      "Power to Cause Love"
+    ],
+    "virtue": "Unselfishness",
+    "vice": "Unchastity, Lust",
+    "divineName": "YHVH Tzabaoth",
+    "animals": [
+      "Lynx",
+      "Sparrow",
+      "Dove",
+      "Swan"
+    ],
+    "alchemicalProcess": "Conjunction",
+    "bodyPart": "Loins, Hips, Legs",
+    "flowers": [
+      "Rose",
+      "Peony",
+      "Jasmine",
+      "Orchid",
+      "Myrtle"
+    ],
+    "woods": [
+      "Apple",
+      "Myrtle",
+      "Cherry",
+      "Sandalwood"
+    ],
+    "candleColor": "Pink or Rose",
+    "essentialOils": [
+      "Rose",
+      "Ylang-ylang",
+      "Jasmine",
+      "Myrtle"
+    ],
+    "direction": "West",
+    "moonPhase": "Full Moon, Waxing Moon"
+  },
+  {
+    "entityId": "hekate",
+    "colors": [
+      "black",
+      "silver",
+      "dark red",
+      "dark purple"
+    ],
+    "stones": [
+      "black tourmaline",
+      "moonstone",
+      "obsidian",
+      "labradorite"
+    ],
+    "herbs": [
+      "mugwort",
+      "rue",
+      "yew",
+      "mandrake"
+    ],
+    "metals": [
+      "silver",
+      "iron"
+    ],
+    "scents": [
+      "myrrh",
+      "cypress",
+      "dragon's blood",
+      "oud"
+    ],
+    "timing": "Saturday, dark moon, Saturn or Moon hour",
+    "element": "Earth",
+    "sphere": "Moon",
+    "day": "Saturday",
+    "planet": "Moon",
+    "zodiac": "Scorpio, Cancer",
+    "tarotCards": [
+      "The High Priestess",
+      "The Moon",
+      "The World"
+    ],
+    "runeAssociations": [
+      "Isa",
+      "Algiz",
+      "Hagalaz"
+    ],
+    "numerology": 3,
+    "magicalWeapon": [
+      "Perfumes",
+      "Sandals",
+      "Torch"
+    ],
+    "magicalPowers": [
+      "Vision of the Machinery of the Universe",
+      "Bewitchments",
+      "Erotic Rites",
+      "Necromancy"
+    ],
+    "virtue": "Independence",
+    "vice": "Idleness",
+    "divineName": "Shaddai El Chai",
+    "animals": [
+      "Dog",
+      "Beetle",
+      "Elephant",
+      "Toad",
+      "Serpent"
+    ],
+    "alchemicalProcess": "Dissolution",
+    "bodyPart": "Reproductive System, Genitals",
+    "flowers": [
+      "White Rose",
+      "Moonflower",
+      "Yarrow",
+      "Night-Blooming Jasmine",
+      "Hellebore"
+    ],
+    "woods": [
+      "Yew",
+      "Willow",
+      "Elder",
+      "Cypress"
+    ],
+    "candleColor": "Black or Silver",
+    "essentialOils": [
+      "Myrrh",
+      "Cypress",
+      "Dragon's Blood",
+      "Mugwort"
+    ],
+    "direction": "West/North",
+    "moonPhase": "Dark Moon, Waning Moon"
+  },
+  {
+    "entityId": "thoth",
+    "colors": [
+      "blue",
+      "gold",
+      "white",
+      "deep teal"
+    ],
+    "stones": [
+      "lapis lazuli",
+      "blue calcite",
+      "sodalite",
+      "carnelian"
+    ],
+    "herbs": [
+      "papyrus",
+      "frankincense",
+      "lotus",
+      "iris"
+    ],
+    "metals": [
+      "mercury",
+      "silver"
+    ],
+    "scents": [
+      "frankincense",
+      "lotus",
+      "kyphi",
+      "jasmine"
+    ],
+    "timing": "Wednesday, any moon phase, Mercury hour",
+    "element": "Air",
+    "sphere": "Mercury",
+    "day": "Wednesday",
+    "planet": "Mercury",
+    "zodiac": "Gemini, Virgo",
+    "tarotCards": [
+      "The Magician",
+      "The Hermit",
+      "Ace of Swords"
+    ],
+    "runeAssociations": [
+      "Ansuz",
+      "Kenaz",
+      "Raidho"
+    ],
+    "numerology": 5,
+    "magicalWeapon": [
+      "Wand",
+      "Caduceus",
+      "Apron"
+    ],
+    "magicalPowers": [
+      "Vision of Splendour",
+      "Gift of Tongues",
+      "Making of Talismans",
+      "Miracles of Healing"
+    ],
+    "virtue": "Truthfulness",
+    "vice": "Falsehood, Dishonesty",
+    "divineName": "Elohim Tzabaoth",
+    "animals": [
+      "Hermaphrodite",
+      "Jackal",
+      "Ibis",
+      "Twin Serpents"
+    ],
+    "alchemicalProcess": "Sublimation",
+    "bodyPart": "Loins, Hips (Left)",
+    "flowers": [
+      "Lotus",
+      "Iris",
+      "Lavender",
+      "Papyrus Flower",
+      "Iris"
+    ],
+    "woods": [
+      "Cedar",
+      "Sandalwood",
+      "Ebony",
+      "Ash"
+    ],
+    "candleColor": "Blue or Gold",
+    "essentialOils": [
+      "Frankincense",
+      "Lotus",
+      "Jasmine",
+      "Cedarwood"
+    ],
+    "direction": "East",
+    "moonPhase": "Full Moon, Waxing Moon"
+  },
+  {
+    "entityId": "isis",
+    "colors": [
+      "blue",
+      "green",
+      "gold",
+      "white"
+    ],
+    "stones": [
+      "lapis lazuli",
+      "turquoise",
+      "carnelian",
+      "moonstone"
+    ],
+    "herbs": [
+      "rose",
+      "lotus",
+      "myrrh",
+      "cedar"
+    ],
+    "metals": [
+      "gold",
+      "silver"
+    ],
+    "scents": [
+      "myrrh",
+      "frankincense",
+      "lotus",
+      "rose"
+    ],
+    "timing": "Monday, waxing or full moon, Moon hour",
+    "element": "Water",
+    "sphere": "Moon",
+    "day": "Monday",
+    "planet": "Moon",
+    "zodiac": "Cancer, Virgo",
+    "tarotCards": [
+      "The High Priestess",
+      "The Empress",
+      "The Star"
+    ],
+    "runeAssociations": [
+      "Berkano",
+      "Laguz",
+      "Ingwaz"
+    ],
+    "numerology": 9,
+    "magicalWeapon": [
+      "Perfumes",
+      "Sandals",
+      "Sistrum"
+    ],
+    "magicalPowers": [
+      "Vision of the Machinery of the Universe",
+      "Bewitchments",
+      "Erotic Rites",
+      "Divination"
+    ],
+    "virtue": "Independence",
+    "vice": "Idleness",
+    "divineName": "Shaddai El Chai",
+    "animals": [
+      "Dog",
+      "Beetle",
+      "Elephant",
+      "Tortoise"
+    ],
+    "alchemicalProcess": "Dissolution",
+    "bodyPart": "Reproductive System, Genitals",
+    "flowers": [
+      "Lotus",
+      "Rose",
+      "Jasmine",
+      "Iris",
+      "Blue Cornflower"
+    ],
+    "woods": [
+      "Cedar",
+      "Sandalwood",
+      "Willow",
+      "Sycamore"
+    ],
+    "candleColor": "Blue or Gold",
+    "essentialOils": [
+      "Myrrh",
+      "Frankincense",
+      "Lotus",
+      "Rose"
+    ],
+    "direction": "West",
+    "moonPhase": "Full Moon, Waxing Moon"
+  },
+  {
+    "entityId": "odin",
+    "colors": [
+      "deep blue",
+      "gray",
+      "black",
+      "gold"
+    ],
+    "stones": [
+      "sapphire",
+      "labradorite",
+      "obsidian",
+      "tiger's eye"
+    ],
+    "herbs": [
+      "oak",
+      "ash",
+      "mugwort",
+      "valerian"
+    ],
+    "metals": [
+      "iron",
+      "gold"
+    ],
+    "scents": [
+      "oakmoss",
+      "pine",
+      "sage",
+      "tobacco"
+    ],
+    "timing": "Wednesday, waxing moon, Mercury hour",
+    "element": "Air",
+    "sphere": "Mercury",
+    "day": "Wednesday",
+    "planet": "Mercury",
+    "zodiac": "Sagittarius, Aquarius",
+    "tarotCards": [
+      "The Hanged Man",
+      "The Hermit",
+      "The Fool"
+    ],
+    "runeAssociations": [
+      "Ansuz",
+      "Raidho",
+      "Othala"
+    ],
+    "numerology": 9,
+    "magicalWeapon": [
+      "Wand",
+      "Caduceus",
+      "Spear (Gungnir)"
+    ],
+    "magicalPowers": [
+      "Vision of Splendour",
+      "Gift of Tongues",
+      "Making of Talismans",
+      "Prophecy"
+    ],
+    "virtue": "Truthfulness",
+    "vice": "Falsehood, Dishonesty",
+    "divineName": "Elohim Tzabaoth",
+    "animals": [
+      "Hermaphrodite",
+      "Raven",
+      "Wolf",
+      "Eight-Legged Horse"
+    ],
+    "alchemicalProcess": "Sublimation",
+    "bodyPart": "Loins, Hips (Left)",
+    "flowers": [
+      "Raven's flower",
+      "Yarrow",
+      "Juniper flower",
+      "Iris",
+      "Violet"
+    ],
+    "woods": [
+      "Ash",
+      "Oak",
+      "Yew",
+      "Pine"
+    ],
+    "candleColor": "Deep Blue or Black",
+    "essentialOils": [
+      "Oakmoss",
+      "Pine",
+      "Sage",
+      "Frankincense"
+    ],
+    "direction": "East",
+    "moonPhase": "Full Moon, Waning Moon"
+  },
+  {
+    "entityId": "freya",
+    "colors": [
+      "green",
+      "gold",
+      "amber",
+      "rose"
+    ],
+    "stones": [
+      "amber",
+      "rose quartz",
+      "emerald",
+      "garnet"
+    ],
+    "herbs": [
+      "rose",
+      "cowslip",
+      "primrose",
+      "yarrow"
+    ],
+    "metals": [
+      "gold",
+      "copper"
+    ],
+    "scents": [
+      "rose",
+      "sandalwood",
+      "apple blossom",
+      "amber"
+    ],
+    "timing": "Friday, waxing or full moon, Venus hour",
+    "element": "Earth",
+    "sphere": "Venus",
+    "day": "Friday",
+    "planet": "Venus",
+    "zodiac": "Taurus, Scorpio",
+    "tarotCards": [
+      "The Empress",
+      "The Lovers",
+      "Nine of Cups"
+    ],
+    "runeAssociations": [
+      "Fehu",
+      "Sowilo",
+      "Berkano"
+    ],
+    "numerology": 6,
+    "magicalWeapon": [
+      "Lamp",
+      "Girdle",
+      "Rose",
+      "Falcon Cloak"
+    ],
+    "magicalPowers": [
+      "Vision of Beauty Triumphant",
+      "Love Philters",
+      "Power to Cause Love",
+      "Seiðr"
+    ],
+    "virtue": "Unselfishness",
+    "vice": "Unchastity, Lust",
+    "divineName": "YHVH Tzabaoth",
+    "animals": [
+      "Lynx",
+      "Sparrow",
+      "Dove",
+      "Swan",
+      "Cat"
+    ],
+    "alchemicalProcess": "Conjunction",
+    "bodyPart": "Loins, Hips, Legs",
+    "flowers": [
+      "Rose",
+      "Primrose",
+      "Cowslip",
+      "Cornflower",
+      "Swan flower"
+    ],
+    "woods": [
+      "Apple",
+      "Birch",
+      "Elder",
+      "Sandalwood"
+    ],
+    "candleColor": "Gold or Rose",
+    "essentialOils": [
+      "Rose",
+      "Sandalwood",
+      "Apple Blossom",
+      "Amber"
+    ],
+    "direction": "West",
+    "moonPhase": "Full Moon, Waxing Moon"
+  },
+  {
+    "entityId": "kali",
+    "colors": [
+      "black",
+      "deep red",
+      "crimson",
+      "purple"
+    ],
+    "stones": [
+      "obsidian",
+      "black tourmaline",
+      "garnet",
+      "ruby"
+    ],
+    "herbs": [
+      "hibiscus",
+      "neem",
+      "turmeric",
+      "black sesame"
+    ],
+    "metals": [
+      "iron",
+      "lead"
+    ],
+    "scents": [
+      "oud",
+      "patchouli",
+      "jasmine",
+      "champaka"
+    ],
+    "timing": "Saturday, dark or new moon, Saturn hour",
+    "element": "Fire",
+    "sphere": "Saturn",
+    "day": "Saturday",
+    "planet": "Saturn",
+    "zodiac": "Scorpio, Capricorn",
+    "tarotCards": [
+      "Death",
+      "The Tower",
+      "Judgement"
+    ],
+    "runeAssociations": [
+      "Hagalaz",
+      "Thurisaz",
+      "Isa"
+    ],
+    "numerology": 10,
+    "magicalWeapon": [
+      "Cup",
+      "Outer Robe of Concealment",
+      "Sickle"
+    ],
+    "magicalPowers": [
+      "Vision of Sorrow",
+      "Works of Malediction and Defense",
+      "Understanding"
+    ],
+    "virtue": "Silence",
+    "vice": "Avarice",
+    "divineName": "YHVH Elohim",
+    "animals": [
+      "Crow",
+      "Owl",
+      "Bee",
+      "Jackal"
+    ],
+    "alchemicalProcess": "Putrefaction, Calcination",
+    "bodyPart": "Right Side of Face, Womb",
+    "flowers": [
+      "Hibiscus",
+      "Black Rose",
+      "Chrysanthemum",
+      "Lotus",
+      "Jasmine"
+    ],
+    "woods": [
+      "Ebony",
+      "Sandalwood",
+      "Cedar",
+      "Neem"
+    ],
+    "candleColor": "Black or Deep Red",
+    "essentialOils": [
+      "Oud",
+      "Patchouli",
+      "Jasmine",
+      "Champaka"
+    ],
+    "direction": "North",
+    "moonPhase": "Dark Moon, New Moon"
+  },
+  {
+    "entityId": "michael",
+    "colors": [
+      "royal blue",
+      "gold",
+      "white",
+      "red"
+    ],
+    "stones": [
+      "sapphire",
+      "clear quartz",
+      "sunstone",
+      "garnet"
+    ],
+    "herbs": [
+      "frankincense",
+      "angelica",
+      "dragon's blood",
+      "bay laurel"
+    ],
+    "metals": [
+      "gold",
+      "iron"
+    ],
+    "scents": [
+      "frankincense",
+      "dragon's blood",
+      "orange",
+      "cinnamon"
+    ],
+    "timing": "Sunday, waxing or full moon, Sun hour",
+    "element": "Fire",
+    "sphere": "Sun",
+    "day": "Sunday",
+    "planet": "Sun",
+    "zodiac": "Leo, Aries",
+    "tarotCards": [
+      "Judgement",
+      "Strength",
+      "The Sun"
+    ],
+    "runeAssociations": [
+      "Sowilo",
+      "Tiwaz",
+      "Algiz"
+    ],
+    "numerology": 5,
+    "magicalWeapon": [
+      "Lamen",
+      "Rosy Cross",
+      "Sword"
+    ],
+    "magicalPowers": [
+      "Vision of the Harmony of Things",
+      "Miracles of Healing",
+      "Prophecy",
+      "Power of Light"
+    ],
+    "virtue": "Devotion to the Great Work",
+    "vice": "Pride",
+    "divineName": "YHVH Eloah va-Daath",
+    "animals": [
+      "Lion",
+      "Child",
+      "Pelican",
+      "Phoenix",
+      "Eagle"
+    ],
+    "alchemicalProcess": "Projection, Coagulation of Gold",
+    "bodyPart": "Breast, Heart",
+    "flowers": [
+      "Sunflower",
+      "Calendula",
+      "Marigold",
+      "Red Rose",
+      "Iris"
+    ],
+    "woods": [
+      "Oak",
+      "Cedar",
+      "Sandalwood",
+      "Laurel"
+    ],
+    "candleColor": "Gold or Deep Blue",
+    "essentialOils": [
+      "Frankincense",
+      "Dragon's Blood",
+      "Orange",
+      "Cinnamon"
+    ],
+    "direction": "South",
+    "moonPhase": "Full Moon, Waxing Moon"
   },
   {
     "entityId": "the_morrigan",
-    "colors": ["black", "red", "dark green", "purple"],
-    "stones": ["obsidian", "bloodstone", "jet", "garnet"],
-    "herbs": ["mugwort", "yarrow", "wormwood", "elder"],
-    "metals": ["iron", "lead"],
-    "scents": ["oakmoss", "myrrh", "patchouli", "wormwood"],
+    "colors": [
+      "black",
+      "red",
+      "dark green",
+      "purple"
+    ],
+    "stones": [
+      "obsidian",
+      "bloodstone",
+      "jet",
+      "garnet"
+    ],
+    "herbs": [
+      "mugwort",
+      "yarrow",
+      "wormwood",
+      "elder"
+    ],
+    "metals": [
+      "iron",
+      "lead"
+    ],
+    "scents": [
+      "oakmoss",
+      "myrrh",
+      "patchouli",
+      "wormwood"
+    ],
     "timing": "Saturday or Tuesday, waning or dark moon, Mars or Saturn hour",
     "element": "Earth",
     "sphere": "Mars",
     "day": "Tuesday",
     "planet": "Mars",
     "zodiac": "Scorpio, Aries",
-    "tarotCards": ["Death", "The Chariot", "Strength"],
-    "runeAssociations": ["Tiwaz", "Algiz", "Berkano"],
-    "numerology": 9
+    "tarotCards": [
+      "Death",
+      "The Chariot",
+      "Strength"
+    ],
+    "runeAssociations": [
+      "Tiwaz",
+      "Algiz",
+      "Berkano"
+    ],
+    "numerology": 9,
+    "magicalWeapon": [
+      "Sword",
+      "Spear",
+      "Scourge",
+      "Chain"
+    ],
+    "magicalPowers": [
+      "Vision of Power",
+      "Works of Wrath and Vengeance",
+      "Power of Shape-Shifting",
+      "Prophecy of War"
+    ],
+    "virtue": "Energy, Courage",
+    "vice": "Cruelty",
+    "divineName": "Elohim Gibor",
+    "animals": [
+      "Crow",
+      "Raven",
+      "Wolf",
+      "Eel",
+      "Cow"
+    ],
+    "alchemicalProcess": "Separation",
+    "bodyPart": "Right Arm",
+    "flowers": [
+      "Black Rose",
+      "Thistle",
+      "Crow flower",
+      "Yarrow",
+      "Heather"
+    ],
+    "woods": [
+      "Oak",
+      "Elder",
+      "Yew",
+      "Hawthorn"
+    ],
+    "candleColor": "Black or Deep Red",
+    "essentialOils": [
+      "Oakmoss",
+      "Myrrh",
+      "Patchouli",
+      "Dragon's Blood"
+    ],
+    "direction": "North/South",
+    "moonPhase": "Dark Moon, Waning Moon"
   }
 ]
