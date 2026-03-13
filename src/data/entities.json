@@ -258,34 +258,276 @@
     "sphere": "Mars"
   },
   {
-    "id": "michael", "name": "Archangel Michael", "tradition": "Abrahamic", "type": "angel",
-    "description": "Prince of the heavenly armies and chief of the archangels. Associated with protection, truth, and divine justice.",
-    "tags": ["protection", "truth", "justice", "strength", "warrior", "courage", "fire"],
-    "sphere": "Sun"
+    "id": "raphael",
+    "name": "Archangel Raphael",
+    "tradition": "Abrahamic",
+    "type": "angel",
+    "description": "Raphael, whose name means 'the healing of God,' is the archangel of air and the East. Associated with spring, intellect, logic, and reason. As archangel of Tiphareth on the Tree of Life, Raphael regulates and harmonizes the energies of all spheres, and is also correlated with victory, success, and prosperity.",
+    "tags": ["healing", "health", "travel", "air", "east", "spring", "intellect", "logic", "mental clarity", "mercury", "tiphareth", "prosperity", "victory"],
+    "sphere": "Mercury / Tiphareth",
+    "attributes": [
+      "Radiant yellow robes",
+      "Holds a caduceus (a staff with two entwined snakes)",
+      "Anything associated with spring (a damp, warm wind)",
+      "Golden robes and brilliant armor with the image of the sun on the breastplate (Tiphareth aspect)",
+      "Holds a scepter (Tiphareth aspect)"
+    ],
+    "reasonsToInvoke": [
+      "To better articulate your ideas to others",
+      "For safe passage",
+      "For healing of any sort",
+      "For assistance with meditation and mental clarity",
+      "To enhance the intellect and learn deeper truths of philosophical and spiritual teachings",
+      "For all manner of healing—physical, mental, emotional, and spiritual",
+      "To repair rifts between yourself and others",
+      "To complete projects",
+      "To attain fame or popularity through talent",
+      "To win legal battles",
+      "For stability of any sort",
+      "To pacify aggressive situations and gain victory over enemies",
+      "To improve physical vitality and stamina",
+      "For any sort of material prosperity",
+      "To overcome sorrow"
+    ]
   },
   {
-    "id": "gabriel", "name": "Archangel Gabriel", "tradition": "Abrahamic", "type": "angel",
-    "description": "The divine messenger archangel. Associated with communication, revelation, purification, and new beginnings.",
-    "tags": ["communication", "messages", "revelation", "moon", "water", "dreams", "purity"],
-    "sphere": "Moon"
+    "id": "gabriel",
+    "name": "Archangel Gabriel",
+    "tradition": "Abrahamic",
+    "type": "angel",
+    "description": "Gabriel is the archangel of water and the West, most associated with autumn, love, and the subconscious mind. Her domain is intuition, emotions, and dreams. As archangel of Yesod on the Tree of Life, Gabriel governs the astral plane, the moon, and the ebb and flow of etheric energy.",
+    "tags": ["communication", "dreams", "intuition", "water", "west", "autumn", "moon", "emotions", "love", "subconscious", "yesod", "astral", "peace"],
+    "sphere": "Moon / Yesod",
+    "attributes": [
+      "Blue robes",
+      "Holds a chalice",
+      "Anything associated with autumn (cool air, the smell of fallen leaves)",
+      "Purple robes and a silver headband with a crescent moon (Yesod aspect)"
+    ],
+    "reasonsToInvoke": [
+      "To overcome anger or melancholy",
+      "To heal any form of emotional wounding",
+      "For anything related to pure love",
+      "To increase the presence of love in your life",
+      "To bring peace and subdue aggression",
+      "To enhance artistic inspiration",
+      "To find answers in dreams and help interpret dreams",
+      "To strengthen your magick",
+      "To obtain secret information",
+      "To gain insight on the workings of the astral realm",
+      "For emotional strength in times of crisis"
+    ]
   },
   {
-    "id": "raphael", "name": "Archangel Raphael", "tradition": "Abrahamic", "type": "angel",
-    "description": "The healing archangel. Oversees physical and emotional healing, travel, and spiritual guidance.",
-    "tags": ["healing", "health", "travel", "guidance", "air", "communication", "recovery"],
-    "sphere": "Mercury"
+    "id": "michael",
+    "name": "Archangel Michael",
+    "tradition": "Abrahamic",
+    "type": "angel",
+    "description": "Michael is the archangel of fire and the South, representing warrior energy associated with summer, courage, willpower, ambition, and sex drive. As archangel of Hod on the Tree of Life, Michael governs intellect, logic, travel, business, medicine, science, and magick—taking on a role of mediation and facilitation.",
+    "tags": ["protection", "courage", "fire", "south", "summer", "warrior", "willpower", "strength", "hod", "intellect", "business", "magick"],
+    "sphere": "Sun / Hod",
+    "attributes": [
+      "Red robes",
+      "Holds a sword",
+      "Anything associated with summer (heat, dryness, intense light)",
+      "Orange robes and a caduceus (Hod aspect)"
+    ],
+    "reasonsToInvoke": [
+      "To lose weight or get into shape",
+      "For ferocity in competition",
+      "For protection",
+      "To enhance passion",
+      "For any outcome associated with fire",
+      "To make intelligent decisions, especially during stressful times",
+      "For protection when performing magick (as well as to strengthen your magick)",
+      "To recover from illness",
+      "For new business ideas and to meet with success in any business venture",
+      "To make good financial deals",
+      "To eloquently express yourself and your ideas"
+    ]
   },
   {
-    "id": "uriel", "name": "Archangel Uriel", "tradition": "Abrahamic", "type": "angel",
-    "description": "Angel of wisdom and illumination. Associated with the earth, natural forces, and bringing divine light to darkness.",
-    "tags": ["wisdom", "illumination", "earth", "grounding", "fire", "knowledge", "transformation"],
-    "sphere": "Earth"
+    "id": "uriel",
+    "name": "Archangel Uriel",
+    "tradition": "Abrahamic",
+    "type": "angel",
+    "description": "Uriel is the archangel of earth and the North, associated with winter. He watches over and guides those who practice magick, especially with divination. His arena is the physical realm—particularly health, finances, and material wellbeing.",
+    "tags": ["wisdom", "earth", "north", "winter", "divination", "grounding", "finances", "material", "illumination", "knowledge"],
+    "sphere": "Earth",
+    "attributes": [
+      "Forest-green robes",
+      "Holds a pentacle (a five-pointed star on a round disk)",
+      "Anything associated with winter (cold, crisp air; a frozen landscape; clear sky)"
+    ],
+    "reasonsToInvoke": [
+      "To assist with divination",
+      "For anything involving finances",
+      "To obtain material goods and wealth"
+    ]
   },
   {
-    "id": "metatron", "name": "Metatron", "tradition": "Kabbalistic", "type": "angel",
-    "description": "Highest of the angels in Kabbalistic tradition. Scribe of God and mediator between the divine and human realms.",
-    "tags": ["sacred geometry", "Kabbalah", "divine wisdom", "ascension", "cosmic order", "light", "transformation"],
-    "sphere": "Kether"
+    "id": "metatron",
+    "name": "Archangel Metatron",
+    "tradition": "Kabbalistic",
+    "type": "angel",
+    "description": "Metatron is the only archangel said to have once been human—identified with the prophet Enoch, transformed by the divine into the angel closest to the throne of heaven. He directs the flow of purest divine energy down into denser levels of reality. As archangel of Kether, the crown of the Tree of Life, he represents complete union with the divine source. Invoking him raises one's energetic vibration toward enlightenment.",
+    "tags": ["sacred geometry", "Kabbalah", "divine wisdom", "ascension", "kether", "light", "transformation", "enlightenment", "cosmic order", "great work"],
+    "sphere": "Kether",
+    "attributes": [
+      "Blinding white, crystalline robes",
+      "Stands or sits on a throne made of light",
+      "Robes of crystal clear light (Kether aspect)"
+    ],
+    "reasonsToInvoke": [
+      "To raise the vibrational frequency of a given area (a room, house, neighborhood, etc.)",
+      "To initiate the process of crossing the abyss",
+      "To complete the Great Work—to escape the wheel of samsara",
+      "To break free from the wheel of samsara, the endless cycle of suffering and rebirth",
+      "To align your individual will with the universal will",
+      "To see through the illusions of the material world",
+      "To raise the vibrational rate of your consciousness in order to display more aspects of divinity in your life"
+    ]
+  },
+  {
+    "id": "sandalphon",
+    "name": "Archangel Sandalphon",
+    "tradition": "Kabbalistic",
+    "type": "angel",
+    "description": "Sandalphon regulates the flow of energy from divinity to the physical realm, gathering prayers and carrying them to the source of creation. Commander of the Ashim ('souls of fire') and archangel of music, fertility, and manifestation. Said to be the twin of Metatron and identified with the prophet Elijah. Presides over Malkuth on the Tree of Life—the densest level of reality where all physical things exist.",
+    "tags": ["manifestation", "prayer", "music", "earth", "malkuth", "fertility", "grounding", "abundance", "physical realm", "twin flame"],
+    "sphere": "Malkuth",
+    "attributes": [
+      "Pale brown robes",
+      "Holds a cornucopia (an overflowing basket of food)"
+    ],
+    "reasonsToInvoke": [
+      "To strengthen your powers of manifestation",
+      "To prevent financial or material loss",
+      "For greater strength and endurance, especially during adverse times",
+      "For assistance in creating music or to improve your musical ability",
+      "To obtain a home",
+      "For assistance in working with plants",
+      "To spread a particular message in the world",
+      "To manifest anything in the material world",
+      "To bless your practical magick such that it manifests in a way that harms none"
+    ]
+  },
+  {
+    "id": "kamael",
+    "name": "Archangel Kamael",
+    "tradition": "Kabbalistic",
+    "type": "angel",
+    "description": "Kamael, whose name means 'strength of God,' is the fiercest warrior among the celestial hosts. As archangel of Geburah on the Tree of Life, Kamael embodies strength, severity, courage, and self-discipline. He exists to protect those who cannot protect themselves, defending against strife swiftly and without remorse.",
+    "tags": ["protection", "strength", "warrior", "geburah", "mars", "courage", "willpower", "self-discipline", "defense", "adversity", "power"],
+    "sphere": "Mars / Geburah",
+    "attributes": [
+      "Red robes, crimson armor, and a helmet",
+      "Holds a spear and shield"
+    ],
+    "reasonsToInvoke": [
+      "To repel negative energy",
+      "To defeat enemies and defend against bullies",
+      "For bravery in the face of adversity",
+      "As a shield against aggressive people and situations",
+      "To project an aura of power",
+      "To express anger in a healthy way",
+      "To repel thieves and protect your home",
+      "For assistance in any type of competition",
+      "For protection against negative thoughts"
+    ]
+  },
+  {
+    "id": "haniel",
+    "name": "Archangel Haniel",
+    "tradition": "Kabbalistic",
+    "type": "angel",
+    "description": "Haniel presides over Netzach on the Tree of Life—the sphere of emotional life, art, beauty, sensuality, and luxury. Haniel possesses equally masculine and feminine energy, making this archangel receptive to any pronoun. Netzach is also the plane where the fey (faeries) exist—powerful entities with their own moral framework.",
+    "tags": ["love", "beauty", "art", "emotions", "netzach", "venus", "sensuality", "faerie", "harmony", "relationships", "joy", "nature"],
+    "sphere": "Venus / Netzach",
+    "attributes": [
+      "Seafoam-green robes",
+      "Accompanied by the scent of rose"
+    ],
+    "reasonsToInvoke": [
+      "To bring peace to arguing lovers",
+      "To encourage fidelity and enhance passion",
+      "To turn rivals and enemies into allies and friends",
+      "To gain new friends",
+      "To reunite loved ones",
+      "For assistance in creating any form of artwork",
+      "To experience joy",
+      "To create an environment in your home that is pleasing to all of the senses",
+      "To aid in gardening or any nature-related activities",
+      "To develop a mutually beneficial relationship with the fey"
+    ]
+  },
+  {
+    "id": "tzadkiel",
+    "name": "Archangel Tzadkiel",
+    "tradition": "Kabbalistic",
+    "type": "angel",
+    "description": "Tzadkiel is the archangel of Chesed on the Tree of Life, the sphere of abundance, prosperity, joy, and adventure. Said to have watched over Abraham, Tzadkiel is the archangel of luck—the more you work with him, the luckier you become. Associated with Jupiter energy, unconditional love, and devotion to the spiritual path. Burn bayberry and cedar to strengthen the connection.",
+    "tags": ["abundance", "prosperity", "luck", "joy", "chesed", "jupiter", "unconditional love", "talent", "ambition", "harmony", "adventure"],
+    "sphere": "Jupiter / Chesed",
+    "attributes": [
+      "Blue robes",
+      "Holds a scepter, like a king"
+    ],
+    "reasonsToInvoke": [
+      "For any form of prosperity and abundance",
+      "To attain inner harmony and joy",
+      "For luck in gambling",
+      "To enhance your popularity and the esteem of others",
+      "For the power to help others",
+      "To increase any talent or skill",
+      "To better understand your will and purpose in life",
+      "For more ambition",
+      "To make certain that others keep their promises"
+    ]
+  },
+  {
+    "id": "tzaphkiel",
+    "name": "Archangel Tzaphkiel",
+    "tradition": "Kabbalistic",
+    "type": "angel",
+    "description": "Tzaphkiel is the archangel of Binah on the Tree of Life—the most feminine of all spheres, associated with Saturn, dark goddesses, karma, and old age. She helps us understand painful lessons necessary for spiritual development, teaching the value of silence. The principal work of Binah is the complete dissolution of the ego. Hers is not an energy to invoke lightly.",
+    "tags": ["binding", "banishing", "saturn", "binah", "justice", "ego dissolution", "karma", "silence", "authority", "secrets", "shadow work"],
+    "sphere": "Saturn / Binah",
+    "attributes": [
+      "Black robes",
+      "Holds an hourglass"
+    ],
+    "reasonsToInvoke": [
+      "To bind enemies in order to prevent them from doing harm",
+      "To destroy the plans and schemes of enemies",
+      "To repel curses or other forms of negative energy",
+      "To bring justice upon those who have done you wrong",
+      "To banish sickness and anxiety",
+      "To project an aura of authority and gain the respect of others",
+      "For a restful night's sleep",
+      "To discover secrets"
+    ]
+  },
+  {
+    "id": "raziel",
+    "name": "Archangel Raziel",
+    "tradition": "Kabbalistic",
+    "type": "angel",
+    "description": "Raziel, the prince of hidden things, presides over Chokmah on the Tree of Life—the sphere of divine masculine energy where the distinction between creator and creation dissolves. Raziel causes epiphanies and realizations about magick and the universe, often through dreams, signs, and flashes of intuition. Said to witness and record everything on Earth in an infinitely enormous book that closes only when the last sentient being enters the divine realm.",
+    "tags": ["wisdom", "hidden knowledge", "chokmah", "epiphanies", "divination", "divine masculine", "records", "magick", "intuition", "ancient mysteries"],
+    "sphere": "Chokmah",
+    "attributes": [
+      "Gray robes",
+      "Holds an extremely large book"
+    ],
+    "reasonsToInvoke": [
+      "To set plans in motion and speed up processes",
+      "To gain energy after you have been drained",
+      "To break free of any situation that feels like a rut",
+      "To obtain wisdom and deeper insight about any subject, especially anything pertaining to past civilizations and cultures",
+      "To discover forgotten or unrecorded magickal techniques",
+      "To strengthen any divination technique"
+    ]
   },
   {
     "id": "bune", "name": "Bune", "tradition": "Goetia", "type": "demon",

@@ -16,6 +16,8 @@ export interface Entity {
   isPopCulture?: boolean;
   isClosed?: boolean;
   sphere?: string;
+  attributes?: string[];
+  reasonsToInvoke?: string[];
 }
 
 export interface Correspondence {

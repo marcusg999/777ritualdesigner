@@ -175,6 +175,34 @@ export default function LibraryPage() {
 
                 <p className="text-sm text-foreground/70 leading-relaxed">{entity.description}</p>
 
+                {entity.attributes && entity.attributes.length > 0 && (
+                  <div className="pt-1">
+                    <p className="text-xs text-foreground/40 uppercase tracking-wider mb-1">Visualization</p>
+                    <ul className="space-y-0.5">
+                      {entity.attributes.map((attr) => (
+                        <li key={attr} className="text-xs text-foreground/60 flex gap-1.5">
+                          <span className="text-gold/40 shrink-0">·</span>
+                          {attr}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+
+                {entity.reasonsToInvoke && entity.reasonsToInvoke.length > 0 && (
+                  <div className="pt-1">
+                    <p className="text-xs text-foreground/40 uppercase tracking-wider mb-1">Reasons to Invoke</p>
+                    <ul className="space-y-0.5">
+                      {entity.reasonsToInvoke.map((reason) => (
+                        <li key={reason} className="text-xs text-foreground/60 flex gap-1.5">
+                          <span className="text-gold/40 shrink-0">·</span>
+                          {reason}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+
                 {sigil && <p className="text-xs text-foreground/40 italic">{sigil.symbolName}</p>}
 
                 <div className="flex flex-wrap gap-1 pt-1">
