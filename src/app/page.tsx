@@ -18,6 +18,31 @@ import { saveResult } from '@/lib/storage';
 const intents = intentsData as Intent[];
 const entities = entitiesData as Entity[];
 
+function Toggle({
+  on,
+  onToggle,
+  label,
+}: {
+  on: boolean;
+  onToggle: () => void;
+  label: string;
+}) {
+  return (
+    <button
+      type="button"
+      role="switch"
+      aria-checked={on}
+      onClick={onToggle}
+      className="card flex items-center gap-3 flex-1 !py-3.5 !px-4 text-left cursor-pointer"
+    >
+      <span className="switch" data-on={on}>
+        <span className="switch__dot" />
+      </span>
+      <span className="text-sm text-foreground/75">{label}</span>
+    </button>
+  );
+}
+
 export default function HomePage() {
   const [query, setQuery] = useState('');
   const [result, setResult] = useState<CorrespondenceResult | null>(null);
@@ -54,7 +79,7 @@ export default function HomePage() {
         }
       }
     } catch {
-      setError('Something went wrong. Please try again.');
+      setError('The working faltered — try phrasing your intention again.');
     } finally {
       setLoading(false);
     }
@@ -68,89 +93,88 @@ export default function HomePage() {
   }, [result, enrichment]);
 
   return (
-    <div className="space-y-8">
-      {/* Hero */}
-      <div className="text-center space-y-4 pt-6">
-        <div className="text-5xl">✦</div>
-        <h1 className="text-4xl sm:text-5xl font-serif text-gold font-bold tracking-tight">
-          Design Your Ritual
-        </h1>
-        <p className="text-foreground/60 max-w-xl mx-auto text-base sm:text-lg">
-          Enter an intention, deity, or concept to discover symbolic correspondences and a personalized ritual outline drawn from world traditions.
+    <div className="space-y-10">
+      {/* ── Hero ──────────────────────────────────────────────────────────── */}
+      <header className="text-center pt-6 sm:pt-10">
+        <p className="eyebrow text-gold/60 reveal reveal-1">
+          Liber 777 · Correspondence Engine
         </p>
-      </div>
+        <h1 className="display-title text-4xl sm:text-6xl mt-4 reveal reveal-2">
+          <span className="gilt">Design Your Ritual</span>
+        </h1>
+        <p className="mx-auto max-w-xl mt-5 text-foreground/60 text-lg reveal reveal-3">
+          Name an intention, a deity, or a concept. The engine draws its
+          symbolic correspondences — and a seven-fold ritual outline — from the
+          world&apos;s traditions.
+        </p>
+      </header>
 
-      {/* Cultural Banner */}
-      <CulturalContextBanner />
+      <div className="max-w-2xl mx-auto space-y-5 reveal reveal-4">
+        <CulturalContextBanner />
 
-      {/* Search */}
-      <div className="max-w-2xl mx-auto space-y-4">
-        <div className="relative">
+        {/* Invocation field */}
+        <div>
+          <label htmlFor="intention" className="section-label block mb-2">
+            Your Intention
+          </label>
           <input
+            id="intention"
             type="text"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             onKeyDown={(e) => e.key === 'Enter' && handleSearch()}
-            placeholder="Enter a desire, concept, or deity..."
-            className="w-full px-5 py-4 bg-surface border border-gold/30 rounded-xl text-foreground placeholder-foreground/30 focus:outline-none focus:border-gold/70 focus:ring-1 focus:ring-gold/30 text-base transition-colors"
+            placeholder="e.g. love, protection, Aphrodite, clarity of mind…"
+            className="field px-5 py-4 text-base"
           />
         </div>
 
         <button
           onClick={handleSearch}
           disabled={loading || !query.trim()}
-          className="w-full py-3.5 bg-gold text-background font-serif font-bold text-lg rounded-xl hover:bg-gold-light transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+          className="btn-gold w-full py-4 text-lg"
         >
-          {loading ? 'Consulting the Ether...' : '✦ Manifest Correspondences'}
+          {loading ? 'Consulting the Ether…' : '✦  Manifest Correspondences'}
         </button>
 
-        {/* Toggles */}
         <div className="flex flex-col sm:flex-row gap-3">
-          <label className="flex items-center gap-3 cursor-pointer flex-1 card py-3">
-            <div
-              onClick={() => setIncludePopCulture(!includePopCulture)}
-              className={`w-10 h-5 rounded-full transition-colors relative cursor-pointer ${includePopCulture ? 'bg-gold' : 'bg-white/20'}`}
-            >
-              <div className={`absolute top-0.5 w-4 h-4 bg-white rounded-full shadow transition-transform ${includePopCulture ? 'translate-x-5' : 'translate-x-0.5'}`} />
-            </div>
-            <span className="text-sm text-foreground/70">Include Pop Culture Archetypes</span>
-          </label>
-
-          <label className="flex items-center gap-3 cursor-pointer flex-1 card py-3">
-            <div
-              onClick={() => setAiEnrichment(!aiEnrichment)}
-              className={`w-10 h-5 rounded-full transition-colors relative cursor-pointer ${aiEnrichment ? 'bg-gold' : 'bg-white/20'}`}
-            >
-              <div className={`absolute top-0.5 w-4 h-4 bg-white rounded-full shadow transition-transform ${aiEnrichment ? 'translate-x-5' : 'translate-x-0.5'}`} />
-            </div>
-            <span className="text-sm text-foreground/70">AI Enrichment (Hybrid Mode)</span>
-          </label>
+          <Toggle
+            on={includePopCulture}
+            onToggle={() => setIncludePopCulture(!includePopCulture)}
+            label="Include Pop-Culture Archetypes"
+          />
+          <Toggle
+            on={aiEnrichment}
+            onToggle={() => setAiEnrichment(!aiEnrichment)}
+            label="AI Enrichment · Hybrid Mode"
+          />
         </div>
+
+        {error && (
+          <p className="text-center text-sm" style={{ color: 'var(--caution-title)' }}>
+            {error}
+          </p>
+        )}
       </div>
 
-      {error && (
-        <p className="text-center text-red-400 text-sm">{error}</p>
-      )}
-
-      {/* Results */}
+      {/* ── Results ───────────────────────────────────────────────────────── */}
       {result && (
         <div className="space-y-6 animate-fade-in">
-          {/* Match info */}
+          <div className="rule" />
+
+          {/* Match summary */}
           <div className="flex flex-wrap items-center justify-between gap-3">
-            <div className="space-y-1">
+            <div className="space-y-2">
               {result.matchedIntent && (
-                <div className="flex items-center gap-2">
-                  <span className="text-xs text-foreground/40 uppercase tracking-widest">Intent</span>
-                  <span className="px-2 py-0.5 bg-gold/10 border border-gold/30 rounded text-xs text-gold font-medium">
-                    {result.matchedIntent.label}
-                  </span>
+                <div className="flex items-center gap-2.5 flex-wrap">
+                  <span className="section-label">Intent</span>
+                  <span className="chip">✦ {result.matchedIntent.label}</span>
                 </div>
               )}
               {result.matchedEntities.length > 0 && (
-                <div className="flex items-center gap-2 flex-wrap">
-                  <span className="text-xs text-foreground/40 uppercase tracking-widest">Entities</span>
+                <div className="flex items-center gap-2.5 flex-wrap">
+                  <span className="section-label">Entities</span>
                   {result.matchedEntities.map((e) => (
-                    <span key={e.id} className="px-2 py-0.5 bg-white/5 border border-white/10 rounded text-xs text-foreground/70">
+                    <span key={e.id} className="tag">
                       {e.name}
                       {e.isPopCulture && ' ✦'}
                     </span>
@@ -161,51 +185,64 @@ export default function HomePage() {
             <button
               onClick={handleSave}
               disabled={saved}
-              className="px-4 py-2 border border-gold/40 text-gold rounded-lg text-sm hover:bg-gold/10 transition-colors disabled:opacity-50"
+              className="btn-ghost px-4 py-2"
             >
-              {saved ? '✓ Saved' : '♡ Save Ritual'}
+              {saved ? '✓ Saved to Grimoire' : '♦ Save Ritual'}
             </button>
           </div>
 
-          {/* Entity Descriptions */}
+          {/* Entity descriptions */}
           {result.matchedEntities.length > 0 && (
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-              {result.matchedEntities.map((entity) => (
-                <div key={entity.id} className="card space-y-2">
-                  {entity.isPopCulture && (
-                    <span className="text-xs px-2 py-0.5 bg-purple-500/20 border border-purple-500/30 rounded text-purple-300">
-                      Pop Culture Archetype
-                    </span>
-                  )}
-                  <div className="flex items-start gap-3">
-                    {(() => {
-                      const sigil = getSigilByEntityId(entity.id);
-                      return sigil ? (
+              {result.matchedEntities.map((entity) => {
+                const sigil = getSigilByEntityId(entity.id);
+                return (
+                  <article key={entity.id} className="card card-hover space-y-3">
+                    {entity.isPopCulture && (
+                      <span
+                        className="tag"
+                        style={{
+                          color: 'var(--amethyst)',
+                          background: 'color-mix(in srgb, var(--amethyst) 12%, transparent)',
+                          borderColor: 'color-mix(in srgb, var(--amethyst) 30%, transparent)',
+                        }}
+                      >
+                        Pop-Culture Archetype
+                      </span>
+                    )}
+                    <div className="flex items-start gap-3">
+                      {sigil && (
                         <div className="shrink-0" title={sigil.symbolName}>
                           <svg
                             viewBox={sigil.viewBox}
-                            width="48"
-                            height="48"
-                            className="text-gold/60"
+                            width="46"
+                            height="46"
+                            className="text-gold/70"
                             aria-label={sigil.symbolName}
                             dangerouslySetInnerHTML={{ __html: sigil.svgContent }}
                           />
                         </div>
-                      ) : null;
-                    })()}
-                    <div className="flex-1 min-w-0">
-                      <h3 className="font-serif text-gold font-semibold">{entity.name}</h3>
-                      <p className="text-xs text-foreground/50">{entity.tradition} · {entity.type}</p>
+                      )}
+                      <div className="flex-1 min-w-0">
+                        <h3 className="font-display text-gold font-semibold text-lg leading-tight">
+                          {entity.name}
+                        </h3>
+                        <p className="eyebrow text-foreground/40 mt-1">
+                          {entity.tradition} · {entity.type}
+                        </p>
+                      </div>
                     </div>
-                  </div>
-                  <p className="text-sm text-foreground/70 leading-relaxed">{entity.description}</p>
-                  <div className="flex flex-wrap gap-1">
-                    {entity.tags.slice(0, 4).map((tag) => (
-                      <span key={tag} className="text-xs px-1.5 py-0.5 bg-white/5 rounded text-foreground/40">{tag}</span>
-                    ))}
-                  </div>
-                </div>
-              ))}
+                    <p className="text-sm text-foreground/75 leading-relaxed">
+                      {entity.description}
+                    </p>
+                    <div className="flex flex-wrap gap-1.5">
+                      {entity.tags.slice(0, 4).map((tag) => (
+                        <span key={tag} className="tag">{tag}</span>
+                      ))}
+                    </div>
+                  </article>
+                );
+              })}
             </div>
           )}
 
