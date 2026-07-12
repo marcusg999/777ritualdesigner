@@ -26,7 +26,7 @@ function getSwatchColor(colorName: string): string {
 function Section({ label, children }: { label: string; children: React.ReactNode }) {
   return (
     <div>
-      <h4 className="text-xs uppercase tracking-widest text-gold/60 font-semibold mb-1.5">{label}</h4>
+      <h4 className="section-label mb-1.5">{label}</h4>
       {children}
     </div>
   );
@@ -36,9 +36,7 @@ function TagList({ items }: { items: string[] }) {
   return (
     <div className="flex flex-wrap gap-1.5">
       {items.map((item) => (
-        <span key={item} className="px-2 py-0.5 rounded text-xs text-foreground/80" style={{ backgroundColor: 'var(--tag-bg)', border: '1px solid var(--tag-border)' }}>
-          {item}
-        </span>
+        <span key={item} className="tag">{item}</span>
       ))}
     </div>
   );
@@ -55,18 +53,18 @@ export default function CorrespondenceCard({ correspondences: c, enrichment }: C
 
   return (
     <div className="card space-y-5">
-      <div className="flex items-center justify-between">
-        <h3 className="text-lg font-serif text-gold font-semibold">Correspondences</h3>
-        <div className="text-xs text-foreground/40">{c.sphere}</div>
+      <div className="flex items-center justify-between gap-3">
+        <h3 className="text-xl font-display text-gold font-semibold">Correspondences</h3>
+        <span className="eyebrow text-foreground/40">{c.sphere}</span>
       </div>
 
       <Section label="Colors">
-        <div className="flex flex-wrap gap-2">
+        <div className="flex flex-wrap gap-2.5">
           {allColors.map((color) => (
             <div key={color} className="flex items-center gap-1.5">
               <div
-                className="w-4 h-4 rounded-full border border-white/20 shrink-0"
-                style={{ backgroundColor: getSwatchColor(color) }}
+                className="w-4 h-4 rounded-full shrink-0"
+                style={{ backgroundColor: getSwatchColor(color), border: '1px solid var(--tag-border)' }}
               />
               <span className="text-xs text-foreground/80 capitalize">{color}</span>
             </div>
@@ -135,13 +133,13 @@ export default function CorrespondenceCard({ correspondences: c, enrichment }: C
 
       {c.numerology !== undefined && (
         <Section label="Numerology">
-          <span className="inline-block text-2xl font-serif text-gold font-bold">{c.numerology}</span>
+          <span className="inline-block text-3xl font-display text-gold font-bold" style={{ fontVariantNumeric: 'tabular-nums' }}>{c.numerology}</span>
         </Section>
       )}
 
       {(c.flowers || c.woods || c.candleColor || c.essentialOils || c.direction || c.moonPhase) && (
-        <div className="border-t border-gold/20 pt-5 space-y-4">
-          <h4 className="text-xs uppercase tracking-widest text-gold/80 font-semibold">
+        <div className="pt-5 space-y-4" style={{ borderTop: '1px solid var(--hairline)' }}>
+          <h4 className="section-label">
             Witch&apos;s Correspondences
           </h4>
 
@@ -186,8 +184,8 @@ export default function CorrespondenceCard({ correspondences: c, enrichment }: C
       )}
 
       {(c.magicalWeapon || c.magicalPowers || c.virtue || c.vice || c.divineName || c.animals || c.alchemicalProcess || c.bodyPart) && (
-        <div className="border-t border-gold/20 pt-5 space-y-4">
-          <h4 className="text-xs uppercase tracking-widest text-gold/80 font-semibold">
+        <div className="pt-5 space-y-4" style={{ borderTop: '1px solid var(--hairline)' }}>
+          <h4 className="section-label">
             777 Correspondences
           </h4>
 
@@ -247,12 +245,10 @@ export default function CorrespondenceCard({ correspondences: c, enrichment }: C
       )}
 
       {enrichment?.interpretation && (
-        <div className="border-t border-gold/20 pt-4">
-          <h4 className="text-xs uppercase tracking-widest text-gold/60 font-semibold mb-2">
-            ✦ Symbolic Insight
-          </h4>
-          <p className="text-sm text-foreground/70 italic leading-relaxed">{enrichment.interpretation}</p>
-          <p className="text-xs text-foreground/30 mt-1">Source: AI enrichment (stub)</p>
+        <div className="pt-4" style={{ borderTop: '1px solid var(--hairline)' }}>
+          <h4 className="section-label mb-2">✦ Symbolic Insight</h4>
+          <p className="text-sm text-foreground/75 italic leading-relaxed">{enrichment.interpretation}</p>
+          <p className="eyebrow text-foreground/30 mt-2">Source · AI enrichment (stub)</p>
         </div>
       )}
     </div>

@@ -14,28 +14,58 @@ export default function Navigation() {
   const pathname = usePathname();
 
   return (
-    <nav className="border-b border-gold/20 sticky top-0 z-50" style={{ background: 'var(--nav-bg)', backdropFilter: 'blur(20px)', WebkitBackdropFilter: 'blur(20px)' }}>
-      <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-2 text-gold font-serif text-xl font-bold tracking-wide hover:opacity-80 transition-opacity">
-          <span className="text-2xl">✦</span>
-          <span>The Physics of HipHop Presents</span>
+    <nav
+      className="sticky top-0 z-50 border-b"
+      style={{
+        background: 'var(--nav-bg)',
+        borderColor: 'var(--card-border)',
+        backdropFilter: 'blur(22px) saturate(120%)',
+        WebkitBackdropFilter: 'blur(22px) saturate(120%)',
+      }}
+    >
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-3">
+        <Link
+          href="/"
+          className="flex items-center gap-2.5 group min-w-0"
+          aria-label="777 Ritual Designer — home"
+        >
+          <span className="text-gold text-xl leading-none transition-transform group-hover:rotate-90 duration-500">
+            ✦
+          </span>
+          <span className="flex flex-col leading-none min-w-0">
+            <span className="font-display text-gold font-semibold tracking-[0.14em] text-[0.95rem] sm:text-base truncate">
+              777 RITUAL
+            </span>
+            <span className="eyebrow text-foreground/40 mt-0.5 truncate">
+              The Physics of HipHop
+            </span>
+          </span>
         </Link>
 
-        <div className="flex items-center gap-1 sm:gap-2">
-          {navLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className={`px-3 py-1.5 rounded-md text-sm font-medium transition-colors ${
-                pathname === link.href
-                  ? 'bg-gold/20 text-gold'
-                  : 'text-foreground/70 hover:text-foreground hover:bg-white/5'
-              }`}
-            >
-              {link.label}
-            </Link>
-          ))}
-          <div className="ml-2">
+        <div className="flex items-center gap-1 sm:gap-1.5">
+          {navLinks.map((link) => {
+            const active = pathname === link.href;
+            return (
+              <Link
+                key={link.href}
+                href={link.href}
+                aria-current={active ? 'page' : undefined}
+                className={`px-2.5 sm:px-3.5 py-1.5 rounded-md text-sm font-medium transition-colors ${
+                  active
+                    ? 'text-gold'
+                    : 'text-foreground/55 hover:text-foreground'
+                }`}
+                style={
+                  active
+                    ? { background: 'color-mix(in srgb, var(--gold) 12%, transparent)' }
+                    : undefined
+                }
+              >
+                {link.label}
+              </Link>
+            );
+          })}
+          <div className="ml-1.5">
             <ThemeToggle />
           </div>
         </div>

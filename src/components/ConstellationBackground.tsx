@@ -166,9 +166,9 @@ export default function ConstellationBackground() {
       } else {
         // ── NIGHT MODE: deep space ────────────────────────────────────────
         const bg = ctx.createRadialGradient(cx, cy * 0.6, 0, cx, cy, Math.max(w, h) * 0.85);
-        bg.addColorStop(0,    '#0c0920');
-        bg.addColorStop(0.45, '#080614');
-        bg.addColorStop(1,    '#020208');
+        bg.addColorStop(0,    '#100b24');
+        bg.addColorStop(0.45, '#0a0718');
+        bg.addColorStop(1,    '#05040b');
         ctx.fillStyle = bg;
         ctx.fillRect(0, 0, w, h);
 

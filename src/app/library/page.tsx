@@ -62,60 +62,64 @@ export default function LibraryPage() {
 
   return (
     <div className="space-y-6">
-      <div>
-        <h1 className="text-3xl font-serif text-gold font-bold mb-2">✦ Library</h1>
-        <p className="text-foreground/50">Browse all entities, deities, and intention archetypes.</p>
-      </div>
+      <header className="pt-4">
+        <p className="eyebrow text-gold/60">Codex of Correspondences</p>
+        <h1 className="display-title text-4xl sm:text-5xl mt-3">
+          <span className="gilt">The Library</span>
+        </h1>
+        <p className="text-foreground/55 mt-3 text-lg">Browse every entity, deity, and intention archetype.</p>
+      </header>
 
       {/* Search */}
       <input
         type="text"
         value={search}
         onChange={(e) => setSearch(e.target.value)}
-        placeholder="Search entities, intents, tags..."
-        className="w-full px-4 py-3 bg-surface border border-gold/20 rounded-xl text-foreground placeholder-foreground/30 focus:outline-none focus:border-gold/50 transition-colors"
+        placeholder="Search entities, intents, tags…"
+        className="field px-4 py-3"
       />
 
       {/* Tabs */}
       <div className="flex gap-2">
-        <button
-          onClick={() => setTab('entities')}
-          className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
-            tab === 'entities'
-              ? 'bg-gold text-background'
-              : 'bg-surface text-foreground/60 hover:text-foreground'
-          }`}
-        >
-          Entities ({filteredEntities.length})
-        </button>
-        <button
-          onClick={() => setTab('intents')}
-          className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
-            tab === 'intents'
-              ? 'bg-gold text-background'
-              : 'bg-surface text-foreground/60 hover:text-foreground'
-          }`}
-        >
-          Intents ({filteredIntents.length})
-        </button>
+        {(['entities', 'intents'] as const).map((t) => {
+          const active = tab === t;
+          const count = t === 'entities' ? filteredEntities.length : filteredIntents.length;
+          return (
+            <button
+              key={t}
+              onClick={() => setTab(t)}
+              className={active ? 'btn-gold px-4 py-2 text-sm' : 'btn-ghost px-4 py-2 !text-sm'}
+              style={active ? undefined : { fontFamily: 'var(--font-mono)' }}
+            >
+              {t === 'entities' ? 'Entities' : 'Intents'} · {count}
+            </button>
+          );
+        })}
       </div>
 
       {/* Tradition Filter (entities only) */}
       {tab === 'entities' && (
         <div className="flex flex-wrap gap-2">
-          {traditions.map((t) => (
-            <button
-              key={t}
-              onClick={() => setTradition(t)}
-              className={`px-3 py-1 rounded-full text-xs font-medium border transition-colors ${
-                tradition === t
-                  ? 'bg-gold/20 border-gold/50 text-gold'
-                  : 'border-white/10 text-foreground/50 hover:border-white/20 hover:text-foreground/70'
-              }`}
-            >
-              {t}
-            </button>
-          ))}
+          {traditions.map((t) => {
+            const active = tradition === t;
+            return (
+              <button
+                key={t}
+                onClick={() => setTradition(t)}
+                className="px-3 py-1 rounded-full text-xs transition-colors"
+                style={{
+                  fontFamily: 'var(--font-mono)',
+                  letterSpacing: '0.04em',
+                  border: '1px solid',
+                  borderColor: active ? 'var(--hairline)' : 'var(--card-border)',
+                  color: active ? 'var(--gold)' : 'color-mix(in srgb, var(--foreground) 55%, transparent)',
+                  background: active ? 'color-mix(in srgb, var(--gold) 12%, transparent)' : 'transparent',
+                }}
+              >
+                {t}
+              </button>
+            );
+          })}
         </div>
       )}
 
@@ -125,36 +129,57 @@ export default function LibraryPage() {
           {filteredEntities.map((entity) => {
             const sigil = getSigilByEntityId(entity.id);
             return (
-              <div key={entity.id} className="card space-y-2 hover:border-gold/30 transition-colors">
-                {/* NEW: HipHop badge */}
-                {entity.tradition === 'HipHop' && (
-                  <span className="text-xs px-2 py-0.5 bg-emerald-500/15 border border-emerald-500/25 rounded text-emerald-200">
-                    HipHop
-                  </span>
-                )}
+              <article key={entity.id} className="card card-hover space-y-2.5">
+                <div className="flex flex-wrap gap-1.5">
+                  {entity.tradition === 'HipHop' && (
+                    <span
+                      className="tag"
+                      style={{
+                        color: '#8fe0b8',
+                        background: 'color-mix(in srgb, #34d399 12%, transparent)',
+                        borderColor: 'color-mix(in srgb, #34d399 26%, transparent)',
+                      }}
+                    >
+                      HipHop
+                    </span>
+                  )}
 
-                {/* Updated: don’t show Pop Culture badge for HipHop */}
-                {entity.isPopCulture && entity.tradition !== 'HipHop' && (
-                  <span className="text-xs px-2 py-0.5 bg-purple-500/20 border border-purple-500/30 rounded text-purple-300">
-                    Pop Culture
-                  </span>
-                )}
+                  {entity.isPopCulture && entity.tradition !== 'HipHop' && (
+                    <span
+                      className="tag"
+                      style={{
+                        color: 'var(--amethyst)',
+                        background: 'color-mix(in srgb, var(--amethyst) 12%, transparent)',
+                        borderColor: 'color-mix(in srgb, var(--amethyst) 30%, transparent)',
+                      }}
+                    >
+                      Pop Culture
+                    </span>
+                  )}
 
-                {entity.isClosed && (
-                  <span className="text-xs px-2 py-0.5 bg-amber-500/20 border border-amber-500/30 rounded text-amber-300">
-                    Initiatory Tradition
-                  </span>
-                )}
+                  {entity.isClosed && (
+                    <span
+                      className="tag"
+                      style={{
+                        color: 'var(--caution-title)',
+                        background: 'var(--caution-bg)',
+                        borderColor: 'var(--caution-border)',
+                      }}
+                    >
+                      Initiatory Tradition
+                    </span>
+                  )}
+                </div>
 
                 <div className="flex items-start justify-between gap-3">
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center justify-between gap-2">
-                      <h3 className="font-serif text-gold font-semibold">{entity.name}</h3>
+                      <h3 className="font-display text-gold font-semibold text-lg leading-tight">{entity.name}</h3>
                       {entity.sphere && (
-                        <span className="text-xs text-foreground/30 shrink-0">{entity.sphere}</span>
+                        <span className="eyebrow text-foreground/35 shrink-0">{entity.sphere}</span>
                       )}
                     </div>
-                    <p className="text-xs text-foreground/40">
+                    <p className="eyebrow text-foreground/40 mt-1">
                       {entity.tradition} · {entity.type}
                     </p>
                   </div>
@@ -165,7 +190,7 @@ export default function LibraryPage() {
                         viewBox={sigil.viewBox}
                         width="44"
                         height="44"
-                        className="text-gold/60 hover:text-gold transition-colors"
+                        className="text-gold/70 hover:text-gold transition-colors"
                         aria-label={sigil.symbolName}
                         dangerouslySetInnerHTML={{ __html: sigil.svgContent }}
                       />
@@ -173,15 +198,15 @@ export default function LibraryPage() {
                   )}
                 </div>
 
-                <p className="text-sm text-foreground/70 leading-relaxed">{entity.description}</p>
+                <p className="text-sm text-foreground/75 leading-relaxed">{entity.description}</p>
 
                 {entity.attributes && entity.attributes.length > 0 && (
                   <div className="pt-1">
-                    <p className="text-xs text-foreground/40 uppercase tracking-wider mb-1">Visualization</p>
+                    <p className="section-label mb-1">Visualization</p>
                     <ul className="space-y-0.5">
                       {entity.attributes.map((attr) => (
-                        <li key={attr} className="text-xs text-foreground/60 flex gap-1.5">
-                          <span className="text-gold/40 shrink-0">·</span>
+                        <li key={attr} className="text-sm text-foreground/60 flex gap-1.5">
+                          <span className="text-gold/50 shrink-0">·</span>
                           {attr}
                         </li>
                       ))}
@@ -191,11 +216,11 @@ export default function LibraryPage() {
 
                 {entity.reasonsToInvoke && entity.reasonsToInvoke.length > 0 && (
                   <div className="pt-1">
-                    <p className="text-xs text-foreground/40 uppercase tracking-wider mb-1">Reasons to Invoke</p>
+                    <p className="section-label mb-1">Reasons to Invoke</p>
                     <ul className="space-y-0.5">
                       {entity.reasonsToInvoke.map((reason) => (
-                        <li key={reason} className="text-xs text-foreground/60 flex gap-1.5">
-                          <span className="text-gold/40 shrink-0">·</span>
+                        <li key={reason} className="text-sm text-foreground/60 flex gap-1.5">
+                          <span className="text-gold/50 shrink-0">·</span>
                           {reason}
                         </li>
                       ))}
@@ -205,17 +230,12 @@ export default function LibraryPage() {
 
                 {sigil && <p className="text-xs text-foreground/40 italic">{sigil.symbolName}</p>}
 
-                <div className="flex flex-wrap gap-1 pt-1">
+                <div className="flex flex-wrap gap-1.5 pt-1">
                   {entity.tags.slice(0, 5).map((tag) => (
-                    <span
-                      key={tag}
-                      className="text-xs px-1.5 py-0.5 bg-white/5 rounded text-foreground/40"
-                    >
-                      {tag}
-                    </span>
+                    <span key={tag} className="tag">{tag}</span>
                   ))}
                 </div>
-              </div>
+              </article>
             );
           })}
 
@@ -231,17 +251,15 @@ export default function LibraryPage() {
       {tab === 'intents' && (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {filteredIntents.map((intent) => (
-            <div key={intent.id} className="card space-y-2 hover:border-gold/30 transition-colors">
-              <h3 className="font-serif text-gold font-semibold">{intent.label}</h3>
-              {intent.description && <p className="text-sm text-foreground/70">{intent.description}</p>}
-              <div className="flex flex-wrap gap-1 pt-1">
+            <article key={intent.id} className="card card-hover space-y-2.5">
+              <h3 className="font-display text-gold font-semibold text-lg leading-tight">{intent.label}</h3>
+              {intent.description && <p className="text-sm text-foreground/75 leading-relaxed">{intent.description}</p>}
+              <div className="flex flex-wrap gap-1.5 pt-1">
                 {intent.tags.slice(0, 5).map((tag) => (
-                  <span key={tag} className="text-xs px-1.5 py-0.5 bg-white/5 rounded text-foreground/40">
-                    {tag}
-                  </span>
+                  <span key={tag} className="tag">{tag}</span>
                 ))}
               </div>
-            </div>
+            </article>
           ))}
 
           {filteredIntents.length === 0 && (
