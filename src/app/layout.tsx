@@ -30,10 +30,13 @@ const jetbrains = JetBrains_Mono({
   display: 'swap',
 });
 
+// Empty for local/Netlify (served at root), '/777ritualdesigner' on Pages.
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
+
 export const metadata: Metadata = {
   title: '777 Ritual Designer',
   description: 'Design rituals and explore occult correspondences across world traditions',
-  manifest: '/manifest.json',
+  manifest: `${basePath}/manifest.json`,
   appleWebApp: {
     capable: true,
     statusBarStyle: 'black-translucent',
@@ -53,7 +56,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       className={`${cinzel.variable} ${cormorant.variable} ${jetbrains.variable}`}
     >
       <head>
-        <link rel="apple-touch-icon" href="/icons/icon-192.png" />
+        <link rel="apple-touch-icon" href={`${basePath}/icons/icon-192.png`} />
       </head>
       <body className="min-h-screen text-foreground antialiased">
         <ConstellationBackground />

@@ -14,6 +14,7 @@ import type { Intent, Entity } from '@/lib/types';
 import { matchQuery } from '@/lib/matcher';
 import { normalizeResult } from '@/lib/normalizer';
 import { saveResult } from '@/lib/storage';
+import { stubEnrichmentProvider } from '@/lib/enrichment';
 
 const intents = intentsData as Intent[];
 const entities = entitiesData as Entity[];
@@ -68,15 +69,10 @@ export default function HomePage() {
       setResult(res);
 
       if (aiEnrichment) {
-        const enrichRes = await fetch('/api/enrich', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ query: q, result: res }),
-        });
-        if (enrichRes.ok) {
-          const data = await enrichRes.json() as EnrichmentData;
-          setEnrichment(data);
-        }
+        // Runs entirely client-side (deterministic stub, no secrets), so the
+        // app works as a fully static export with no server route required.
+        const data = await stubEnrichmentProvider.enrich(q, res);
+        setEnrichment(data);
       }
     } catch {
       setError('The working faltered — try phrasing your intention again.');
