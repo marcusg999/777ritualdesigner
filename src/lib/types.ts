@@ -68,6 +68,17 @@ export interface Correspondence {
   syncretism?: string[];
   feastDay?: string;
   taboos?: string[];
+  // Attested attributes of a deity or figure (any tradition)
+  offerings?: string[];
+  /** Principal festival or holy day. */
+  festival?: string;
+  /** Short attested facts: rank, epithets, myths. */
+  lore?: string[];
+  // Biography (HipHop figures)
+  birthDate?: string;
+  deathDate?: string;
+  natalSun?: string;
+  signatureWorks?: string[];
   /** Which lineage's conventions the record follows, and caveats. */
   traditionNote?: string;
 }

@@ -92,6 +92,15 @@ describe('parseTiming', () => {
     expect(parseTiming(record('elemental_balance')).fixedEvents).toHaveLength(6);
   });
 
+  it('reads days of the month', () => {
+    const plan = parseTiming({ ...record('love'), timing: 'The 17th of each month; above all December 17' });
+    expect(plan.monthDays).toEqual([17]);
+    expect(plan.fixedEvents).toEqual([]);
+    const s = suggestDates({ ...plan, moon: [] }, SAT_SEP_26_2026);
+    expect(s[0].date.toDateString()).toBe('Sat Oct 17 2026');
+    expect(s[0].reasons).toContain('The 17th of the month');
+  });
+
   it('keeps only real zodiac signs', () => {
     expect(parseTiming(record('love')).signs).toEqual(['Libra', 'Taurus']);
   });

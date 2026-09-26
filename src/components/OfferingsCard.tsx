@@ -4,6 +4,8 @@ import type { OfferingRecord } from '@/lib/offerings';
 
 interface OfferingsCardProps {
   offerings: OfferingRecord[];
+  /** Display names by entity id (e.g. "Babalú-Ayé"). */
+  names?: Record<string, string>;
 }
 
 function Section({ label, children }: { label: string; children: React.ReactNode }) {
@@ -25,7 +27,7 @@ function TagList({ items }: { items: string[] }) {
   );
 }
 
-export default function OfferingsCard({ offerings }: OfferingsCardProps) {
+export default function OfferingsCard({ offerings, names = {} }: OfferingsCardProps) {
   if (offerings.length === 0) return null;
 
   return (
@@ -44,7 +46,7 @@ export default function OfferingsCard({ offerings }: OfferingsCardProps) {
           className="space-y-4"
           style={idx > 0 ? { borderTop: '1px solid var(--hairline)', paddingTop: '1rem' } : undefined}
         >
-          <h4 className="font-display text-gold font-semibold capitalize">{record.entityId === 'ifa' ? 'Ifá' : record.entityId.charAt(0).toUpperCase() + record.entityId.slice(1)}</h4>
+          <h4 className="font-display text-gold font-semibold capitalize">{names[record.entityId] ?? record.entityId}</h4>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <Section label="Common Offerings">
               <TagList items={record.commonOfferings} />

@@ -20,6 +20,14 @@ const COLOR_MAP: Record<string, string> = {
   gray: '#6b7280', amber: '#f59e0b', cyan: '#06b6d4', crimson: '#dc143c',
 };
 
+type FigureKind = 'orisha' | 'biography' | 'traditional';
+
+const FIGURE_HEADING: Record<FigureKind, string> = {
+  orisha: 'Orisha Correspondences',
+  biography: 'Biography & Derivation',
+  traditional: 'Traditional Attributes',
+};
+
 const NINE_COLORS =
   'conic-gradient(#800020, #ef4444, #f97316, #eab308, #22c55e, #3b82f6, #6366f1, #a855f7, #78350f, #800020)';
 
@@ -67,6 +75,16 @@ export default function CorrespondenceCard({ correspondences: c, basis, enrichme
     ? [...c.stones, ...enrichment.additionalCorrespondences.stones]
     : c.stones;
 
+  // A deity or figure's own record gets an attributes section, headed and
+  // labelled for its tradition; Liber 777 records keep their own section.
+  const kind: FigureKind = c.eleke ? 'orisha' : c.birthDate ? 'biography' : 'traditional';
+  const is777 = !!(c.divineName || c.magicalWeapon || c.magicalPowers || c.virtue || c.vice || c.alchemicalProcess || c.bodyPart);
+  const hasFigure = !!(
+    c.eleke || c.birthDate || c.festival || c.feastDay || c.sacredPlaces?.length || c.tools?.length ||
+    c.offerings?.length || c.lore?.length || c.temperament?.length || c.syncretism?.length ||
+    c.sacredNumbers?.length || c.traditionNote
+  );
+
   return (
     <div className="card space-y-5">
       <div className="flex items-center justify-between gap-3">
@@ -90,42 +108,78 @@ export default function CorrespondenceCard({ correspondences: c, basis, enrichme
         </div>
       </Section>
 
-      {c.eleke && (
+      {hasFigure && (
         <div className="pt-5 space-y-4" style={{ borderTop: '1px solid var(--hairline)' }}>
-          <h4 className="section-label">Orisha Correspondences</h4>
+          <h4 className="section-label">{FIGURE_HEADING[kind]}</h4>
 
-          <Section label="Eleke (Sacred Beads)">
-            <p className="text-sm text-foreground/80">{c.eleke}</p>
-          </Section>
+          {c.eleke && (
+            <Section label="Eleke (Sacred Beads)">
+              <p className="text-sm text-foreground/80">{c.eleke}</p>
+            </Section>
+          )}
 
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            {c.sacredNumbers && c.sacredNumbers.length > 0 && (
-              <Section label="Sacred Numbers">
-                <span className="inline-block text-3xl font-display text-gold font-bold" style={{ fontVariantNumeric: 'tabular-nums' }}>
-                  {c.sacredNumbers.join(' · ')}
-                </span>
-              </Section>
-            )}
-            {c.day && (
-              <Section label="Day">
-                <p className="text-sm text-foreground/80">{c.day}</p>
-              </Section>
-            )}
-            {c.feastDay && (
-              <Section label="Feast Day">
-                <p className="text-sm text-foreground/80">{c.feastDay}</p>
-              </Section>
-            )}
-          </div>
+          {kind === 'biography' && (
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              {c.birthDate && (
+                <Section label="Born">
+                  <p className="text-sm text-foreground/80">{c.birthDate}</p>
+                </Section>
+              )}
+              {c.deathDate && (
+                <Section label="Died">
+                  <p className="text-sm text-foreground/80">{c.deathDate}</p>
+                </Section>
+              )}
+              {c.natalSun && (
+                <Section label="Natal Sun">
+                  <p className="text-sm text-foreground/80">{c.natalSun}</p>
+                </Section>
+              )}
+            </div>
+          )}
+
+          {((c.sacredNumbers && c.sacredNumbers.length > 0) || (c.eleke && c.day) || c.feastDay || c.festival) && (
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              {c.sacredNumbers && c.sacredNumbers.length > 0 && (
+                <Section label="Sacred Numbers">
+                  <span className="inline-block text-3xl font-display text-gold font-bold" style={{ fontVariantNumeric: 'tabular-nums' }}>
+                    {c.sacredNumbers.join(' · ')}
+                  </span>
+                </Section>
+              )}
+              {c.eleke && c.day && (
+                <Section label="Day">
+                  <p className="text-sm text-foreground/80">{c.day}</p>
+                </Section>
+              )}
+              {c.feastDay && (
+                <Section label="Feast Day">
+                  <p className="text-sm text-foreground/80">{c.feastDay}</p>
+                </Section>
+              )}
+              {c.festival && (
+                <div className="sm:col-span-2">
+                  <Section label="Festival / Holy Day">
+                    <p className="text-sm text-foreground/80">{c.festival}</p>
+                  </Section>
+                </div>
+              )}
+            </div>
+          )}
 
           {c.sacredPlaces && c.sacredPlaces.length > 0 && (
-            <Section label="Sacred Places in Nature">
+            <Section label={kind === 'orisha' ? 'Sacred Places in Nature' : kind === 'biography' ? 'Places' : 'Sacred Places'}>
               <TagList items={c.sacredPlaces} />
             </Section>
           )}
           {c.tools && c.tools.length > 0 && (
-            <Section label="Tools & Emblems">
+            <Section label={kind === 'biography' ? 'Instruments & Emblems' : 'Tools & Emblems'}>
               <TagList items={c.tools} />
+            </Section>
+          )}
+          {c.signatureWorks && c.signatureWorks.length > 0 && (
+            <Section label="Signature Works">
+              <TagList items={c.signatureWorks} />
             </Section>
           )}
           {c.temperament && c.temperament.length > 0 && (
@@ -133,9 +187,14 @@ export default function CorrespondenceCard({ correspondences: c, basis, enrichme
               <TagList items={c.temperament} />
             </Section>
           )}
-          {c.animals && c.animals.length > 0 && (
+          {c.animals && c.animals.length > 0 && !is777 && (
             <Section label="Sacred Animals">
               <TagList items={c.animals} />
+            </Section>
+          )}
+          {c.offerings && c.offerings.length > 0 && (
+            <Section label="Traditional Offerings">
+              <TagList items={c.offerings} />
             </Section>
           )}
           {c.syncretism && c.syncretism.length > 0 && (
@@ -146,6 +205,15 @@ export default function CorrespondenceCard({ correspondences: c, basis, enrichme
           {c.taboos && c.taboos.length > 0 && (
             <Section label="Taboos (Èèwọ̀)">
               <TagList items={c.taboos} />
+            </Section>
+          )}
+          {c.lore && c.lore.length > 0 && (
+            <Section label="Lore">
+              <ul className="space-y-1.5 list-none">
+                {c.lore.map((line) => (
+                  <li key={line} className="text-sm text-foreground/75 leading-relaxed">✦ {line}</li>
+                ))}
+              </ul>
             </Section>
           )}
           {c.traditionNote && (
@@ -273,7 +341,7 @@ export default function CorrespondenceCard({ correspondences: c, basis, enrichme
         </div>
       )}
 
-      {(c.magicalWeapon || c.magicalPowers || c.virtue || c.vice || c.divineName || (c.animals && !c.eleke) || c.alchemicalProcess || c.bodyPart) && (
+      {(c.magicalWeapon || c.magicalPowers || c.virtue || c.vice || c.divineName || (c.animals && is777) || c.alchemicalProcess || c.bodyPart) && (
         <div className="pt-5 space-y-4" style={{ borderTop: '1px solid var(--hairline)' }}>
           <h4 className="section-label">
             777 Correspondences
@@ -326,7 +394,7 @@ export default function CorrespondenceCard({ correspondences: c, basis, enrichme
             </Section>
           )}
 
-          {c.animals && c.animals.length > 0 && !c.eleke && (
+          {c.animals && c.animals.length > 0 && is777 && (
             <Section label="Sacred Animals">
               <TagList items={c.animals} />
             </Section>
@@ -336,9 +404,9 @@ export default function CorrespondenceCard({ correspondences: c, basis, enrichme
 
       {enrichment?.interpretation && (
         <div className="pt-4" style={{ borderTop: '1px solid var(--hairline)' }}>
-          <h4 className="section-label mb-2">✦ Symbolic Insight</h4>
+          <h4 className="section-label mb-2">✦ Reflection Prompt</h4>
           <p className="text-sm text-foreground/75 italic leading-relaxed">{enrichment.interpretation}</p>
-          <p className="eyebrow text-foreground/30 mt-2">Source · AI enrichment (stub)</p>
+          <p className="eyebrow text-foreground/30 mt-2">A fixed journaling prompt · not AI-generated</p>
         </div>
       )}
     </div>

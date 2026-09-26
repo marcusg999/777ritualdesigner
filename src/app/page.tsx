@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useCallback } from 'react';
-import type { CorrespondenceResult, EnrichmentData } from '@/lib/types';
+import type { CorrespondenceResult } from '@/lib/types';
 import CorrespondenceCard from '@/components/CorrespondenceCard';
 import RitualOutline from '@/components/RitualOutline';
 import CulturalContextBanner from '@/components/CulturalContextBanner';
@@ -9,19 +9,11 @@ import OfferingsCard from '@/components/OfferingsCard';
 import dynamic from 'next/dynamic';
 import { getOfferingsForEntities } from '@/lib/offerings';
 import { getSigilByEntityId } from '@/lib/sigils';
-import intentsData from '@/data/intents.json';
-import entitiesData from '@/data/entities.json';
-import type { Intent, Entity } from '@/lib/types';
-import { matchQuery } from '@/lib/matcher';
-import { normalizeResult } from '@/lib/normalizer';
-import { saveResult } from '@/lib/storage';
-import { stubEnrichmentProvider } from '@/lib/enrichment';
+import { buildRitual, type RitualOptions } from '@/lib/ritual';
+import { saveRitual } from '@/lib/storage';
 
 // Loaded on demand: the astronomy code is only needed once a ritual is shown.
 const TimingCard = dynamic(() => import('@/components/TimingCard'), { ssr: false });
-
-const intents = intentsData as Intent[];
-const entities = entitiesData as Entity[];
 
 function Toggle({
   on,
@@ -50,50 +42,43 @@ function Toggle({
 
 export default function HomePage() {
   const [query, setQuery] = useState('');
-  const [result, setResult] = useState<CorrespondenceResult | null>(null);
+  // The result plus the options it was built with — what Save records, even
+  // if the toggles are changed afterwards.
+  const [built, setBuilt] = useState<{ result: CorrespondenceResult; options: RitualOptions } | null>(null);
+  const result = built?.result ?? null;
+  const enrichment = result?.enrichment;
   const [loading, setLoading] = useState(false);
-  const [enrichment, setEnrichment] = useState<EnrichmentData | undefined>();
   const [includePopCulture, setIncludePopCulture] = useState(false);
-  const [aiEnrichment, setAiEnrichment] = useState(false);
+  const [reflection, setReflection] = useState(false);
   const [saved, setSaved] = useState(false);
   const [error, setError] = useState('');
 
-  const handleSearch = useCallback(async () => {
+  const handleSearch = useCallback(() => {
     const q = query.trim();
     if (!q) return;
 
     setLoading(true);
     setError('');
     setSaved(false);
-    setEnrichment(undefined);
 
     try {
-      const match = matchQuery(q, intents, entities, includePopCulture);
-      const res = normalizeResult(match, q);
-      setResult(res);
-
-      if (aiEnrichment) {
-        // Runs entirely client-side (deterministic stub, no secrets), so the
-        // app works as a fully static export with no server route required.
-        const data = await stubEnrichmentProvider.enrich(q, res);
-        setEnrichment(data);
-      }
+      const options = { includePopCulture, reflection };
+      setBuilt({ result: buildRitual(q, options), options });
     } catch {
       setError('The working faltered — try phrasing your intention again.');
     } finally {
       setLoading(false);
     }
-  }, [query, includePopCulture, aiEnrichment]);
+  }, [query, includePopCulture, reflection]);
 
   const handleSave = useCallback(() => {
-    if (!result) return;
-    const toSave = enrichment ? { ...result, enrichment } : result;
-    if (saveResult(toSave)) {
+    if (!built) return;
+    if (saveRitual({ query: built.result.query, ...built.options })) {
       setSaved(true);
     } else {
       setError('This browser blocked saving — storage may be full or disabled in private browsing.');
     }
-  }, [result, enrichment]);
+  }, [built]);
 
   return (
     <div className="space-y-10">
@@ -146,9 +131,9 @@ export default function HomePage() {
             label="Include Pop-Culture Archetypes"
           />
           <Toggle
-            on={aiEnrichment}
-            onToggle={() => setAiEnrichment(!aiEnrichment)}
-            label="AI Enrichment · Hybrid Mode"
+            on={reflection}
+            onToggle={() => setReflection(!reflection)}
+            label="Add Reflection Prompts"
           />
         </div>
 
@@ -213,6 +198,19 @@ export default function HomePage() {
                         Pop-Culture Archetype
                       </span>
                     )}
+                    {entity.isClosed && (
+                      <span
+                        className="tag"
+                        title="Divination in this tradition is performed only by initiated priests (babalawos and iyanifa)."
+                        style={{
+                          color: 'var(--caution-title)',
+                          background: 'var(--caution-bg)',
+                          borderColor: 'var(--caution-border)',
+                        }}
+                      >
+                        Initiatory Tradition
+                      </span>
+                    )}
                     <div className="flex items-start gap-3">
                       {sigil && (
                         <div className="shrink-0" title={sigil.symbolName}>
@@ -258,7 +256,8 @@ export default function HomePage() {
 
           {(() => {
             const ifaOfferings = getOfferingsForEntities(result.matchedEntities.map((e) => e.id));
-            return ifaOfferings.length > 0 ? <OfferingsCard offerings={ifaOfferings} /> : null;
+            const names = Object.fromEntries(result.matchedEntities.map((e) => [e.id, e.name]));
+            return ifaOfferings.length > 0 ? <OfferingsCard offerings={ifaOfferings} names={names} /> : null;
           })()}
         </div>
       )}

@@ -9,11 +9,15 @@ import type {
 } from './types';
 import correspondencesData from '@/data/correspondences.json';
 import ifaCorrespondencesData from '@/data/correspondences_ifa_yoruba.json';
+import worldCorrespondencesData from '@/data/correspondences_world.json';
+import hiphopCorrespondencesData from '@/data/correspondences_hiphop.json';
 import { getOfferingsByEntityId } from './offerings';
 
 const correspondences: Correspondence[] = [
   ...(correspondencesData as Correspondence[]),
   ...(ifaCorrespondencesData as Correspondence[]),
+  ...(worldCorrespondencesData as Correspondence[]),
+  ...(hiphopCorrespondencesData as Correspondence[]),
 ];
 
 const IFA_TRADITION = 'Ifá/Yorùbá';
@@ -153,7 +157,14 @@ function buildRitualOutline(
   // sacred number, the offerings the Orisha accepts, and Èṣù honored first.
   const orisha = entities.find((e) => e.tradition === IFA_TRADITION);
   const orishaOffering = orisha ? getOfferingsByEntityId(orisha.id) : undefined;
-  const numbers = correspondence.sacredNumbers;
+  // Offerings belong to whichever figure these correspondences describe.
+  const owner = orisha ?? entities.find((e) => e.id === correspondence.entityId);
+  const offerings = (orishaOffering?.commonOfferings ?? correspondence.offerings ?? []).filter(
+    // Historical sacrifices are documented on the card, never suggested.
+    (o) => !/in antiquity|contexts only/i.test(o)
+  );
+  // Only numbers you can sensibly arrange offerings by (not 42 or 108).
+  const numbers = (correspondence.sacredNumbers ?? []).filter((n) => n <= 21);
 
   const prepNotes = [
     `Element: ${correspondence.element}`,
@@ -179,10 +190,10 @@ function buildRitualOutline(
   }
 
   let symbolicAction = `Hold your chosen focal objects in your hands. Light a ${colorStr || 'white'} candle, watching the flame as a symbol of your focused will.`;
-  if (orishaOffering && orishaOffering.commonOfferings.length > 0) {
-    const offered = joinList(orishaOffering.commonOfferings.slice(0, 3).map((o) => o.toLowerCase()), 'and');
-    symbolicAction += ` Present offerings traditionally given to ${orisha!.name}, such as ${offered}`;
-    symbolicAction += numbers && numbers.length > 0 ? `, arranged in groups of ${joinList(numbers.map(String), 'or')}.` : '.';
+  if (owner && offerings.length > 0) {
+    const offered = joinList(offerings.slice(0, 3).map((o) => inline(o)), 'and');
+    symbolicAction += ` Present offerings traditionally given to ${owner.name}, such as ${offered}`;
+    symbolicAction += numbers.length > 0 ? `, arranged in groups of ${joinList(numbers.map(String), 'or')}.` : '.';
   } else if (herbs.length > 0) {
     symbolicAction += ' If you have herbs, you may burn them safely or arrange them on your altar.';
   }

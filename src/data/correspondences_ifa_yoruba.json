@@ -1,72 +1,22 @@
 [
   {
     "entityId": "ogun",
-    "colors": [
-      "green",
-      "black"
-    ],
+    "colors": ["green", "black"],
     "eleke": "Green and black beads, commonly strung in groups of 7 (or 3)",
     "numerology": 7,
-    "sacredNumbers": [
-      3,
-      7
-    ],
+    "sacredNumbers": [3, 7],
     "day": "Tuesday",
     "timing": "Tuesday, Ogun's day",
-    "sacredPlaces": [
-      "The wilderness",
-      "Forests",
-      "Train tracks and railroads",
-      "The blacksmith's forge"
-    ],
-    "tools": [
-      "Hammer",
-      "Anvil",
-      "Machete",
-      "Hoe",
-      "Shovel",
-      "Pick",
-      "Pike",
-      "Rake",
-      "All tools",
-      "Iron cauldron (caldero)",
-      "Chains"
-    ],
-    "temperament": [
-      "Hard-working",
-      "Inventive",
-      "Brooding",
-      "Prone to anger",
-      "Solitary"
-    ],
-    "syncretism": [
-      "Saint Peter (Cuba)",
-      "Saint George (Brazil — Rio de Janeiro)",
-      "Saint Anthony (Brazil — Bahia)"
-    ],
+    "sacredPlaces": ["The wilderness", "Forests", "Train tracks and railroads", "The blacksmith's forge"],
+    "tools": ["Hammer", "Anvil", "Machete", "Hoe", "Shovel", "Pick", "Pike", "Rake", "All tools", "Iron cauldron (caldero)", "Chains"],
+    "temperament": ["Hard-working", "Inventive", "Brooding", "Prone to anger", "Solitary"],
+    "syncretism": ["Saint Peter (Cuba)", "Saint George (Brazil — Rio de Janeiro)", "Saint Anthony (Brazil — Bahia)"],
     "feastDay": "June 29 (Saint Peter)",
-    "metals": [
-      "Iron",
-      "Steel"
-    ],
-    "stones": [
-      "Magnetite / lodestone (iron ore)",
-      "Hematite (modern)",
-      "Black tourmaline (modern)"
-    ],
-    "herbs": [
-      "Guinea grass (hierba de Guinea)",
-      "Ironwood (palo de hierro)",
-      "Eucalyptus"
-    ],
-    "scents": [
-      "Tobacco",
-      "Eucalyptus"
-    ],
-    "animals": [
-      "Dog",
-      "Rooster"
-    ],
+    "metals": ["Iron", "Steel"],
+    "stones": ["Magnetite / lodestone (iron ore)", "Hematite (modern)", "Black tourmaline (modern)"],
+    "herbs": ["Guinea grass (hierba de Guinea)", "Ironwood (palo de hierro)", "Eucalyptus"],
+    "scents": ["Tobacco", "Eucalyptus"],
+    "animals": ["Dog", "Rooster"],
     "element": "Earth & Fire (iron and the forge)",
     "sphere": "Mars",
     "planet": "Mars",
@@ -74,68 +24,22 @@
   },
   {
     "entityId": "eshu",
-    "colors": [
-      "red",
-      "black"
-    ],
+    "colors": ["red", "black"],
     "eleke": "Alternating red and black beads (some roads of Elegguá use black and white)",
     "numerology": 3,
-    "sacredNumbers": [
-      3,
-      21
-    ],
+    "sacredNumbers": [3, 21],
     "day": "Monday",
     "timing": "Monday, Elegguá's day — and first in any ceremony, before every other Orisha",
-    "sacredPlaces": [
-      "Crossroads",
-      "Doorways and thresholds",
-      "Behind the front door of the home",
-      "Roads and paths",
-      "Markets",
-      "The bush (el monte)"
-    ],
-    "tools": [
-      "Garabato (hooked guava-wood stick)",
-      "Otá — consecrated stone or cement head with cowrie-shell eyes",
-      "Keys",
-      "Whistle",
-      "Toys",
-      "Cowrie shells"
-    ],
-    "temperament": [
-      "Playful",
-      "Mischievous trickster",
-      "Clever",
-      "Childlike",
-      "Unpredictable",
-      "Fiercely protective"
-    ],
-    "syncretism": [
-      "Holy Child of Atocha",
-      "Saint Anthony of Padua",
-      "The Ánima Sola (Lonely Soul in Purgatory)"
-    ],
+    "sacredPlaces": ["Crossroads", "Doorways and thresholds", "Behind the front door of the home", "Roads and paths", "Markets", "The bush (el monte)"],
+    "tools": ["Garabato (hooked guava-wood stick)", "Otá — consecrated stone or cement head with cowrie-shell eyes", "Keys", "Whistle", "Toys", "Cowrie shells"],
+    "temperament": ["Playful", "Mischievous trickster", "Clever", "Childlike", "Unpredictable", "Fiercely protective"],
+    "syncretism": ["Holy Child of Atocha", "Saint Anthony of Padua", "The Ánima Sola (Lonely Soul in Purgatory)"],
     "feastDay": "June 13 (Saint Anthony of Padua)",
     "metals": [],
-    "stones": [
-      "Otá (consecrated stone)",
-      "Jet (modern)",
-      "Red jasper (modern)"
-    ],
-    "herbs": [
-      "Abre camino (road opener)",
-      "Guava (guayaba) leaves and branches",
-      "Rompe saragüey"
-    ],
-    "scents": [
-      "Tobacco",
-      "Rum"
-    ],
-    "animals": [
-      "Rooster",
-      "Male goat",
-      "Mouse / jutía"
-    ],
+    "stones": ["Otá (consecrated stone)", "Jet (modern)", "Red jasper (modern)"],
+    "herbs": ["Abre camino (road opener)", "Guava (guayaba) leaves and branches", "Rompe saragüey"],
+    "scents": ["Tobacco", "Rum"],
+    "animals": ["Rooster", "Male goat", "Mouse / jutía"],
     "element": "Not traditionally assigned (keeper of the crossroads)",
     "sphere": "Mercury",
     "planet": "Mercury",
@@ -143,68 +47,22 @@
   },
   {
     "entityId": "shango",
-    "colors": [
-      "red",
-      "white"
-    ],
+    "colors": ["red", "white"],
     "eleke": "Alternating red and white beads, commonly in patterns of 6 (or 4)",
     "numerology": 6,
-    "sacredNumbers": [
-      4,
-      6
-    ],
+    "sacredNumbers": [4, 6],
     "day": "Friday",
     "timing": "Friday, Changó's day in Lucumí practice (Wednesday in Candomblé; Ọjọ́ Jàkúta in the Yorùbá week)",
-    "sacredPlaces": [
-      "The royal palm tree (his throne)",
-      "Places struck by lightning",
-      "Storm-filled skies",
-      "The drum feast (bembé)"
-    ],
-    "tools": [
-      "Double-headed axe (oshé)",
-      "Batá drums",
-      "Wooden bowl on a pedestal (batea)",
-      "Thunderstones (edun ara)",
-      "Sword",
-      "Maraca (acheré)",
-      "Wooden mortar (pilón)"
-    ],
-    "temperament": [
-      "Passionate",
-      "Charismatic",
-      "Proud",
-      "Virile",
-      "Quick-tempered",
-      "Generous",
-      "Loves music, dance and celebration"
-    ],
-    "syncretism": [
-      "Saint Barbara (Cuba)",
-      "Saint Jerome (Brazil)"
-    ],
+    "sacredPlaces": ["The royal palm tree (his throne)", "Places struck by lightning", "Storm-filled skies", "The drum feast (bembé)"],
+    "tools": ["Double-headed axe (oshé)", "Batá drums", "Wooden bowl on a pedestal (batea)", "Thunderstones (edun ara)", "Sword", "Maraca (acheré)", "Wooden mortar (pilón)"],
+    "temperament": ["Passionate", "Charismatic", "Proud", "Virile", "Quick-tempered", "Generous", "Loves music, dance and celebration"],
+    "syncretism": ["Saint Barbara (Cuba)", "Saint Jerome (Brazil)"],
     "feastDay": "December 4 (Saint Barbara)",
     "metals": [],
-    "stones": [
-      "Thunderstones (edun ara)",
-      "Red jasper (modern)",
-      "Garnet (modern)"
-    ],
-    "herbs": [
-      "Poplar (álamo)",
-      "Cedar (cedro)",
-      "Red amaranth (bledo punzó)"
-    ],
-    "scents": [
-      "Cedar"
-    ],
-    "animals": [
-      "Ram",
-      "Rooster",
-      "Turtle (jicotea)",
-      "Quail",
-      "Horse"
-    ],
+    "stones": ["Thunderstones (edun ara)", "Red jasper (modern)", "Garnet (modern)"],
+    "herbs": ["Poplar (álamo)", "Cedar (cedro)", "Red amaranth (bledo punzó)"],
+    "scents": ["Cedar"],
+    "animals": ["Ram", "Rooster", "Turtle (jicotea)", "Quail", "Horse"],
     "element": "Fire",
     "sphere": "Jupiter",
     "planet": "Jupiter",
@@ -212,72 +70,22 @@
   },
   {
     "entityId": "oshun",
-    "colors": [
-      "yellow",
-      "gold",
-      "amber"
-    ],
+    "colors": ["yellow", "gold", "amber"],
     "eleke": "Yellow and amber (gold) beads, commonly grouped in fives",
     "numerology": 5,
-    "sacredNumbers": [
-      5
-    ],
+    "sacredNumbers": [5],
     "day": "Saturday",
     "timing": "Saturday, Oshun's day in Lucumí practice (Friday in traditional Yorùbá practice)",
-    "sacredPlaces": [
-      "Rivers and freshwater streams",
-      "Waterfalls",
-      "The Ọ̀ṣun River and sacred grove at Òṣogbo, Nigeria"
-    ],
-    "tools": [
-      "Fan (abanico) of peacock feathers",
-      "Mirror",
-      "Comb",
-      "Five brass bracelets (manillas)",
-      "Bells",
-      "Gold jewelry"
-    ],
-    "temperament": [
-      "Sweet",
-      "Sensual",
-      "Flirtatious",
-      "Generous",
-      "Joyful",
-      "Vain",
-      "Fierce and vengeful when offended"
-    ],
-    "syncretism": [
-      "Our Lady of Charity of El Cobre (Cuba)",
-      "Our Lady of Candeias / Conceição (Brazil)"
-    ],
+    "sacredPlaces": ["Rivers and freshwater streams", "Waterfalls", "The Ọ̀ṣun River and sacred grove at Òṣogbo, Nigeria"],
+    "tools": ["Fan (abanico) of peacock feathers", "Mirror", "Comb", "Five brass bracelets (manillas)", "Bells", "Gold jewelry"],
+    "temperament": ["Sweet", "Sensual", "Flirtatious", "Generous", "Joyful", "Vain", "Fierce and vengeful when offended"],
+    "syncretism": ["Our Lady of Charity of El Cobre (Cuba)", "Our Lady of Candeias / Conceição (Brazil)"],
     "feastDay": "September 8 (Our Lady of Charity)",
-    "metals": [
-      "Gold",
-      "Brass",
-      "Copper"
-    ],
-    "stones": [
-      "River stones (otanes)",
-      "Amber",
-      "Citrine (modern)"
-    ],
-    "herbs": [
-      "Cinnamon (canela)",
-      "Chamomile (manzanilla)",
-      "Sunflower (girasol)",
-      "Anise"
-    ],
-    "scents": [
-      "Honey",
-      "Cinnamon",
-      "Orange blossom"
-    ],
-    "animals": [
-      "Peacock",
-      "Vulture (Ikolé, her messenger)",
-      "Hen",
-      "Freshwater fish"
-    ],
+    "metals": ["Gold", "Brass", "Copper"],
+    "stones": ["River stones (otanes)", "Amber", "Citrine (modern)"],
+    "herbs": ["Cinnamon (canela)", "Chamomile (manzanilla)", "Sunflower (girasol)", "Anise"],
+    "scents": ["Honey", "Cinnamon", "Orange blossom"],
+    "animals": ["Peacock", "Vulture (Ikolé, her messenger)", "Hen", "Freshwater fish"],
     "element": "Water (fresh water)",
     "sphere": "Venus",
     "planet": "Venus",
@@ -285,70 +93,22 @@
   },
   {
     "entityId": "yemaya",
-    "colors": [
-      "blue",
-      "white",
-      "clear crystal"
-    ],
+    "colors": ["blue", "white", "clear crystal"],
     "eleke": "Blue and clear (crystal) beads, commonly grouped in sevens",
     "numerology": 7,
-    "sacredNumbers": [
-      7
-    ],
+    "sacredNumbers": [7],
     "day": "Saturday",
     "timing": "Saturday, Yemayá's day in Lucumí practice",
-    "sacredPlaces": [
-      "The ocean",
-      "The seashore and the waves",
-      "The Ògùn River at Abẹ́òkúta, Nigeria (her home in Yorùbáland)"
-    ],
-    "tools": [
-      "Fan (abanico) of seashells",
-      "Anchor",
-      "Oars",
-      "Seashells and conch shells",
-      "Seven silver bracelets",
-      "Silver moon",
-      "Gourd rattle"
-    ],
-    "temperament": [
-      "Nurturing",
-      "Maternal",
-      "Protective",
-      "Dignified",
-      "Deep and mysterious",
-      "Unforgiving when angered, like the storming sea"
-    ],
-    "syncretism": [
-      "Our Lady of Regla (Cuba)",
-      "Stella Maris / Our Lady of Navigators (Brazil)"
-    ],
+    "sacredPlaces": ["The ocean", "The seashore and the waves", "The Ògùn River at Abẹ́òkúta, Nigeria (her home in Yorùbáland)"],
+    "tools": ["Fan (abanico) of seashells", "Anchor", "Oars", "Seashells and conch shells", "Seven silver bracelets", "Silver moon", "Gourd rattle"],
+    "temperament": ["Nurturing", "Maternal", "Protective", "Dignified", "Deep and mysterious", "Unforgiving when angered, like the storming sea"],
+    "syncretism": ["Our Lady of Regla (Cuba)", "Stella Maris / Our Lady of Navigators (Brazil)"],
     "feastDay": "September 7 (Our Lady of Regla)",
-    "metals": [
-      "Silver"
-    ],
-    "stones": [
-      "Sea stones (otanes)",
-      "Pearl",
-      "Mother-of-pearl",
-      "Aquamarine (modern)"
-    ],
-    "herbs": [
-      "Watercress (berro)",
-      "Purslane (verdolaga)",
-      "Purple basil (albahaca morada)",
-      "Mint (yerba buena)"
-    ],
-    "scents": [
-      "Mint (yerba buena)",
-      "Sea air"
-    ],
-    "animals": [
-      "Duck",
-      "Ram",
-      "She-goat",
-      "Fish"
-    ],
+    "metals": ["Silver"],
+    "stones": ["Sea stones (otanes)", "Pearl", "Mother-of-pearl", "Aquamarine (modern)"],
+    "herbs": ["Watercress (berro)", "Purslane (verdolaga)", "Purple basil (albahaca morada)", "Mint (yerba buena)"],
+    "scents": ["Mint (yerba buena)", "Sea air"],
+    "animals": ["Duck", "Ram", "She-goat", "Fish"],
     "element": "Water (the sea)",
     "sphere": "Moon",
     "planet": "Moon",
@@ -356,78 +116,23 @@
   },
   {
     "entityId": "obatala",
-    "colors": [
-      "white",
-      "silver"
-    ],
+    "colors": ["white", "silver"],
     "eleke": "All-white beads; some roads add mother-of-pearl, crystal, coral or purple accents",
     "numerology": 8,
-    "sacredNumbers": [
-      8,
-      16,
-      24
-    ],
+    "sacredNumbers": [8, 16, 24],
     "day": "Sunday",
     "timing": "Sunday, Obatalá's day (some houses honor him on Thursday)",
-    "sacredPlaces": [
-      "Mountaintops and hills",
-      "Clean, quiet, orderly spaces",
-      "Ilé-Ifẹ̀, Nigeria"
-    ],
-    "tools": [
-      "Irukẹ̀rẹ̀ (white horsetail fly whisk)",
-      "Opá / opásoró (silver staff)",
-      "Silver crown",
-      "Silver bracelets",
-      "Silver moon and sun",
-      "Silver serpent",
-      "White dove"
-    ],
-    "temperament": [
-      "Calm",
-      "Patient",
-      "Wise",
-      "Compassionate",
-      "Cool-headed peacemaker",
-      "Stern about order, cleanliness and truth"
-    ],
-    "syncretism": [
-      "Our Lady of Mercy (Cuba)",
-      "Jesus / Senhor do Bonfim (Brazil)"
-    ],
+    "sacredPlaces": ["Mountaintops and hills", "Clean, quiet, orderly spaces", "Ilé-Ifẹ̀, Nigeria"],
+    "tools": ["Irukẹ̀rẹ̀ (white horsetail fly whisk)", "Opá / opásoró (silver staff)", "Silver crown", "Silver bracelets", "Silver moon and sun", "Silver serpent", "White dove"],
+    "temperament": ["Calm", "Patient", "Wise", "Compassionate", "Cool-headed peacemaker", "Stern about order, cleanliness and truth"],
+    "syncretism": ["Our Lady of Mercy (Cuba)", "Jesus / Senhor do Bonfim (Brazil)"],
     "feastDay": "September 24 (Our Lady of Mercy)",
-    "metals": [
-      "Silver"
-    ],
-    "stones": [
-      "White otanes",
-      "Pearl",
-      "Clear quartz (modern)",
-      "Moonstone (modern)"
-    ],
-    "herbs": [
-      "Cotton (algodón)",
-      "Soursop (guanábana)",
-      "Almond (almendro)",
-      "Prodigiosa (Kalanchoe)"
-    ],
-    "scents": [
-      "White flowers",
-      "Cocoa butter"
-    ],
-    "animals": [
-      "White dove",
-      "Snail (ìgbín)",
-      "White hen",
-      "White she-goat",
-      "Elephant"
-    ],
-    "taboos": [
-      "Alcohol, including palm wine",
-      "Palm oil",
-      "Salt",
-      "Hot pepper"
-    ],
+    "metals": ["Silver"],
+    "stones": ["White otanes", "Pearl", "Clear quartz (modern)", "Moonstone (modern)"],
+    "herbs": ["Cotton (algodón)", "Soursop (guanábana)", "Almond (almendro)", "Prodigiosa (Kalanchoe)"],
+    "scents": ["White flowers", "Cocoa butter"],
+    "animals": ["White dove", "Snail (ìgbín)", "White hen", "White she-goat", "Elephant"],
+    "taboos": ["Alcohol, including palm wine", "Palm oil", "Salt", "Hot pepper"],
     "element": "Air",
     "sphere": "Moon",
     "planet": "Moon",
@@ -435,70 +140,23 @@
   },
   {
     "entityId": "oya",
-    "colors": [
-      "maroon",
-      "burgundy",
-      "brown",
-      "nine colors"
-    ],
+    "colors": ["maroon", "burgundy", "brown", "nine colors"],
     "eleke": "Maroon-brown beads with thin black and white stripes, with coral and burgundy crystal; some houses use nine colors",
     "numerology": 9,
-    "sacredNumbers": [
-      9
-    ],
+    "sacredNumbers": [9],
     "day": "Friday",
     "timing": "Friday, Oyá's day in Lucumí practice (Wednesday in Yorùbá and Candomblé practice)",
-    "sacredPlaces": [
-      "Cemetery gates",
-      "The marketplace",
-      "The Niger River (Odò Ọya)",
-      "Storms, whirlwinds and lightning"
-    ],
-    "tools": [
-      "Irukẹ̀rẹ̀ (dark horsetail fly whisk)",
-      "Machete / sword",
-      "Nine copper bracelets",
-      "Buffalo horns",
-      "Lightning bolt",
-      "Skirt of nine colors"
-    ],
-    "temperament": [
-      "Fierce",
-      "Independent",
-      "Bold",
-      "Impetuous",
-      "Blunt and honest",
-      "Loyal",
-      "Guardian of the threshold between life and death"
-    ],
-    "syncretism": [
-      "Our Lady of Candelaria (Cuba)",
-      "Saint Teresa of Ávila (Cuba)",
-      "Saint Barbara (Brazil, as Iansã)"
-    ],
+    "sacredPlaces": ["Cemetery gates", "The marketplace", "The Niger River (Odò Ọya)", "Storms, whirlwinds and lightning"],
+    "tools": ["Irukẹ̀rẹ̀ (dark horsetail fly whisk)", "Machete / sword", "Nine copper bracelets", "Buffalo horns", "Lightning bolt", "Skirt of nine colors"],
+    "temperament": ["Fierce", "Independent", "Bold", "Impetuous", "Blunt and honest", "Loyal", "Guardian of the threshold between life and death"],
+    "syncretism": ["Our Lady of Candelaria (Cuba)", "Saint Teresa of Ávila (Cuba)", "Saint Barbara (Brazil, as Iansã)"],
     "feastDay": "February 2 (Candelaria) · October 15 (Saint Teresa)",
-    "metals": [
-      "Copper"
-    ],
-    "stones": [
-      "Otanes",
-      "Garnet (modern)",
-      "Smoky quartz (modern)"
-    ],
-    "herbs": [
-      "Flame tree (framboyán)",
-      "Star apple (caimito)"
-    ],
+    "metals": ["Copper"],
+    "stones": ["Otanes", "Garnet (modern)", "Smoky quartz (modern)"],
+    "herbs": ["Flame tree (framboyán)", "Star apple (caimito)"],
     "scents": [],
-    "animals": [
-      "Water buffalo",
-      "Black hen",
-      "She-goat",
-      "Guinea hen"
-    ],
-    "taboos": [
-      "Ram / mutton (in many houses)"
-    ],
+    "animals": ["Water buffalo", "Black hen", "She-goat", "Guinea hen"],
+    "taboos": ["Ram / mutton (in many houses)"],
     "element": "Air (wind) & Fire (lightning)",
     "sphere": "Saturn",
     "planet": "Saturn",
@@ -506,56 +164,22 @@
   },
   {
     "entityId": "orunmila",
-    "colors": [
-      "green",
-      "yellow"
-    ],
+    "colors": ["green", "yellow"],
     "eleke": "Alternating green and yellow beads, also worn as the idé bracelet of Orula",
     "numerology": 16,
-    "sacredNumbers": [
-      16
-    ],
+    "sacredNumbers": [16],
     "day": "Sunday",
     "timing": "Sunday, Orula's day (some houses honor him on Thursday)",
-    "sacredPlaces": [
-      "The divination mat",
-      "Palm groves — the sacred palm that yields ikin",
-      "Òkè Ìgètí, the hill of Ọ̀rúnmìlà at Ilé-Ifẹ̀"
-    ],
-    "tools": [
-      "Ikin (16 sacred palm nuts)",
-      "Ọ̀pẹ̀lẹ̀ (divination chain)",
-      "Ọpọ́n Ifá (divination tray)",
-      "Ìrọ́kẹ̀ (divination tapper)",
-      "Ìyẹ̀rọ̀sùn (divination powder)",
-      "Idé (green and yellow bracelet)"
-    ],
-    "temperament": [
-      "Wise",
-      "Patient",
-      "Measured",
-      "Far-seeing",
-      "Calm counselor",
-      "Witness to destiny (Ẹlẹ́rìí Ìpín)"
-    ],
-    "syncretism": [
-      "Saint Francis of Assisi"
-    ],
+    "sacredPlaces": ["The divination mat", "Palm groves — the sacred palm that yields ikin", "Òkè Ìgètí, the hill of Ọ̀rúnmìlà at Ilé-Ifẹ̀"],
+    "tools": ["Ikin (16 sacred palm nuts)", "Ọ̀pẹ̀lẹ̀ (divination chain)", "Ọpọ́n Ifá (divination tray)", "Ìrọ́kẹ̀ (divination tapper)", "Ìyẹ̀rọ̀sùn (divination powder)", "Idé (green and yellow bracelet)"],
+    "temperament": ["Wise", "Patient", "Measured", "Far-seeing", "Calm counselor", "Witness to destiny (Ẹlẹ́rìí Ìpín)"],
+    "syncretism": ["Saint Francis of Assisi"],
     "feastDay": "October 4 (Saint Francis of Assisi)",
     "metals": [],
-    "stones": [
-      "Otanes",
-      "Peridot (modern)",
-      "Citrine (modern)"
-    ],
+    "stones": ["Otanes", "Peridot (modern)", "Citrine (modern)"],
     "herbs": [],
     "scents": [],
-    "animals": [
-      "Black hen",
-      "Goat",
-      "Bush rat (ekú)",
-      "Fish (ẹja)"
-    ],
+    "animals": ["Black hen", "Goat", "Bush rat (ekú)", "Fish (ẹja)"],
     "element": "Not traditionally assigned",
     "sphere": "Mercury",
     "planet": "Mercury",
@@ -563,59 +187,194 @@
   },
   {
     "entityId": "ifa",
-    "colors": [
-      "green",
-      "yellow"
-    ],
+    "colors": ["green", "yellow"],
     "eleke": "Alternating green and yellow beads — the eleke and idé of Orunmila, the Orisha of Ifá",
     "numerology": 16,
-    "sacredNumbers": [
-      16,
-      256
-    ],
+    "sacredNumbers": [16, 256],
     "day": "Sunday",
     "timing": "Sunday, Orula's day (some houses honor him on Thursday)",
-    "sacredPlaces": [
-      "The divination mat",
-      "Palm groves — the sacred palm that yields ikin",
-      "Ilé-Ifẹ̀, Nigeria"
-    ],
-    "tools": [
-      "Ikin (16 sacred palm nuts)",
-      "Ọ̀pẹ̀lẹ̀ (divination chain)",
-      "Ọpọ́n Ifá (divination tray)",
-      "Ìrọ́kẹ̀ (divination tapper)",
-      "Ìyẹ̀rọ̀sùn (divination powder)",
-      "The 256 odù (sacred verses)"
-    ],
-    "temperament": [
-      "Wise",
-      "Patient",
-      "Measured",
-      "Truthful",
-      "Witness to destiny"
-    ],
-    "syncretism": [
-      "Saint Francis of Assisi (through Orunmila)"
-    ],
+    "sacredPlaces": ["The divination mat", "Palm groves — the sacred palm that yields ikin", "Ilé-Ifẹ̀, Nigeria"],
+    "tools": ["Ikin (16 sacred palm nuts)", "Ọ̀pẹ̀lẹ̀ (divination chain)", "Ọpọ́n Ifá (divination tray)", "Ìrọ́kẹ̀ (divination tapper)", "Ìyẹ̀rọ̀sùn (divination powder)", "The 256 odù (sacred verses)"],
+    "temperament": ["Wise", "Patient", "Measured", "Truthful", "Witness to destiny"],
+    "syncretism": ["Saint Francis of Assisi (through Orunmila)"],
     "feastDay": "October 4 (Saint Francis of Assisi)",
     "metals": [],
-    "stones": [
-      "Otanes",
-      "Peridot (modern)",
-      "Citrine (modern)"
-    ],
+    "stones": ["Otanes", "Peridot (modern)", "Citrine (modern)"],
     "herbs": [],
     "scents": [],
-    "animals": [
-      "Black hen",
-      "Goat",
-      "Bush rat (ekú)",
-      "Fish (ẹja)"
-    ],
+    "animals": ["Black hen", "Goat", "Bush rat (ekú)", "Fish (ẹja)"],
     "element": "Not traditionally assigned",
     "sphere": "Mercury",
     "planet": "Mercury",
     "traditionNote": "Ifá is the divination system and body of wisdom of Ọ̀rúnmìlà — 16 principal odù yielding 256 in all. Divination itself is reserved for trained babalawos and iyanifa. Planet and sphere are modern hermetic cross-references."
+  },
+  {
+    "entityId": "ochosi",
+    "colors": ["blue", "amber"],
+    "eleke": "Royal blue and transparent honey-amber beads, some with coral and jet accents",
+    "numerology": 3,
+    "sacredNumbers": [3, 7],
+    "day": "Monday",
+    "timing": "Monday or Wednesday, and the 4th of each month (many houses honor him on Tuesday with Ogún)",
+    "sacredPlaces": ["The forest and hunting grounds", "Wherever justice is sought — courts and jails"],
+    "tools": ["Bow and arrow (ofá)", "Three arrows", "Small mirror", "Deer antler", "Fishing hook"],
+    "temperament": ["Stealthy", "Precise", "Patient", "Solitary", "Upright and just"],
+    "syncretism": ["Saint Norbert (Cuba)", "Saint Sebastian or Saint George (Brazil, as Oxóssi)"],
+    "feastDay": "June 6 (Saint Norbert)",
+    "metals": ["Iron", "Brass"],
+    "stones": ["Otanes"],
+    "herbs": [],
+    "scents": ["Anisette"],
+    "animals": ["Deer", "Quail", "Pheasant", "Pigeon", "Hunting dogs"],
+    "element": "Not traditionally assigned",
+    "sphere": "Not traditionally assigned",
+    "traditionNote": "Lucumí (Regla de Ocha) conventions; houses and lineages differ (his day especially). No planet or Western element is traditionally assigned to this Orisha, so none is given."
+  },
+  {
+    "entityId": "babalu-aye",
+    "colors": ["purple", "brown", "black"],
+    "eleke": "White beads striped with blue, with jet and cowrie shells (patterns vary by house)",
+    "numerology": 17,
+    "sacredNumbers": [17],
+    "timing": "The 17th of each month, and above all December 17, the feast of San Lázaro",
+    "sacredPlaces": ["El Rincón sanctuary, near Havana", "The earth itself", "Among the sick and the poor"],
+    "tools": ["Já (broom of palm ribs)", "Crutches", "Burlap (sackcloth) garments"],
+    "temperament": ["Humble", "Compassionate", "Severe with those who mock the sick", "Miraculous healer"],
+    "syncretism": ["Saint Lazarus (Cuba)", "Saint Roch or Saint Lazarus (Brazil, as Obaluaiyê / Omolu)"],
+    "feastDay": "December 17 (Saint Lazarus)",
+    "metals": [],
+    "stones": ["Otanes"],
+    "herbs": ["Cundeamor (bitter melon)", "Sesame"],
+    "scents": ["Tobacco"],
+    "animals": ["Dogs"],
+    "element": "Not traditionally assigned",
+    "sphere": "Not traditionally assigned",
+    "traditionNote": "Lucumí (Regla de Ocha) conventions; houses and lineages differ (his weekday especially). No planet or Western element is traditionally assigned to this Orisha, so none is given."
+  },
+  {
+    "entityId": "osain",
+    "colors": ["green", "many colors"],
+    "eleke": "Beads of mixed colors, with green predominant",
+    "numerology": 7,
+    "sacredNumbers": [7, 21],
+    "timing": "No weekday is agreed across houses; in the forest, among living plants",
+    "sacredPlaces": ["The forest (el monte)", "Wherever medicinal plants grow"],
+    "tools": ["Güiro (hanging gourd) with four feathers", "Herbs and leaves", "Pipe"],
+    "temperament": ["Solitary", "Secretive", "Knowing", "Fair to those who respect the forest"],
+    "syncretism": ["Saint Joseph (primarily)", "Saint Benedict", "Saint Sylvester", "John the Baptist"],
+    "feastDay": "March 19 (Saint Joseph)",
+    "metals": [],
+    "stones": ["Otanes"],
+    "herbs": ["All plants and leaves are his"],
+    "scents": ["Tobacco"],
+    "animals": ["Birds"],
+    "element": "Not traditionally assigned",
+    "sphere": "Not traditionally assigned",
+    "traditionNote": "Lucumí (Regla de Ocha) conventions; houses and lineages differ. No planet or Western element is traditionally assigned to this Orisha, so none is given."
+  },
+  {
+    "entityId": "olokun",
+    "colors": ["dark blue", "sea green", "white"],
+    "eleke": "Dark blue with green or white (houses vary: blue, white and black; light green)",
+    "numerology": 7,
+    "sacredNumbers": [7, 9],
+    "timing": "No weekday is agreed across houses; at the sea",
+    "sacredPlaces": ["The depths of the ocean"],
+    "tools": ["Masks", "Anchor", "Snakes (as emblems)", "Chains"],
+    "temperament": ["Unfathomable", "Wealthy", "Mysterious", "Overwhelming when roused"],
+    "syncretism": ["Not syncretized with any saint in Lucumí practice"],
+    "metals": [],
+    "stones": ["Sea stones"],
+    "herbs": ["Water lily", "Water lettuce", "Watercress"],
+    "scents": [],
+    "animals": ["Duck", "Sea creatures"],
+    "element": "Not traditionally assigned",
+    "sphere": "Not traditionally assigned",
+    "traditionNote": "Lucumí (Regla de Ocha) conventions; houses and lineages differ (colors 7 or 9 and form differ widely). No planet or Western element is traditionally assigned to this Orisha, so none is given."
+  },
+  {
+    "entityId": "ibeji",
+    "colors": ["red", "blue", "white"],
+    "eleke": "Two necklaces, one red and white (for Changó) and one blue and white (for Yemayá), or mixed",
+    "numerology": 2,
+    "sacredNumbers": [2, 4, 8],
+    "timing": "No weekday is agreed across houses; September 26, the feast of Saints Cosmas and Damian",
+    "sacredPlaces": ["Wherever children play"],
+    "tools": ["A pair of twin figures (dolls)", "Toys", "Maracas", "Small drums"],
+    "temperament": ["Playful", "Mischievous", "Joyful", "Lucky"],
+    "syncretism": ["Saints Cosmas and Damian"],
+    "feastDay": "September 26 (Saints Cosmas and Damian)",
+    "metals": [],
+    "stones": ["Otanes"],
+    "herbs": [],
+    "scents": [],
+    "animals": [],
+    "element": "Not traditionally assigned",
+    "sphere": "Not traditionally assigned",
+    "traditionNote": "Lucumí (Regla de Ocha) conventions; houses and lineages differ. No planet or Western element is traditionally assigned to this Orisha, so none is given."
+  },
+  {
+    "entityId": "aganju",
+    "colors": ["brown", "burgundy", "nine colors"],
+    "eleke": "Brown beads combined with nine colors, but no black",
+    "numerology": 9,
+    "sacredNumbers": [9],
+    "timing": "No weekday is agreed across houses; July 25, the feast of Saint Christopher",
+    "sacredPlaces": ["Volcanoes", "Raging rivers and their crossings", "Deserts and wild land"],
+    "tools": ["Double-headed axe", "Staff", "A small figure carried on his shoulder"],
+    "temperament": ["Immensely strong", "Stubborn", "Protective", "Fiery"],
+    "syncretism": ["Saint Christopher"],
+    "feastDay": "July 25 (Saint Christopher)",
+    "metals": [],
+    "stones": ["Otanes", "Volcanic rock"],
+    "herbs": [],
+    "scents": [],
+    "animals": [],
+    "element": "Not traditionally assigned",
+    "sphere": "Not traditionally assigned",
+    "traditionNote": "Lucumí (Regla de Ocha) conventions; houses and lineages differ. No planet or Western element is traditionally assigned to this Orisha, so none is given."
+  },
+  {
+    "entityId": "oba",
+    "colors": ["brown", "coral pink", "opal"],
+    "eleke": "Brown, opal and coral beads",
+    "numerology": 8,
+    "sacredNumbers": [8],
+    "timing": "No weekday is agreed across houses; April 29, the feast of Saint Catherine of Siena",
+    "sacredPlaces": ["The Ọbà River, Nigeria", "The cemetery, among the graves (Lucumí)"],
+    "tools": ["Sword", "Book", "Mask"],
+    "temperament": ["Devoted", "Loyal", "Self-sacrificing", "Dignified", "Grieving"],
+    "syncretism": ["Saint Catherine of Siena"],
+    "feastDay": "April 29 (Saint Catherine of Siena)",
+    "metals": ["Copper"],
+    "stones": ["Otanes"],
+    "herbs": [],
+    "scents": [],
+    "animals": [],
+    "element": "Not traditionally assigned",
+    "sphere": "Not traditionally assigned",
+    "traditionNote": "Lucumí (Regla de Ocha) conventions; houses and lineages differ. No planet or Western element is traditionally assigned to this Orisha, so none is given."
+  },
+  {
+    "entityId": "yewa",
+    "colors": ["pink", "burgundy"],
+    "eleke": "Pink and burgundy beads",
+    "numerology": 7,
+    "sacredNumbers": [7, 9],
+    "timing": "No weekday is agreed across houses; April 27, the feast of Our Lady of Montserrat",
+    "sacredPlaces": ["The cemetery, among the graves (some houses say its gates)"],
+    "tools": ["Irukẹ̀rẹ̀ (fly whisk)", "Sword", "Crown"],
+    "temperament": ["Austere", "Chaste", "Solitary", "Stern", "Demanding of order and modesty"],
+    "syncretism": ["Our Lady of Montserrat"],
+    "feastDay": "April 27 (Our Lady of Montserrat)",
+    "metals": [],
+    "stones": ["Otanes"],
+    "herbs": [],
+    "scents": [],
+    "animals": [],
+    "taboos": ["Obscenity, quarrelling or immodesty in her presence", "Disorder in her shrine"],
+    "element": "Not traditionally assigned",
+    "sphere": "Not traditionally assigned",
+    "traditionNote": "Lucumí (Regla de Ocha) conventions; houses and lineages differ (her number is given as 7 or 9). No planet or Western element is traditionally assigned to this Orisha, so none is given."
   }
 ]

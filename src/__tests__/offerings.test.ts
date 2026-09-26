@@ -17,8 +17,11 @@ describe('getOfferingsByEntityId', () => {
     expect(record).toBeUndefined();
   });
 
-  it('returns correct offerings for each of the 9 Orishas', () => {
-    const ids = ['obatala', 'yemaya', 'shango', 'ogun', 'eshu', 'oshun', 'ifa', 'oya', 'orunmila'];
+  it('returns correct offerings for each of the 17 Orishas', () => {
+    const ids = [
+      'obatala', 'yemaya', 'shango', 'ogun', 'eshu', 'oshun', 'ifa', 'oya', 'orunmila',
+      'ochosi', 'babalu-aye', 'osain', 'olokun', 'ibeji', 'aganju', 'oba', 'yewa',
+    ];
     for (const id of ids) {
       const record = getOfferingsByEntityId(id);
       expect(record).toBeDefined();

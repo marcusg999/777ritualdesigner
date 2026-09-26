@@ -1,0 +1,2148 @@
+[
+  {
+    "entityId": "ares",
+    "colors": [
+      "red",
+      "scarlet"
+    ],
+    "stones": [
+      "Garnet",
+      "Bloodstone"
+    ],
+    "herbs": [],
+    "metals": [
+      "Iron"
+    ],
+    "scents": [
+      "Dragon’s blood",
+      "Tobacco"
+    ],
+    "timing": "Tuesday, the day of Mars",
+    "element": "Fire",
+    "sphere": "Mars",
+    "planet": "Mars",
+    "day": "Tuesday",
+    "numerology": 5,
+    "tools": [
+      "Spear",
+      "Bronze helmet",
+      "Shield"
+    ],
+    "animals": [
+      "Dog",
+      "Vulture"
+    ],
+    "sacredPlaces": [
+      "Areopagus (the Hill of Ares), Athens",
+      "Sparta, where he was worshipped as Enyalios",
+      "Thrace, his homeland"
+    ],
+    "offerings": [
+      "Wine libations"
+    ],
+    "traditionNote": "Symbols, sacred animals and plants, cult sites and offerings are attested in ancient sources. Colors, metals, planet and weekday are later Hellenistic planetary associations; a sacred number is the god's day in the Athenian monthly calendar where one is recorded."
+  },
+  {
+    "entityId": "hermes",
+    "colors": [
+      "orange",
+      "yellow"
+    ],
+    "stones": [
+      "Agate",
+      "Opal"
+    ],
+    "herbs": [
+      "Crocus",
+      "Strawberry tree"
+    ],
+    "metals": [
+      "Quicksilver (as an amalgam)"
+    ],
+    "scents": [
+      "Storax",
+      "Mastic"
+    ],
+    "timing": "Wednesday, the day of Mercury; the 4th of each month was his birthday",
+    "element": "Air",
+    "sphere": "Mercury",
+    "planet": "Mercury",
+    "day": "Wednesday",
+    "sacredNumbers": [
+      4
+    ],
+    "numerology": 4,
+    "tools": [
+      "Caduceus (kerykeion)",
+      "Winged sandals (talaria)",
+      "Winged hat (petasos)",
+      "Lyre, which he invented",
+      "Herm (boundary pillar)"
+    ],
+    "animals": [
+      "Tortoise",
+      "Ram",
+      "Hawk"
+    ],
+    "sacredPlaces": [
+      "Mount Kyllene, Arcadia (his birthplace)",
+      "Crossroads and boundaries marked by herms"
+    ],
+    "offerings": [
+      "Honey",
+      "Cakes",
+      "Incense",
+      "A stone added to his roadside cairn"
+    ],
+    "traditionNote": "Symbols, sacred animals and plants, cult sites and offerings are attested in ancient sources. Colors, metals, planet and weekday are later Hellenistic planetary associations; a sacred number is the god's day in the Athenian monthly calendar where one is recorded."
+  },
+  {
+    "entityId": "persephone",
+    "colors": [
+      "black",
+      "red",
+      "spring green"
+    ],
+    "stones": [
+      "Onyx",
+      "Jet"
+    ],
+    "herbs": [
+      "Pomegranate",
+      "Mint",
+      "Narcissus",
+      "Asphodel"
+    ],
+    "metals": [
+      "Lead"
+    ],
+    "scents": [
+      "Myrrh",
+      "Cypress"
+    ],
+    "timing": "Saturday, the day of Saturn",
+    "element": "Earth",
+    "sphere": "Saturn",
+    "planet": "Saturn",
+    "day": "Saturday",
+    "numerology": 3,
+    "tools": [
+      "Pomegranate",
+      "Torch",
+      "Sheaf of grain"
+    ],
+    "sacredPlaces": [
+      "Eleusis",
+      "The underworld and its meadows of asphodel"
+    ],
+    "festival": "The Eleusinian Mysteries (autumn) and the Thesmophoria, with Demeter",
+    "offerings": [
+      "Pomegranates",
+      "Grain",
+      "Honey cakes"
+    ],
+    "traditionNote": "Symbols, sacred animals and plants, cult sites and offerings are attested in ancient sources. Colors, metals, planet and weekday are later Hellenistic planetary associations; a sacred number is the god's day in the Athenian monthly calendar where one is recorded."
+  },
+  {
+    "entityId": "apollo",
+    "colors": [
+      "gold",
+      "yellow"
+    ],
+    "stones": [
+      "Topaz",
+      "Citrine (modern)"
+    ],
+    "herbs": [
+      "Laurel (bay)",
+      "Hyacinth"
+    ],
+    "metals": [
+      "Gold"
+    ],
+    "scents": [
+      "Frankincense"
+    ],
+    "timing": "Sunday, the day of the Sun; the 7th of each month was his birthday",
+    "element": "Fire",
+    "sphere": "Sun",
+    "planet": "Sun",
+    "day": "Sunday",
+    "sacredNumbers": [
+      7
+    ],
+    "numerology": 7,
+    "tools": [
+      "Lyre (kithara)",
+      "Silver bow and arrows",
+      "Laurel wreath",
+      "Delphic tripod"
+    ],
+    "animals": [
+      "Swan",
+      "Raven",
+      "Wolf",
+      "Dolphin"
+    ],
+    "sacredPlaces": [
+      "Delphi",
+      "Delos, his birthplace",
+      "Didyma"
+    ],
+    "festival": "The Pythian Games at Delphi; the Thargelia",
+    "offerings": [
+      "Laurel",
+      "Hymns (paeans)",
+      "Barley",
+      "Incense"
+    ],
+    "traditionNote": "Symbols, sacred animals and plants, cult sites and offerings are attested in ancient sources. Colors, metals, planet and weekday are later Hellenistic planetary associations; a sacred number is the god's day in the Athenian monthly calendar where one is recorded."
+  },
+  {
+    "entityId": "artemis",
+    "colors": [
+      "silver",
+      "white"
+    ],
+    "stones": [
+      "Moonstone",
+      "Pearl"
+    ],
+    "herbs": [
+      "Walnut",
+      "Cypress",
+      "Mugwort (Artemisia)"
+    ],
+    "metals": [
+      "Silver"
+    ],
+    "scents": [
+      "Jasmine",
+      "Camphor"
+    ],
+    "timing": "Monday, the day of the Moon; the 6th of each month was her birthday",
+    "element": "Water",
+    "sphere": "Moon",
+    "planet": "Moon",
+    "day": "Monday",
+    "sacredNumbers": [
+      6
+    ],
+    "numerology": 6,
+    "tools": [
+      "Bow and quiver",
+      "Torches",
+      "Crescent moon"
+    ],
+    "animals": [
+      "Deer",
+      "Bear",
+      "Hunting dogs",
+      "Boar"
+    ],
+    "sacredPlaces": [
+      "The Artemision at Ephesus",
+      "Brauron",
+      "Delos",
+      "Wild mountains and forests"
+    ],
+    "festival": "The Brauronia; the Mounichia, with round cakes ringed by lit torches",
+    "offerings": [
+      "Round honey cakes set with small torches (amphiphon)",
+      "Hunting spoils",
+      "Garments dedicated after childbirth"
+    ],
+    "traditionNote": "Symbols, sacred animals and plants, cult sites and offerings are attested in ancient sources. Colors, metals, planet and weekday are later Hellenistic planetary associations; a sacred number is the god's day in the Athenian monthly calendar where one is recorded."
+  },
+  {
+    "entityId": "athena",
+    "colors": [
+      "grey",
+      "olive",
+      "gold"
+    ],
+    "stones": [
+      "Agate",
+      "Opal"
+    ],
+    "herbs": [
+      "Olive"
+    ],
+    "metals": [
+      "Quicksilver (as an amalgam)"
+    ],
+    "scents": [
+      "Storax",
+      "Mastic"
+    ],
+    "timing": "Wednesday, the day of Mercury; the 3rd of each month was her birthday",
+    "element": "Air",
+    "sphere": "Mercury",
+    "planet": "Mercury",
+    "day": "Wednesday",
+    "sacredNumbers": [
+      3
+    ],
+    "numerology": 3,
+    "tools": [
+      "Aegis with the Gorgoneion",
+      "Spear",
+      "Helmet",
+      "Shield"
+    ],
+    "animals": [
+      "Owl",
+      "Snake"
+    ],
+    "sacredPlaces": [
+      "The Acropolis and Parthenon, Athens"
+    ],
+    "festival": "The Panathenaia (midsummer), when a new woven robe (peplos) was presented",
+    "offerings": [
+      "Olive oil",
+      "A woven robe (peplos)",
+      "Owl imagery"
+    ],
+    "traditionNote": "Symbols, sacred animals and plants, cult sites and offerings are attested in ancient sources. Colors, metals, planet and weekday are later Hellenistic planetary associations; a sacred number is the god's day in the Athenian monthly calendar where one is recorded."
+  },
+  {
+    "entityId": "poseidon",
+    "colors": [
+      "sea blue",
+      "sea green"
+    ],
+    "stones": [],
+    "herbs": [
+      "Pine",
+      "Wild celery"
+    ],
+    "metals": [],
+    "scents": [],
+    "timing": "Any day at the sea; the 8th of each month was his",
+    "element": "Water",
+    "sphere": "Neptune",
+    "sacredNumbers": [
+      8
+    ],
+    "numerology": 8,
+    "tools": [
+      "Trident"
+    ],
+    "animals": [
+      "Horse",
+      "Bull",
+      "Dolphin"
+    ],
+    "sacredPlaces": [
+      "The Isthmus of Corinth",
+      "Cape Sounion",
+      "The open sea"
+    ],
+    "festival": "The Isthmian Games",
+    "offerings": [
+      "Libations poured into the sea",
+      "Black bulls (in antiquity)"
+    ],
+    "traditionNote": "Symbols, sacred animals and plants, cult sites and offerings are attested in ancient sources. Colors, metals, planet and weekday are later Hellenistic planetary associations; a sacred number is the god's day in the Athenian monthly calendar where one is recorded."
+  },
+  {
+    "entityId": "zeus",
+    "colors": [
+      "blue",
+      "purple"
+    ],
+    "stones": [
+      "Sapphire",
+      "Amethyst"
+    ],
+    "herbs": [
+      "Oak"
+    ],
+    "metals": [
+      "Tin"
+    ],
+    "scents": [
+      "Cedar",
+      "Saffron"
+    ],
+    "timing": "Thursday, the day of Jupiter",
+    "element": "Air",
+    "sphere": "Jupiter",
+    "planet": "Jupiter",
+    "day": "Thursday",
+    "numerology": 4,
+    "tools": [
+      "Thunderbolt",
+      "Sceptre"
+    ],
+    "animals": [
+      "Eagle",
+      "Bull"
+    ],
+    "sacredPlaces": [
+      "Olympia",
+      "Dodona and its oracular oak",
+      "Mount Olympus"
+    ],
+    "festival": "The Olympic Games",
+    "offerings": [
+      "Wine libations",
+      "Incense",
+      "Bulls (in antiquity)"
+    ],
+    "traditionNote": "Symbols, sacred animals and plants, cult sites and offerings are attested in ancient sources. Colors, metals, planet and weekday are later Hellenistic planetary associations; a sacred number is the god's day in the Athenian monthly calendar where one is recorded."
+  },
+  {
+    "entityId": "dionysus",
+    "colors": [
+      "purple",
+      "wine red",
+      "ivy green"
+    ],
+    "stones": [
+      "Sapphire",
+      "Amethyst"
+    ],
+    "herbs": [
+      "Grapevine",
+      "Ivy",
+      "Fig"
+    ],
+    "metals": [
+      "Tin"
+    ],
+    "scents": [
+      "Cedar",
+      "Saffron"
+    ],
+    "timing": "Thursday, the day of Jupiter",
+    "element": "Air",
+    "sphere": "Jupiter",
+    "planet": "Jupiter",
+    "day": "Thursday",
+    "numerology": 4,
+    "tools": [
+      "Thyrsus",
+      "Wine cup (kantharos)",
+      "Ivy wreath",
+      "Theatrical mask"
+    ],
+    "animals": [
+      "Panther",
+      "Bull",
+      "Goat",
+      "Snake"
+    ],
+    "sacredPlaces": [
+      "The Theatre of Dionysus, Athens",
+      "Delphi (in the winter months)",
+      "Naxos"
+    ],
+    "festival": "The Anthesteria and the City Dionysia",
+    "offerings": [
+      "Wine",
+      "Grapes",
+      "Ivy"
+    ],
+    "traditionNote": "Symbols, sacred animals and plants, cult sites and offerings are attested in ancient sources. Colors, metals, planet and weekday are later Hellenistic planetary associations; a sacred number is the god's day in the Athenian monthly calendar where one is recorded."
+  },
+  {
+    "entityId": "hephaestus",
+    "colors": [
+      "red",
+      "orange",
+      "bronze"
+    ],
+    "stones": [
+      "Garnet",
+      "Bloodstone"
+    ],
+    "herbs": [],
+    "metals": [
+      "Bronze",
+      "Iron"
+    ],
+    "scents": [
+      "Dragon’s blood",
+      "Tobacco"
+    ],
+    "timing": "Tuesday, the day of Mars",
+    "element": "Fire",
+    "sphere": "Mars",
+    "planet": "Mars",
+    "day": "Tuesday",
+    "numerology": 5,
+    "tools": [
+      "Hammer",
+      "Anvil",
+      "Tongs"
+    ],
+    "animals": [
+      "Donkey"
+    ],
+    "sacredPlaces": [
+      "Lemnos",
+      "The Hephaisteion, Athens",
+      "His forge beneath volcanoes"
+    ],
+    "festival": "The Chalkeia, festival of bronze-workers",
+    "offerings": [
+      "Torch races (the Hephaisteia)"
+    ],
+    "traditionNote": "Symbols, sacred animals and plants, cult sites and offerings are attested in ancient sources. Colors, metals, planet and weekday are later Hellenistic planetary associations; a sacred number is the god's day in the Athenian monthly calendar where one is recorded."
+  },
+  {
+    "entityId": "demeter",
+    "colors": [
+      "gold",
+      "green",
+      "brown"
+    ],
+    "stones": [],
+    "herbs": [
+      "Wheat",
+      "Barley",
+      "Poppy",
+      "Pennyroyal"
+    ],
+    "metals": [],
+    "scents": [],
+    "timing": "Full moon, above all at harvest",
+    "element": "Earth",
+    "sphere": "Earth",
+    "tools": [
+      "Sheaf of wheat",
+      "Torch",
+      "Poppy"
+    ],
+    "animals": [
+      "Pig"
+    ],
+    "sacredPlaces": [
+      "Eleusis"
+    ],
+    "festival": "The Eleusinian Mysteries and the Thesmophoria",
+    "offerings": [
+      "First fruits of the harvest",
+      "Grain",
+      "Honey",
+      "Kykeon (barley, water and pennyroyal)"
+    ],
+    "traditionNote": "Symbols, sacred animals and plants, cult sites and offerings are attested in ancient sources. Colors, metals, planet and weekday are later Hellenistic planetary associations; a sacred number is the god's day in the Athenian monthly calendar where one is recorded."
+  },
+  {
+    "entityId": "eros",
+    "colors": [
+      "pink",
+      "red",
+      "gold"
+    ],
+    "stones": [
+      "Emerald",
+      "Rose quartz (modern)"
+    ],
+    "herbs": [
+      "Rose"
+    ],
+    "metals": [
+      "Copper"
+    ],
+    "scents": [
+      "Rose",
+      "Benzoin"
+    ],
+    "timing": "Friday, the day of Venus; the 4th of each month was his",
+    "element": "Water",
+    "sphere": "Venus",
+    "planet": "Venus",
+    "day": "Friday",
+    "sacredNumbers": [
+      4
+    ],
+    "numerology": 4,
+    "tools": [
+      "Bow and arrows",
+      "Wings",
+      "Torch"
+    ],
+    "animals": [
+      "Hare"
+    ],
+    "sacredPlaces": [
+      "Thespiae, his chief cult site"
+    ],
+    "festival": "The Erotidia at Thespiae",
+    "offerings": [
+      "Roses",
+      "Garlands"
+    ],
+    "traditionNote": "Symbols, sacred animals and plants, cult sites and offerings are attested in ancient sources. Colors, metals, planet and weekday are later Hellenistic planetary associations; a sacred number is the god's day in the Athenian monthly calendar where one is recorded."
+  },
+  {
+    "entityId": "osiris",
+    "colors": [
+      "green",
+      "black"
+    ],
+    "stones": [
+      "Onyx",
+      "Jet"
+    ],
+    "herbs": [
+      "Grain",
+      "Tamarisk",
+      "Ivy"
+    ],
+    "metals": [
+      "Lead"
+    ],
+    "scents": [
+      "Myrrh",
+      "Cypress"
+    ],
+    "timing": "Saturday, the day of Saturn",
+    "element": "Earth",
+    "sphere": "Saturn",
+    "planet": "Saturn",
+    "day": "Saturday",
+    "numerology": 3,
+    "tools": [
+      "Crook and flail",
+      "Atef crown",
+      "Djed pillar"
+    ],
+    "animals": [
+      "Apis bull"
+    ],
+    "sacredPlaces": [
+      "Abydos",
+      "Busiris (Djedu)",
+      "The constellation Orion (Sah), his celestial form"
+    ],
+    "festival": "The Khoiak mysteries, when grain-filled Osiris figures were planted and sprouted",
+    "offerings": [
+      "Bread and beer",
+      "Cool water libations (qebhu)",
+      "Grain"
+    ],
+    "traditionNote": "Iconography, sacred animals, cult centres and offerings are attested in Egyptian sources. Ancient Egypt used a ten-day week, so planet and weekday are modern hermetic cross-references, as are colors unless noted."
+  },
+  {
+    "entityId": "anubis",
+    "colors": [
+      "black"
+    ],
+    "stones": [
+      "Onyx",
+      "Jet"
+    ],
+    "herbs": [
+      "Myrrh",
+      "Natron"
+    ],
+    "metals": [
+      "Lead"
+    ],
+    "scents": [
+      "Myrrh",
+      "Cypress"
+    ],
+    "timing": "Saturday, the day of Saturn",
+    "element": "Earth",
+    "sphere": "Saturn",
+    "planet": "Saturn",
+    "day": "Saturday",
+    "numerology": 3,
+    "tools": [
+      "Imiut fetish",
+      "Was-sceptre",
+      "Embalming natron and linen"
+    ],
+    "animals": [
+      "Jackal"
+    ],
+    "sacredPlaces": [
+      "Cynopolis (Hardai)",
+      "The necropolis — Saqqara and every tomb"
+    ],
+    "offerings": [
+      "Bread and beer",
+      "Incense"
+    ],
+    "traditionNote": "Iconography, sacred animals, cult centres and offerings are attested in Egyptian sources. Ancient Egypt used a ten-day week, so planet and weekday are modern hermetic cross-references, as are colors unless noted."
+  },
+  {
+    "entityId": "ra",
+    "colors": [
+      "gold",
+      "red"
+    ],
+    "stones": [
+      "Topaz",
+      "Citrine (modern)"
+    ],
+    "herbs": [
+      "Blue lotus"
+    ],
+    "metals": [
+      "Gold"
+    ],
+    "scents": [
+      "Frankincense"
+    ],
+    "timing": "Sunday, the day of Sun",
+    "element": "Fire",
+    "sphere": "Sun",
+    "planet": "Sun",
+    "day": "Sunday",
+    "numerology": 6,
+    "tools": [
+      "Sun disc with uraeus",
+      "Obelisk and benben stone",
+      "Solar barque"
+    ],
+    "animals": [
+      "Falcon",
+      "Scarab (Khepri, the morning sun)",
+      "Ram (the night sun)"
+    ],
+    "sacredPlaces": [
+      "Heliopolis (Iunu)"
+    ],
+    "offerings": [
+      "Bread and beer",
+      "Resin at dawn, myrrh at noon and kyphi at dusk (Plutarch)"
+    ],
+    "traditionNote": "Iconography, sacred animals, cult centres and offerings are attested in Egyptian sources. Ancient Egypt used a ten-day week, so planet and weekday are modern hermetic cross-references, as are colors unless noted."
+  },
+  {
+    "entityId": "bastet",
+    "colors": [
+      "silver",
+      "white"
+    ],
+    "stones": [
+      "Moonstone",
+      "Pearl"
+    ],
+    "herbs": [],
+    "metals": [
+      "Silver"
+    ],
+    "scents": [
+      "Jasmine",
+      "Camphor"
+    ],
+    "timing": "Monday, the day of Moon",
+    "element": "Water",
+    "sphere": "Moon",
+    "planet": "Moon",
+    "day": "Monday",
+    "numerology": 9,
+    "tools": [
+      "Sistrum",
+      "Aegis",
+      "Perfume and ointment jars"
+    ],
+    "animals": [
+      "Cat",
+      "Lioness"
+    ],
+    "sacredPlaces": [
+      "Bubastis"
+    ],
+    "festival": "Her festival at Bubastis — music, dancing and wine (Herodotus 2.60)",
+    "offerings": [
+      "Perfumes and ointments",
+      "Cat figurines",
+      "Wine"
+    ],
+    "traditionNote": "Iconography, sacred animals, cult centres and offerings are attested in Egyptian sources. Ancient Egypt used a ten-day week, so planet and weekday are modern hermetic cross-references, as are colors unless noted."
+  },
+  {
+    "entityId": "sekhmet",
+    "colors": [
+      "red",
+      "orange"
+    ],
+    "stones": [
+      "Topaz",
+      "Citrine (modern)"
+    ],
+    "herbs": [],
+    "metals": [
+      "Gold"
+    ],
+    "scents": [
+      "Frankincense"
+    ],
+    "timing": "Sunday, the day of Sun",
+    "element": "Fire",
+    "sphere": "Sun",
+    "planet": "Sun",
+    "day": "Sunday",
+    "sacredNumbers": [
+      7
+    ],
+    "numerology": 7,
+    "tools": [
+      "Sun disc and uraeus",
+      "Arrows (the \"seven arrows of Sekhmet\")"
+    ],
+    "animals": [
+      "Lioness"
+    ],
+    "sacredPlaces": [
+      "Memphis, with Ptah and Nefertum"
+    ],
+    "offerings": [
+      "Beer dyed red with ochre (the Destruction of Mankind myth)"
+    ],
+    "lore": [
+      "Her priests were physicians — she both sent plague and healed it."
+    ],
+    "traditionNote": "Iconography, sacred animals, cult centres and offerings are attested in Egyptian sources. Ancient Egypt used a ten-day week, so planet and weekday are modern hermetic cross-references, as are colors unless noted."
+  },
+  {
+    "entityId": "hathor",
+    "colors": [
+      "turquoise",
+      "gold"
+    ],
+    "stones": [
+      "Turquoise",
+      "Malachite"
+    ],
+    "herbs": [
+      "Sycamore fig",
+      "Papyrus"
+    ],
+    "metals": [
+      "Gold",
+      "Copper"
+    ],
+    "scents": [
+      "Rose",
+      "Benzoin"
+    ],
+    "timing": "Friday, the day of Venus",
+    "element": "Water",
+    "sphere": "Venus",
+    "planet": "Venus",
+    "day": "Friday",
+    "numerology": 7,
+    "tools": [
+      "Sistrum",
+      "Menat necklace",
+      "Mirror",
+      "Sun disc between cow horns"
+    ],
+    "animals": [
+      "Cow"
+    ],
+    "sacredPlaces": [
+      "Dendera",
+      "Serabit el-Khadim, the Sinai turquoise mines",
+      "Deir el-Bahari"
+    ],
+    "festival": "The Beautiful Feast of the Valley; the Festival of Drunkenness",
+    "offerings": [
+      "Beer",
+      "Music and dance",
+      "Mirrors",
+      "Flowers"
+    ],
+    "traditionNote": "Iconography, sacred animals, cult centres and offerings are attested in Egyptian sources. Ancient Egypt used a ten-day week, so planet and weekday are modern hermetic cross-references, as are colors unless noted."
+  },
+  {
+    "entityId": "maat",
+    "colors": [
+      "white",
+      "gold"
+    ],
+    "stones": [
+      "Onyx",
+      "Jet"
+    ],
+    "herbs": [],
+    "metals": [
+      "Lead"
+    ],
+    "scents": [
+      "Myrrh",
+      "Cypress"
+    ],
+    "timing": "Saturday, the day of Saturn",
+    "element": "Earth",
+    "sphere": "Saturn",
+    "planet": "Saturn",
+    "day": "Saturday",
+    "sacredNumbers": [
+      42
+    ],
+    "numerology": 42,
+    "tools": [
+      "Ostrich feather",
+      "Scales of judgement",
+      "Ankh"
+    ],
+    "animals": [],
+    "sacredPlaces": [
+      "The precinct of Maat at Karnak"
+    ],
+    "offerings": [
+      "A figure of Ma’at — the king’s offering of truth itself",
+      "Truthful speech"
+    ],
+    "lore": [
+      "The 42 judges and 42 declarations of innocence of the Book of the Dead are hers."
+    ],
+    "traditionNote": "Iconography, sacred animals, cult centres and offerings are attested in Egyptian sources. Ancient Egypt used a ten-day week, so planet and weekday are modern hermetic cross-references, as are colors unless noted."
+  },
+  {
+    "entityId": "nephthys",
+    "colors": [
+      "black",
+      "indigo"
+    ],
+    "stones": [
+      "Onyx",
+      "Jet"
+    ],
+    "herbs": [],
+    "metals": [
+      "Lead"
+    ],
+    "scents": [
+      "Myrrh",
+      "Cypress"
+    ],
+    "timing": "Saturday, the day of Saturn",
+    "element": "Earth",
+    "sphere": "Saturn",
+    "planet": "Saturn",
+    "day": "Saturday",
+    "numerology": 3,
+    "tools": [
+      "House-and-basket hieroglyph crown"
+    ],
+    "animals": [
+      "Kite (the bird)"
+    ],
+    "sacredPlaces": [
+      "Tombs and funerary rites"
+    ],
+    "lore": [
+      "With Isis she forms the \"Two Kites\" who mourn and protect Osiris."
+    ],
+    "traditionNote": "Iconography, sacred animals, cult centres and offerings are attested in Egyptian sources. Ancient Egypt used a ten-day week, so planet and weekday are modern hermetic cross-references, as are colors unless noted."
+  },
+  {
+    "entityId": "thor",
+    "colors": [
+      "red"
+    ],
+    "stones": [
+      "Sapphire",
+      "Amethyst"
+    ],
+    "herbs": [
+      "Oak",
+      "Rowan"
+    ],
+    "metals": [
+      "Iron"
+    ],
+    "scents": [
+      "Cedar",
+      "Saffron"
+    ],
+    "timing": "Thursday, Thor’s day (Þórsdagr)",
+    "element": "Fire (lightning)",
+    "sphere": "Jupiter",
+    "planet": "Jupiter",
+    "day": "Thursday",
+    "numerology": 4,
+    "tools": [
+      "Mjölnir",
+      "Megingjörð (belt of strength)",
+      "Járngreipr (iron gauntlets)"
+    ],
+    "animals": [
+      "Goats Tanngrisnir and Tanngnjóstr"
+    ],
+    "sacredPlaces": [
+      "Þrúðvangr and his hall Bilskirnir",
+      "The temple at Uppsala (Adam of Bremen)"
+    ],
+    "offerings": [
+      "Mead or ale"
+    ],
+    "runeAssociations": [
+      "Thurisaz (modern association)"
+    ],
+    "lore": [
+      "His red beard is attested; the hammer hallowed weddings (Þrymskviða)."
+    ],
+    "traditionNote": "Symbols, animals, halls and runes come from the Poetic and Prose Eddas. English weekday names preserve Tyr (Tuesday), Odin (Wednesday), Thor (Thursday) and Frigg (Friday); other planets, colors and metals are modern associations unless noted."
+  },
+  {
+    "entityId": "loki",
+    "colors": [
+      "orange",
+      "yellow"
+    ],
+    "stones": [
+      "Agate",
+      "Opal"
+    ],
+    "herbs": [],
+    "metals": [
+      "Quicksilver (as an amalgam)"
+    ],
+    "scents": [
+      "Storax",
+      "Mastic"
+    ],
+    "timing": "No day of his own in the lore; Wednesday by his Mercurial nature (modern)",
+    "element": "Air",
+    "sphere": "Mercury",
+    "planet": "Mercury",
+    "day": "Wednesday",
+    "numerology": 8,
+    "tools": [
+      "The fishing net, which he invented"
+    ],
+    "animals": [
+      "Salmon",
+      "Mare",
+      "Fly",
+      "Seal"
+    ],
+    "sacredPlaces": [
+      "The cave where he lies bound beneath the serpent’s venom"
+    ],
+    "lore": [
+      "Father of Fenrir, Jörmungandr and Hel; mother of Sleipnir.",
+      "No cult or offerings are attested in the sources."
+    ],
+    "traditionNote": "Symbols, animals, halls and runes come from the Poetic and Prose Eddas. English weekday names preserve Tyr (Tuesday), Odin (Wednesday), Thor (Thursday) and Frigg (Friday); other planets, colors and metals are modern associations unless noted."
+  },
+  {
+    "entityId": "frigg",
+    "colors": [
+      "green",
+      "rose"
+    ],
+    "stones": [
+      "Emerald",
+      "Rose quartz (modern)"
+    ],
+    "herbs": [],
+    "metals": [
+      "Copper"
+    ],
+    "scents": [
+      "Rose",
+      "Benzoin"
+    ],
+    "timing": "Friday, Frigg’s day",
+    "element": "Water",
+    "sphere": "Venus",
+    "planet": "Venus",
+    "day": "Friday",
+    "numerology": 7,
+    "tools": [
+      "Distaff and spindle",
+      "Household keys"
+    ],
+    "animals": [
+      "Falcon (her feather cloak)"
+    ],
+    "sacredPlaces": [
+      "Fensalir, her hall",
+      "Orion’s Belt, once called Frigg’s distaff"
+    ],
+    "lore": [
+      "Attended by Fulla, Hlín and Gná; she knows all fates but does not speak them."
+    ],
+    "traditionNote": "Symbols, animals, halls and runes come from the Poetic and Prose Eddas. English weekday names preserve Tyr (Tuesday), Odin (Wednesday), Thor (Thursday) and Frigg (Friday); other planets, colors and metals are modern associations unless noted."
+  },
+  {
+    "entityId": "tyr",
+    "colors": [
+      "red",
+      "scarlet"
+    ],
+    "stones": [
+      "Garnet",
+      "Bloodstone"
+    ],
+    "herbs": [],
+    "metals": [
+      "Iron"
+    ],
+    "scents": [
+      "Dragon’s blood",
+      "Tobacco"
+    ],
+    "timing": "Tuesday, Tyr’s day (Týsdagr)",
+    "element": "Fire",
+    "sphere": "Mars",
+    "planet": "Mars",
+    "day": "Tuesday",
+    "numerology": 5,
+    "tools": [
+      "Sword",
+      "Spear"
+    ],
+    "animals": [
+      "Wolf (Fenrir)"
+    ],
+    "sacredPlaces": [
+      "The Thing (the law assembly) — as Mars Thingsus"
+    ],
+    "runeAssociations": [
+      "Tiwaz ᛏ"
+    ],
+    "lore": [
+      "Sigrdrífumál: carve victory runes on the sword hilt and name Tyr twice.",
+      "He gave his right hand to bind Fenrir."
+    ],
+    "traditionNote": "Symbols, animals, halls and runes come from the Poetic and Prose Eddas. English weekday names preserve Tyr (Tuesday), Odin (Wednesday), Thor (Thursday) and Frigg (Friday); other planets, colors and metals are modern associations unless noted."
+  },
+  {
+    "entityId": "baldur",
+    "colors": [
+      "white",
+      "gold"
+    ],
+    "stones": [
+      "Topaz",
+      "Citrine (modern)"
+    ],
+    "herbs": [
+      "Mistletoe",
+      "Scentless mayweed (baldursbrá, \"Baldr’s brow\")"
+    ],
+    "metals": [
+      "Gold"
+    ],
+    "scents": [
+      "Frankincense"
+    ],
+    "timing": "Sunday, the day of Sun",
+    "element": "Fire",
+    "sphere": "Sun",
+    "planet": "Sun",
+    "day": "Sunday",
+    "numerology": 6,
+    "tools": [
+      "The ring Draupnir",
+      "His ship Hringhorni"
+    ],
+    "animals": [],
+    "sacredPlaces": [
+      "Breiðablik, his hall"
+    ],
+    "festival": "Midsummer (a modern association, via his funeral pyre)",
+    "traditionNote": "Symbols, animals, halls and runes come from the Poetic and Prose Eddas. English weekday names preserve Tyr (Tuesday), Odin (Wednesday), Thor (Thursday) and Frigg (Friday); other planets, colors and metals are modern associations unless noted."
+  },
+  {
+    "entityId": "hel",
+    "colors": [
+      "black",
+      "pale flesh"
+    ],
+    "stones": [
+      "Onyx",
+      "Jet"
+    ],
+    "herbs": [],
+    "metals": [
+      "Lead"
+    ],
+    "scents": [
+      "Myrrh",
+      "Cypress"
+    ],
+    "timing": "Saturday, the day of Saturn",
+    "element": "Earth",
+    "sphere": "Saturn",
+    "planet": "Saturn",
+    "day": "Saturday",
+    "numerology": 3,
+    "tools": [
+      "Her dish Hungr (Hunger)",
+      "Her knife Sultr (Famine)"
+    ],
+    "animals": [
+      "The hound Garmr"
+    ],
+    "sacredPlaces": [
+      "Helheim and her hall Éljúðnir"
+    ],
+    "lore": [
+      "Half blue-black and half flesh-coloured (Gylfaginning)."
+    ],
+    "traditionNote": "Symbols, animals, halls and runes come from the Poetic and Prose Eddas. English weekday names preserve Tyr (Tuesday), Odin (Wednesday), Thor (Thursday) and Frigg (Friday); other planets, colors and metals are modern associations unless noted."
+  },
+  {
+    "entityId": "brigid",
+    "colors": [
+      "gold",
+      "yellow"
+    ],
+    "stones": [
+      "Topaz",
+      "Citrine (modern)"
+    ],
+    "herbs": [
+      "Rushes"
+    ],
+    "metals": [
+      "Gold"
+    ],
+    "scents": [
+      "Frankincense"
+    ],
+    "timing": "February 1, Imbolc",
+    "element": "Fire",
+    "sphere": "Sun",
+    "planet": "Sun",
+    "day": "Sunday",
+    "numerology": 6,
+    "tools": [
+      "Brigid’s cross of woven rushes",
+      "Perpetual flame",
+      "Anvil"
+    ],
+    "animals": [
+      "Cow",
+      "Ox",
+      "Serpent"
+    ],
+    "sacredPlaces": [
+      "Kildare, where her flame was relit in 1993",
+      "Holy wells"
+    ],
+    "festival": "Imbolc, 1 February",
+    "offerings": [
+      "Bread, butter and milk",
+      "A Brídeóg (Brigid doll)",
+      "A strip of cloth (brat Bríde) left out on Imbolc eve"
+    ],
+    "traditionNote": "Festivals, emblems and places are attested in Irish and Gaulish sources and folk custom. Planet and colors are modern associations."
+  },
+  {
+    "entityId": "cernunnos",
+    "colors": [
+      "green",
+      "brown"
+    ],
+    "stones": [],
+    "herbs": [
+      "Oak"
+    ],
+    "metals": [],
+    "scents": [],
+    "timing": "May 1, Beltane (a modern pagan association)",
+    "element": "Earth",
+    "sphere": "Earth",
+    "tools": [
+      "Antlers",
+      "Torc",
+      "Bag of coins (Reims altar)"
+    ],
+    "animals": [
+      "Stag",
+      "Ram-horned serpent",
+      "Bull"
+    ],
+    "sacredPlaces": [
+      "The Pillar of the Boatmen, Paris — the only inscription naming him",
+      "The Gundestrup cauldron, Denmark"
+    ],
+    "lore": [
+      "Known almost entirely from iconography; no myth or rite survives."
+    ],
+    "traditionNote": "Festivals, emblems and places are attested in Irish and Gaulish sources and folk custom. Planet and colors are modern associations."
+  },
+  {
+    "entityId": "lugh",
+    "colors": [
+      "gold",
+      "yellow"
+    ],
+    "stones": [
+      "Topaz",
+      "Citrine (modern)"
+    ],
+    "herbs": [
+      "Bilberry"
+    ],
+    "metals": [
+      "Gold"
+    ],
+    "scents": [
+      "Frankincense"
+    ],
+    "timing": "August 1, Lughnasadh",
+    "element": "Fire",
+    "sphere": "Sun",
+    "planet": "Sun",
+    "day": "Sunday",
+    "numerology": 6,
+    "tools": [
+      "Spear (Areadbhair)",
+      "Sling"
+    ],
+    "animals": [
+      "The hound Failinis"
+    ],
+    "sacredPlaces": [
+      "Tailtiu (Teltown, Co. Meath)"
+    ],
+    "festival": "Lughnasadh, 1 August",
+    "offerings": [
+      "First fruits — bilberries gathered on hilltops"
+    ],
+    "lore": [
+      "Samildánach, \"skilled in all the arts\"; Lámfada, \"of the long arm\"."
+    ],
+    "traditionNote": "Festivals, emblems and places are attested in Irish and Gaulish sources and folk custom. Planet and colors are modern associations."
+  },
+  {
+    "entityId": "inanna",
+    "colors": [
+      "lapis blue",
+      "gold"
+    ],
+    "stones": [
+      "Lapis lazuli",
+      "Carnelian"
+    ],
+    "herbs": [
+      "Date palm",
+      "The huluppu tree"
+    ],
+    "metals": [
+      "Gold"
+    ],
+    "scents": [
+      "Rose",
+      "Benzoin"
+    ],
+    "timing": "Friday, the day of Venus",
+    "element": "Water",
+    "sphere": "Venus",
+    "planet": "Venus",
+    "day": "Friday",
+    "sacredNumbers": [
+      15
+    ],
+    "numerology": 15,
+    "tools": [
+      "Eight-pointed star",
+      "Reed-bundle gatepost",
+      "Rosette",
+      "Lapis measuring rod and line"
+    ],
+    "animals": [
+      "Lion",
+      "Dove"
+    ],
+    "sacredPlaces": [
+      "Uruk and the Eanna temple"
+    ],
+    "offerings": [
+      "Cakes for the Queen of Heaven (kamānu)",
+      "Beer",
+      "Dates"
+    ],
+    "traditionNote": "Symbols, animals and her number 15 are attested in Sumerian and Akkadian sources; Inanna is herself the planet Venus. The weekday is a later planetary association."
+  },
+  {
+    "entityId": "lakshmi",
+    "colors": [
+      "red",
+      "gold"
+    ],
+    "stones": [
+      "Emerald",
+      "Rose quartz (modern)"
+    ],
+    "herbs": [
+      "Lotus",
+      "Tulsi"
+    ],
+    "metals": [
+      "Gold",
+      "Silver"
+    ],
+    "scents": [
+      "Rose",
+      "Benzoin"
+    ],
+    "timing": "Friday, Lakshmi’s day (Shukravar)",
+    "element": "Water",
+    "sphere": "Venus",
+    "planet": "Venus",
+    "day": "Friday",
+    "sacredNumbers": [
+      8
+    ],
+    "numerology": 8,
+    "tools": [
+      "Lotus",
+      "Gold coins",
+      "Water pot (kalash)"
+    ],
+    "animals": [
+      "Owl (Uluka, her vahana)",
+      "Elephants"
+    ],
+    "sacredPlaces": [
+      "Mahalakshmi Temple, Kolhapur"
+    ],
+    "festival": "Diwali (Lakshmi Puja); Varalakshmi Vratam",
+    "offerings": [
+      "Lotus flowers",
+      "Kheer and sweets",
+      "Rice",
+      "Coins",
+      "Lit diyas"
+    ],
+    "lore": [
+      "Her eight forms are the Ashta Lakshmi."
+    ],
+    "traditionNote": "Iconography, vahanas (mounts), festivals, weekdays and offerings follow common Hindu devotional practice, which varies by region and sampradaya. Planets follow the Vedic weekday lords."
+  },
+  {
+    "entityId": "saraswati",
+    "colors": [
+      "white",
+      "yellow"
+    ],
+    "stones": [
+      "Agate",
+      "Opal"
+    ],
+    "herbs": [
+      "White lotus"
+    ],
+    "metals": [
+      "Quicksilver (as an amalgam)"
+    ],
+    "scents": [
+      "Storax",
+      "Mastic"
+    ],
+    "timing": "Vasant Panchami above all; Thursdays in some households — no weekday is universal",
+    "element": "Air",
+    "sphere": "Mercury",
+    "planet": "Mercury",
+    "day": "Wednesday",
+    "numerology": 8,
+    "tools": [
+      "Veena",
+      "Book",
+      "Prayer beads (akshamala)",
+      "Water pot"
+    ],
+    "animals": [
+      "Swan (hamsa)",
+      "Peacock"
+    ],
+    "sacredPlaces": [
+      "The lost Saraswati River",
+      "Gnana Saraswati Temple, Basar"
+    ],
+    "festival": "Vasant Panchami, when yellow is worn; Saraswati Puja at the close of Navaratri",
+    "offerings": [
+      "White flowers",
+      "Books and instruments placed before her",
+      "Yellow sweets"
+    ],
+    "traditionNote": "Iconography, vahanas (mounts), festivals, weekdays and offerings follow common Hindu devotional practice, which varies by region and sampradaya. Planets follow the Vedic weekday lords."
+  },
+  {
+    "entityId": "ganesha",
+    "colors": [
+      "red",
+      "yellow"
+    ],
+    "stones": [
+      "Agate",
+      "Opal"
+    ],
+    "herbs": [
+      "Durva grass (21 blades)",
+      "Red hibiscus",
+      "Shami leaves"
+    ],
+    "metals": [
+      "Quicksilver (as an amalgam)"
+    ],
+    "scents": [
+      "Storax",
+      "Mastic"
+    ],
+    "timing": "Wednesday, Ganesha’s day (Budhvar); also Tuesday for Angaraki Chaturthi",
+    "element": "Air",
+    "sphere": "Mercury",
+    "planet": "Mercury",
+    "day": "Wednesday",
+    "sacredNumbers": [
+      21
+    ],
+    "numerology": 21,
+    "tools": [
+      "Modak (sweet)",
+      "Axe",
+      "Noose",
+      "Broken tusk"
+    ],
+    "animals": [
+      "Mouse (Mushika, his vahana)",
+      "Elephant"
+    ],
+    "sacredPlaces": [
+      "The Ashtavinayaka temples, Maharashtra"
+    ],
+    "festival": "Ganesh Chaturthi",
+    "offerings": [
+      "21 modaks",
+      "Durva grass",
+      "Red flowers",
+      "Coconut"
+    ],
+    "lore": [
+      "Invoked first, before any other deity or undertaking."
+    ],
+    "traditionNote": "Iconography, vahanas (mounts), festivals, weekdays and offerings follow common Hindu devotional practice, which varies by region and sampradaya. Planets follow the Vedic weekday lords."
+  },
+  {
+    "entityId": "shiva",
+    "colors": [
+      "white (sacred ash)",
+      "blue"
+    ],
+    "stones": [
+      "Moonstone",
+      "Pearl"
+    ],
+    "herbs": [
+      "Bilva (bael) leaves",
+      "Datura",
+      "Rudraksha"
+    ],
+    "metals": [
+      "Silver"
+    ],
+    "scents": [
+      "Jasmine",
+      "Camphor"
+    ],
+    "timing": "Monday, Shiva’s day (Somvar)",
+    "element": "Water",
+    "sphere": "Moon",
+    "planet": "Moon",
+    "day": "Monday",
+    "sacredNumbers": [
+      5,
+      108
+    ],
+    "numerology": 5,
+    "tools": [
+      "Trishula (trident)",
+      "Damaru (drum)",
+      "Crescent moon",
+      "The Ganga in his hair",
+      "Lingam"
+    ],
+    "animals": [
+      "Nandi (the bull)",
+      "Serpent (Vasuki)"
+    ],
+    "sacredPlaces": [
+      "Mount Kailash",
+      "Varanasi (Kashi Vishwanath)",
+      "The twelve Jyotirlingas"
+    ],
+    "festival": "Maha Shivaratri",
+    "offerings": [
+      "Bilva leaves",
+      "Water and milk poured over the lingam (abhishekam)",
+      "Vibhuti (sacred ash)"
+    ],
+    "lore": [
+      "Five is the Panchakshara, \"Om Namah Shivaya\"; 108 beads make his rudraksha mala."
+    ],
+    "traditionNote": "Iconography, vahanas (mounts), festivals, weekdays and offerings follow common Hindu devotional practice, which varies by region and sampradaya. Planets follow the Vedic weekday lords."
+  },
+  {
+    "entityId": "durga",
+    "colors": [
+      "red"
+    ],
+    "stones": [
+      "Garnet",
+      "Bloodstone"
+    ],
+    "herbs": [
+      "Red hibiscus"
+    ],
+    "metals": [
+      "Iron"
+    ],
+    "scents": [
+      "Dragon’s blood",
+      "Tobacco"
+    ],
+    "timing": "Tuesday, Durga’s day (Mangalvar); Fridays too",
+    "element": "Fire",
+    "sphere": "Mars",
+    "planet": "Mars",
+    "day": "Tuesday",
+    "sacredNumbers": [
+      9
+    ],
+    "numerology": 9,
+    "tools": [
+      "Trishula",
+      "Sword",
+      "Chakra (discus)",
+      "Conch",
+      "Bow",
+      "Lotus"
+    ],
+    "animals": [
+      "Lion or tiger (her vahana)"
+    ],
+    "sacredPlaces": [
+      "Vaishno Devi",
+      "Kamakhya",
+      "Kolkata’s Durga Puja pandals"
+    ],
+    "festival": "Navaratri and Durga Puja — nine nights for her nine forms",
+    "offerings": [
+      "Red hibiscus",
+      "Red cloth (chunari)",
+      "Sweets"
+    ],
+    "traditionNote": "Iconography, vahanas (mounts), festivals, weekdays and offerings follow common Hindu devotional practice, which varies by region and sampradaya. Planets follow the Vedic weekday lords."
+  },
+  {
+    "entityId": "raphael",
+    "colors": [
+      "yellow",
+      "violet"
+    ],
+    "stones": [
+      "Topaz",
+      "Yellow diamond"
+    ],
+    "herbs": [
+      "Acacia",
+      "Bay",
+      "Vine"
+    ],
+    "metals": [
+      "Quicksilver (as an amalgam)"
+    ],
+    "scents": [
+      "Olibanum (frankincense)"
+    ],
+    "timing": "Wednesday, the day of Raphael and Mercury",
+    "element": "Air",
+    "sphere": "Mercury / Tiphareth",
+    "planet": "Mercury",
+    "day": "Wednesday",
+    "direction": "East",
+    "numerology": 6,
+    "divineName": "YHVH Eloah va-Daath",
+    "magicalWeapon": [
+      "Lamen",
+      "Rosy Cross"
+    ],
+    "virtue": "Devotion to the Great Work",
+    "vice": "Pride",
+    "animals": [
+      "Phoenix",
+      "Lion",
+      "Child"
+    ],
+    "traditionNote": "From Liber 777 and Golden Dawn attributions — Western ceremonial magic, not Jewish, Christian or Islamic practice. Colors are the Golden Dawn Queen scale unless noted; the weekday follows the planetary archangels of the Heptameron where one exists. His colors are the yellow and violet of the Golden Dawn’s eastern quarter."
+  },
+  {
+    "entityId": "gabriel",
+    "colors": [
+      "blue",
+      "orange"
+    ],
+    "stones": [
+      "Quartz"
+    ],
+    "herbs": [
+      "Banyan",
+      "Mandrake",
+      "Damiana"
+    ],
+    "metals": [
+      "Silver"
+    ],
+    "scents": [
+      "Jasmine",
+      "Ginseng"
+    ],
+    "timing": "Monday, the day of Gabriel and the Moon",
+    "element": "Water",
+    "sphere": "Moon / Yesod",
+    "planet": "Moon",
+    "day": "Monday",
+    "direction": "West",
+    "numerology": 9,
+    "divineName": "Shaddai El Chai",
+    "magicalWeapon": [
+      "Perfumes",
+      "Sandals"
+    ],
+    "virtue": "Independence",
+    "vice": "Idleness",
+    "animals": [
+      "Elephant"
+    ],
+    "traditionNote": "From Liber 777 and Golden Dawn attributions — Western ceremonial magic, not Jewish, Christian or Islamic practice. Colors are the Golden Dawn Queen scale unless noted; the weekday follows the planetary archangels of the Heptameron where one exists. Colors are the blue and orange of the Golden Dawn’s western quarter."
+  },
+  {
+    "entityId": "uriel",
+    "colors": [
+      "citrine",
+      "olive",
+      "russet",
+      "black"
+    ],
+    "stones": [
+      "Rock crystal"
+    ],
+    "herbs": [
+      "Willow",
+      "Lily",
+      "Ivy"
+    ],
+    "metals": [],
+    "scents": [
+      "Dittany of Crete"
+    ],
+    "timing": "Any day, facing North",
+    "element": "Earth",
+    "sphere": "Earth",
+    "direction": "North",
+    "divineName": "AGLA",
+    "magicalWeapon": [
+      "Pentacle"
+    ],
+    "traditionNote": "From Liber 777 and Golden Dawn attributions — Western ceremonial magic, not Jewish, Christian or Islamic practice. Colors are the Golden Dawn Queen scale unless noted; the weekday follows the planetary archangels of the Heptameron where one exists. Colors are the citrine, olive, russet and black of the Golden Dawn’s northern quarter."
+  },
+  {
+    "entityId": "metatron",
+    "colors": [
+      "white brilliance"
+    ],
+    "stones": [
+      "Diamond"
+    ],
+    "herbs": [
+      "Almond in flower"
+    ],
+    "metals": [],
+    "scents": [
+      "Ambergris"
+    ],
+    "timing": "Any day, in stillness before dawn",
+    "element": "Spirit",
+    "sphere": "Kether",
+    "numerology": 1,
+    "divineName": "Eheieh",
+    "magicalWeapon": [
+      "Crown"
+    ],
+    "virtue": "Attainment — completion of the Great Work",
+    "traditionNote": "From Liber 777 and Golden Dawn attributions — Western ceremonial magic, not Jewish, Christian or Islamic practice. Colors are the Golden Dawn Queen scale unless noted; the weekday follows the planetary archangels of the Heptameron where one exists."
+  },
+  {
+    "entityId": "raziel",
+    "colors": [
+      "grey",
+      "pure soft blue"
+    ],
+    "stones": [
+      "Star ruby",
+      "Turquoise"
+    ],
+    "herbs": [
+      "Amaranth"
+    ],
+    "metals": [],
+    "scents": [
+      "Musk"
+    ],
+    "timing": "Any day, beneath a clear night sky — the zodiac is Chokmah’s sphere",
+    "element": "Spirit",
+    "sphere": "Chokmah",
+    "numerology": 2,
+    "divineName": "Yah",
+    "magicalWeapon": [
+      "Inner Robe of Glory"
+    ],
+    "virtue": "Devotion",
+    "animals": [
+      "Man"
+    ],
+    "traditionNote": "From Liber 777 and Golden Dawn attributions — Western ceremonial magic, not Jewish, Christian or Islamic practice. Colors are the Golden Dawn Queen scale unless noted; the weekday follows the planetary archangels of the Heptameron where one exists."
+  },
+  {
+    "entityId": "tzaphkiel",
+    "colors": [
+      "black",
+      "crimson"
+    ],
+    "stones": [
+      "Star sapphire",
+      "Pearl"
+    ],
+    "herbs": [
+      "Cypress",
+      "Poppy"
+    ],
+    "metals": [
+      "Lead"
+    ],
+    "scents": [
+      "Myrrh",
+      "Civet"
+    ],
+    "timing": "Saturday, the day of Tzaphkiel (Cassiel) and Saturn",
+    "element": "Earth",
+    "sphere": "Saturn / Binah",
+    "planet": "Saturn",
+    "day": "Saturday",
+    "numerology": 3,
+    "divineName": "YHVH Elohim",
+    "magicalWeapon": [
+      "Cup",
+      "Outer Robe of Concealment"
+    ],
+    "virtue": "Silence",
+    "vice": "Avarice",
+    "animals": [
+      "Woman"
+    ],
+    "traditionNote": "From Liber 777 and Golden Dawn attributions — Western ceremonial magic, not Jewish, Christian or Islamic practice. Colors are the Golden Dawn Queen scale unless noted; the weekday follows the planetary archangels of the Heptameron where one exists."
+  },
+  {
+    "entityId": "tzadkiel",
+    "colors": [
+      "blue",
+      "deep violet"
+    ],
+    "stones": [
+      "Amethyst",
+      "Sapphire"
+    ],
+    "herbs": [
+      "Olive",
+      "Shamrock"
+    ],
+    "metals": [
+      "Tin"
+    ],
+    "scents": [
+      "Cedar"
+    ],
+    "timing": "Thursday, the day of Tzadkiel (Sachiel) and Jupiter",
+    "element": "Air",
+    "sphere": "Jupiter / Chesed",
+    "planet": "Jupiter",
+    "day": "Thursday",
+    "numerology": 4,
+    "divineName": "El",
+    "magicalWeapon": [
+      "Wand",
+      "Sceptre",
+      "Crook"
+    ],
+    "virtue": "Obedience",
+    "vice": "Bigotry, hypocrisy, gluttony, tyranny",
+    "animals": [
+      "Unicorn"
+    ],
+    "traditionNote": "From Liber 777 and Golden Dawn attributions — Western ceremonial magic, not Jewish, Christian or Islamic practice. Colors are the Golden Dawn Queen scale unless noted; the weekday follows the planetary archangels of the Heptameron where one exists."
+  },
+  {
+    "entityId": "kamael",
+    "colors": [
+      "scarlet",
+      "orange"
+    ],
+    "stones": [
+      "Ruby"
+    ],
+    "herbs": [
+      "Oak",
+      "Nettle"
+    ],
+    "metals": [
+      "Iron"
+    ],
+    "scents": [
+      "Tobacco"
+    ],
+    "timing": "Tuesday, the day of Kamael (Samael) and Mars",
+    "element": "Fire",
+    "sphere": "Mars / Geburah",
+    "planet": "Mars",
+    "day": "Tuesday",
+    "numerology": 5,
+    "divineName": "Elohim Gibor",
+    "magicalWeapon": [
+      "Sword",
+      "Spear",
+      "Scourge",
+      "Chain"
+    ],
+    "virtue": "Energy, courage",
+    "vice": "Cruelty, destruction",
+    "animals": [
+      "Basilisk"
+    ],
+    "traditionNote": "From Liber 777 and Golden Dawn attributions — Western ceremonial magic, not Jewish, Christian or Islamic practice. Colors are the Golden Dawn Queen scale unless noted; the weekday follows the planetary archangels of the Heptameron where one exists."
+  },
+  {
+    "entityId": "haniel",
+    "colors": [
+      "emerald",
+      "amber"
+    ],
+    "stones": [
+      "Emerald"
+    ],
+    "herbs": [
+      "Rose"
+    ],
+    "metals": [
+      "Copper"
+    ],
+    "scents": [
+      "Benzoin",
+      "Rose",
+      "Red sandalwood"
+    ],
+    "timing": "Friday, the day of Haniel (Anael) and Venus",
+    "element": "Water",
+    "sphere": "Venus / Netzach",
+    "planet": "Venus",
+    "day": "Friday",
+    "numerology": 7,
+    "divineName": "YHVH Tzabaoth",
+    "magicalWeapon": [
+      "Lamp",
+      "Girdle"
+    ],
+    "virtue": "Unselfishness",
+    "vice": "Unchastity, lust",
+    "animals": [
+      "Lynx"
+    ],
+    "traditionNote": "From Liber 777 and Golden Dawn attributions — Western ceremonial magic, not Jewish, Christian or Islamic practice. Colors are the Golden Dawn Queen scale unless noted; the weekday follows the planetary archangels of the Heptameron where one exists."
+  },
+  {
+    "entityId": "sandalphon",
+    "colors": [
+      "citrine",
+      "olive",
+      "russet",
+      "black"
+    ],
+    "stones": [
+      "Rock crystal"
+    ],
+    "herbs": [
+      "Willow",
+      "Lily",
+      "Ivy"
+    ],
+    "metals": [],
+    "scents": [
+      "Dittany of Crete"
+    ],
+    "timing": "Any day, at an altar set on the earth",
+    "element": "Earth",
+    "sphere": "Malkuth",
+    "numerology": 10,
+    "divineName": "Adonai ha-Aretz",
+    "magicalWeapon": [
+      "Magical circle",
+      "Triangle"
+    ],
+    "virtue": "Discrimination",
+    "vice": "Avarice, inertia",
+    "animals": [
+      "Sphinx"
+    ],
+    "traditionNote": "From Liber 777 and Golden Dawn attributions — Western ceremonial magic, not Jewish, Christian or Islamic practice. Colors are the Golden Dawn Queen scale unless noted; the weekday follows the planetary archangels of the Heptameron where one exists."
+  },
+  {
+    "entityId": "bune",
+    "colors": [
+      "green",
+      "rose"
+    ],
+    "stones": [
+      "Emerald",
+      "Rose quartz (modern)"
+    ],
+    "herbs": [
+      "Rose",
+      "Vervain"
+    ],
+    "metals": [
+      "Copper"
+    ],
+    "scents": [
+      "Rose",
+      "Benzoin"
+    ],
+    "timing": "Friday, the day of Venus",
+    "element": "Water",
+    "sphere": "Venus",
+    "planet": "Venus",
+    "day": "Friday",
+    "numerology": 7,
+    "tools": [
+      "Seal cast in copper",
+      "Circle and Triangle of Art"
+    ],
+    "lore": [
+      "The 26th spirit; a Duke ruling 30 legions.",
+      "Appears as a dragon with three heads — a dog’s, a griffin’s and a man’s — and speaks with a high, comely voice.",
+      "Gives riches, wisdom and eloquence; changes the places of the dead."
+    ],
+    "traditionNote": "From the Ars Goetia (Lesser Key of Solomon). A spirit's rank sets its planet and the metal of its seal (Kings–Sun/gold, Dukes–Venus/copper, Presidents–Mercury/quicksilver, Marquises–Moon/silver); colors, day and incense follow that planet."
+  },
+  {
+    "entityId": "dantalion",
+    "colors": [
+      "green",
+      "rose"
+    ],
+    "stones": [
+      "Emerald",
+      "Rose quartz (modern)"
+    ],
+    "herbs": [
+      "Rose",
+      "Vervain"
+    ],
+    "metals": [
+      "Copper"
+    ],
+    "scents": [
+      "Rose",
+      "Benzoin"
+    ],
+    "timing": "Friday, the day of Venus",
+    "element": "Water",
+    "sphere": "Venus",
+    "planet": "Venus",
+    "day": "Friday",
+    "numerology": 7,
+    "tools": [
+      "Seal cast in copper",
+      "Circle and Triangle of Art"
+    ],
+    "lore": [
+      "The 71st spirit; a Duke ruling 36 legions.",
+      "Appears as a man with many faces of men and women, holding a book in his right hand.",
+      "Teaches arts and sciences, knows and can change thoughts, causes love, and shows the likeness of anyone in a vision."
+    ],
+    "traditionNote": "From the Ars Goetia (Lesser Key of Solomon). A spirit's rank sets its planet and the metal of its seal (Kings–Sun/gold, Dukes–Venus/copper, Presidents–Mercury/quicksilver, Marquises–Moon/silver); colors, day and incense follow that planet."
+  },
+  {
+    "entityId": "sallos",
+    "colors": [
+      "green",
+      "rose"
+    ],
+    "stones": [
+      "Emerald",
+      "Rose quartz (modern)"
+    ],
+    "herbs": [
+      "Rose",
+      "Vervain"
+    ],
+    "metals": [
+      "Copper"
+    ],
+    "scents": [
+      "Rose",
+      "Benzoin"
+    ],
+    "timing": "Friday, the day of Venus",
+    "element": "Water",
+    "sphere": "Venus",
+    "planet": "Venus",
+    "day": "Friday",
+    "numerology": 7,
+    "tools": [
+      "Seal cast in copper",
+      "Circle and Triangle of Art"
+    ],
+    "lore": [
+      "The 19th spirit; a Duke ruling 30 legions.",
+      "Appears as a gallant soldier crowned as a duke, riding a crocodile; he is peaceable.",
+      "Causes love between men and women."
+    ],
+    "traditionNote": "From the Ars Goetia (Lesser Key of Solomon). A spirit's rank sets its planet and the metal of its seal (Kings–Sun/gold, Dukes–Venus/copper, Presidents–Mercury/quicksilver, Marquises–Moon/silver); colors, day and incense follow that planet."
+  },
+  {
+    "entityId": "marbas",
+    "colors": [
+      "orange",
+      "yellow"
+    ],
+    "stones": [
+      "Agate",
+      "Opal"
+    ],
+    "herbs": [
+      "Lavender",
+      "Fennel"
+    ],
+    "metals": [
+      "Quicksilver (as an amalgam)"
+    ],
+    "scents": [
+      "Storax",
+      "Mastic"
+    ],
+    "timing": "Wednesday, the day of Mercury",
+    "element": "Air",
+    "sphere": "Mercury",
+    "planet": "Mercury",
+    "day": "Wednesday",
+    "numerology": 8,
+    "tools": [
+      "Seal (Presidents: quicksilver, as an amalgam)",
+      "Circle and Triangle of Art"
+    ],
+    "lore": [
+      "The 5th spirit; a President ruling 36 legions.",
+      "Appears as a great lion, then in human shape.",
+      "Answers truly of hidden things, causes and cures diseases, teaches mechanical arts, and changes men into other shapes."
+    ],
+    "traditionNote": "From the Ars Goetia (Lesser Key of Solomon). A spirit's rank sets its planet and the metal of its seal (Kings–Sun/gold, Dukes–Venus/copper, Presidents–Mercury/quicksilver, Marquises–Moon/silver); colors, day and incense follow that planet."
+  }
+]

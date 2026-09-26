@@ -49,6 +49,8 @@ type SeasonalBonus = 'solstice' | 'equinox' | 'mar-equinox' | 'samhain';
 export interface TimingPlan {
   /** Preferred weekdays (Date.getDay()), primary first. */
   weekdays: number[];
+  /** Days of the month ("the 17th of each month"); either these or a weekday satisfies the day. */
+  monthDays: number[];
   /** Acceptable moon phases; empty means any phase. */
   moon: MoonPreference[];
   /** Planets whose hours suit the working; empty when the tradition doesn't use them. */
@@ -75,6 +77,12 @@ export function parseTiming(c: Correspondence): TimingPlan {
   for (const m of text.matchAll(/\b(Sunday|Monday|Tuesday|Wednesday|Thursday|Friday|Saturday)\b/g)) {
     const idx = WEEKDAYS.indexOf(m[1]);
     if (!weekdays.includes(idx)) weekdays.push(idx);
+  }
+
+  const monthDays: number[] = [];
+  for (const m of text.matchAll(/\b(\d{1,2})(?:st|nd|rd|th) of (?:each|every) month\b/gi)) {
+    const d = Number(m[1]);
+    if (d >= 1 && d <= 31 && !monthDays.includes(d)) monthDays.push(d);
   }
 
   const moon = new Set<MoonPreference>();
@@ -132,6 +140,7 @@ export function parseTiming(c: Correspondence): TimingPlan {
 
   return {
     weekdays,
+    monthDays,
     moon: [...moon],
     hourPlanets,
     fixedEvents,
@@ -142,9 +151,16 @@ export function parseTiming(c: Correspondence): TimingPlan {
   };
 }
 
+function ordinal(n: number): string {
+  const s = n % 100 >= 11 && n % 100 <= 13 ? 'th' : ['th', 'st', 'nd', 'rd'][n % 10] ?? 'th';
+  return `${n}${s}`;
+}
+
 function calendarLabel(month: number, day: number): string {
   if (month === 9 && day === 31) return 'Samhain';
   if (month === 4 && day === 1) return 'Beltane';
+  if (month === 1 && day === 1) return 'Imbolc';
+  if (month === 7 && day === 1) return 'Lughnasadh';
   return new Date(2000, month, day).toLocaleDateString('en-US', { month: 'long', day: 'numeric' });
 }
 
@@ -299,6 +315,12 @@ export function suggestDates(
       reasons.push(`${WEEKDAYS[day.getDay()]}, ruled by ${DAY_RULER[day.getDay()]}`);
     }
 
+    const monthDayHit = plan.monthDays.includes(day.getDate());
+    if (monthDayHit) {
+      score += 3;
+      reasons.push(`The ${ordinal(day.getDate())} of the month`);
+    }
+
     const moonHit = plan.moon.some((p) => moonMatches(moon.angle, p));
     if (moonHit) {
       score += 2;
@@ -313,13 +335,14 @@ export function suggestDates(
     }
 
     const sign = sunSign(atHour(day, 12));
-    const weekdayOk = plan.weekdays.length === 0 || wd >= 0;
+    const dayOk =
+      (plan.weekdays.length === 0 && plan.monthDays.length === 0) || wd >= 0 || monthDayHit;
     const moonOk = plan.moon.length === 0 || moonHit || !!bonus;
     // The zodiac season is extra colour, never a reason on its own.
     if (score > 0 && plan.signs.includes(sign)) reasons.push(`Sun in ${sign}`);
 
     const suggestion = { date: day, score, reasons, moon, exactPhase: quarterByDay.get(dayKey(day)), sign };
-    if (weekdayOk && moonOk) full.push(suggestion);
+    if (dayOk && moonOk) full.push(suggestion);
     else if (score > 0 && i < 60) partial.push({ ...suggestion, partial: true });
   }
 

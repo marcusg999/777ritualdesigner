@@ -160,6 +160,7 @@ export default function LibraryPage() {
 
                   {entity.isClosed && (
                     <span
+                      title="Divination in this tradition is performed only by initiated priests (babalawos and iyanifa)."
                       className="tag"
                       style={{
                         color: 'var(--caution-title)',
