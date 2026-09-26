@@ -84,8 +84,11 @@ export default function HomePage() {
   const handleSave = useCallback(() => {
     if (!result) return;
     const toSave = enrichment ? { ...result, enrichment } : result;
-    saveResult(toSave);
-    setSaved(true);
+    if (saveResult(toSave)) {
+      setSaved(true);
+    } else {
+      setError('This browser blocked saving — storage may be full or disabled in private browsing.');
+    }
   }, [result, enrichment]);
 
   return (
@@ -243,7 +246,7 @@ export default function HomePage() {
           )}
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-            <CorrespondenceCard correspondences={result.correspondences} enrichment={enrichment} />
+            <CorrespondenceCard correspondences={result.correspondences} basis={result.basis} enrichment={enrichment} />
             <RitualOutline steps={result.ritualOutline} disclaimer={result.disclaimer} enrichment={enrichment} />
           </div>
 

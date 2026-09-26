@@ -1,22 +1,16 @@
 'use client';
 
-import { useState, useEffect } from 'react';
-import type { CorrespondenceResult } from '@/lib/types';
-import { getSavedResults, deleteResult } from '@/lib/storage';
+import { useState, useSyncExternalStore } from 'react';
+import { deleteResult, getSavedSnapshot, getServerSnapshot, subscribeSaved } from '@/lib/storage';
 import CorrespondenceCard from '@/components/CorrespondenceCard';
 import RitualOutline from '@/components/RitualOutline';
 
 export default function SavedPage() {
-  const [results, setResults] = useState<CorrespondenceResult[]>([]);
+  const results = useSyncExternalStore(subscribeSaved, getSavedSnapshot, getServerSnapshot);
   const [expanded, setExpanded] = useState<string | null>(null);
-
-  useEffect(() => {
-    setResults(getSavedResults());
-  }, []);
 
   const handleDelete = (query: string) => {
     deleteResult(query);
-    setResults(getSavedResults());
     if (expanded === query) setExpanded(null);
   };
 
@@ -76,7 +70,7 @@ export default function SavedPage() {
 
             {expanded === result.query && (
               <div className="mt-6 grid grid-cols-1 lg:grid-cols-2 gap-6">
-                <CorrespondenceCard correspondences={result.correspondences} enrichment={result.enrichment} />
+                <CorrespondenceCard correspondences={result.correspondences} basis={result.basis} enrichment={result.enrichment} />
                 <RitualOutline steps={result.ritualOutline} disclaimer={result.disclaimer} enrichment={result.enrichment} />
               </div>
             )}

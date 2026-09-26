@@ -16,6 +16,8 @@ export interface Entity {
   isPopCulture?: boolean;
   isClosed?: boolean;
   sphere?: string;
+  /** Alternate names and spellings (e.g. Oggún, Ògún, Ogum for Ogun). */
+  aliases?: string[];
   attributes?: string[];
   reasonsToInvoke?: string[];
 }
@@ -53,6 +55,21 @@ export interface Correspondence {
   essentialOils?: string[];
   direction?: string;
   moonPhase?: string;
+  // Orisha correspondences (Lucumí / Yorùbá)
+  /** Description of the eleke (beaded necklace) — its colors and pattern. */
+  eleke?: string;
+  /** All sacred numbers, when a tradition assigns more than one. */
+  sacredNumbers?: number[];
+  sacredPlaces?: string[];
+  /** Emblems and working tools (herramientas). */
+  tools?: string[];
+  temperament?: string[];
+  /** Catholic saint(s) the Orisha is syncretized with, by region. */
+  syncretism?: string[];
+  feastDay?: string;
+  taboos?: string[];
+  /** Which lineage's conventions the record follows, and caveats. */
+  traditionNote?: string;
 }
 
 export interface RitualStep {
@@ -67,8 +84,15 @@ export interface CorrespondenceResult {
   matchedEntities: Entity[];
   correspondences: Correspondence;
   ritualOutline: RitualStep[];
+  /** Where the correspondences came from, so the UI can say so. */
+  basis?: CorrespondenceBasis;
   enrichment?: EnrichmentData;
   disclaimer: string;
+}
+
+export interface CorrespondenceBasis {
+  kind: 'entity' | 'intent' | 'planetary' | 'default';
+  label: string;
 }
 
 export interface EnrichmentData {
@@ -86,4 +110,6 @@ export interface MatchResult {
   score: number;
   intent?: Intent;
   entities: Entity[];
+  /** True when the query names the top entity (or an alias) directly. */
+  primaryEntityNamed?: boolean;
 }

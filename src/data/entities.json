@@ -585,54 +585,63 @@
     "id": "obatala", "name": "Obatala", "tradition": "Ifá/Yorùbá", "type": "deity",
     "description": "Orisha of purity, clarity, and creation. Father of all Orishas and molder of human bodies, associated with white, wisdom, and peaceful authority.",
     "tags": ["purity", "clarity", "wisdom", "creation", "peace", "white", "authority", "healing"],
+    "aliases": ["Obatalá", "Ọbàtálá", "Oxalá", "Oxala", "Orisha Nla", "Òrìṣà Ńlá", "Orishanla", "Oshala"],
     "sphere": "Moon"
   },
   {
     "id": "yemaya", "name": "Yemaya", "tradition": "Ifá/Yorùbá", "type": "deity",
     "description": "Orisha of the ocean and motherhood. Nurturing protector of women and children, governing the depths of the sea and the mysteries of life.",
     "tags": ["sea", "ocean", "motherhood", "nurturing", "water", "protection", "fertility", "moon"],
+    "aliases": ["Yemayá", "Yemoja", "Yemọja", "Iemanjá", "Yemanja", "Yemalla"],
     "sphere": "Moon"
   },
   {
     "id": "shango", "name": "Shango", "tradition": "Ifá/Yorùbá", "type": "deity",
     "description": "Orisha of thunder, lightning, and justice. Embodies fierce power, passion, and kingship. Patron of warriors and those who seek strength.",
     "tags": ["thunder", "lightning", "power", "strength", "passion", "justice", "fire", "warrior"],
+    "aliases": ["Changó", "Chango", "Ṣàngó", "Sango", "Xangô", "Xango"],
     "sphere": "Jupiter"
   },
   {
     "id": "ogun", "name": "Ogun", "tradition": "Ifá/Yorùbá", "type": "deity",
     "description": "Orisha of iron, labor, and war. Patron of blacksmiths, hunters, and warriors, governing all things made of iron and the clearing of obstacles.",
     "tags": ["iron", "war", "labor", "hunting", "obstacles", "strength", "craftsmanship", "protection"],
+    "aliases": ["Oggún", "Oggun", "Ògún", "Ogum", "Ogou"],
     "sphere": "Mars"
   },
   {
     "id": "eshu", "name": "Eshu", "tradition": "Ifá/Yorùbá", "type": "deity",
     "description": "Orisha of crossroads, communication, and chance. Messenger between the divine and human realms, opener of paths and guardian of thresholds.",
     "tags": ["crossroads", "communication", "trickster", "roads", "messenger", "beginnings", "chance", "liminal"],
+    "aliases": ["Èṣù", "Esu", "Exu", "Elegguá", "Eleggua", "Elegua", "Eleguá", "Elegba", "Ẹlẹ́gbára", "Elegbara"],
     "sphere": "Mercury"
   },
   {
     "id": "oshun", "name": "Oshun", "tradition": "Ifá/Yorùbá", "type": "deity",
     "description": "Orisha of rivers, love, fertility, and prosperity. Embodiment of feminine sweetness, beauty, and abundance. Governs fresh water and matters of the heart.",
     "tags": ["love", "fertility", "prosperity", "rivers", "water", "beauty", "abundance", "healing"],
+    "aliases": ["Ochún", "Ochun", "Ọ̀ṣun", "Osun", "Oxum"],
     "sphere": "Venus"
   },
   {
     "id": "ifa", "name": "Ifá", "tradition": "Ifá/Yorùbá", "type": "deity",
-    "description": "Orisha of wisdom and divination. The body of knowledge and divine oracle through which the Orishas communicate fate and guidance to humanity.",
+    "description": "The sacred divination system and body of wisdom of Orunmila. Through its 256 odù (sacred verses), cast by trained babalawos and iyanifa, the Orishas communicate destiny and guidance to humanity.",
     "tags": ["wisdom", "divination", "oracle", "fate", "knowledge", "balance", "prophecy", "truth"],
+    "aliases": ["Ifa"],
     "sphere": "Mercury"
   },
   {
     "id": "oya", "name": "Oya", "tradition": "Ifá/Yorùbá", "type": "deity",
     "description": "Orisha of winds, storms, and transformation. Guardian of the cemetery and the passage between life and death, embodying radical change and fierce feminine power.",
     "tags": ["wind", "storms", "change", "transformation", "death", "transition", "power", "warrior"],
+    "aliases": ["Oyá", "Ọya", "Yansa", "Iansã", "Iansa"],
     "sphere": "Saturn"
   },
   {
     "id": "orunmila", "name": "Orunmila", "tradition": "Ifá/Yorùbá", "type": "deity",
     "description": "Orisha of knowledge, fate, and divination. Witness to all creation, Orunmila embodies the highest wisdom of the Ifá oracle and guides souls toward their destiny.",
     "tags": ["knowledge", "fate", "divination", "destiny", "wisdom", "prophecy", "balance", "truth"],
+    "aliases": ["Ọ̀rúnmìlà", "Orula", "Orunla", "Orúnmila"],
     "sphere": "Mercury"
   },
   {

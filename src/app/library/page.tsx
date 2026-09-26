@@ -5,6 +5,7 @@ import type { Intent, Entity } from '@/lib/types';
 import { getSigilByEntityId } from '@/lib/sigils';
 import intentsData from '@/data/intents.json';
 import entitiesData from '@/data/entities.json';
+import { normalizeText } from '@/lib/matcher';
 
 const intents = intentsData as Intent[];
 const entities = entitiesData as Entity[];
@@ -37,26 +38,26 @@ export default function LibraryPage() {
       const matchesTradition =
         tradition === 'All' || e.tradition.toLowerCase() === tradition.toLowerCase();
 
-      const q = search.toLowerCase();
+      // Accent-insensitive, so "ifa" finds Ifá and "yoruba" finds Yorùbá.
+      const q = normalizeText(search);
+      const has = (text: string) => normalizeText(text).includes(q);
       const matchesSearch =
         !q ||
-        e.name.toLowerCase().includes(q) ||
-        e.tradition.toLowerCase().includes(q) ||
-        e.tags.some((t) => t.toLowerCase().includes(q)) ||
-        e.description.toLowerCase().includes(q);
+        has(e.name) ||
+        (e.aliases ?? []).some(has) ||
+        has(e.tradition) ||
+        e.tags.some(has) ||
+        has(e.description);
 
       return matchesTradition && matchesSearch;
     });
   }, [search, tradition]);
 
   const filteredIntents = useMemo(() => {
-    const q = search.toLowerCase();
+    const q = normalizeText(search);
+    const has = (text: string) => normalizeText(text).includes(q);
     return intents.filter(
-      (i) =>
-        !q ||
-        i.label.toLowerCase().includes(q) ||
-        i.tags.some((t) => t.toLowerCase().includes(q)) ||
-        (i.description && i.description.toLowerCase().includes(q))
+      (i) => !q || has(i.label) || i.tags.some(has) || (i.description !== undefined && has(i.description))
     );
   }, [search]);
 
