@@ -1313,7 +1313,7 @@
       "cedarwood",
       "sandalwood"
     ],
-    "timing": "Saturday, any moon phase, Earth hour",
+    "timing": "Saturday, any moon phase, Saturn hour",
     "element": "Earth",
     "sphere": "Earth",
     "day": "Saturday",
@@ -3790,7 +3790,7 @@
       "cedarwood",
       "pine"
     ],
-    "timing": "Saturday, any moon phase, Earth hour",
+    "timing": "Saturday, any moon phase, Saturn hour",
     "element": "Earth",
     "sphere": "Earth",
     "day": "Saturday",
@@ -5072,7 +5072,7 @@
       "oakmoss",
       "petrichor"
     ],
-    "timing": "Wednesday or Saturday, new moon or dawn, Earth hour",
+    "timing": "Wednesday or Saturday, new moon or dawn, Saturn hour",
     "element": "Earth",
     "sphere": "Earth",
     "day": "Wednesday",
@@ -6632,7 +6632,7 @@
       "musk",
       "oakmoss"
     ],
-    "timing": "Wednesday or Monday, waxing moon, Earth hour",
+    "timing": "Wednesday or Monday, waxing moon, Saturn hour",
     "element": "Earth",
     "sphere": "Earth",
     "day": "Wednesday",
@@ -6723,7 +6723,7 @@
       "sandalwood",
       "star anise"
     ],
-    "timing": "Midnight, clear night, any moon phase, Kether hour",
+    "timing": "Midnight on a clear night, any moon phase",
     "element": "Spirit",
     "sphere": "Kether",
     "day": "Any",

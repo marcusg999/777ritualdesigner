@@ -1,13 +1,18 @@
 'use client';
 
-import type { Correspondence, EnrichmentData } from '@/lib/types';
+import type { Correspondence, CorrespondenceBasis, EnrichmentData } from '@/lib/types';
 
 interface CorrespondenceCardProps {
   correspondences: Correspondence;
+  basis?: CorrespondenceBasis;
   enrichment?: EnrichmentData;
 }
 
+// Checked in order, so more specific names must come before the generic
+// ones they contain (e.g. "maroon" before "red"-family matches).
 const COLOR_MAP: Record<string, string> = {
+  maroon: '#6b1d2a', burgundy: '#800020', coral: '#f87171', navy: '#1e3a8a',
+  crystal: '#e2e8f0', clear: '#e2e8f0',
   red: '#ef4444', rose: '#f43f5e', pink: '#ec4899', orange: '#f97316',
   gold: '#d4af37', yellow: '#eab308', green: '#22c55e', teal: '#14b8a6',
   blue: '#3b82f6', indigo: '#6366f1', violet: '#8b5cf6', purple: '#a855f7',
@@ -15,8 +20,19 @@ const COLOR_MAP: Record<string, string> = {
   gray: '#6b7280', amber: '#f59e0b', cyan: '#06b6d4', crimson: '#dc143c',
 };
 
+const NINE_COLORS =
+  'conic-gradient(#800020, #ef4444, #f97316, #eab308, #22c55e, #3b82f6, #6366f1, #a855f7, #78350f, #800020)';
+
+const BASIS_LABEL: Record<CorrespondenceBasis['kind'], string> = {
+  entity: 'Correspondences of',
+  intent: 'Intent ·',
+  planetary: 'Planetary ·',
+  default: '',
+};
+
 function getSwatchColor(colorName: string): string {
   const lower = colorName.toLowerCase();
+  if (lower.includes('nine colors')) return NINE_COLORS;
   for (const [key, val] of Object.entries(COLOR_MAP)) {
     if (lower.includes(key)) return val;
   }
@@ -42,7 +58,7 @@ function TagList({ items }: { items: string[] }) {
   );
 }
 
-export default function CorrespondenceCard({ correspondences: c, enrichment }: CorrespondenceCardProps) {
+export default function CorrespondenceCard({ correspondences: c, basis, enrichment }: CorrespondenceCardProps) {
   const allColors = enrichment?.additionalCorrespondences?.colors
     ? [...c.colors, ...enrichment.additionalCorrespondences.colors]
     : c.colors;
@@ -55,7 +71,9 @@ export default function CorrespondenceCard({ correspondences: c, enrichment }: C
     <div className="card space-y-5">
       <div className="flex items-center justify-between gap-3">
         <h3 className="text-xl font-display text-gold font-semibold">Correspondences</h3>
-        <span className="eyebrow text-foreground/40">{c.sphere}</span>
+        <span className="eyebrow text-foreground/40 text-right">
+          {basis && basis.kind !== 'default' ? `${BASIS_LABEL[basis.kind]} ${basis.label}` : c.sphere}
+        </span>
       </div>
 
       <Section label="Colors">
@@ -64,7 +82,7 @@ export default function CorrespondenceCard({ correspondences: c, enrichment }: C
             <div key={color} className="flex items-center gap-1.5">
               <div
                 className="w-4 h-4 rounded-full shrink-0"
-                style={{ backgroundColor: getSwatchColor(color), border: '1px solid var(--tag-border)' }}
+                style={{ background: getSwatchColor(color), border: '1px solid var(--tag-border)' }}
               />
               <span className="text-xs text-foreground/80 capitalize">{color}</span>
             </div>
@@ -72,19 +90,91 @@ export default function CorrespondenceCard({ correspondences: c, enrichment }: C
         </div>
       </Section>
 
+      {c.eleke && (
+        <div className="pt-5 space-y-4" style={{ borderTop: '1px solid var(--hairline)' }}>
+          <h4 className="section-label">Orisha Correspondences</h4>
+
+          <Section label="Eleke (Sacred Beads)">
+            <p className="text-sm text-foreground/80">{c.eleke}</p>
+          </Section>
+
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            {c.sacredNumbers && c.sacredNumbers.length > 0 && (
+              <Section label="Sacred Numbers">
+                <span className="inline-block text-3xl font-display text-gold font-bold" style={{ fontVariantNumeric: 'tabular-nums' }}>
+                  {c.sacredNumbers.join(' · ')}
+                </span>
+              </Section>
+            )}
+            {c.day && (
+              <Section label="Day">
+                <p className="text-sm text-foreground/80">{c.day}</p>
+              </Section>
+            )}
+            {c.feastDay && (
+              <Section label="Feast Day">
+                <p className="text-sm text-foreground/80">{c.feastDay}</p>
+              </Section>
+            )}
+          </div>
+
+          {c.sacredPlaces && c.sacredPlaces.length > 0 && (
+            <Section label="Sacred Places in Nature">
+              <TagList items={c.sacredPlaces} />
+            </Section>
+          )}
+          {c.tools && c.tools.length > 0 && (
+            <Section label="Tools & Emblems">
+              <TagList items={c.tools} />
+            </Section>
+          )}
+          {c.temperament && c.temperament.length > 0 && (
+            <Section label="Temperament">
+              <TagList items={c.temperament} />
+            </Section>
+          )}
+          {c.animals && c.animals.length > 0 && (
+            <Section label="Sacred Animals">
+              <TagList items={c.animals} />
+            </Section>
+          )}
+          {c.syncretism && c.syncretism.length > 0 && (
+            <Section label="Syncretized Catholic Saints">
+              <TagList items={c.syncretism} />
+            </Section>
+          )}
+          {c.taboos && c.taboos.length > 0 && (
+            <Section label="Taboos (Èèwọ̀)">
+              <TagList items={c.taboos} />
+            </Section>
+          )}
+          {c.traditionNote && (
+            <p className="text-xs text-foreground/50 italic leading-relaxed">{c.traditionNote}</p>
+          )}
+        </div>
+      )}
+
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-        <Section label="Stones">
-          <TagList items={allStones} />
-        </Section>
-        <Section label="Herbs">
-          <TagList items={c.herbs} />
-        </Section>
-        <Section label="Metals">
-          <TagList items={c.metals} />
-        </Section>
-        <Section label="Scents">
-          <TagList items={c.scents} />
-        </Section>
+        {allStones.length > 0 && (
+          <Section label="Stones">
+            <TagList items={allStones} />
+          </Section>
+        )}
+        {c.herbs.length > 0 && (
+          <Section label="Herbs">
+            <TagList items={c.herbs} />
+          </Section>
+        )}
+        {c.metals.length > 0 && (
+          <Section label="Metals">
+            <TagList items={c.metals} />
+          </Section>
+        )}
+        {c.scents.length > 0 && (
+          <Section label="Scents">
+            <TagList items={c.scents} />
+          </Section>
+        )}
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
@@ -106,7 +196,7 @@ export default function CorrespondenceCard({ correspondences: c, enrichment }: C
               <p className="text-sm text-foreground/80">{c.planet}</p>
             </Section>
           )}
-          {c.day && (
+          {c.day && !c.eleke && (
             <Section label="Day">
               <p className="text-sm text-foreground/80">{c.day}</p>
             </Section>
@@ -131,7 +221,7 @@ export default function CorrespondenceCard({ correspondences: c, enrichment }: C
         </Section>
       )}
 
-      {c.numerology !== undefined && (
+      {c.numerology !== undefined && !c.sacredNumbers && (
         <Section label="Numerology">
           <span className="inline-block text-3xl font-display text-gold font-bold" style={{ fontVariantNumeric: 'tabular-nums' }}>{c.numerology}</span>
         </Section>
@@ -183,7 +273,7 @@ export default function CorrespondenceCard({ correspondences: c, enrichment }: C
         </div>
       )}
 
-      {(c.magicalWeapon || c.magicalPowers || c.virtue || c.vice || c.divineName || c.animals || c.alchemicalProcess || c.bodyPart) && (
+      {(c.magicalWeapon || c.magicalPowers || c.virtue || c.vice || c.divineName || (c.animals && !c.eleke) || c.alchemicalProcess || c.bodyPart) && (
         <div className="pt-5 space-y-4" style={{ borderTop: '1px solid var(--hairline)' }}>
           <h4 className="section-label">
             777 Correspondences
@@ -236,7 +326,7 @@ export default function CorrespondenceCard({ correspondences: c, enrichment }: C
             </Section>
           )}
 
-          {c.animals && c.animals.length > 0 && (
+          {c.animals && c.animals.length > 0 && !c.eleke && (
             <Section label="Sacred Animals">
               <TagList items={c.animals} />
             </Section>
