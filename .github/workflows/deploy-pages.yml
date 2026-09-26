@@ -4,6 +4,15 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  # While the repo's Pages source is still "Deploy from a branch", GitHub's
+  # built-in publisher also runs on each push and deploys the raw repository
+  # (a Jekyll render of the README), overwriting the app if it finishes last.
+  # Redeploying after it completes guarantees the app is the final deployment.
+  # Once Settings → Pages → Source is "GitHub Actions", that publisher stops
+  # running and this trigger simply never fires.
+  workflow_run:
+    workflows: ['pages build and deployment']
+    types: [completed]
 
 # Allow the workflow to publish to GitHub Pages via OIDC.
 permissions:
@@ -22,6 +31,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          # workflow_run events carry the triggering branch; always publish main.
+          ref: main
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -30,8 +42,8 @@ jobs:
           cache: npm
 
       - name: Configure Pages
-        # Enables Pages (build type = GitHub Actions) if not already, and
-        # exposes the resolved base path.
+        # Reads the site's Pages configuration (base URL). It does not change
+        # the Pages source setting.
         uses: actions/configure-pages@v5
 
       - name: Install dependencies
@@ -57,3 +69,19 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+      - name: Verify the live site serves the app
+        env:
+          PAGE_URL: ${{ steps.deployment.outputs.page_url }}
+        run: |
+          for i in $(seq 1 12); do
+            html=$(curl -fsSL -H 'Cache-Control: no-cache' "${PAGE_URL}?check=${GITHUB_RUN_ID}-${i}" || true)
+            if grep -q '<title>777 Ritual Designer</title>' <<<"$html" \
+              && grep -q '/777ritualdesigner/_next/' <<<"$html"; then
+              echo "Live site is serving the app: ${PAGE_URL}"
+              exit 0
+            fi
+            sleep 10
+          done
+          echo "::error::${PAGE_URL} is not serving the app after deploy"
+          exit 1

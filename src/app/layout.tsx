@@ -1,31 +1,36 @@
 import type { Metadata, Viewport } from 'next';
-import { Cinzel, Cormorant_Garamond, JetBrains_Mono } from 'next/font/google';
+import localFont from 'next/font/local';
 import { ThemeProvider } from 'next-themes';
 import Navigation from '@/components/Navigation';
 import ConstellationBackground from '@/components/ConstellationBackground';
 import './globals.css';
 
+// Fonts are bundled (variable woff2 from Fontsource, SIL OFL 1.1 — licenses in
+// ./fonts) rather than fetched from Google at build time, so a Google Fonts
+// outage or rate limit can never fail a deploy.
+
 // Display: inscriptional Roman capitals — the temple / talisman voice.
-const cinzel = Cinzel({
-  subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
+const cinzel = localFont({
+  src: './fonts/cinzel-latin-wght-normal.woff2',
+  weight: '400 900',
   variable: '--font-display',
   display: 'swap',
 });
 
 // Body: a high-contrast literary serif — the grimoire voice.
-const cormorant = Cormorant_Garamond({
-  subsets: ['latin'],
-  weight: ['300', '400', '500', '600'],
-  style: ['normal', 'italic'],
+const cormorant = localFont({
+  src: [
+    { path: './fonts/cormorant-garamond-latin-wght-normal.woff2', weight: '300 700', style: 'normal' },
+    { path: './fonts/cormorant-garamond-latin-wght-italic.woff2', weight: '300 700', style: 'italic' },
+  ],
   variable: '--font-body',
   display: 'swap',
 });
 
 // Utility: a technical monospace — the star-chart annotation voice.
-const jetbrains = JetBrains_Mono({
-  subsets: ['latin'],
-  weight: ['400', '500', '600'],
+const jetbrains = localFont({
+  src: './fonts/jetbrains-mono-latin-wght-normal.woff2',
+  weight: '100 800',
   variable: '--font-mono',
   display: 'swap',
 });
