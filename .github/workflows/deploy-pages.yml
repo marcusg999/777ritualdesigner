@@ -4,21 +4,14 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
-  # While the repo's Pages source is still "Deploy from a branch", GitHub's
-  # built-in publisher also runs on each push and deploys the raw repository
-  # (a Jekyll render of the README), overwriting the app if it finishes last.
-  # Redeploying after it completes guarantees the app is the final deployment.
-  # Once Settings → Pages → Source is "GitHub Actions", that publisher stops
-  # running and this trigger simply never fires.
-  workflow_run:
-    workflows: ['pages build and deployment']
-    types: [completed]
 
 # Allow the workflow to publish to GitHub Pages via OIDC.
 permissions:
   contents: read
   pages: write
   id-token: write
+  # Read access to Actions, to wait for GitHub's own Pages publisher below.
+  actions: read
 
 # Only one Pages deploy at a time; let a newer run cancel an in-progress one.
 concurrency:
@@ -31,9 +24,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          # workflow_run events carry the triggering branch; always publish main.
-          ref: main
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -66,6 +56,33 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
+      # While Settings → Pages → Source is "Deploy from a branch", GitHub's
+      # built-in "pages build and deployment" also runs on every push and
+      # publishes the raw repository (a render of the README). Whichever
+      # deploys last is what the site serves, so wait for it to finish first.
+      # (GitHub doesn't emit workflow_run events for that built-in workflow,
+      # so it can't be used as a trigger.) Once the source is "GitHub
+      # Actions" that publisher never runs and this step returns at once.
+      - name: Wait for GitHub's branch publisher to finish
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          for i in $(seq 1 36); do
+            if ! pending=$(gh run list -R "$GITHUB_REPOSITORY" --workflow 'pages build and deployment' \
+              --commit "$GITHUB_SHA" --json status \
+              --jq '[.[] | select(.status != "completed")] | length'); then
+              echo "::warning::Could not query the branch publisher's runs; deploying without waiting"
+              exit 0
+            fi
+            if [ "${pending:-0}" = "0" ]; then
+              echo "No branch publish in progress for ${GITHUB_SHA}"
+              exit 0
+            fi
+            echo "Waiting for the branch publisher (${pending} run(s) in progress)…"
+            sleep 10
+          done
+          echo "::warning::Branch publisher still running after 6 minutes; deploying anyway"
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
