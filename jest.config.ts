@@ -3,6 +3,7 @@ import type { Config } from 'jest';
 const config: Config = {
   preset: 'ts-jest',
   testEnvironment: 'jsdom',
+  globalSetup: '<rootDir>/jest.global-setup.js',
   moduleNameMapper: {
     '^@/(.*)$': '<rootDir>/src/$1',
   },

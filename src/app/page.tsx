@@ -6,6 +6,7 @@ import CorrespondenceCard from '@/components/CorrespondenceCard';
 import RitualOutline from '@/components/RitualOutline';
 import CulturalContextBanner from '@/components/CulturalContextBanner';
 import OfferingsCard from '@/components/OfferingsCard';
+import dynamic from 'next/dynamic';
 import { getOfferingsForEntities } from '@/lib/offerings';
 import { getSigilByEntityId } from '@/lib/sigils';
 import intentsData from '@/data/intents.json';
@@ -15,6 +16,9 @@ import { matchQuery } from '@/lib/matcher';
 import { normalizeResult } from '@/lib/normalizer';
 import { saveResult } from '@/lib/storage';
 import { stubEnrichmentProvider } from '@/lib/enrichment';
+
+// Loaded on demand: the astronomy code is only needed once a ritual is shown.
+const TimingCard = dynamic(() => import('@/components/TimingCard'), { ssr: false });
 
 const intents = intentsData as Intent[];
 const entities = entitiesData as Entity[];
@@ -249,6 +253,8 @@ export default function HomePage() {
             <CorrespondenceCard correspondences={result.correspondences} basis={result.basis} enrichment={enrichment} />
             <RitualOutline steps={result.ritualOutline} disclaimer={result.disclaimer} enrichment={enrichment} />
           </div>
+
+          <TimingCard correspondences={result.correspondences} />
 
           {(() => {
             const ifaOfferings = getOfferingsForEntities(result.matchedEntities.map((e) => e.id));

@@ -4,6 +4,10 @@ import { useState, useSyncExternalStore } from 'react';
 import { deleteResult, getSavedSnapshot, getServerSnapshot, subscribeSaved } from '@/lib/storage';
 import CorrespondenceCard from '@/components/CorrespondenceCard';
 import RitualOutline from '@/components/RitualOutline';
+import dynamic from 'next/dynamic';
+
+// Timing is recalculated from today whenever a saved ritual is opened.
+const TimingCard = dynamic(() => import('@/components/TimingCard'), { ssr: false });
 
 export default function SavedPage() {
   const results = useSyncExternalStore(subscribeSaved, getSavedSnapshot, getServerSnapshot);
@@ -72,6 +76,9 @@ export default function SavedPage() {
               <div className="mt-6 grid grid-cols-1 lg:grid-cols-2 gap-6">
                 <CorrespondenceCard correspondences={result.correspondences} basis={result.basis} enrichment={result.enrichment} />
                 <RitualOutline steps={result.ritualOutline} disclaimer={result.disclaimer} enrichment={result.enrichment} />
+                <div className="lg:col-span-2">
+                  <TimingCard correspondences={result.correspondences} />
+                </div>
               </div>
             )}
           </div>
