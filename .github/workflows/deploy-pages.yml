@@ -68,9 +68,10 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           for i in $(seq 1 36); do
-            if ! pending=$(gh run list -R "$GITHUB_REPOSITORY" --workflow 'pages build and deployment' \
-              --commit "$GITHUB_SHA" --json status \
-              --jq '[.[] | select(.status != "completed")] | length'); then
+            # The built-in workflow can't be looked up by name, so list this
+            # commit's runs and match its fixed path instead.
+            if ! pending=$(gh api "repos/${GITHUB_REPOSITORY}/actions/runs?head_sha=${GITHUB_SHA}&per_page=100" \
+              --jq '[.workflow_runs[] | select(.path == "dynamic/pages/pages-build-deployment" and .status != "completed")] | length'); then
               echo "::warning::Could not query the branch publisher's runs; deploying without waiting"
               exit 0
             fi
