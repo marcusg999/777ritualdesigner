@@ -20,7 +20,10 @@ function search(query: string, includePopCulture = true) {
   return { match, result: normalizeResult(match, query) };
 }
 
-const ORISHA_IDS = ['obatala', 'yemaya', 'shango', 'ogun', 'eshu', 'oshun', 'ifa', 'oya', 'orunmila'];
+const ORISHA_IDS = [
+  'obatala', 'yemaya', 'shango', 'ogun', 'eshu', 'oshun', 'ifa', 'oya', 'orunmila',
+  'ochosi', 'babalu-aye', 'osain', 'olokun', 'ibeji', 'aganju', 'oba', 'yewa',
+];
 
 describe('deity-name searches', () => {
   it('resolves every entity name to that entity first', () => {
@@ -45,6 +48,8 @@ describe('deity-name searches', () => {
       ['Oggún', 'ogun'], ['Ògún', 'ogun'], ['Elegua', 'eshu'], ['Elegguá', 'eshu'],
       ['Yemoja', 'yemaya'], ['Iemanjá', 'yemaya'], ['Ochún', 'oshun'], ['Changó', 'shango'],
       ['Xangô', 'shango'], ['Iansã', 'oya'], ['Orula', 'orunmila'], ['Ifa', 'ifa'],
+      ['Oxóssi', 'ochosi'], ['Babalu Aye', 'babalu-aye'], ['San Lázaro', 'babalu-aye'], ['Osanyin', 'osain'],
+      ['Olokun', 'olokun'], ['Jimaguas', 'ibeji'], ['Aggayú', 'aganju'], ['Obba', 'oba'], ['Yegua', 'yewa'],
     ];
     for (const [query, id] of cases) {
       expect(search(query).match.entities[0]?.id).toBe(id);
@@ -66,16 +71,43 @@ describe('deity-name searches', () => {
     expect(result.correspondences.entityId).toBe('oshun');
   });
 
-  it('falls back to representative planetary correspondences for deities without a record', () => {
-    const { result } = search('Ares');
-    expect(result.basis?.kind).toBe('planetary');
-    expect(result.correspondences.intentId).toBe('courage');
-    expect(result.correspondences.planet).toBe('Mars');
+  it('gives every deity and figure its own record', () => {
+    for (const entity of entities.filter((e) => !e.isPopCulture)) {
+      const { result } = search(entity.name, false);
+      expect({ name: entity.name, kind: result.basis?.kind }).toEqual({ name: entity.name, kind: 'entity' });
+    }
   });
 
-  it('resolves compound spheres such as "Mars / Geburah"', () => {
-    const { result } = search('Archangel Kamael');
-    expect(result.basis?.kind).not.toBe('default');
+  it('falls back to representative planetary correspondences for archetypes without a record', () => {
+    const { result } = search('The Dark Knight Archetype');
+    expect(result.basis?.kind).toBe('planetary');
+    expect(result.correspondences.intentId).toBe('protection');
+    expect(result.correspondences.planet).toBe('Saturn');
+  });
+
+  it('gives archangels their Liber 777 attributions', () => {
+    const kamael = search('Archangel Kamael').result.correspondences;
+    expect(kamael.divineName).toBe('Elohim Gibor');
+    expect(kamael.day).toBe('Tuesday');
+    expect(search('Archangel Haniel').result.correspondences.divineName).toBe('YHVH Tzabaoth');
+  });
+
+  it('sets Goetic planets and seal metals by rank', () => {
+    for (const duke of ['Bune', 'Dantalion', 'Sallos']) {
+      const c = search(duke).result.correspondences;
+      expect([c.planet, c.metals]).toEqual(['Venus', ['Copper']]);
+    }
+    expect(search('Marbas').result.correspondences.planet).toBe('Mercury');
+  });
+
+  it('derives HipHop figures from their natal Sun and labels it as interpretation', () => {
+    const dilla = search('J Dilla').result.correspondences;
+    expect([dilla.birthDate, dilla.natalSun, dilla.planet, dilla.day]).toEqual([
+      'February 7, 1974 · Detroit, Michigan', 'Aquarius', 'Saturn', 'Saturday',
+    ]);
+    expect(dilla.traditionNote).toMatch(/interpretation, not an established tradition/);
+    // Madlib was born the day after the Sun entered Scorpio.
+    expect(search('Madlib').result.correspondences.natalSun).toBe('Scorpio');
   });
 
   it('still matches plain intent queries', () => {
@@ -140,6 +172,7 @@ describe('Orisha data integrity', () => {
     expect(numbers).toMatchObject({
       eshu: [3, 21], ogun: [3, 7], shango: [4, 6], oshun: [5], yemaya: [7],
       obatala: [8, 16, 24], oya: [9], orunmila: [16],
+      ochosi: [3, 7], 'babalu-aye': [17], osain: [7, 21], ibeji: [2, 4, 8], aganju: [9], oba: [8],
     });
   });
 

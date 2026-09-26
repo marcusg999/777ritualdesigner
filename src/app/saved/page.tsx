@@ -1,16 +1,27 @@
 'use client';
 
-import { useState, useSyncExternalStore } from 'react';
-import { deleteResult, getSavedSnapshot, getServerSnapshot, subscribeSaved } from '@/lib/storage';
+import { useMemo, useState, useSyncExternalStore } from 'react';
+import { deleteRitual, getSavedSnapshot, getServerSnapshot, subscribeSaved } from '@/lib/storage';
+import { buildRitual } from '@/lib/ritual';
 import CorrespondenceCard from '@/components/CorrespondenceCard';
 import RitualOutline from '@/components/RitualOutline';
+import dynamic from 'next/dynamic';
+
+// Timing is recalculated from today whenever a saved ritual is opened.
+const TimingCard = dynamic(() => import('@/components/TimingCard'), { ssr: false });
 
 export default function SavedPage() {
-  const results = useSyncExternalStore(subscribeSaved, getSavedSnapshot, getServerSnapshot);
+  const saved = useSyncExternalStore(subscribeSaved, getSavedSnapshot, getServerSnapshot);
+  // Rebuilt from each saved recipe, so rituals always reflect the current,
+  // corrected correspondences — including ones saved before a fix.
+  const results = useMemo(
+    () => saved.map((s) => buildRitual(s.query, { includePopCulture: s.includePopCulture, reflection: s.reflection })),
+    [saved]
+  );
   const [expanded, setExpanded] = useState<string | null>(null);
 
   const handleDelete = (query: string) => {
-    deleteResult(query);
+    deleteRitual(query);
     if (expanded === query) setExpanded(null);
   };
 
@@ -33,6 +44,9 @@ export default function SavedPage() {
         </h1>
         <p className="text-foreground/55 mt-3 text-lg">
           {results.length} ritual{results.length !== 1 ? 's' : ''} kept for return.
+        </p>
+        <p className="text-foreground/40 mt-1 text-sm">
+          Each is rebuilt from its intention when opened, so it always reflects the current correspondences.
         </p>
       </header>
 
@@ -72,6 +86,9 @@ export default function SavedPage() {
               <div className="mt-6 grid grid-cols-1 lg:grid-cols-2 gap-6">
                 <CorrespondenceCard correspondences={result.correspondences} basis={result.basis} enrichment={result.enrichment} />
                 <RitualOutline steps={result.ritualOutline} disclaimer={result.disclaimer} enrichment={result.enrichment} />
+                <div className="lg:col-span-2">
+                  <TimingCard correspondences={result.correspondences} />
+                </div>
               </div>
             )}
           </div>

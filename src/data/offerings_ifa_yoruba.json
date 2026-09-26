@@ -70,5 +70,69 @@
     "symbolism": ["Knowledge", "Divination and fate", "Destiny", "Cosmic order", "Witness to creation"],
     "ritualObjects": ["Ikin (16 sacred palm nuts)", "Ọ̀pẹ̀lẹ̀ (divination chain)", "Ọpọ́n Ifá (divination tray)", "Ìrọ́kẹ̀ (divination tapper)", "Green and yellow beads (idé)"],
     "cautions": ["Orunmila is closely identified with the Ifá oracle. Ceremonial and divinatory approaches require initiation and training. Consult a trained babalawo for Ifá-related guidance. Avoid restricted rites without proper initiation."]
+  },
+  {
+    "entityId": "ochosi",
+    "tradition": "Ifá/Yorùbá",
+    "commonOfferings": ["Anisette", "Smoked fish and jutía", "Pears and grapes", "Pomegranates", "Plantains and bananas"],
+    "symbolism": ["The hunt", "Justice", "Focus and precision", "Provision"],
+    "ritualObjects": ["Bow and arrow (ofá)", "Deer antler", "Blue and amber beads"],
+    "cautions": ["Ochosi is received with the Warriors (Elegguá, Ogún, Ochosi, Osun) through initiation. Consult an initiated practitioner before working with him."]
+  },
+  {
+    "entityId": "babalu-aye",
+    "tradition": "Ifá/Yorùbá",
+    "commonOfferings": ["Toasted corn", "A gourd of black beans topped with a red onion", "Beans and grains", "Dry white wine", "Rum and tobacco"],
+    "symbolism": ["Healing", "Humility", "Compassion for the outcast", "Illness as teacher"],
+    "ritualObjects": ["Já (palm-rib broom)", "Burlap cloth", "Crutches"],
+    "cautions": ["Babalú-Ayé is approached with great respect; his rites and the pilgrimage to El Rincón are serious devotional acts. Consult an initiated practitioner before working with him."]
+  },
+  {
+    "entityId": "osain",
+    "tradition": "Ifá/Yorùbá",
+    "commonOfferings": ["Fresh leaves and medicinal plants", "Seeds", "Honey", "Aguardiente", "Tobacco"],
+    "symbolism": ["The healing power of plants", "The forest", "Hidden knowledge"],
+    "ritualObjects": ["Güiro (hanging gourd)", "Herbs", "Green beads"],
+    "cautions": ["Osain is received and worked by initiated herbalists (osainistas and babalawos). Consult an initiated practitioner before working with him."]
+  },
+  {
+    "entityId": "olokun",
+    "tradition": "Ifá/Yorùbá",
+    "commonOfferings": ["Duck (traditional)", "Sugar cane syrup (melado)", "Sweets", "Flowers"],
+    "symbolism": ["The abyss", "Wealth from the deep", "The drowned and the ancestors", "Mystery"],
+    "ritualObjects": ["Tinaja (large vessel)", "Masks", "Dark blue beads"],
+    "cautions": ["Olokun of Ifá is given by babalawos, and Olokun is never crowned on an initiate’s head. Consult an initiated practitioner; do not attempt his rites alone."]
+  },
+  {
+    "entityId": "ibeji",
+    "tradition": "Ifá/Yorùbá",
+    "commonOfferings": ["Candy and sweets", "Toys", "Sugar cane", "Fruit", "Yellow rice", "Okra and black-eyed peas"],
+    "symbolism": ["Childhood", "Joy", "Twins", "Good fortune"],
+    "ritualObjects": ["Twin figures", "Toys", "Red and blue beads"],
+    "cautions": ["Practices around twins and the Ibeji differ by region and house. Consult an initiated practitioner before approaching their rites."]
+  },
+  {
+    "entityId": "aganju",
+    "tradition": "Ifá/Yorùbá",
+    "commonOfferings": ["Nine kinds of fruit", "Red wine", "Toasted corn", "Pumpkin"],
+    "symbolism": ["Volcanic power", "Strength", "Carrying others across", "Fatherhood"],
+    "ritualObjects": ["Double-headed axe", "Staff", "Brown multicolored beads"],
+    "cautions": ["Aganju is received through initiation in Lucumí practice. Consult an initiated practitioner before working with him."]
+  },
+  {
+    "entityId": "oba",
+    "tradition": "Ifá/Yorùbá",
+    "commonOfferings": ["Fruit", "Flowers", "Candles"],
+    "symbolism": ["Devotion", "Faithful marriage", "Sacrifice", "Transformation through loss"],
+    "ritualObjects": ["Sword", "Book", "Brown and coral beads"],
+    "cautions": ["Oba is received through initiation, and many houses rarely crown her. Consult an initiated practitioner before working with her."]
+  },
+  {
+    "entityId": "yewa",
+    "tradition": "Ifá/Yorùbá",
+    "commonOfferings": ["White and pink flowers", "Candles", "Silence and modest conduct"],
+    "symbolism": ["Purity", "Chastity", "The passage of the dead", "Solitude"],
+    "ritualObjects": ["Fly whisk", "Pink and burgundy beads"],
+    "cautions": ["Yewá is served with strict modesty and is traditionally tended by elders; her taboos are severe. Consult an initiated practitioner before approaching her."]
   }
 ]
