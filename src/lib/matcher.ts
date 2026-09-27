@@ -129,12 +129,25 @@ function removePhrase(q: string, phrase: string): string {
   return tokens.join(' ').trim();
 }
 
-function scoreIntent(q: string, intent: Intent): number {
+function scoreIntent(q: string, intent: Intent): { score: number; rank: number } {
+  const id = intent.id.replace(/_/g, ' ');
   const labelSim = stringSimilarity(q, intent.label);
-  const idSim = stringSimilarity(q, intent.id.replace(/_/g, ' '));
+  const idSim = stringSimilarity(q, id);
   const tagSim = tokenSimilarity(q, intent.tags);
   const descSim = intent.description ? stringSimilarity(q, intent.description) * 0.5 : 0;
-  return Math.max(labelSim, idSim, tagSim, descSim);
+  const score = Math.max(labelSim, idSim, tagSim, descSim);
+
+  // Many intents reach 1.0 through a single shared tag ("solstice", "balance"),
+  // so ties are broken by how much of the query the intent accounts for, and
+  // by whether the query names the intent itself — so "summer solstice" finds
+  // Summer Solstice, not Winter Solstice.
+  const words = new Set(
+    [id, intent.label, ...intent.tags].flatMap((w) => normalizeText(w).split(' ')).filter(Boolean)
+  );
+  const tokens = q.split(' ').filter(Boolean);
+  const coverage = tokens.length > 0 ? tokens.filter((t) => words.has(t)).length / tokens.length : 0;
+  const named = normalizeText(id) === q || normalizeText(intent.label.split('&')[0]) === q ? 1 : 0;
+  return { score, rank: score + 0.3 * coverage + 0.2 * named };
 }
 
 export function matchQuery(
@@ -185,10 +198,12 @@ export function matchQuery(
 
   let bestIntent: Intent | undefined;
   let bestIntentScore = 0;
+  let bestIntentRank = 0;
   if (residual) {
     for (const intent of intents) {
-      const score = scoreIntent(residual, intent);
-      if (score > bestIntentScore) {
+      const { score, rank } = scoreIntent(residual, intent);
+      if (rank > bestIntentRank) {
+        bestIntentRank = rank;
         bestIntentScore = score;
         bestIntent = intent;
       }

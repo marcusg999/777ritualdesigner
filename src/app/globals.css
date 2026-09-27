@@ -35,6 +35,8 @@
   --gold: #cba14a;
   --gold-light: #e6c968;
   --amethyst: #9a7cd8;
+  /* Almanac holy days: a sage that sits between gold and amethyst. */
+  --holy: #7fbf9f;
 
   /* Filled-gold surfaces (buttons, active tabs) — bright leaf, dark ink. */
   --btn-from: #e6c968;
@@ -69,6 +71,7 @@
   --gold: #7a5c10;
   --gold-light: #9a7218;
   --amethyst: #5a4a8a;
+  --holy: #2f6f58;
 
   /* Keep the fill vivid in daylight even though text-gold runs dark. */
   --btn-from: #f0cf5f;

@@ -110,8 +110,24 @@ describe('deity-name searches', () => {
     expect(search('Madlib').result.correspondences.natalSun).toBe('Scorpio');
   });
 
+  it('finds every intent by its own id and name', () => {
+    for (const intent of intents) {
+      for (const q of [intent.id.replace(/_/g, ' '), intent.label]) {
+        expect({ q, got: search(q).match.intent?.id }).toEqual({ q, got: intent.id });
+      }
+    }
+  });
+
+  it('prefers the intent that covers the whole query over a shared tag', () => {
+    expect(search('summer solstice').match.intent?.id).toBe('summer_solstice');
+    expect(search('elemental balance').match.intent?.id).toBe('elemental_balance');
+    expect(search('rebirth').match.intent?.id).toBe('rebirth');
+  });
+
   it('still matches plain intent queries', () => {
-    expect(search('money').match.intent?.id).toBe('abundance');
+    // There is a dedicated Money intent; it must win over Abundance's "money" tag.
+    expect(search('money').match.intent?.id).toBe('money');
+    expect(search('prosperity').match.intent?.id).toBe('abundance');
     expect(search('love').result.basis?.kind).toBe('intent');
   });
 });
