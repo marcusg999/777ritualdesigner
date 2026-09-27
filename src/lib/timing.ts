@@ -51,6 +51,8 @@ export interface TimingPlan {
   weekdays: number[];
   /** Days of the month ("the 17th of each month"); either these or a weekday satisfies the day. */
   monthDays: number[];
+  /** Days of the lunar month ("the 4th day of each lunar month"), counted from the noumenia. */
+  lunarDays: number[];
   /** Acceptable moon phases; empty means any phase. */
   moon: MoonPreference[];
   /** Planets whose hours suit the working; empty when the tradition doesn't use them. */
@@ -83,6 +85,12 @@ export function parseTiming(c: Correspondence): TimingPlan {
   for (const m of text.matchAll(/\b(\d{1,2})(?:st|nd|rd|th) of (?:each|every) month\b/gi)) {
     const d = Number(m[1]);
     if (d >= 1 && d <= 31 && !monthDays.includes(d)) monthDays.push(d);
+  }
+
+  const lunarDays: number[] = [];
+  for (const m of text.matchAll(/\b(\d{1,2})(?:st|nd|rd|th) day of (?:each|every) lunar month\b/gi)) {
+    const d = Number(m[1]);
+    if (d >= 1 && d <= 30 && !lunarDays.includes(d)) lunarDays.push(d);
   }
 
   const moon = new Set<MoonPreference>();
@@ -141,6 +149,7 @@ export function parseTiming(c: Correspondence): TimingPlan {
   return {
     weekdays,
     monthDays,
+    lunarDays,
     moon: [...moon],
     hourPlanets,
     fixedEvents,
@@ -151,7 +160,7 @@ export function parseTiming(c: Correspondence): TimingPlan {
   };
 }
 
-function ordinal(n: number): string {
+export function ordinal(n: number): string {
   const s = n % 100 >= 11 && n % 100 <= 13 ? 'th' : ['th', 'st', 'nd', 'rd'][n % 10] ?? 'th';
   return `${n}${s}`;
 }
@@ -230,6 +239,29 @@ export function sunSign(at: Date): string {
 
 const QUARTER_NAMES = ['New Moon', 'First Quarter', 'Full Moon', 'Last Quarter'];
 
+/** Exact new moons between two instants, ascending. */
+export function newMoons(from: Date, to: Date): Date[] {
+  return moonQuarters(from, to).filter((q) => q.name === 'New Moon').map((q) => q.time);
+}
+
+/**
+ * Day of the lunar month in the Athenian reckoning: the noumenia — the local
+ * day after the new moon, when the first crescent can be seen — is day 1.
+ * Undefined if no new moon precedes the day in the list given.
+ */
+export function lunarDay(day: Date, moons: Date[]): number | undefined {
+  const d = localDay(day);
+  let noumenia: Date | undefined;
+  for (const nm of moons) {
+    const n = addDays(localDay(nm), 1);
+    if (n.getTime() <= d.getTime()) noumenia = n;
+    else break;
+  }
+  if (!noumenia) return undefined;
+  // Rounded, so a 23- or 25-hour DST day still counts as one day.
+  return Math.round((d.getTime() - noumenia.getTime()) / 86_400_000) + 1;
+}
+
 /** Exact principal moon phases between two instants. */
 export function moonQuarters(from: Date, to: Date): Array<{ name: string; time: Date }> {
   const out: Array<{ name: string; time: Date }> = [];
@@ -293,6 +325,7 @@ export function suggestDates(
   const quarters = moonQuarters(addDays(start, -1), addDays(start, days + 1));
   const quarterByDay = new Map(quarters.map((q) => [dayKey(q.time), q]));
   const bonusDays = seasonalBonusDays(plan.seasonalBonus, start, days);
+  const moonsForLunarDays = plan.lunarDays.length > 0 ? newMoons(addDays(start, -32), addDays(start, days + 1)) : [];
 
   const full: DateSuggestion[] = [];
   const partial: DateSuggestion[] = [];
@@ -320,6 +353,12 @@ export function suggestDates(
       score += 3;
       reasons.push(`The ${ordinal(day.getDate())} of the month`);
     }
+    const lunar = plan.lunarDays.length > 0 ? lunarDay(day, moonsForLunarDays) : undefined;
+    const lunarDayHit = lunar !== undefined && plan.lunarDays.includes(lunar);
+    if (lunarDayHit) {
+      score += 3;
+      reasons.push(`The ${ordinal(lunar)} day of the lunar month`);
+    }
 
     const moonHit = plan.moon.some((p) => moonMatches(moon.angle, p));
     if (moonHit) {
@@ -336,7 +375,10 @@ export function suggestDates(
 
     const sign = sunSign(atHour(day, 12));
     const dayOk =
-      (plan.weekdays.length === 0 && plan.monthDays.length === 0) || wd >= 0 || monthDayHit;
+      (plan.weekdays.length === 0 && plan.monthDays.length === 0 && plan.lunarDays.length === 0) ||
+      wd >= 0 ||
+      monthDayHit ||
+      lunarDayHit;
     const moonOk = plan.moon.length === 0 || moonHit || !!bonus;
     // The zodiac season is extra colour, never a reason on its own.
     if (score > 0 && plan.signs.includes(sign)) reasons.push(`Sun in ${sign}`);

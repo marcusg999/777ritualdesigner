@@ -6,12 +6,14 @@ import ThemeToggle from './ThemeToggle';
 
 const navLinks = [
   { href: '/', label: 'Generator' },
+  { href: '/almanac', label: 'Almanac' },
   { href: '/library', label: 'Library' },
   { href: '/saved', label: 'Saved' },
 ];
 
 export default function Navigation() {
-  const pathname = usePathname();
+  // The GitHub Pages build uses trailing slashes ("/library/"); compare without.
+  const pathname = usePathname().replace(/(.)\/$/, '$1');
 
   return (
     <nav

@@ -1,6 +1,7 @@
 'use client';
 
-import { useState, useCallback } from 'react';
+import { Suspense, useState, useCallback } from 'react';
+import { useSearchParams } from 'next/navigation';
 import type { CorrespondenceResult } from '@/lib/types';
 import CorrespondenceCard from '@/components/CorrespondenceCard';
 import RitualOutline from '@/components/RitualOutline';
@@ -40,11 +41,16 @@ function Toggle({
   );
 }
 
-export default function HomePage() {
-  const [query, setQuery] = useState('');
+const DEFAULT_OPTIONS: RitualOptions = { includePopCulture: false, reflection: false };
+
+function Generator({ initialQuery = '' }: { initialQuery?: string }) {
+  const [query, setQuery] = useState(initialQuery);
   // The result plus the options it was built with — what Save records, even
   // if the toggles are changed afterwards.
-  const [built, setBuilt] = useState<{ result: CorrespondenceResult; options: RitualOptions } | null>(null);
+  // A query arriving in the URL (?q=…, e.g. from the Almanac) is built straight away.
+  const [built, setBuilt] = useState<{ result: CorrespondenceResult; options: RitualOptions } | null>(() =>
+    initialQuery ? { result: buildRitual(initialQuery, DEFAULT_OPTIONS), options: DEFAULT_OPTIONS } : null
+  );
   const result = built?.result ?? null;
   const enrichment = result?.enrichment;
   const [loading, setLoading] = useState(false);
@@ -262,5 +268,21 @@ export default function HomePage() {
         </div>
       )}
     </div>
+  );
+}
+
+function GeneratorFromUrl() {
+  const q = useSearchParams().get('q')?.trim() ?? '';
+  // Keyed by the query so following another ?q= link starts a fresh ritual.
+  return <Generator key={q} initialQuery={q} />;
+}
+
+export default function HomePage() {
+  // The static page renders the empty generator; the URL's query, if any,
+  // is read on the client.
+  return (
+    <Suspense fallback={<Generator />}>
+      <GeneratorFromUrl />
+    </Suspense>
   );
 }
