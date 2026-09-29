@@ -2,7 +2,14 @@
 
 import Link from 'next/link';
 import { useMemo, useState, useSyncExternalStore } from 'react';
-import { monthAlmanac, monthName, type AlmanacDay, type AlmanacEvent, type AlmanacEventKind } from '@/lib/almanac';
+import {
+  monthAlmanac,
+  monthName,
+  type AlmanacDay,
+  type AlmanacEvent,
+  type AlmanacEventKind,
+  type VoidOfCourse,
+} from '@/lib/almanac';
 import { WEEKDAYS, localDay, ordinal, planetaryHours, sunSign } from '@/lib/timing';
 import { getLocationSnapshot, getServerLocation, subscribeLocation } from '@/lib/location';
 import type { Correspondence, Entity } from '@/lib/types';
@@ -15,6 +22,7 @@ type Category = 'moon' | 'sky' | 'holy';
 const CATEGORY: Record<AlmanacEventKind, Category> = {
   phase: 'moon',
   'moon-sign': 'moon',
+  void: 'moon',
   season: 'sky',
   'sun-sign': 'sky',
   eclipse: 'sky',
@@ -47,6 +55,21 @@ function sameDay(a: Date, b: Date) {
   return a.getFullYear() === b.getFullYear() && a.getMonth() === b.getMonth() && a.getDate() === b.getDate();
 }
 
+/** A time, prefixed with its weekday when it falls on a different day than `day`. */
+function timeOn(t: Date, day: Date) {
+  return sameDay(t, day) ? formatTime(t) : `${t.toLocaleDateString(undefined, { weekday: 'short' })} ${formatTime(t)}`;
+}
+
+/** How a void-of-course period reads on one day: a range, or where it starts or ends. */
+function voidOnDay(v: VoidOfCourse, day: Date) {
+  const starts = sameDay(v.start, day);
+  const ends = sameDay(v.end, day);
+  if (starts && ends) return `${formatTime(v.start)} – ${formatTime(v.end)}`;
+  if (starts) return `from ${formatTime(v.start)}`;
+  if (ends) return `until ${formatTime(v.end)}`;
+  return 'all day';
+}
+
 function Dot({ category }: { category: Category }) {
   return <span className="inline-block w-1.5 h-1.5 rounded-full shrink-0" style={{ background: CATEGORY_COLOR[category] }} />;
 }
@@ -54,7 +77,7 @@ function Dot({ category }: { category: Category }) {
 /** Short cell label: the most notable events first. */
 function cellEvents(day: AlmanacDay): AlmanacEvent[] {
   const rank: Record<AlmanacEventKind, number> = {
-    eclipse: 0, season: 1, sabbat: 2, phase: 3, station: 4, 'holy-day': 5, 'sun-sign': 6, 'moon-sign': 7,
+    eclipse: 0, season: 1, sabbat: 2, phase: 3, station: 4, 'holy-day': 5, 'sun-sign': 6, 'moon-sign': 7, void: 8,
   };
   return [...day.events].sort((a, b) => rank[a.kind] - rank[b.kind]);
 }
@@ -102,7 +125,7 @@ function DayCell({ day, selected, isToday, onSelect }: { day: AlmanacDay; select
   );
 }
 
-function EventRow({ event }: { event: AlmanacEvent }) {
+function EventRow({ event, day }: { event: AlmanacEvent; day: Date }) {
   return (
     <li className="py-2.5 flex items-start gap-3" style={{ borderTop: '1px solid var(--hairline)' }}>
       <span className="flex items-center h-5">
@@ -111,7 +134,13 @@ function EventRow({ event }: { event: AlmanacEvent }) {
       <div className="flex-1 min-w-0">
         <p className="text-sm text-foreground/90">
           {event.title}
-          {event.time && <span className="text-foreground/50"> · {formatTime(event.time)}</span>}
+          {event.time && (
+            <span className="text-foreground/50">
+              {' · '}
+              {formatTime(event.time)}
+              {event.end && ` – ${timeOn(event.end, day)}`}
+            </span>
+          )}
         </p>
         {event.detail && <p className="text-xs text-foreground/55 mt-0.5">{event.detail}</p>}
       </div>
@@ -153,6 +182,11 @@ function DayDetail({ day, today }: { day: AlmanacDay; today: Date }) {
               {day.moon.phaseName} · {Math.round(day.moon.illumination * 100)}% lit
             </p>
             <p className="text-sm text-foreground/80">in {day.moonSign}</p>
+            {day.voids.map((v) => (
+              <p key={v.start.getTime()} className="text-sm text-foreground/60">
+                Void of course {voidOnDay(v, day.date)}
+              </p>
+            ))}
           </div>
         </div>
         <div>
@@ -176,7 +210,7 @@ function DayDetail({ day, today }: { day: AlmanacDay; today: Date }) {
       {day.events.length > 0 ? (
         <ul className="list-none">
           {day.events.map((e, i) => (
-            <EventRow key={i} event={e} />
+            <EventRow key={i} event={e} day={day.date} />
           ))}
         </ul>
       ) : (
@@ -202,12 +236,22 @@ function DayDetail({ day, today }: { day: AlmanacDay; today: Date }) {
           <ol className="grid grid-cols-2 sm:grid-cols-4 gap-x-4 gap-y-1 list-none">
             {hours.map((h) => {
               const current = now >= h.start && now < h.end;
+              const isVoid = day.voids.some((v) => v.start < h.end && v.end > h.start);
               return (
                 <li
                   key={h.index}
                   className={`text-xs flex justify-between gap-2 ${current ? 'text-gold font-semibold' : 'text-foreground/70'}`}
                 >
-                  <span>{h.planet}{h.night ? ' ☾' : ''}</span>
+                  <span>
+                    {h.planet}
+                    {h.night ? ' ☾' : ''}
+                    {isVoid && (
+                      <abbr title="The moon is void of course during this hour" className="text-foreground/40 no-underline">
+                        {' '}
+                        v/c
+                      </abbr>
+                    )}
+                  </span>
                   <span style={{ fontVariantNumeric: 'tabular-nums' }}>{formatTime(h.start)}</span>
                 </li>
               );
@@ -305,9 +349,15 @@ export default function AlmanacView() {
           reversed. Solar eclipses are visible only along their path.
         </p>
         <p>
+          The moon is void of course (v/c) from its last major aspect in a sign — a conjunction, sextile, square, trine
+          or opposition to the Sun or a planet, Mercury through Pluto — until it enters the next sign. Tradition holds
+          it a poor time to begin new workings; it suits rest, reflection and finishing what is already under way.
+          Traditional astrologers count the seven classical planets only, so their void periods can start earlier.
+        </p>
+        <p>
           Greek holy days follow the Athenian lunar month, counted from the noumenia (the day after the new moon).
           Hindu festivals such as Diwali, Navaratri and Maha Shivaratri follow the lunisolar Panchang and aren&apos;t
-          shown yet, nor are void-of-course moon periods.
+          shown yet.
         </p>
       </div>
     </div>
