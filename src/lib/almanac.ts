@@ -20,6 +20,7 @@ import {
   SunPosition,
 } from 'astronomy-engine';
 import type { Correspondence, Entity } from './types';
+import { hinduFestivals, sunriseOn, tithiAt, type Place } from './panchang';
 import {
   DAY_RULER,
   SIGNS,
@@ -63,6 +64,8 @@ export interface AlmanacDay {
   date: Date;
   /** Day of the lunar month (noumenia = 1), for the Athenian holy days. */
   lunarDay?: number;
+  /** The Hindu lunar day (1–30) in force at sunrise. */
+  tithi: number;
   /** The moon as it stands at 9 pm local time. */
   moon: MoonInfo;
   moonSign: string;
@@ -249,7 +252,8 @@ const ECLIPSE_LABEL: Record<string, string> = {
   total: 'Total',
 };
 
-export function monthAlmanac(year: number, month: number): AlmanacDay[] {
+/** The month's days; a location sets the sunrise the Hindu calendar is reckoned from. */
+export function monthAlmanac(year: number, month: number, place?: Place | null): AlmanacDay[] {
   const first = new Date(year, month, 1);
   const next = new Date(year, month + 1, 1);
   const days: AlmanacDay[] = [];
@@ -264,6 +268,7 @@ export function monthAlmanac(year: number, month: number): AlmanacDay[] {
       moonSign: moonSign(evening),
       ruler: DAY_RULER[d.getDay()],
       retrograde: retrogradePlanets(noon),
+      tithi: tithiAt(sunriseOn(d, place)),
       voids: [],
       events: [],
     };
@@ -310,6 +315,10 @@ export function monthAlmanac(year: number, month: number): AlmanacDay[] {
     if (cq.month === month) {
       push(new Date(year, month, cq.day), { kind: 'sabbat', title: cq.sabbat, detail: cq.detail, query: cq.query });
     }
+  }
+
+  for (const f of hinduFestivals(first, next, place)) {
+    push(f.date, { kind: 'holy-day', title: f.name, detail: f.detail, time: f.start, end: f.end, query: f.deity });
   }
 
   for (const e of eclipses(addDays(first, -1), next)) {
