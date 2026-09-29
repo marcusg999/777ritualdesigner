@@ -10,7 +10,8 @@ import {
   type AlmanacEventKind,
 } from '@/lib/almanac';
 import { WEEKDAYS, localDay, ordinal, planetaryHours, sunSign } from '@/lib/timing';
-import { getLocationSnapshot, getServerLocation, subscribeLocation } from '@/lib/location';
+import { getLocationSnapshot, getServerLocation, subscribeLocation, type SavedLocation } from '@/lib/location';
+import { tithiName } from '@/lib/panchang';
 import type { Correspondence, Entity } from '@/lib/types';
 import ifaData from '@/data/correspondences_ifa_yoruba.json';
 import entitiesData from '@/data/entities.json';
@@ -127,7 +128,7 @@ function EventRow({ event, day }: { event: AlmanacEvent; day: Date }) {
           {event.time && (
             <span className="text-foreground/50">
               {' · '}
-              {formatTime(event.time)}
+              {timeOn(event.time, day)}
               {event.end && ` – ${timeOn(event.end, day)}`}
             </span>
           )}
@@ -143,8 +144,7 @@ function EventRow({ event, day }: { event: AlmanacEvent; day: Date }) {
   );
 }
 
-function DayDetail({ day, today }: { day: AlmanacDay; today: Date }) {
-  const location = useSyncExternalStore(subscribeLocation, getLocationSnapshot, getServerLocation);
+function DayDetail({ day, today, location }: { day: AlmanacDay; today: Date; location: SavedLocation | null }) {
   const hours = useMemo(
     () => (location ? planetaryHours(day.date, location.lat, location.lon) : undefined),
     [day.date, location]
@@ -185,15 +185,16 @@ function DayDetail({ day, today }: { day: AlmanacDay; today: Date }) {
             {weekday}, ruled by {day.ruler}
           </p>
           <p className="text-sm text-foreground/80">Sun in {sunSign(noon)}</p>
+          <p className="text-sm text-foreground/80">
+            {day.retrograde.length > 0 ? `Retrograde: ${day.retrograde.join(', ')}` : 'No planet retrograde'}
+          </p>
         </div>
         <div>
           <p className="section-label">Lunar month</p>
           <p className="text-sm text-foreground/80">
             {day.lunarDay ? `${ordinal(day.lunarDay)} day (Athenian reckoning)` : '—'}
           </p>
-          <p className="text-sm text-foreground/80">
-            {day.retrograde.length > 0 ? `Retrograde: ${day.retrograde.join(', ')}` : 'No planet retrograde'}
-          </p>
+          <p className="text-sm text-foreground/80">Tithi {tithiName(day.tithi)} at sunrise</p>
         </div>
       </div>
 
@@ -261,8 +262,9 @@ export default function AlmanacView() {
   const [today] = useState(() => localDay(new Date()));
   const [cursor, setCursor] = useState(() => ({ year: today.getFullYear(), month: today.getMonth() }));
   const [selected, setSelected] = useState<Date>(today);
+  const location = useSyncExternalStore(subscribeLocation, getLocationSnapshot, getServerLocation);
 
-  const days = useMemo(() => monthAlmanac(cursor.year, cursor.month), [cursor]);
+  const days = useMemo(() => monthAlmanac(cursor.year, cursor.month, location), [cursor, location]);
   const selectedDay = days.find((d) => sameDay(d.date, selected)) ?? days[0];
   const leading = days[0].date.getDay();
 
@@ -327,7 +329,7 @@ export default function AlmanacView() {
         </div>
       </div>
 
-      <DayDetail day={selectedDay} today={today} />
+      <DayDetail day={selectedDay} today={today} location={location} />
 
       <div className="text-xs text-foreground/45 space-y-1.5 leading-relaxed">
         <p>
@@ -346,8 +348,16 @@ export default function AlmanacView() {
         </p>
         <p>
           Greek holy days follow the Athenian lunar month, counted from the noumenia (the day after the new moon).
-          Hindu festivals such as Diwali, Navaratri and Maha Shivaratri follow the lunisolar Panchang and aren&apos;t
-          shown yet.
+        </p>
+        <p>
+          Hindu festivals follow the lunisolar Panchang: each is kept on the day its tithi (lunar day) is in force at
+          its appointed time — Diwali in the evening twilight, Maha Shivaratri at midnight, Ganesh Chaturthi at
+          midday — and the times shown are those windows. Lunar months run new moon to new moon (amanta), named by
+          the sidereal sankranti with the Lahiri ayanamsa. Days are reckoned from sunrise{' '}
+          {location
+            ? 'at your location, as a local panchang does, so dates can differ by a day from those published for India.'
+            : 'taken as 6 am until you share a location (under Planetary hours); dates can differ by a day from those published for India.'}{' '}
+          Regional calendars (and the purnimanta months of North India) name some months differently.
         </p>
       </div>
     </div>
