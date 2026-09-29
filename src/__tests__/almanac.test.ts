@@ -2,11 +2,14 @@ import {
   HOLY_DAYS,
   eclipses,
   monthAlmanac,
+  moonSign,
   moonIngresses,
   planetaryStations,
   sunIngresses,
+  voidOfCourse,
 } from '@/lib/almanac';
-import { SIGNS, lunarDay, newMoons, parseTiming, suggestDates } from '@/lib/timing';
+import { SIGNS, lunarDay, moonQuarters, newMoons, parseTiming, suggestDates } from '@/lib/timing';
+import { Body, Ecliptic, EclipticGeoMoon, GeoVector, SunPosition } from 'astronomy-engine';
 import worldData from '@/data/correspondences_world.json';
 import type { Correspondence } from '@/lib/types';
 
@@ -62,6 +65,62 @@ describe('ingresses', () => {
     const [libra] = sunIngresses(new Date('2026-09-20T00:00Z'), new Date('2026-09-30T00:00Z'));
     expect(libra.sign).toBe('Libra');
     within(libra.time, '2026-09-23T00:05Z', 5);
+  });
+});
+
+describe('void-of-course moon', () => {
+  const sept = voidOfCourse(new Date('2026-09-01T00:00Z'), new Date('2026-10-01T00:00Z'));
+
+  it('runs from the last aspect in a sign until the next ingress', () => {
+    expect(sept).toHaveLength(14);
+    for (const v of sept) {
+      expect(v.start.getTime()).toBeLessThan(v.end.getTime());
+      expect(moonSign(new Date(v.start.getTime() + 1000))).toBe(v.from);
+      expect(moonSign(new Date(v.end.getTime() + 1000))).toBe(v.to);
+      expect(SIGNS.indexOf(v.to)).toBe((SIGNS.indexOf(v.from) + 1) % 12);
+    }
+  });
+
+  it('lands last aspects to the Sun on the lunar phases', () => {
+    // 18 Sept 2026: the First Quarter (Moon square Sun) is the Moon's last aspect in Sagittarius.
+    const v = sept.find((x) => x.from === 'Sagittarius')!;
+    expect(v.lastAspect).toBe('Moon square Sun');
+    const [firstQuarter] = moonQuarters(new Date('2026-09-18T00:00Z'), new Date('2026-09-20T00:00Z'));
+    within(v.start, firstQuarter.time.toISOString(), 2);
+    within(v.end, '2026-09-19T04:55Z', 2);
+  });
+
+  it('leaves no aspect inside a void period', () => {
+    const bodies = [Body.Sun, Body.Mercury, Body.Venus, Body.Mars, Body.Jupiter, Body.Saturn, Body.Uranus, Body.Neptune, Body.Pluto];
+    const angles = [0, 60, 90, 120, 180, 240, 270, 300];
+    const sep = (b: Body, t: number) => {
+      const d = new Date(t);
+      const other = b === Body.Sun ? SunPosition(d).elon : Ecliptic(GeoVector(b, d, true)).elon;
+      return (((EclipticGeoMoon(d).lon - other) % 360) + 360) % 360;
+    };
+    // The Moon always outruns the planets, so the separation only grows:
+    // an aspect perfects wherever a sampled step crosses an aspect angle.
+    for (const v of sept) {
+      for (const b of bodies) {
+        let prev = sep(b, v.start.getTime() + 1000);
+        for (let t = v.start.getTime() + 10 * 60_000; ; t = Math.min(t + 10 * 60_000, v.end.getTime() - 1000)) {
+          const s = sep(b, t);
+          const crossed = angles.filter((a) => (a === 0 ? s < prev : prev < a && s >= a));
+          expect({ body: b, start: v.start, crossed }).toEqual({ body: b, start: v.start, crossed: [] });
+          prev = s;
+          if (t >= v.end.getTime() - 1000) break;
+        }
+      }
+    }
+  });
+
+  it('assigns an aspect just after an ingress to the new sign', () => {
+    // 26 April 2026: the Moon squares Uranus (entering Gemini) 20 seconds after
+    // it enters Virgo, so Leo's void begins at its earlier trine to Mercury.
+    const leo = voidOfCourse(new Date('2026-04-25T00:00Z'), new Date('2026-04-26T00:00Z')).find((v) => v.from === 'Leo')!;
+    expect(leo.lastAspect).toBe('Moon trine Mercury');
+    within(leo.start, '2026-04-24T22:21Z', 2);
+    within(leo.end, '2026-04-26T01:04Z', 2);
   });
 });
 
@@ -127,6 +186,17 @@ describe('monthAlmanac', () => {
     const equinox = on(22).events.find((e) => e.kind === 'season')!;
     expect(equinox.query).toBe('elemental balance');
     expect(on(26).events.find((e) => e.title === 'Ibeji')!.query).toBe('Ibeji');
+  });
+
+  it('lists void-of-course periods on the days they touch', () => {
+    // Libra → Scorpio: 7:26 am on the 13th to 11:44 pm on the 13th, Los Angeles time.
+    const event = on(13).events.find((e) => e.kind === 'void')!;
+    expect(event.detail).toBe('After its last aspect (Moon square Mars) in Libra, until it enters Scorpio');
+    expect(event.end!.getDate()).toBe(13);
+    // 29 Sept 4:36 pm to 30 Sept 10:26 am: shown on both days, as one event on the first.
+    expect(on(29).voids).toHaveLength(1);
+    expect(on(30).voids[0]).toBe(on(29).voids[0]);
+    expect(on(30).events.filter((e) => e.kind === 'void')).toHaveLength(0);
   });
 
   it('marks Saturn retrograde through September 2026', () => {
