@@ -10,7 +10,6 @@
 import {
   Body,
   Ecliptic,
-  EclipticGeoMoon,
   GeoVector,
   NextGlobalSolarEclipse,
   NextLunarEclipse,
@@ -28,17 +27,23 @@ import {
   localDay,
   lunarDay,
   moonInfo,
+  moonIngresses,
   moonQuarters,
+  moonSign,
   newMoons,
   ordinal,
+  voidOfCourse,
   type MoonInfo,
   type Planet,
+  type VoidOfCourse,
 } from './timing';
 import correspondencesData from '@/data/correspondences.json';
 import ifaData from '@/data/correspondences_ifa_yoruba.json';
 import worldData from '@/data/correspondences_world.json';
 import hiphopData from '@/data/correspondences_hiphop.json';
 import entitiesData from '@/data/entities.json';
+
+export { moonIngresses, moonSign, voidOfCourse, type VoidOfCourse };
 
 export type AlmanacEventKind = 'phase' | 'moon-sign' | 'void' | 'season' | 'sabbat' | 'sun-sign' | 'eclipse' | 'station' | 'holy-day';
 
@@ -77,147 +82,6 @@ const HOUR = 3_600_000;
 
 const dayKey = (d: Date) => `${d.getFullYear()}-${d.getMonth()}-${d.getDate()}`;
 const signOf = (longitude: number) => SIGNS[Math.floor((((longitude % 360) + 360) % 360) / 30)];
-
-// ─── Moon ───────────────────────────────────────────────────────────────────
-
-export function moonSign(at: Date): string {
-  return signOf(EclipticGeoMoon(at).lon);
-}
-
-/** Every instant the moon changes sign in [from, to), to the second. */
-export function moonIngresses(from: Date, to: Date): Array<{ sign: string; time: Date }> {
-  const out: Array<{ sign: string; time: Date }> = [];
-  const step = 2 * HOUR; // the moon spends ~2.3 days in each sign
-  let t = from.getTime();
-  let sign = moonSign(from);
-  while (t < to.getTime()) {
-    const next = t + step;
-    const nextSign = moonSign(new Date(next));
-    if (nextSign !== sign) {
-      let lo = t;
-      let hi = next;
-      while (hi - lo > 1000) {
-        const mid = (lo + hi) / 2;
-        if (moonSign(new Date(mid)) === sign) lo = mid;
-        else hi = mid;
-      }
-      if (hi >= from.getTime() && hi < to.getTime()) out.push({ sign: nextSign, time: new Date(hi) });
-      sign = nextSign;
-    }
-    t = next;
-  }
-  return out;
-}
-
-// ─── Void-of-course moon ────────────────────────────────────────────────────
-
-// The bodies and aspects of the modern definition used by published almanacs:
-// Sun through Pluto, and the five Ptolemaic aspects.
-const ASPECT_BODIES: Array<{ name: string; body: Body }> = [
-  { name: 'Sun', body: Body.Sun },
-  { name: 'Mercury', body: Body.Mercury },
-  { name: 'Venus', body: Body.Venus },
-  { name: 'Mars', body: Body.Mars },
-  { name: 'Jupiter', body: Body.Jupiter },
-  { name: 'Saturn', body: Body.Saturn },
-  { name: 'Uranus', body: Body.Uranus },
-  { name: 'Neptune', body: Body.Neptune },
-  { name: 'Pluto', body: Body.Pluto },
-];
-// Separation (Moon minus body, 0–360°) at which each aspect is exact.
-const ASPECT_ANGLES: Array<{ angle: number; aspect: string }> = [
-  { angle: 0, aspect: 'conjunct' },
-  { angle: 60, aspect: 'sextile' },
-  { angle: 90, aspect: 'square' },
-  { angle: 120, aspect: 'trine' },
-  { angle: 180, aspect: 'opposite' },
-  { angle: 240, aspect: 'trine' },
-  { angle: 270, aspect: 'square' },
-  { angle: 300, aspect: 'sextile' },
-];
-
-const norm360 = (x: number) => ((x % 360) + 360) % 360;
-
-/** The Moon's ecliptic longitude minus the body's, both apparent and of date. */
-function separation(body: Body, t: number): number {
-  const date = new Date(t);
-  const other = body === Body.Sun ? SunPosition(date).elon : Ecliptic(GeoVector(body, date, true)).elon;
-  return norm360(EclipticGeoMoon(date).lon - other);
-}
-
-export interface VoidOfCourse {
-  /** The Moon's last exact aspect in the sign it is leaving… */
-  start: Date;
-  /** …until it enters the next sign. */
-  end: Date;
-  /** The sign the Moon is leaving and the one it enters. */
-  from: string;
-  to: string;
-  /** e.g. "Moon trine Saturn"; absent if the Moon made no aspect in the whole sign. */
-  lastAspect?: string;
-}
-
-/**
- * The last exact aspect the Moon makes to `body` in (from, to], if any. The
- * Moon outruns every planet, so the separation only ever increases — each
- * aspect angle is crossed at most once while the Moon crosses a single sign.
- */
-function lastAspectTo(body: Body, from: number, to: number): { time: number; aspect: string } | undefined {
-  const s0 = separation(body, from);
-  const unwrap = (t: number) => s0 + norm360(separation(body, t) - s0);
-  const s1 = unwrap(to);
-  let target: { angle: number; aspect: string } | undefined;
-  for (let k = Math.floor(s1 / 360); k >= 0 && !target; k--) {
-    for (let i = ASPECT_ANGLES.length - 1; i >= 0; i--) {
-      const angle = ASPECT_ANGLES[i].angle + 360 * k;
-      if (angle > s0 && angle <= s1) {
-        target = { angle, aspect: ASPECT_ANGLES[i].aspect };
-        break;
-      }
-    }
-  }
-  if (!target) return undefined;
-  let lo = from;
-  let hi = to;
-  while (hi - lo > 1000) {
-    const mid = (lo + hi) / 2;
-    if (unwrap(mid) < target.angle) lo = mid;
-    else hi = mid;
-  }
-  return { time: hi, aspect: target.aspect };
-}
-
-/**
- * Void-of-course periods overlapping [from, to): from the Moon's last major
- * aspect in a sign until it enters the next one.
- */
-export function voidOfCourse(from: Date, to: Date): VoidOfCourse[] {
-  // Start a sign early so the period running into `from` is found too.
-  const ingresses = moonIngresses(new Date(from.getTime() - 3 * 24 * HOUR), new Date(to.getTime() + 3 * 24 * HOUR));
-  const out: VoidOfCourse[] = [];
-  for (let i = 1; i < ingresses.length; i++) {
-    const entered = ingresses[i - 1];
-    const leaves = ingresses[i];
-    const signStart = entered.time.getTime();
-    const signEnd = leaves.time.getTime();
-    let last: { time: number; aspect: string; name: string } | undefined;
-    for (const { name, body } of ASPECT_BODIES) {
-      const a = lastAspectTo(body, signStart, signEnd);
-      if (a && (!last || a.time > last.time)) last = { ...a, name };
-    }
-    const start = new Date(last ? last.time : signStart);
-    if (start < leaves.time && start < to && leaves.time > from) {
-      out.push({
-        start,
-        end: leaves.time,
-        from: entered.sign,
-        to: leaves.sign,
-        lastAspect: last && `Moon ${last.aspect} ${last.name}`,
-      });
-    }
-  }
-  return out;
-}
 
 // ─── Sun and the Wheel of the Year ──────────────────────────────────────────
 

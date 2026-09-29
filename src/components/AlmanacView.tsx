@@ -8,14 +8,13 @@ import {
   type AlmanacDay,
   type AlmanacEvent,
   type AlmanacEventKind,
-  type VoidOfCourse,
 } from '@/lib/almanac';
 import { WEEKDAYS, localDay, ordinal, planetaryHours, sunSign } from '@/lib/timing';
 import { getLocationSnapshot, getServerLocation, subscribeLocation } from '@/lib/location';
 import type { Correspondence, Entity } from '@/lib/types';
 import ifaData from '@/data/correspondences_ifa_yoruba.json';
 import entitiesData from '@/data/entities.json';
-import { formatTime, LocationControls, MoonGlyph } from './Sky';
+import { formatTime, LocationControls, MoonGlyph, voidOnDay } from './Sky';
 
 type Category = 'moon' | 'sky' | 'holy';
 
@@ -60,15 +59,6 @@ function timeOn(t: Date, day: Date) {
   return sameDay(t, day) ? formatTime(t) : `${t.toLocaleDateString(undefined, { weekday: 'short' })} ${formatTime(t)}`;
 }
 
-/** How a void-of-course period reads on one day: a range, or where it starts or ends. */
-function voidOnDay(v: VoidOfCourse, day: Date) {
-  const starts = sameDay(v.start, day);
-  const ends = sameDay(v.end, day);
-  if (starts && ends) return `${formatTime(v.start)} – ${formatTime(v.end)}`;
-  if (starts) return `from ${formatTime(v.start)}`;
-  if (ends) return `until ${formatTime(v.end)}`;
-  return 'all day';
-}
 
 function Dot({ category }: { category: Category }) {
   return <span className="inline-block w-1.5 h-1.5 rounded-full shrink-0" style={{ background: CATEGORY_COLOR[category] }} />;

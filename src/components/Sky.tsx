@@ -2,11 +2,25 @@
 
 // Sky widgets shared by the Timing card and the Almanac.
 import { useState } from 'react';
-import type { Planet, PlanetaryHour } from '@/lib/timing';
+import type { Planet, PlanetaryHour, VoidOfCourse } from '@/lib/timing';
 import { isValidLocation, setLocation, type SavedLocation } from '@/lib/location';
 
 export function formatTime(d: Date): string {
   return d.toLocaleTimeString(undefined, { hour: 'numeric', minute: '2-digit' });
+}
+
+function sameDay(a: Date, b: Date) {
+  return a.getFullYear() === b.getFullYear() && a.getMonth() === b.getMonth() && a.getDate() === b.getDate();
+}
+
+/** How a void-of-course period reads on one day: a range, or where it starts or ends. */
+export function voidOnDay(v: VoidOfCourse, day: Date): string {
+  const starts = sameDay(v.start, day);
+  const ends = sameDay(v.end, day);
+  if (starts && ends) return `${formatTime(v.start)} – ${formatTime(v.end)}`;
+  if (starts) return `from ${formatTime(v.start)}`;
+  if (ends) return `until ${formatTime(v.end)}`;
+  return 'all day';
 }
 
 /** The moon's lit shape for a phase angle (0 new → 180 full), as seen from the north. */
@@ -26,7 +40,7 @@ export function MoonGlyph({ angle, size = 22 }: { angle: number; size?: number }
   );
 }
 
-export function HoursFor({ hours, planets }: { hours: PlanetaryHour[]; planets: Planet[] }) {
+export function HoursFor({ hours, planets, voids = [] }: { hours: PlanetaryHour[]; planets: Planet[]; voids?: VoidOfCourse[] }) {
   return (
     <div className="space-y-1">
       {planets.map((planet) => {
@@ -34,12 +48,21 @@ export function HoursFor({ hours, planets }: { hours: PlanetaryHour[]; planets: 
         return (
           <div key={planet} className="flex flex-wrap items-baseline gap-x-3 gap-y-1 text-xs text-foreground/70">
             <span className="text-gold font-semibold">{planet} hours</span>
-            {windows.map((h) => (
-              <span key={h.index} className="whitespace-nowrap">
-                {formatTime(h.start)}–{formatTime(h.end)}
-                {h.night && <span className="text-foreground/40"> (night)</span>}
-              </span>
-            ))}
+            {windows.map((h) => {
+              const isVoid = voids.some((v) => v.start < h.end && v.end > h.start);
+              return (
+                <span key={h.index} className={`whitespace-nowrap ${isVoid ? 'text-foreground/35' : ''}`}>
+                  {formatTime(h.start)}–{formatTime(h.end)}
+                  {h.night && <span className="text-foreground/40"> (night)</span>}
+                  {isVoid && (
+                    <abbr title="The moon is void of course during this hour" className="no-underline">
+                      {' '}
+                      v/c
+                    </abbr>
+                  )}
+                </span>
+              );
+            })}
           </div>
         );
       })}
