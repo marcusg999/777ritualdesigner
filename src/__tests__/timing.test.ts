@@ -8,9 +8,13 @@ import {
   phaseName,
   CHALDEAN,
   DAY_RULER,
+  voidOfCourse,
+  type DateSuggestion,
 } from '@/lib/timing';
 import correspondencesData from '@/data/correspondences.json';
 import ifaData from '@/data/correspondences_ifa_yoruba.json';
+import worldData from '@/data/correspondences_world.json';
+import hiphopData from '@/data/correspondences_hiphop.json';
 import type { Correspondence } from '@/lib/types';
 
 // jest.global-setup.js pins TZ=America/Los_Angeles so these run in local time.
@@ -160,6 +164,67 @@ describe('suggestDates', () => {
     const s = suggestDates(plan, SAT_SEP_26_2026, { days: 5 });
     expect(s.length).toBeGreaterThan(0);
     expect(s.every((x) => x.partial)).toBe(true);
+  });
+});
+
+describe('void-of-course moon in suggestions', () => {
+  const at9pm = (d: Date) => new Date(d.getFullYear(), d.getMonth(), d.getDate(), 21);
+  const voidAt = (t: Date) =>
+    voidOfCourse(new Date(t.getTime() - 86_400_000), new Date(t.getTime() + 86_400_000)).some(
+      (v) => v.start <= t && t < v.end
+    );
+  const days = (s: DateSuggestion[]) => s.map((x) => x.date.toDateString());
+
+  it('passes over days when the moon is void at the working time', () => {
+    // Justice: Saturday or Tuesday, waning moon. On Tuesday 29 Sept 2026 the moon
+    // is void from 4:35 pm until 10:25 am, and on Saturday 3 Oct through the evening.
+    const plan = parseTiming(record('justice'));
+    expect(plan.observesVoidMoon).toBe(true);
+    expect(days(suggestDates({ ...plan, observesVoidMoon: false }, SAT_SEP_26_2026))).toEqual([
+      'Sat Sep 26 2026', 'Tue Sep 29 2026', 'Sat Oct 03 2026',
+    ]);
+    const s = suggestDates(plan, SAT_SEP_26_2026);
+    expect(days(s)).toEqual(['Sat Sep 26 2026', 'Tue Oct 06 2026', 'Tue Oct 27 2026']);
+    for (const x of s) expect(voidAt(at9pm(x.date))).toBe(false);
+  });
+
+  it('reports the void periods on a suggested day, so the working can begin outside them', () => {
+    const [sat] = suggestDates(parseTiming(record('justice')), SAT_SEP_26_2026);
+    // 26 Sept: void from 1:31 am to 3:23 am, well before the evening working.
+    expect(sat.voids).toHaveLength(1);
+    expect(sat.voids[0].end.getHours()).toBe(3);
+    expect(sat.voidAtWorking).toBe(false);
+  });
+
+  it('never suggests a void working time for any Western working', () => {
+    const western = (correspondencesData as Correspondence[]).filter((_, i) => i % 6 === 0);
+    for (const c of western) {
+      const plan = parseTiming(c);
+      if (!plan.observesVoidMoon || plan.fixedEvents.length > 0 || plan.timeOfDay) continue;
+      for (const x of suggestDates(plan, SAT_SEP_26_2026)) {
+        if (x.partial || x.voidAtWorking) continue;
+        expect({ id: c.intentId, day: x.date.toDateString(), void: voidAt(at9pm(x.date)) }).toEqual({
+          id: c.intentId, day: x.date.toDateString(), void: false,
+        });
+      }
+    }
+  });
+
+  it('keeps a fixed holy date and says when the moon is void', () => {
+    const [samhain] = suggestDates(parseTiming(record('samhain')), SAT_SEP_26_2026);
+    expect(samhain.date.toDateString()).toBe('Sat Oct 31 2026');
+    expect(samhain.voidAtWorking).toBe(true);
+  });
+
+  it('applies only to traditions timed by Western astrology', () => {
+    const find = (id: string) =>
+      [...(worldData as Correspondence[]), ...(hiphopData as Correspondence[])].find((c) => c.entityId === id)!;
+    expect(parseTiming(record('ogun')).observesVoidMoon).toBe(false);
+    for (const id of ['ares', 'tyr', 'durga', 'osiris', 'brigid']) expect(parseTiming(find(id)).observesVoidMoon).toBe(false);
+    for (const id of ['kamael', 'bune', 'jdilla']) expect(parseTiming(find(id)).observesVoidMoon).toBe(true);
+    // Ogun keeps Tuesday 29 Sept, void or not — Lucumí times a working by the Orisha's day.
+    const [ogun] = suggestDates(parseTiming(record('ogun')), SAT_SEP_26_2026);
+    expect([ogun.date.toDateString(), ogun.voids]).toEqual(['Tue Sep 29 2026', []]);
   });
 });
 

@@ -13,7 +13,7 @@ import {
   type PlanetaryHour,
 } from '@/lib/timing';
 import { getLocationSnapshot, getServerLocation, subscribeLocation } from '@/lib/location';
-import { formatTime, HoursFor, LocationControls, MoonGlyph } from './Sky';
+import { formatTime, HoursFor, LocationControls, MoonGlyph, voidOnDay } from './Sky';
 
 interface TimingCardProps {
   correspondences: Correspondence;
@@ -70,10 +70,18 @@ function Suggestion({
             {s.exactEvent && <> · {s.exactEvent.name.toLowerCase()} at {formatTime(s.exactEvent.time)}</>}
           </span>
         </div>
+        {s.voids.length > 0 && (
+          <p className="text-xs text-foreground/60">
+            Moon void of course {s.voids.map((v) => voidOnDay(v, s.date)).join(' and ')}
+            {s.voidAtWorking
+              ? ' — including the usual time for this working, so begin before or after it.'
+              : ' — begin the working outside it.'}
+          </p>
+        )}
         {s.partial && (
           <p className="text-xs text-foreground/50 italic">Closest available — not every condition is met.</p>
         )}
-        {planets.length > 0 && hours && <HoursFor hours={hours} planets={planets} />}
+        {planets.length > 0 && hours && <HoursFor hours={hours} planets={planets} voids={s.voids} />}
         {planets.length > 0 && hours === null && (
           <p className="text-xs text-foreground/50 italic">
             The sun doesn&apos;t both rise and set here that day, so there are no planetary hours.
@@ -135,14 +143,16 @@ export default function TimingCard({ correspondences: c }: TimingCardProps) {
 
       {c.eleke && (
         <p className="text-xs text-foreground/50 italic leading-relaxed">
-          Lucumí practice times a working by the Orisha&apos;s day; planetary hours are a Western ceremonial
-          practice and are not part of the tradition, so none are given here.
+          Lucumí practice times a working by the Orisha&apos;s day; planetary hours and the void-of-course moon
+          belong to Western astrology and are not part of the tradition, so neither is given here.
         </p>
       )}
 
       <p className="text-xs text-foreground/40">
         Moon phases and solstices computed with astronomy-engine for your time zone ({zone}). The moon is judged
         at {plan.timeOfDay ?? '9 pm'} on each day.
+        {plan.observesVoidMoon &&
+          ' Days when the moon is void of course at that time are passed over, since a working begun then is held not to come to fruition — except fixed holy days, which can’t move.'}
       </p>
     </div>
   );

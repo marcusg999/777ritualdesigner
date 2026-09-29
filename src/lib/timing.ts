@@ -9,6 +9,9 @@
  */
 import {
   Body,
+  Ecliptic,
+  EclipticGeoMoon,
+  GeoVector,
   Illumination,
   MoonPhase,
   NextMoonQuarter,
@@ -18,7 +21,8 @@ import {
   Seasons,
   SunPosition,
 } from 'astronomy-engine';
-import type { Correspondence } from './types';
+import type { Correspondence, Entity } from './types';
+import entitiesData from '@/data/entities.json';
 
 export type Planet = 'Sun' | 'Moon' | 'Mars' | 'Mercury' | 'Jupiter' | 'Venus' | 'Saturn';
 export type MoonPreference = 'new' | 'dark' | 'waxing' | 'full' | 'waning';
@@ -39,6 +43,12 @@ const MONTHS = [
   'july', 'august', 'september', 'october', 'november', 'december',
 ];
 const PLANET_RE = '(?:Sun|Moon|Mars|Mercury|Jupiter|Venus|Saturn)';
+
+// Traditions whose workings are timed by Western astrology, where the
+// void-of-course moon applies. Religions with sacred calendars of their own —
+// Lucumí, Greek, Egyptian, Norse, Celtic, Hindu — keep their days as they are.
+const ASTROLOGICAL_TRADITIONS = new Set(['Kabbalistic', 'Abrahamic', 'Goetia', 'HipHop', 'Pop Culture']);
+const TRADITION = new Map((entitiesData as Entity[]).map((e) => [e.id, e.tradition]));
 
 type FixedEvent =
   | { kind: 'dec-solstice' | 'jun-solstice' | 'mar-equinox' | 'sep-equinox' }
@@ -64,6 +74,12 @@ export interface TimingPlan {
   timeOfDay?: TimeOfDay;
   /** Traditional phrase for the day, e.g. "Ogun's day". */
   dayNote?: string;
+  /**
+   * Whether the void-of-course moon applies. It belongs to Western astrology,
+   * so it governs the ceremonial intents and figures, not religions with their
+   * own sacred calendars (Lucumí times a working by the Orisha's day).
+   */
+  observesVoidMoon: boolean;
 }
 
 // ─── Parsing ────────────────────────────────────────────────────────────────
@@ -157,6 +173,7 @@ export function parseTiming(c: Correspondence): TimingPlan {
     signs,
     timeOfDay: tod ? (tod[1] as TimeOfDay) : undefined,
     dayNote,
+    observesVoidMoon: !c.eleke && (!c.entityId || ASTROLOGICAL_TRADITIONS.has(TRADITION.get(c.entityId) ?? '')),
   };
 }
 
@@ -288,6 +305,167 @@ function fixedEventDate(event: FixedEvent, year: number): { date: Date; label: s
   }
 }
 
+// ─── Moon signs and the void-of-course moon ────────────────────────────────
+
+const HOUR = 3_600_000;
+const signOf = (longitude: number) => SIGNS[Math.floor((((longitude % 360) + 360) % 360) / 30)];
+
+export function moonSign(at: Date): string {
+  return signOf(EclipticGeoMoon(at).lon);
+}
+
+/** Every instant the moon changes sign in [from, to), to the second. */
+export function moonIngresses(from: Date, to: Date): Array<{ sign: string; time: Date }> {
+  const out: Array<{ sign: string; time: Date }> = [];
+  const step = 2 * HOUR; // the moon spends ~2.3 days in each sign
+  let t = from.getTime();
+  let sign = moonSign(from);
+  while (t < to.getTime()) {
+    const next = t + step;
+    const nextSign = moonSign(new Date(next));
+    if (nextSign !== sign) {
+      let lo = t;
+      let hi = next;
+      while (hi - lo > 1000) {
+        const mid = (lo + hi) / 2;
+        if (moonSign(new Date(mid)) === sign) lo = mid;
+        else hi = mid;
+      }
+      if (hi >= from.getTime() && hi < to.getTime()) out.push({ sign: nextSign, time: new Date(hi) });
+      sign = nextSign;
+    }
+    t = next;
+  }
+  return out;
+}
+
+// The bodies and aspects of the modern definition used by published almanacs:
+// Sun through Pluto, and the five Ptolemaic aspects.
+const ASPECT_BODIES: Array<{ name: string; body: Body }> = [
+  { name: 'Sun', body: Body.Sun },
+  { name: 'Mercury', body: Body.Mercury },
+  { name: 'Venus', body: Body.Venus },
+  { name: 'Mars', body: Body.Mars },
+  { name: 'Jupiter', body: Body.Jupiter },
+  { name: 'Saturn', body: Body.Saturn },
+  { name: 'Uranus', body: Body.Uranus },
+  { name: 'Neptune', body: Body.Neptune },
+  { name: 'Pluto', body: Body.Pluto },
+];
+// Separation (Moon minus body, 0–360°) at which each aspect is exact.
+const ASPECT_ANGLES: Array<{ angle: number; aspect: string }> = [
+  { angle: 0, aspect: 'conjunct' },
+  { angle: 60, aspect: 'sextile' },
+  { angle: 90, aspect: 'square' },
+  { angle: 120, aspect: 'trine' },
+  { angle: 180, aspect: 'opposite' },
+  { angle: 240, aspect: 'trine' },
+  { angle: 270, aspect: 'square' },
+  { angle: 300, aspect: 'sextile' },
+];
+
+const norm360 = (x: number) => ((x % 360) + 360) % 360;
+
+function bodyLongitude(body: Body, t: number): number {
+  const date = new Date(t);
+  return body === Body.Sun ? SunPosition(date).elon : Ecliptic(GeoVector(body, date, true)).elon;
+}
+
+// The outer planets crawl (under 0.07° a day) and Pluto is by far the most
+// expensive body to compute, so across the two or three days the Moon spends
+// in a sign their longitude is interpolated between its ends — true to
+// within seconds of time.
+const OUTER = new Set([Body.Uranus, Body.Neptune, Body.Pluto]);
+
+/** The body's longitude over [from, to], exact or interpolated. */
+function longitudeOver(body: Body, from: number, to: number): (t: number) => number {
+  if (!OUTER.has(body)) return (t) => bodyLongitude(body, t);
+  const l0 = bodyLongitude(body, from);
+  let d = bodyLongitude(body, to) - l0;
+  if (d > 180) d -= 360;
+  if (d < -180) d += 360;
+  return (t) => l0 + (d * (t - from)) / (to - from);
+}
+
+export interface VoidOfCourse {
+  /** The Moon's last exact aspect in the sign it is leaving… */
+  start: Date;
+  /** …until it enters the next sign. */
+  end: Date;
+  /** The sign the Moon is leaving and the one it enters. */
+  from: string;
+  to: string;
+  /** e.g. "Moon trine Saturn"; absent if the Moon made no aspect in the whole sign. */
+  lastAspect?: string;
+}
+
+/**
+ * The last exact aspect the Moon makes to `body` in (from, to], if any. The
+ * Moon outruns every planet, so the separation only ever increases — each
+ * aspect angle is crossed at most once while the Moon crosses a single sign.
+ */
+function lastAspectTo(body: Body, from: number, to: number): { time: number; aspect: string } | undefined {
+  const lon = longitudeOver(body, from, to);
+  // The Moon's ecliptic longitude minus the body's.
+  const separation = (t: number) => norm360(EclipticGeoMoon(new Date(t)).lon - lon(t));
+  const s0 = separation(from);
+  const unwrap = (t: number) => s0 + norm360(separation(t) - s0);
+  const s1 = unwrap(to);
+  let target: { angle: number; aspect: string } | undefined;
+  for (let k = Math.floor(s1 / 360); k >= 0 && !target; k--) {
+    for (let i = ASPECT_ANGLES.length - 1; i >= 0; i--) {
+      const angle = ASPECT_ANGLES[i].angle + 360 * k;
+      if (angle > s0 && angle <= s1) {
+        target = { angle, aspect: ASPECT_ANGLES[i].aspect };
+        break;
+      }
+    }
+  }
+  if (!target) return undefined;
+  let lo = from;
+  let hi = to;
+  while (hi - lo > 1000) {
+    const mid = (lo + hi) / 2;
+    if (unwrap(mid) < target.angle) lo = mid;
+    else hi = mid;
+  }
+  return { time: hi, aspect: target.aspect };
+}
+
+/**
+ * Void-of-course periods overlapping [from, to): from the Moon's last major
+ * aspect in a sign until it enters the next one.
+ */
+export function voidOfCourse(from: Date, to: Date): VoidOfCourse[] {
+  // Start a sign early so the period running into `from` is found too.
+  const ingresses = moonIngresses(new Date(from.getTime() - 3 * 24 * HOUR), new Date(to.getTime() + 3 * 24 * HOUR));
+  const out: VoidOfCourse[] = [];
+  for (let i = 1; i < ingresses.length; i++) {
+    const entered = ingresses[i - 1];
+    const leaves = ingresses[i];
+    // A void lies within its sign, so skip signs outside the range.
+    if (leaves.time <= from || entered.time >= to) continue;
+    const signStart = entered.time.getTime();
+    const signEnd = leaves.time.getTime();
+    let last: { time: number; aspect: string; name: string } | undefined;
+    for (const { name, body } of ASPECT_BODIES) {
+      const a = lastAspectTo(body, signStart, signEnd);
+      if (a && (!last || a.time > last.time)) last = { ...a, name };
+    }
+    const start = new Date(last ? last.time : signStart);
+    if (start < leaves.time && start < to && leaves.time > from) {
+      out.push({
+        start,
+        end: leaves.time,
+        from: entered.sign,
+        to: leaves.sign,
+        lastAspect: last && `Moon ${last.aspect} ${last.name}`,
+      });
+    }
+  }
+  return out;
+}
+
 // ─── Suggestions ────────────────────────────────────────────────────────────
 
 export interface DateSuggestion {
@@ -303,6 +481,18 @@ export interface DateSuggestion {
   sign: string;
   /** Meets only some of the stated conditions (no full match in the window). */
   partial?: boolean;
+  /** Void-of-course periods overlapping this day, so the working can begin outside them. */
+  voids: VoidOfCourse[];
+  /** The moon is void at the working's usual time — only where the date can't move (a holy day) or is a near-miss. */
+  voidAtWorking?: boolean;
+}
+
+/** Void-of-course periods overlapping a local day, and whether one covers the working's time. */
+function voidsOn(plan: TimingPlan, day: Date): { voids: VoidOfCourse[]; voidAtWorking: boolean } {
+  if (!plan.observesVoidMoon) return { voids: [], voidAtWorking: false };
+  const at = evaluationTime(day, plan.timeOfDay);
+  const voids = voidOfCourse(day, addDays(day, 1));
+  return { voids, voidAtWorking: voids.some((v) => v.start <= at && at < v.end) };
 }
 
 /** When the moon is judged for a day: the working's time of day, else 9 pm. */
@@ -328,7 +518,8 @@ export function suggestDates(
   const moonsForLunarDays = plan.lunarDays.length > 0 ? newMoons(addDays(start, -32), addDays(start, days + 1)) : [];
 
   const full: DateSuggestion[] = [];
-  const partial: DateSuggestion[] = [];
+  // Near-misses get their void periods worked out only if they're chosen.
+  const partial: Array<Omit<DateSuggestion, 'voids'> & { voids?: VoidOfCourse[] }> = [];
   for (let i = 0; i < days && full.length < count; i++) {
     const day = addDays(start, i);
     const moon = moonInfo(evaluationTime(day, plan.timeOfDay));
@@ -384,14 +575,27 @@ export function suggestDates(
     if (score > 0 && plan.signs.includes(sign)) reasons.push(`Sun in ${sign}`);
 
     const suggestion = { date: day, score, reasons, moon, exactPhase: quarterByDay.get(dayKey(day)), sign };
-    if (dayOk && moonOk) full.push(suggestion);
-    else if (score > 0 && i < 60) partial.push({ ...suggestion, partial: true });
+    const nearMiss = score > 0 && i < 60;
+    if (dayOk && moonOk) {
+      // Tradition holds that nothing begun while the moon is void of course
+      // comes to fruition, so a day whose working time falls in a void is
+      // only a near-miss — unless the date itself is the occasion (a holy day,
+      // or the solstice standing in for the moon), which can't move.
+      const voids = voidsOn(plan, day);
+      if (!voids.voidAtWorking || monthDayHit || lunarDayHit || bonus) full.push({ ...suggestion, ...voids });
+      else if (nearMiss) partial.push({ ...suggestion, ...voids, partial: true });
+    } else if (nearMiss) {
+      partial.push({ ...suggestion, partial: true });
+    }
   }
 
   // Every stated condition met, soonest first. Only if the sky offers none in
   // the window do near-misses appear, best first, flagged as partial.
   if (full.length > 0) return full;
-  return partial.sort((a, b) => b.score - a.score || a.date.getTime() - b.date.getTime()).slice(0, count);
+  return partial
+    .sort((a, b) => b.score - a.score || a.date.getTime() - b.date.getTime())
+    .slice(0, count)
+    .map((s) => (s.voids ? (s as DateSuggestion) : { ...s, ...voidsOn(plan, s.date) }));
 }
 
 function suggestFixed(plan: TimingPlan, start: Date, count: number): DateSuggestion[] {
@@ -415,6 +619,7 @@ function suggestFixed(plan: TimingPlan, start: Date, count: number): DateSuggest
       score += 2;
       reasons.push(moon.phaseName);
     }
+    // A fixed date can't move, so a void is reported rather than avoided.
     return {
       date,
       score,
@@ -422,6 +627,7 @@ function suggestFixed(plan: TimingPlan, start: Date, count: number): DateSuggest
       moon,
       exactEvent: exact ? { name: label, time: exact } : undefined,
       sign: sunSign(atHour(date, 12)),
+      ...voidsOn(plan, date),
     };
   });
 }
