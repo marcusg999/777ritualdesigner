@@ -13,7 +13,6 @@
  * reckons them; without one, sunrise and sunset are taken as 6 am and 6 pm.
  */
 import { Body, MoonPhase, Observer, SearchMoonPhase, SearchRiseSet, SunPosition } from 'astronomy-engine';
-import { addDays, localDay } from './timing';
 
 export interface Place {
   lat: number;
@@ -23,6 +22,11 @@ export interface Place {
 const HOUR = 3_600_000;
 const MINUTE = 60_000;
 const DAY = 24 * HOUR;
+
+// Local calendar days, built from date fields so they stay DST-safe. (Kept
+// here rather than imported, so the timing engine can import this module.)
+const localDay = (d: Date) => new Date(d.getFullYear(), d.getMonth(), d.getDate());
+const addDays = (d: Date, n: number) => new Date(d.getFullYear(), d.getMonth(), d.getDate() + n);
 
 // ─── Tithis ─────────────────────────────────────────────────────────────────
 
@@ -227,11 +231,13 @@ function observe(rule: FestivalRule, span: { start: number; end: number }, place
   return best;
 }
 
-/** Hindu festivals kept in [from, to), for the viewer's location if known. */
-export function hinduFestivals(from: Date, to: Date, place?: Place | null): HinduFestival[] {
+/** Hindu festivals kept in [from, to), for the viewer's location if known — optionally one deity's only. */
+export function hinduFestivals(from: Date, to: Date, place?: Place | null, deity?: string): HinduFestival[] {
   const out: HinduFestival[] = [];
+  const rules = deity ? FESTIVALS.filter((r) => r.deity === deity) : FESTIVALS;
+  if (rules.length === 0) return out;
   for (const m of lunarMonths(addDays(from, -2), addDays(to, 2))) {
-    for (const rule of FESTIVALS) {
+    for (const rule of rules) {
       if (rule.month !== undefined ? rule.month !== m.month || m.adhika : rule.except?.includes(m.month)) continue;
       const span = tithiSpan(m.newMoon, rule.tithi);
       const kept = observe(rule, span, place);

@@ -13,7 +13,7 @@ import {
   type PlanetaryHour,
 } from '@/lib/timing';
 import { getLocationSnapshot, getServerLocation, subscribeLocation } from '@/lib/location';
-import { formatTime, HoursFor, LocationControls, MoonGlyph, voidOnDay } from './Sky';
+import { formatTime, HoursFor, LocationControls, MoonGlyph, timeOn, voidOnDay } from './Sky';
 
 interface TimingCardProps {
   correspondences: Correspondence;
@@ -70,6 +70,19 @@ function Suggestion({
             {s.exactEvent && <> · {s.exactEvent.name.toLowerCase()} at {formatTime(s.exactEvent.time)}</>}
           </span>
         </div>
+        {s.festival && (
+          <p className="text-xs text-foreground/70">
+            {s.festival.detail}
+            {s.festival.start && (
+              <span className="text-foreground/50">
+                {' · '}
+                {s.festival.end
+                  ? `puja ${timeOn(s.festival.start, s.date)} – ${timeOn(s.festival.end, s.date)}`
+                  : `moonrise ${timeOn(s.festival.start, s.date)}`}
+              </span>
+            )}
+          </p>
+        )}
         {s.voids.length > 0 && (
           <p className="text-xs text-foreground/60">
             Moon void of course {s.voids.map((v) => voidOnDay(v, s.date)).join(' and ')}
@@ -97,7 +110,9 @@ export default function TimingCard({ correspondences: c }: TimingCardProps) {
   const location = useSyncExternalStore(subscribeLocation, getLocationSnapshot, getServerLocation);
 
   const plan = useMemo(() => parseTiming(c), [c]);
-  const suggestions = useMemo(() => suggestDates(plan, now), [plan, now]);
+  // A location sets the sunrise from which Hindu festival days are reckoned.
+  const place = plan.hinduDeity ? location : null;
+  const suggestions = useMemo(() => suggestDates(plan, now, { place }), [plan, now, place]);
   const tonight = useMemo(() => moonInfo(new Date(now.getFullYear(), now.getMonth(), now.getDate(), 21)), [now]);
 
   const hoursByDay = useMemo(() => {
@@ -139,7 +154,12 @@ export default function TimingCard({ correspondences: c }: TimingCardProps) {
 
       {plan.timeOfDay && <p className="text-sm text-foreground/60">{TIME_OF_DAY_NOTE[plan.timeOfDay]}</p>}
 
-      {plan.hourPlanets.length > 0 && <LocationControls location={location} />}
+      {(plan.hourPlanets.length > 0 || plan.hinduDeity) && (
+        <LocationControls
+          location={location}
+          purpose={plan.hinduDeity ? (plan.hourPlanets.length > 0 ? 'both' : 'festivals') : 'hours'}
+        />
+      )}
 
       {c.eleke && (
         <p className="text-xs text-foreground/50 italic leading-relaxed">
@@ -151,6 +171,8 @@ export default function TimingCard({ correspondences: c }: TimingCardProps) {
       <p className="text-xs text-foreground/40">
         Moon phases and solstices computed with astronomy-engine for your time zone ({zone}). The moon is judged
         at {plan.timeOfDay ?? '9 pm'} on each day.
+        {plan.hinduDeity &&
+          ` ${plan.hinduDeity}’s festivals follow the Panchang, as in the Almanac: each is kept on the day its tithi (lunar day) holds at its appointed hour, reckoned from ${location ? 'sunrise at your location' : 'a 6 am sunrise until you share a location'}, so dates can differ by a day from those published for India.`}
         {plan.observesVoidMoon &&
           ' Days when the moon is void of course at that time are passed over, since a working begun then is held not to come to fruition — except fixed holy days, which can’t move.'}
       </p>

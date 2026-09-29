@@ -15,7 +15,7 @@ import { tithiName } from '@/lib/panchang';
 import type { Correspondence, Entity } from '@/lib/types';
 import ifaData from '@/data/correspondences_ifa_yoruba.json';
 import entitiesData from '@/data/entities.json';
-import { formatTime, LocationControls, MoonGlyph, voidOnDay } from './Sky';
+import { formatTime, LocationControls, MoonGlyph, timeOn, voidOnDay } from './Sky';
 
 type Category = 'moon' | 'sky' | 'holy';
 
@@ -55,10 +55,6 @@ function sameDay(a: Date, b: Date) {
   return a.getFullYear() === b.getFullYear() && a.getMonth() === b.getMonth() && a.getDate() === b.getDate();
 }
 
-/** A time, prefixed with its weekday when it falls on a different day than `day`. */
-function timeOn(t: Date, day: Date) {
-  return sameDay(t, day) ? formatTime(t) : `${t.toLocaleDateString(undefined, { weekday: 'short' })} ${formatTime(t)}`;
-}
 
 
 function Dot({ category }: { category: Category }) {
@@ -252,7 +248,7 @@ function DayDetail({ day, today, location }: { day: AlmanacDay; today: Date; loc
         {hours === null && (
           <p className="text-xs text-foreground/50 italic">The sun doesn&apos;t both rise and set here on this day.</p>
         )}
-        <LocationControls location={location} />
+        <LocationControls location={location} purpose="both" />
       </div>
     </div>
   );

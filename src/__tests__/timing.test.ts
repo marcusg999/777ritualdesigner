@@ -228,6 +228,61 @@ describe('void-of-course moon in suggestions', () => {
   });
 });
 
+describe('Hindu festivals in suggestions', () => {
+  const DELHI = { lat: 28.61, lon: 77.21 };
+  const hindu = (id: string) =>
+    [...all, ...(worldData as Correspondence[])].find((c) => c.entityId === id)!;
+  const TUE_SEP_29_2026 = new Date(2026, 8, 29, 10);
+  const list = (s: DateSuggestion[]) =>
+    s.map((x) => `${x.date.toDateString()}${x.festival ? ` · ${x.festival.name}` : ''}`);
+
+  it('adds the next of each of the deity’s festivals to its days', () => {
+    // Lakshmi: her Fridays, then Diwali on 8 Nov (as published for New Delhi).
+    const s = suggestDates(parseTiming(hindu('lakshmi')), TUE_SEP_29_2026, { place: DELHI });
+    expect(list(s)).toEqual([
+      'Fri Oct 02 2026', 'Fri Oct 09 2026', 'Fri Oct 16 2026', 'Sun Nov 08 2026 · Diwali · Lakshmi Puja',
+    ]);
+    const diwali = s[3].festival!;
+    expect(diwali.detail).toMatch(/Amavasya/);
+    expect(diwali.end!.getTime() - diwali.start!.getTime()).toBeGreaterThan(2 * 3_600_000);
+  });
+
+  it('keeps the next monthly observance and the great annual one', () => {
+    // Tuesdays count for Ganesha only as Angaraki Sankashti, which the calendar supplies.
+    expect(parseTiming(hindu('ganesha')).weekdays).toEqual([3]);
+    const s = suggestDates(parseTiming(hindu('ganesha')), TUE_SEP_29_2026, { place: DELHI });
+    expect(list(s)).toEqual([
+      'Tue Sep 29 2026 · Angaraki Sankashti Chaturthi', 'Wed Sep 30 2026', 'Wed Oct 07 2026', 'Wed Oct 14 2026',
+      'Sat Sep 04 2027 · Ganesh Chaturthi',
+    ]);
+    // Sankashti is kept by moonrise, so its time is the moonrise.
+    expect(s[0].festival!.start).toBeDefined();
+    expect(s[0].festival!.end).toBeUndefined();
+  });
+
+  it('merges a festival into a day already suggested', () => {
+    // Durga's Tuesdays from 12 Oct 2026 include Vijayadashami, Tuesday 20 Oct.
+    const s = suggestDates(parseTiming(hindu('durga')), new Date(2026, 9, 12), { place: DELHI });
+    const dashami = s.find((x) => x.festival?.name === 'Vijayadashami')!;
+    expect(dashami.date.toDateString()).toBe('Tue Oct 20 2026');
+    expect(dashami.reasons[0]).toBe('Vijayadashami');
+    expect(dashami.reasons[1]).toMatch(/^Tuesday/);
+    expect(s.filter((x) => x.date.toDateString() === 'Tue Oct 20 2026')).toHaveLength(1);
+  });
+
+  it('offers only festivals when the deity has no day of its own', () => {
+    // Saraswati: "Vasant Panchami above all … no weekday is universal".
+    const s = suggestDates(parseTiming(hindu('saraswati')), TUE_SEP_29_2026, { place: DELHI });
+    expect(list(s)).toEqual(['Thu Feb 11 2027 · Vasant Panchami']);
+  });
+
+  it('leaves other traditions alone', () => {
+    expect(parseTiming(record('ogun')).hinduDeity).toBeUndefined();
+    expect(parseTiming(record('justice')).hinduDeity).toBeUndefined();
+    expect(parseTiming(hindu('kali')).hinduDeity).toBe('Kali');
+  });
+});
+
 describe('planetaryHours', () => {
   const tue = planetaryHours(new Date(2026, 8, 29), LA.lat, LA.lon)!;
 
