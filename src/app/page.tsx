@@ -1,6 +1,7 @@
 'use client';
 
-import { Suspense, useState, useCallback } from 'react';
+import { Suspense, useState, useCallback, useMemo } from 'react';
+import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
 import type { CorrespondenceResult } from '@/lib/types';
 import CorrespondenceCard from '@/components/CorrespondenceCard';
@@ -12,6 +13,7 @@ import { getOfferingsForEntities } from '@/lib/offerings';
 import { getSigilByEntityId } from '@/lib/sigils';
 import { buildRitual, type RitualOptions } from '@/lib/ritual';
 import { saveRitual } from '@/lib/storage';
+import { suggestArchetypes } from '@/lib/archetypes';
 
 // Loaded on demand: the astronomy code is only needed once a ritual is shown.
 const TimingCard = dynamic(() => import('@/components/TimingCard'), { ssr: false });
@@ -53,6 +55,10 @@ function Generator({ initialQuery = '' }: { initialQuery?: string }) {
   );
   const result = built?.result ?? null;
   const enrichment = result?.enrichment;
+  const archetypes = useMemo(
+    () => (built ? suggestArchetypes(built.result, { includePopCulture: built.options.includePopCulture }) : []),
+    [built]
+  );
   const [loading, setLoading] = useState(false);
   const [includePopCulture, setIncludePopCulture] = useState(false);
   const [reflection, setReflection] = useState(false);
@@ -251,6 +257,42 @@ function Generator({ initialQuery = '' }: { initialQuery?: string }) {
                 );
               })}
             </div>
+          )}
+
+          {/* Archetypes that answer the desire */}
+          {archetypes.length > 0 && (
+            <section className="space-y-3" aria-labelledby="archetypes-heading">
+              <h2 id="archetypes-heading" className="section-label">
+                Archetypes for your desire
+              </h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                {archetypes.map(({ entity, matched, planet }) => (
+                  <article key={entity.id} className="card card-hover space-y-3 flex flex-col">
+                    <div>
+                      <div className="flex items-center justify-between gap-2">
+                        <h3 className="font-display text-gold font-semibold text-lg leading-tight">{entity.name}</h3>
+                        {entity.sphere && <span className="eyebrow text-foreground/35 shrink-0">{entity.sphere}</span>}
+                      </div>
+                      <p className="eyebrow text-foreground/40 mt-1">
+                        {entity.tradition} · {entity.category ?? entity.type}
+                      </p>
+                    </div>
+                    <p className="text-sm text-foreground/75 leading-relaxed flex-1">{entity.description}</p>
+                    <p className="text-xs text-foreground/55">
+                      {matched.length > 0
+                        ? `Answers to: ${matched.slice(0, 3).join(' · ')}`
+                        : `Shares this working’s planet, ${planet}`}
+                    </p>
+                    <Link
+                      href={`/?q=${encodeURIComponent(entity.name)}`}
+                      className="text-sm text-gold hover:underline self-start"
+                    >
+                      Open ritual →
+                    </Link>
+                  </article>
+                ))}
+              </div>
+            </section>
           )}
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
