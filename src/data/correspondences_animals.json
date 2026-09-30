@@ -1,0 +1,1317 @@
+[
+  {
+    "entityId": "zodiac-rat",
+    "colors": [
+      "black"
+    ],
+    "stones": [
+      "Agate",
+      "Opal"
+    ],
+    "herbs": [
+      "Lavender",
+      "Fennel"
+    ],
+    "metals": [
+      "Quicksilver (as an amalgam)"
+    ],
+    "scents": [
+      "Storax",
+      "Mastic"
+    ],
+    "timing": "The day of the Rat in the sixty-day cycle, in the hour of the Rat (11 pm – 1 am)",
+    "element": "Water (yang)",
+    "sphere": "Mercury",
+    "planet": "Mercury",
+    "direction": "North",
+    "sacredNumbers": [
+      1,
+      6
+    ],
+    "characteristics": [
+      "Quick-witted",
+      "Resourceful",
+      "Charming",
+      "Thrifty"
+    ],
+    "lore": [
+      "Earthly branch 子 zǐ, the first; yang Water. 鼠 (shǔ).",
+      "Rules the double hour 11 pm – 1 am, the eleventh lunar month and midwinter; its direction is north.",
+      "Trine: Rat, Dragon and Monkey (Water). Secret friend: the Ox. Clash: the Horse.",
+      "Won the Jade Emperor’s Great Race by riding across the river on the Ox’s back and leaping ahead at the finish.",
+      "Years of the Rat: 1984 (Wood), 1996 (Fire), 2008 (Earth), 2020 (Metal), 2032 (Water), 2044 (Wood) — each begins at Lunar New Year, in late January or February."
+    ],
+    "traditionNote": "The branch, element, yin and yang, double hour, month, direction, season, trines, secret friends, clashes and the Great Race are traditional Chinese lore. The numbers are the element's He Tu (River Chart) numbers, and the planet is the element's in Chinese astronomy (Wood–Jupiter, Fire–Mars, Earth–Saturn, Metal–Venus, Water–Mercury). The character traits are popular modern descriptions. Stones, herbs, metal and scent come from the Western tables for that planet — this app's cross-reference."
+  },
+  {
+    "entityId": "zodiac-ox",
+    "colors": [
+      "yellow"
+    ],
+    "stones": [
+      "Onyx",
+      "Jet"
+    ],
+    "herbs": [
+      "Cypress",
+      "Comfrey"
+    ],
+    "metals": [
+      "Lead"
+    ],
+    "scents": [
+      "Myrrh",
+      "Cypress"
+    ],
+    "timing": "The day of the Ox in the sixty-day cycle, in the hour of the Ox (1 – 3 am)",
+    "element": "Earth (yin)",
+    "sphere": "Saturn",
+    "planet": "Saturn",
+    "direction": "North-northeast",
+    "sacredNumbers": [
+      5,
+      10
+    ],
+    "characteristics": [
+      "Diligent",
+      "Dependable",
+      "Patient",
+      "Determined"
+    ],
+    "lore": [
+      "Earthly branch 丑 chǒu, the second; yin Earth. 牛 (niú).",
+      "Rules the double hour 1 – 3 am, the twelfth lunar month and late winter; its direction is north-northeast.",
+      "Trine: Ox, Snake and Rooster (Metal). Secret friend: the Rat. Clash: the Goat.",
+      "Carried the Rat across the river in the Great Race, and was beaten to the line by its passenger.",
+      "Years of the Ox: 1985 (Wood), 1997 (Fire), 2009 (Earth), 2021 (Metal), 2033 (Water) — each begins at Lunar New Year, in late January or February."
+    ],
+    "traditionNote": "The branch, element, yin and yang, double hour, month, direction, season, trines, secret friends, clashes and the Great Race are traditional Chinese lore. The numbers are the element's He Tu (River Chart) numbers, and the planet is the element's in Chinese astronomy (Wood–Jupiter, Fire–Mars, Earth–Saturn, Metal–Venus, Water–Mercury). The character traits are popular modern descriptions. Stones, herbs, metal and scent come from the Western tables for that planet — this app's cross-reference."
+  },
+  {
+    "entityId": "zodiac-tiger",
+    "colors": [
+      "green",
+      "blue-green (qīng 青)"
+    ],
+    "stones": [
+      "Sapphire",
+      "Amethyst"
+    ],
+    "herbs": [
+      "Sage",
+      "Hyssop"
+    ],
+    "metals": [
+      "Tin"
+    ],
+    "scents": [
+      "Cedar",
+      "Saffron"
+    ],
+    "timing": "The day of the Tiger in the sixty-day cycle, in the hour of the Tiger (3 – 5 am)",
+    "element": "Wood (yang)",
+    "sphere": "Jupiter",
+    "planet": "Jupiter",
+    "direction": "East-northeast",
+    "sacredNumbers": [
+      3,
+      8
+    ],
+    "characteristics": [
+      "Brave",
+      "Confident",
+      "Competitive",
+      "Unpredictable"
+    ],
+    "lore": [
+      "Earthly branch 寅 yín, the third; yang Wood. 虎 (hǔ).",
+      "Rules the double hour 3 – 5 am, the first lunar month and early spring; its direction is east-northeast.",
+      "Trine: Tiger, Horse and Dog (Fire). Secret friend: the Pig. Clash: the Monkey.",
+      "The king of beasts, the character 王 (“king”) marked on its brow; it came third, having fought the river’s current.",
+      "Years of the Tiger: 1986 (Fire), 1998 (Earth), 2010 (Metal), 2022 (Water), 2034 (Wood) — each begins at Lunar New Year, in late January or February."
+    ],
+    "traditionNote": "The branch, element, yin and yang, double hour, month, direction, season, trines, secret friends, clashes and the Great Race are traditional Chinese lore. The numbers are the element's He Tu (River Chart) numbers, and the planet is the element's in Chinese astronomy (Wood–Jupiter, Fire–Mars, Earth–Saturn, Metal–Venus, Water–Mercury). The character traits are popular modern descriptions. Stones, herbs, metal and scent come from the Western tables for that planet — this app's cross-reference."
+  },
+  {
+    "entityId": "zodiac-rabbit",
+    "colors": [
+      "green",
+      "blue-green (qīng 青)"
+    ],
+    "stones": [
+      "Sapphire",
+      "Amethyst"
+    ],
+    "herbs": [
+      "Sage",
+      "Hyssop"
+    ],
+    "metals": [
+      "Tin"
+    ],
+    "scents": [
+      "Cedar",
+      "Saffron"
+    ],
+    "timing": "The day of the Rabbit in the sixty-day cycle, in the hour of the Rabbit (5 – 7 am)",
+    "element": "Wood (yin)",
+    "sphere": "Jupiter",
+    "planet": "Jupiter",
+    "direction": "East",
+    "sacredNumbers": [
+      3,
+      8
+    ],
+    "characteristics": [
+      "Gentle",
+      "Elegant",
+      "Kind",
+      "Cautious"
+    ],
+    "lore": [
+      "Earthly branch 卯 mǎo, the fourth; yin Wood. 兔 (tù).",
+      "Rules the double hour 5 – 7 am, the second lunar month and mid-spring; its direction is east.",
+      "Trine: Rabbit, Goat and Pig (Wood). Secret friend: the Dog. Clash: the Rooster.",
+      "The Jade Rabbit pounds the elixir of immortality on the Moon beside Chang’e; in the Race it crossed on stones and a floating log.",
+      "Years of the Rabbit: 1987 (Fire), 1999 (Earth), 2011 (Metal), 2023 (Water), 2035 (Wood) — each begins at Lunar New Year, in late January or February."
+    ],
+    "traditionNote": "The branch, element, yin and yang, double hour, month, direction, season, trines, secret friends, clashes and the Great Race are traditional Chinese lore. The numbers are the element's He Tu (River Chart) numbers, and the planet is the element's in Chinese astronomy (Wood–Jupiter, Fire–Mars, Earth–Saturn, Metal–Venus, Water–Mercury). The character traits are popular modern descriptions. Stones, herbs, metal and scent come from the Western tables for that planet — this app's cross-reference."
+  },
+  {
+    "entityId": "zodiac-dragon",
+    "colors": [
+      "yellow"
+    ],
+    "stones": [
+      "Onyx",
+      "Jet"
+    ],
+    "herbs": [
+      "Cypress",
+      "Comfrey"
+    ],
+    "metals": [
+      "Lead"
+    ],
+    "scents": [
+      "Myrrh",
+      "Cypress"
+    ],
+    "timing": "The day of the Dragon in the sixty-day cycle, in the hour of the Dragon (7 – 9 am)",
+    "element": "Earth (yang)",
+    "sphere": "Saturn",
+    "planet": "Saturn",
+    "direction": "East-southeast",
+    "sacredNumbers": [
+      5,
+      10
+    ],
+    "characteristics": [
+      "Confident",
+      "Ambitious",
+      "Charismatic",
+      "Energetic"
+    ],
+    "lore": [
+      "Earthly branch 辰 chén, the fifth; yang Earth. 龙 (lóng).",
+      "Rules the double hour 7 – 9 am, the third lunar month and late spring; its direction is east-southeast.",
+      "Trine: Dragon, Rat and Monkey (Water). Secret friend: the Rooster. Clash: the Dog.",
+      "Bringer of rain and emblem of the emperor; it came fifth, having stopped to bring rain to parched villages.",
+      "Years of the Dragon: 1988 (Earth), 2000 (Metal), 2012 (Water), 2024 (Wood), 2036 (Fire) — each begins at Lunar New Year, in late January or February."
+    ],
+    "traditionNote": "The branch, element, yin and yang, double hour, month, direction, season, trines, secret friends, clashes and the Great Race are traditional Chinese lore. The numbers are the element's He Tu (River Chart) numbers, and the planet is the element's in Chinese astronomy (Wood–Jupiter, Fire–Mars, Earth–Saturn, Metal–Venus, Water–Mercury). The character traits are popular modern descriptions. Stones, herbs, metal and scent come from the Western tables for that planet — this app's cross-reference."
+  },
+  {
+    "entityId": "zodiac-snake",
+    "colors": [
+      "red"
+    ],
+    "stones": [
+      "Garnet",
+      "Bloodstone"
+    ],
+    "herbs": [
+      "Nettle",
+      "Basil"
+    ],
+    "metals": [
+      "Iron"
+    ],
+    "scents": [
+      "Dragon’s blood",
+      "Tobacco"
+    ],
+    "timing": "The day of the Snake in the sixty-day cycle, in the hour of the Snake (9 – 11 am)",
+    "element": "Fire (yin)",
+    "sphere": "Mars",
+    "planet": "Mars",
+    "direction": "South-southeast",
+    "sacredNumbers": [
+      2,
+      7
+    ],
+    "characteristics": [
+      "Wise",
+      "Intuitive",
+      "Enigmatic",
+      "Graceful"
+    ],
+    "lore": [
+      "Earthly branch 巳 sì, the sixth; yin Fire. 蛇 (shé).",
+      "Rules the double hour 9 – 11 am, the fourth lunar month and early summer; its direction is south-southeast.",
+      "Trine: Snake, Ox and Rooster (Metal). Secret friend: the Monkey. Clash: the Pig.",
+      "Hid coiled on the Horse’s hoof and startled it at the finish to take sixth place.",
+      "Years of the Snake: 1989 (Earth), 2001 (Metal), 2013 (Water), 2025 (Wood), 2037 (Fire) — each begins at Lunar New Year, in late January or February."
+    ],
+    "traditionNote": "The branch, element, yin and yang, double hour, month, direction, season, trines, secret friends, clashes and the Great Race are traditional Chinese lore. The numbers are the element's He Tu (River Chart) numbers, and the planet is the element's in Chinese astronomy (Wood–Jupiter, Fire–Mars, Earth–Saturn, Metal–Venus, Water–Mercury). The character traits are popular modern descriptions. Stones, herbs, metal and scent come from the Western tables for that planet — this app's cross-reference."
+  },
+  {
+    "entityId": "zodiac-horse",
+    "colors": [
+      "red"
+    ],
+    "stones": [
+      "Garnet",
+      "Bloodstone"
+    ],
+    "herbs": [
+      "Nettle",
+      "Basil"
+    ],
+    "metals": [
+      "Iron"
+    ],
+    "scents": [
+      "Dragon’s blood",
+      "Tobacco"
+    ],
+    "timing": "The day of the Horse in the sixty-day cycle, in the hour of the Horse (11 am – 1 pm)",
+    "element": "Fire (yang)",
+    "sphere": "Mars",
+    "planet": "Mars",
+    "direction": "South",
+    "sacredNumbers": [
+      2,
+      7
+    ],
+    "characteristics": [
+      "Energetic",
+      "Free-spirited",
+      "Warm",
+      "Impatient"
+    ],
+    "lore": [
+      "Earthly branch 午 wǔ, the seventh; yang Fire. 马 (mǎ).",
+      "Rules the double hour 11 am – 1 pm, the fifth lunar month and midsummer; its direction is south.",
+      "Trine: Horse, Tiger and Dog (Fire). Secret friend: the Goat. Clash: the Rat.",
+      "The animal of noon and of midsummer, when yang is at its height.",
+      "Years of the Horse: 1990 (Metal), 2002 (Water), 2014 (Wood), 2026 (Fire), 2038 (Earth) — each begins at Lunar New Year, in late January or February."
+    ],
+    "traditionNote": "The branch, element, yin and yang, double hour, month, direction, season, trines, secret friends, clashes and the Great Race are traditional Chinese lore. The numbers are the element's He Tu (River Chart) numbers, and the planet is the element's in Chinese astronomy (Wood–Jupiter, Fire–Mars, Earth–Saturn, Metal–Venus, Water–Mercury). The character traits are popular modern descriptions. Stones, herbs, metal and scent come from the Western tables for that planet — this app's cross-reference."
+  },
+  {
+    "entityId": "zodiac-goat",
+    "colors": [
+      "yellow"
+    ],
+    "stones": [
+      "Onyx",
+      "Jet"
+    ],
+    "herbs": [
+      "Cypress",
+      "Comfrey"
+    ],
+    "metals": [
+      "Lead"
+    ],
+    "scents": [
+      "Myrrh",
+      "Cypress"
+    ],
+    "timing": "The day of the Goat in the sixty-day cycle, in the hour of the Goat (1 – 3 pm)",
+    "element": "Earth (yin)",
+    "sphere": "Saturn",
+    "planet": "Saturn",
+    "direction": "South-southwest",
+    "sacredNumbers": [
+      5,
+      10
+    ],
+    "characteristics": [
+      "Gentle",
+      "Artistic",
+      "Compassionate",
+      "Sensitive"
+    ],
+    "lore": [
+      "Earthly branch 未 wèi, the eighth; yin Earth. 羊 (yáng).",
+      "Rules the double hour 1 – 3 pm, the sixth lunar month and late summer; its direction is south-southwest.",
+      "Trine: Goat, Rabbit and Pig (Wood). Secret friend: the Horse. Clash: the Ox.",
+      "Crossed the river on a raft with the Monkey and the Rooster, and came eighth.",
+      "Years of the Goat: 1991 (Metal), 2003 (Water), 2015 (Wood), 2027 (Fire), 2039 (Earth) — each begins at Lunar New Year, in late January or February."
+    ],
+    "traditionNote": "The branch, element, yin and yang, double hour, month, direction, season, trines, secret friends, clashes and the Great Race are traditional Chinese lore. The numbers are the element's He Tu (River Chart) numbers, and the planet is the element's in Chinese astronomy (Wood–Jupiter, Fire–Mars, Earth–Saturn, Metal–Venus, Water–Mercury). The character traits are popular modern descriptions. Stones, herbs, metal and scent come from the Western tables for that planet — this app's cross-reference."
+  },
+  {
+    "entityId": "zodiac-monkey",
+    "colors": [
+      "white"
+    ],
+    "stones": [
+      "Emerald",
+      "Rose quartz (modern)"
+    ],
+    "herbs": [
+      "Rose",
+      "Vervain"
+    ],
+    "metals": [
+      "Copper"
+    ],
+    "scents": [
+      "Rose",
+      "Benzoin"
+    ],
+    "timing": "The day of the Monkey in the sixty-day cycle, in the hour of the Monkey (3 – 5 pm)",
+    "element": "Metal (yang)",
+    "sphere": "Venus",
+    "planet": "Venus",
+    "direction": "West-southwest",
+    "sacredNumbers": [
+      4,
+      9
+    ],
+    "characteristics": [
+      "Clever",
+      "Curious",
+      "Playful",
+      "Mischievous"
+    ],
+    "lore": [
+      "Earthly branch 申 shēn, the ninth; yang Metal. 猴 (hóu).",
+      "Rules the double hour 3 – 5 pm, the seventh lunar month and early autumn; its direction is west-southwest.",
+      "Trine: Monkey, Rat and Dragon (Water). Secret friend: the Snake. Clash: the Tiger.",
+      "Sun Wukong, the Monkey King of Journey to the West, is the most famous of its kind.",
+      "Years of the Monkey: 1992 (Water), 2004 (Wood), 2016 (Fire), 2028 (Earth), 2040 (Metal) — each begins at Lunar New Year, in late January or February."
+    ],
+    "traditionNote": "The branch, element, yin and yang, double hour, month, direction, season, trines, secret friends, clashes and the Great Race are traditional Chinese lore. The numbers are the element's He Tu (River Chart) numbers, and the planet is the element's in Chinese astronomy (Wood–Jupiter, Fire–Mars, Earth–Saturn, Metal–Venus, Water–Mercury). The character traits are popular modern descriptions. Stones, herbs, metal and scent come from the Western tables for that planet — this app's cross-reference."
+  },
+  {
+    "entityId": "zodiac-rooster",
+    "colors": [
+      "white"
+    ],
+    "stones": [
+      "Emerald",
+      "Rose quartz (modern)"
+    ],
+    "herbs": [
+      "Rose",
+      "Vervain"
+    ],
+    "metals": [
+      "Copper"
+    ],
+    "scents": [
+      "Rose",
+      "Benzoin"
+    ],
+    "timing": "The day of the Rooster in the sixty-day cycle, in the hour of the Rooster (5 – 7 pm)",
+    "element": "Metal (yin)",
+    "sphere": "Venus",
+    "planet": "Venus",
+    "direction": "West",
+    "sacredNumbers": [
+      4,
+      9
+    ],
+    "characteristics": [
+      "Observant",
+      "Hardworking",
+      "Confident",
+      "Candid"
+    ],
+    "lore": [
+      "Earthly branch 酉 yǒu, the tenth; yin Metal. 鸡 (jī).",
+      "Rules the double hour 5 – 7 pm, the eighth lunar month and mid-autumn; its direction is west.",
+      "Trine: Rooster, Ox and Snake (Metal). Secret friend: the Dragon. Clash: the Rabbit.",
+      "Its crow at dawn calls up the Sun.",
+      "Years of the Rooster: 1993 (Water), 2005 (Wood), 2017 (Fire), 2029 (Earth), 2041 (Metal) — each begins at Lunar New Year, in late January or February."
+    ],
+    "traditionNote": "The branch, element, yin and yang, double hour, month, direction, season, trines, secret friends, clashes and the Great Race are traditional Chinese lore. The numbers are the element's He Tu (River Chart) numbers, and the planet is the element's in Chinese astronomy (Wood–Jupiter, Fire–Mars, Earth–Saturn, Metal–Venus, Water–Mercury). The character traits are popular modern descriptions. Stones, herbs, metal and scent come from the Western tables for that planet — this app's cross-reference."
+  },
+  {
+    "entityId": "zodiac-dog",
+    "colors": [
+      "yellow"
+    ],
+    "stones": [
+      "Onyx",
+      "Jet"
+    ],
+    "herbs": [
+      "Cypress",
+      "Comfrey"
+    ],
+    "metals": [
+      "Lead"
+    ],
+    "scents": [
+      "Myrrh",
+      "Cypress"
+    ],
+    "timing": "The day of the Dog in the sixty-day cycle, in the hour of the Dog (7 – 9 pm)",
+    "element": "Earth (yang)",
+    "sphere": "Saturn",
+    "planet": "Saturn",
+    "direction": "West-northwest",
+    "sacredNumbers": [
+      5,
+      10
+    ],
+    "characteristics": [
+      "Loyal",
+      "Honest",
+      "Protective",
+      "Just"
+    ],
+    "lore": [
+      "Earthly branch 戌 xū, the eleventh; yang Earth. 狗 (gǒu).",
+      "Rules the double hour 7 – 9 pm, the ninth lunar month and late autumn; its direction is west-northwest.",
+      "Trine: Dog, Tiger and Horse (Fire). Secret friend: the Rabbit. Clash: the Dragon.",
+      "Came eleventh, having stopped to play in the river.",
+      "Years of the Dog: 1994 (Wood), 2006 (Fire), 2018 (Earth), 2030 (Metal), 2042 (Water) — each begins at Lunar New Year, in late January or February."
+    ],
+    "traditionNote": "The branch, element, yin and yang, double hour, month, direction, season, trines, secret friends, clashes and the Great Race are traditional Chinese lore. The numbers are the element's He Tu (River Chart) numbers, and the planet is the element's in Chinese astronomy (Wood–Jupiter, Fire–Mars, Earth–Saturn, Metal–Venus, Water–Mercury). The character traits are popular modern descriptions. Stones, herbs, metal and scent come from the Western tables for that planet — this app's cross-reference."
+  },
+  {
+    "entityId": "zodiac-pig",
+    "colors": [
+      "black"
+    ],
+    "stones": [
+      "Agate",
+      "Opal"
+    ],
+    "herbs": [
+      "Lavender",
+      "Fennel"
+    ],
+    "metals": [
+      "Quicksilver (as an amalgam)"
+    ],
+    "scents": [
+      "Storax",
+      "Mastic"
+    ],
+    "timing": "The day of the Pig in the sixty-day cycle, in the hour of the Pig (9 – 11 pm)",
+    "element": "Water (yin)",
+    "sphere": "Mercury",
+    "planet": "Mercury",
+    "direction": "North-northwest",
+    "sacredNumbers": [
+      1,
+      6
+    ],
+    "characteristics": [
+      "Generous",
+      "Sincere",
+      "Easygoing",
+      "Compassionate"
+    ],
+    "lore": [
+      "Earthly branch 亥 hài, the twelfth; yin Water. 猪 (zhū).",
+      "Rules the double hour 9 – 11 pm, the tenth lunar month and early winter; its direction is north-northwest.",
+      "Trine: Pig, Rabbit and Goat (Wood). Secret friend: the Tiger. Clash: the Snake.",
+      "Came last, having stopped to eat and to sleep.",
+      "Years of the Pig: 1995 (Wood), 2007 (Fire), 2019 (Earth), 2031 (Metal), 2043 (Water) — each begins at Lunar New Year, in late January or February."
+    ],
+    "traditionNote": "The branch, element, yin and yang, double hour, month, direction, season, trines, secret friends, clashes and the Great Race are traditional Chinese lore. The numbers are the element's He Tu (River Chart) numbers, and the planet is the element's in Chinese astronomy (Wood–Jupiter, Fire–Mars, Earth–Saturn, Metal–Venus, Water–Mercury). The character traits are popular modern descriptions. Stones, herbs, metal and scent come from the Western tables for that planet — this app's cross-reference."
+  },
+  {
+    "entityId": "animal-wolf",
+    "colors": [
+      "red",
+      "scarlet"
+    ],
+    "stones": [
+      "Garnet",
+      "Bloodstone"
+    ],
+    "herbs": [
+      "Nettle",
+      "Basil"
+    ],
+    "metals": [
+      "Iron"
+    ],
+    "scents": [
+      "Dragon’s blood",
+      "Tobacco"
+    ],
+    "timing": "Tuesday, the day of Mars, in a Mars hour",
+    "element": "Fire",
+    "sphere": "Mars",
+    "planet": "Mars",
+    "day": "Tuesday",
+    "numerology": 5,
+    "characteristics": [
+      "Loyal to the pack",
+      "Fierce",
+      "Instinctive",
+      "Wild"
+    ],
+    "lore": [
+      "Agrippa places it under Mars (Occult Philosophy I.27), and also under Saturn (I.25).",
+      "Odin’s wolves Geri and Freki (“ravenous” and “greedy”) eat at his side in Valhalla.",
+      "A she-wolf nursed Romulus and Remus, the founders of Rome; the wolf was sacred to Mars.",
+      "Fenrir, the bound wolf, will break free at Ragnarök."
+    ],
+    "traditionNote": "The planet is Agrippa's (Three Books of Occult Philosophy, I.23–29), and sets the day, hour, colors, metal, stones, herbs and number. The lore is the animal's attested place in myth and religion. The characteristics are the app's summary of what the animal has been taken to signify."
+  },
+  {
+    "entityId": "animal-hound",
+    "colors": [
+      "silver",
+      "white"
+    ],
+    "stones": [
+      "Moonstone",
+      "Pearl"
+    ],
+    "herbs": [
+      "Mugwort",
+      "Willow"
+    ],
+    "metals": [
+      "Silver"
+    ],
+    "scents": [
+      "Jasmine",
+      "Camphor"
+    ],
+    "timing": "Monday, the day of the Moon, in a Moon hour",
+    "element": "Water",
+    "sphere": "Moon",
+    "planet": "Moon",
+    "day": "Monday",
+    "numerology": 9,
+    "characteristics": [
+      "Faithful",
+      "Guarding",
+      "Guiding",
+      "Watchful"
+    ],
+    "lore": [
+      "Agrippa places it under the Moon (Occult Philosophy I.24), and also under Mercury (I.29).",
+      "Hecate’s hounds bay at the crossroads, and dogs were offered to her.",
+      "Cerberus guards the gate of Hades; Garmr guards the gate of Hel.",
+      "Anubis, the jackal-headed god, guides the dead and guards the tomb."
+    ],
+    "traditionNote": "The planet is Agrippa's (Three Books of Occult Philosophy, I.23–29), and sets the day, hour, colors, metal, stones, herbs and number. The lore is the animal's attested place in myth and religion. The characteristics are the app's summary of what the animal has been taken to signify."
+  },
+  {
+    "entityId": "animal-fox",
+    "colors": [
+      "orange",
+      "yellow"
+    ],
+    "stones": [
+      "Agate",
+      "Opal"
+    ],
+    "herbs": [
+      "Lavender",
+      "Fennel"
+    ],
+    "metals": [
+      "Quicksilver (as an amalgam)"
+    ],
+    "scents": [
+      "Storax",
+      "Mastic"
+    ],
+    "timing": "Wednesday, the day of Mercury, in a Mercury hour",
+    "element": "Air",
+    "sphere": "Mercury",
+    "planet": "Mercury",
+    "day": "Wednesday",
+    "numerology": 8,
+    "characteristics": [
+      "Cunning",
+      "Adaptable",
+      "Quick",
+      "Elusive"
+    ],
+    "lore": [
+      "Agrippa places it under Mercury (Occult Philosophy I.29).",
+      "Foxes (kitsune) are the messengers of Inari, the Japanese deity of rice and prosperity.",
+      "The Teumessian fox of Greek myth was fated never to be caught.",
+      "Reynard the Fox is the trickster hero of medieval European fable."
+    ],
+    "traditionNote": "The planet is Agrippa's (Three Books of Occult Philosophy, I.23–29), and sets the day, hour, colors, metal, stones, herbs and number. The lore is the animal's attested place in myth and religion. The characteristics are the app's summary of what the animal has been taken to signify."
+  },
+  {
+    "entityId": "animal-bear",
+    "colors": [
+      "black",
+      "indigo"
+    ],
+    "stones": [
+      "Onyx",
+      "Jet"
+    ],
+    "herbs": [
+      "Cypress",
+      "Comfrey"
+    ],
+    "metals": [
+      "Lead"
+    ],
+    "scents": [
+      "Myrrh",
+      "Cypress"
+    ],
+    "timing": "Saturday, the day of Saturn, in a Saturn hour",
+    "element": "Earth",
+    "sphere": "Saturn",
+    "planet": "Saturn",
+    "day": "Saturday",
+    "numerology": 3,
+    "characteristics": [
+      "Protective",
+      "Strong",
+      "Solitary",
+      "Restorative"
+    ],
+    "lore": [
+      "Agrippa places it under Saturn (Occult Philosophy I.25).",
+      "Girls served Artemis at Brauron as “little bears” (arktoi).",
+      "Callisto, turned into a bear, was set among the stars as the Great Bear.",
+      "The Gaulish goddess Artio was worshipped with a bear at Muri, near Bern.",
+      "Norse berserkers — “bear-shirts” — fought in a bear’s fury."
+    ],
+    "traditionNote": "The planet is Agrippa's (Three Books of Occult Philosophy, I.23–29), and sets the day, hour, colors, metal, stones, herbs and number. The lore is the animal's attested place in myth and religion. The characteristics are the app's summary of what the animal has been taken to signify."
+  },
+  {
+    "entityId": "animal-stag",
+    "colors": [
+      "blue",
+      "purple"
+    ],
+    "stones": [
+      "Sapphire",
+      "Amethyst"
+    ],
+    "herbs": [
+      "Sage",
+      "Hyssop"
+    ],
+    "metals": [
+      "Tin"
+    ],
+    "scents": [
+      "Cedar",
+      "Saffron"
+    ],
+    "timing": "Thursday, the day of Jupiter, in a Jupiter hour",
+    "element": "Air",
+    "sphere": "Jupiter",
+    "planet": "Jupiter",
+    "day": "Thursday",
+    "numerology": 4,
+    "characteristics": [
+      "Noble",
+      "Regal",
+      "Renewing",
+      "Wild"
+    ],
+    "lore": [
+      "Agrippa places it under Jupiter (Occult Philosophy I.26), and also under Mercury (I.29).",
+      "Cernunnos, the antlered god, sits among animals on the Gundestrup cauldron.",
+      "The Ceryneian Hind of Artemis was captured by Heracles.",
+      "The stag Eikþyrnir stands on Valhalla’s roof; the rivers of the world flow from its antlers."
+    ],
+    "traditionNote": "The planet is Agrippa's (Three Books of Occult Philosophy, I.23–29), and sets the day, hour, colors, metal, stones, herbs and number. The lore is the animal's attested place in myth and religion. The characteristics are the app's summary of what the animal has been taken to signify."
+  },
+  {
+    "entityId": "animal-boar",
+    "colors": [
+      "gold",
+      "yellow"
+    ],
+    "stones": [
+      "Topaz",
+      "Citrine (modern)"
+    ],
+    "herbs": [
+      "Bay laurel",
+      "St John's wort"
+    ],
+    "metals": [
+      "Gold"
+    ],
+    "scents": [
+      "Frankincense"
+    ],
+    "timing": "Sunday, the day of the Sun, in a Sun hour",
+    "element": "Fire",
+    "sphere": "Sun",
+    "planet": "Sun",
+    "day": "Sunday",
+    "numerology": 6,
+    "characteristics": [
+      "Fearless",
+      "Tenacious",
+      "Fertile",
+      "Fierce"
+    ],
+    "lore": [
+      "Agrippa places it under the Sun (Occult Philosophy I.23).",
+      "Freyr rides Gullinbursti, the boar with golden bristles.",
+      "Varaha, Vishnu’s boar avatar, raised the earth from the cosmic ocean.",
+      "Artemis sent the Calydonian Boar to ravage Calydon.",
+      "The boar crests Anglo-Saxon helmets such as the one from Benty Grange."
+    ],
+    "traditionNote": "The planet is Agrippa's (Three Books of Occult Philosophy, I.23–29), and sets the day, hour, colors, metal, stones, herbs and number. The lore is the animal's attested place in myth and religion. The characteristics are the app's summary of what the animal has been taken to signify."
+  },
+  {
+    "entityId": "animal-lion",
+    "colors": [
+      "gold",
+      "yellow"
+    ],
+    "stones": [
+      "Topaz",
+      "Citrine (modern)"
+    ],
+    "herbs": [
+      "Bay laurel",
+      "St John's wort"
+    ],
+    "metals": [
+      "Gold"
+    ],
+    "scents": [
+      "Frankincense"
+    ],
+    "timing": "Sunday, the day of the Sun, in a Sun hour",
+    "element": "Fire",
+    "sphere": "Sun",
+    "planet": "Sun",
+    "day": "Sunday",
+    "numerology": 6,
+    "characteristics": [
+      "Courageous",
+      "Regal",
+      "Radiant",
+      "Proud"
+    ],
+    "lore": [
+      "Agrippa places it under the Sun (Occult Philosophy I.23).",
+      "Sekhmet, the lioness-headed Eye of Ra.",
+      "Heracles wore the hide of the Nemean lion.",
+      "Striding lions of Ishtar line Babylon’s Processional Way to the Ishtar Gate.",
+      "Durga rides a lion into battle; Leo is the Sun’s own sign."
+    ],
+    "traditionNote": "The planet is Agrippa's (Three Books of Occult Philosophy, I.23–29), and sets the day, hour, colors, metal, stones, herbs and number. The lore is the animal's attested place in myth and religion. The characteristics are the app's summary of what the animal has been taken to signify."
+  },
+  {
+    "entityId": "animal-bull",
+    "colors": [
+      "green",
+      "rose"
+    ],
+    "stones": [
+      "Emerald",
+      "Rose quartz (modern)"
+    ],
+    "herbs": [
+      "Rose",
+      "Vervain"
+    ],
+    "metals": [
+      "Copper"
+    ],
+    "scents": [
+      "Rose",
+      "Benzoin"
+    ],
+    "timing": "Friday, the day of Venus, in a Venus hour",
+    "element": "Water",
+    "sphere": "Venus",
+    "planet": "Venus",
+    "day": "Friday",
+    "numerology": 7,
+    "characteristics": [
+      "Steadfast",
+      "Fertile",
+      "Powerful",
+      "Grounded"
+    ],
+    "lore": [
+      "Agrippa places it under Venus (Occult Philosophy I.28).",
+      "Apis, the sacred bull of Memphis.",
+      "Nandi, Shiva’s bull, keeps the door of his temples.",
+      "Ishtar sent the Bull of Heaven against Gilgamesh.",
+      "Zeus took the form of a white bull to carry off Europa."
+    ],
+    "traditionNote": "The planet is Agrippa's (Three Books of Occult Philosophy, I.23–29), and sets the day, hour, colors, metal, stones, herbs and number. The lore is the animal's attested place in myth and religion. The characteristics are the app's summary of what the animal has been taken to signify."
+  },
+  {
+    "entityId": "animal-cat",
+    "colors": [
+      "silver",
+      "white"
+    ],
+    "stones": [
+      "Moonstone",
+      "Pearl"
+    ],
+    "herbs": [
+      "Mugwort",
+      "Willow"
+    ],
+    "metals": [
+      "Silver"
+    ],
+    "scents": [
+      "Jasmine",
+      "Camphor"
+    ],
+    "timing": "Monday, the day of the Moon, in a Moon hour",
+    "element": "Water",
+    "sphere": "Moon",
+    "planet": "Moon",
+    "day": "Monday",
+    "numerology": 9,
+    "characteristics": [
+      "Independent",
+      "Mysterious",
+      "Graceful",
+      "Watchful"
+    ],
+    "lore": [
+      "Agrippa places it under the Moon (Occult Philosophy I.24), and also under Saturn (I.25).",
+      "Bastet, the cat goddess, was worshipped at Bubastis.",
+      "Freyja’s chariot is drawn by two cats.",
+      "Agrippa: the cat’s eyes grow larger and smaller with the course of the Moon."
+    ],
+    "traditionNote": "The planet is Agrippa's (Three Books of Occult Philosophy, I.23–29), and sets the day, hour, colors, metal, stones, herbs and number. The lore is the animal's attested place in myth and religion. The characteristics are the app's summary of what the animal has been taken to signify."
+  },
+  {
+    "entityId": "animal-raven",
+    "colors": [
+      "black",
+      "indigo"
+    ],
+    "stones": [
+      "Onyx",
+      "Jet"
+    ],
+    "herbs": [
+      "Cypress",
+      "Comfrey"
+    ],
+    "metals": [
+      "Lead"
+    ],
+    "scents": [
+      "Myrrh",
+      "Cypress"
+    ],
+    "timing": "Saturday, the day of Saturn, in a Saturn hour",
+    "element": "Earth",
+    "sphere": "Saturn",
+    "planet": "Saturn",
+    "day": "Saturday",
+    "numerology": 3,
+    "characteristics": [
+      "Intelligent",
+      "Prophetic",
+      "Watchful",
+      "Liminal"
+    ],
+    "lore": [
+      "Agrippa places the crow under Saturn (Occult Philosophy I.25), and among the birds that sing at sunrise under the Sun (I.23).",
+      "Huginn and Muninn — Thought and Memory — fly out over the world for Odin each day.",
+      "The raven was Apollo’s messenger, turned black for bringing news of Coronis’s betrayal.",
+      "The Morrígan appears as a crow over the battlefield.",
+      "Noah sent out a raven before the dove."
+    ],
+    "traditionNote": "The planet is Agrippa's (Three Books of Occult Philosophy, I.23–29), and sets the day, hour, colors, metal, stones, herbs and number. The lore is the animal's attested place in myth and religion. The characteristics are the app's summary of what the animal has been taken to signify."
+  },
+  {
+    "entityId": "animal-owl",
+    "colors": [
+      "black",
+      "indigo"
+    ],
+    "stones": [
+      "Onyx",
+      "Jet"
+    ],
+    "herbs": [
+      "Cypress",
+      "Comfrey"
+    ],
+    "metals": [
+      "Lead"
+    ],
+    "scents": [
+      "Myrrh",
+      "Cypress"
+    ],
+    "timing": "Saturday, the day of Saturn, in a Saturn hour",
+    "element": "Earth",
+    "sphere": "Saturn",
+    "planet": "Saturn",
+    "day": "Saturday",
+    "numerology": 3,
+    "characteristics": [
+      "Wise",
+      "Nocturnal",
+      "Perceptive",
+      "Silent"
+    ],
+    "lore": [
+      "Agrippa places it under Saturn (Occult Philosophy I.25), and also under Mars (I.27).",
+      "Athena’s little owl (Athene noctua) was stamped on the coins of Athens.",
+      "Hegel: “the owl of Minerva spreads its wings only with the falling of dusk.”",
+      "In Rome the screech-owl’s cry was an omen of death."
+    ],
+    "traditionNote": "The planet is Agrippa's (Three Books of Occult Philosophy, I.23–29), and sets the day, hour, colors, metal, stones, herbs and number. The lore is the animal's attested place in myth and religion. The characteristics are the app's summary of what the animal has been taken to signify."
+  },
+  {
+    "entityId": "animal-eagle",
+    "colors": [
+      "blue",
+      "purple"
+    ],
+    "stones": [
+      "Sapphire",
+      "Amethyst"
+    ],
+    "herbs": [
+      "Sage",
+      "Hyssop"
+    ],
+    "metals": [
+      "Tin"
+    ],
+    "scents": [
+      "Cedar",
+      "Saffron"
+    ],
+    "timing": "Thursday, the day of Jupiter, in a Jupiter hour",
+    "element": "Air",
+    "sphere": "Jupiter",
+    "planet": "Jupiter",
+    "day": "Thursday",
+    "numerology": 4,
+    "characteristics": [
+      "Sovereign",
+      "Far-seeing",
+      "Just",
+      "Soaring"
+    ],
+    "lore": [
+      "Agrippa places it under Jupiter (Occult Philosophy I.26), and also under the Sun (I.23) and Mars (I.27).",
+      "The eagle of Zeus bears his thunderbolts and carried Ganymede to Olympus.",
+      "An eagle sits in the crown of Yggdrasil, the world tree.",
+      "Rome’s legions marched under the eagle standard (aquila).",
+      "Agrippa calls the eagle “the ensign of emperors, and an emblem of justice and clemency.”"
+    ],
+    "traditionNote": "The planet is Agrippa's (Three Books of Occult Philosophy, I.23–29), and sets the day, hour, colors, metal, stones, herbs and number. The lore is the animal's attested place in myth and religion. The characteristics are the app's summary of what the animal has been taken to signify."
+  },
+  {
+    "entityId": "animal-falcon",
+    "colors": [
+      "gold",
+      "yellow"
+    ],
+    "stones": [
+      "Topaz",
+      "Citrine (modern)"
+    ],
+    "herbs": [
+      "Bay laurel",
+      "St John's wort"
+    ],
+    "metals": [
+      "Gold"
+    ],
+    "scents": [
+      "Frankincense"
+    ],
+    "timing": "Sunday, the day of the Sun, in a Sun hour",
+    "element": "Fire",
+    "sphere": "Sun",
+    "planet": "Sun",
+    "day": "Sunday",
+    "numerology": 6,
+    "characteristics": [
+      "Focused",
+      "Swift",
+      "Noble",
+      "Visionary"
+    ],
+    "lore": [
+      "Agrippa places the hawk under the Sun (Occult Philosophy I.23), and the falcon and hawk under Mars (I.27); the app follows the Egyptians' solar falcon.",
+      "Horus, the falcon-headed god of the sky and of kingship.",
+      "Ra-Horakhty, the falcon-headed Sun rising on the horizon.",
+      "Freyja’s falcon-feather cloak lets its wearer fly; Loki borrows it.",
+      "Agrippa: the Egyptians held the hawk an emblem of spirit and light."
+    ],
+    "traditionNote": "The planet is Agrippa's (Three Books of Occult Philosophy, I.23–29), and sets the day, hour, colors, metal, stones, herbs and number. The lore is the animal's attested place in myth and religion. The characteristics are the app's summary of what the animal has been taken to signify."
+  },
+  {
+    "entityId": "animal-swan",
+    "colors": [
+      "green",
+      "rose"
+    ],
+    "stones": [
+      "Emerald",
+      "Rose quartz (modern)"
+    ],
+    "herbs": [
+      "Rose",
+      "Vervain"
+    ],
+    "metals": [
+      "Copper"
+    ],
+    "scents": [
+      "Rose",
+      "Benzoin"
+    ],
+    "timing": "Friday, the day of Venus, in a Venus hour",
+    "element": "Water",
+    "sphere": "Venus",
+    "planet": "Venus",
+    "day": "Friday",
+    "numerology": 7,
+    "characteristics": [
+      "Graceful",
+      "Faithful",
+      "Transforming",
+      "Serene"
+    ],
+    "lore": [
+      "Agrippa places it under Venus (Occult Philosophy I.28), and also under the Sun (I.23).",
+      "Swans drew Apollo to the land of the Hyperboreans.",
+      "Zeus came to Leda in the form of a swan.",
+      "The Children of Lir were turned into swans for nine hundred years.",
+      "The hamsa is Saraswati’s mount; the swan was said to sing before it died."
+    ],
+    "traditionNote": "The planet is Agrippa's (Three Books of Occult Philosophy, I.23–29), and sets the day, hour, colors, metal, stones, herbs and number. The lore is the animal's attested place in myth and religion. The characteristics are the app's summary of what the animal has been taken to signify."
+  },
+  {
+    "entityId": "animal-dove",
+    "colors": [
+      "green",
+      "rose"
+    ],
+    "stones": [
+      "Emerald",
+      "Rose quartz (modern)"
+    ],
+    "herbs": [
+      "Rose",
+      "Vervain"
+    ],
+    "metals": [
+      "Copper"
+    ],
+    "scents": [
+      "Rose",
+      "Benzoin"
+    ],
+    "timing": "Friday, the day of Venus, in a Venus hour",
+    "element": "Water",
+    "sphere": "Venus",
+    "planet": "Venus",
+    "day": "Friday",
+    "numerology": 7,
+    "characteristics": [
+      "Peaceful",
+      "Loving",
+      "Gentle",
+      "Hopeful"
+    ],
+    "lore": [
+      "Agrippa places it under Venus (Occult Philosophy I.28).",
+      "Doves draw Aphrodite’s chariot.",
+      "The dove was Ishtar’s bird.",
+      "A dove returned to Noah with an olive leaf.",
+      "The Spirit descended as a dove at Jesus’s baptism."
+    ],
+    "traditionNote": "The planet is Agrippa's (Three Books of Occult Philosophy, I.23–29), and sets the day, hour, colors, metal, stones, herbs and number. The lore is the animal's attested place in myth and religion. The characteristics are the app's summary of what the animal has been taken to signify."
+  },
+  {
+    "entityId": "animal-ibis",
+    "colors": [
+      "orange",
+      "yellow"
+    ],
+    "stones": [
+      "Agate",
+      "Opal"
+    ],
+    "herbs": [
+      "Lavender",
+      "Fennel"
+    ],
+    "metals": [
+      "Quicksilver (as an amalgam)"
+    ],
+    "scents": [
+      "Storax",
+      "Mastic"
+    ],
+    "timing": "Wednesday, the day of Mercury, in a Mercury hour",
+    "element": "Air",
+    "sphere": "Mercury",
+    "planet": "Mercury",
+    "day": "Wednesday",
+    "numerology": 8,
+    "characteristics": [
+      "Wise",
+      "Scholarly",
+      "Patient",
+      "Precise"
+    ],
+    "lore": [
+      "Agrippa places it under Mercury (Occult Philosophy I.29).",
+      "Thoth, ibis-headed god of writing, wisdom and the Moon’s reckoning.",
+      "Millions of mummified ibises were offered to Thoth at Saqqara and Tuna el-Gebel.",
+      "The Greeks identified Thoth with Hermes — Hermes Trismegistus."
+    ],
+    "traditionNote": "The planet is Agrippa's (Three Books of Occult Philosophy, I.23–29), and sets the day, hour, colors, metal, stones, herbs and number. The lore is the animal's attested place in myth and religion. The characteristics are the app's summary of what the animal has been taken to signify."
+  },
+  {
+    "entityId": "animal-serpent",
+    "colors": [
+      "black",
+      "indigo"
+    ],
+    "stones": [
+      "Onyx",
+      "Jet"
+    ],
+    "herbs": [
+      "Cypress",
+      "Comfrey"
+    ],
+    "metals": [
+      "Lead"
+    ],
+    "scents": [
+      "Myrrh",
+      "Cypress"
+    ],
+    "timing": "Saturday, the day of Saturn, in a Saturn hour",
+    "element": "Earth",
+    "sphere": "Saturn",
+    "planet": "Saturn",
+    "day": "Saturday",
+    "numerology": 3,
+    "characteristics": [
+      "Renewing",
+      "Wise",
+      "Transformative",
+      "Hidden"
+    ],
+    "lore": [
+      "Agrippa places it under Saturn (Occult Philosophy I.25).",
+      "A serpent twines the rod of Asclepius, the healer.",
+      "Wadjet, the rearing cobra (uraeus), crowned the pharaohs.",
+      "The Ouroboros eats its own tail — the cycle without end.",
+      "Jörmungandr, the world-serpent, encircles the earth."
+    ],
+    "traditionNote": "The planet is Agrippa's (Three Books of Occult Philosophy, I.23–29), and sets the day, hour, colors, metal, stones, herbs and number. The lore is the animal's attested place in myth and religion. The characteristics are the app's summary of what the animal has been taken to signify."
+  },
+  {
+    "entityId": "animal-scarab",
+    "colors": [
+      "gold",
+      "yellow"
+    ],
+    "stones": [
+      "Topaz",
+      "Citrine (modern)"
+    ],
+    "herbs": [
+      "Bay laurel",
+      "St John's wort"
+    ],
+    "metals": [
+      "Gold"
+    ],
+    "scents": [
+      "Frankincense"
+    ],
+    "timing": "Sunday, the day of the Sun, in a Sun hour",
+    "element": "Fire",
+    "sphere": "Sun",
+    "planet": "Sun",
+    "day": "Sunday",
+    "numerology": 6,
+    "characteristics": [
+      "Renewing",
+      "Persistent",
+      "Self-creating",
+      "Solar"
+    ],
+    "lore": [
+      "Agrippa places it under the Sun (Occult Philosophy I.23).",
+      "Khepri rolls the Sun into the sky each dawn, as the scarab rolls its ball of dung.",
+      "His name comes from kheper, “to come into being.”",
+      "A heart scarab, inscribed with a spell of the Book of the Dead, was laid over the heart of the mummy."
+    ],
+    "traditionNote": "The planet is Agrippa's (Three Books of Occult Philosophy, I.23–29), and sets the day, hour, colors, metal, stones, herbs and number. The lore is the animal's attested place in myth and religion. The characteristics are the app's summary of what the animal has been taken to signify."
+  },
+  {
+    "entityId": "animal-bee",
+    "colors": [
+      "gold",
+      "yellow"
+    ],
+    "stones": [
+      "Topaz",
+      "Citrine (modern)"
+    ],
+    "herbs": [
+      "Bay laurel",
+      "St John's wort"
+    ],
+    "metals": [
+      "Gold"
+    ],
+    "scents": [
+      "Frankincense"
+    ],
+    "timing": "Sunday, the day of the Sun, in a Sun hour",
+    "element": "Fire",
+    "sphere": "Sun",
+    "planet": "Sun",
+    "day": "Sunday",
+    "numerology": 6,
+    "characteristics": [
+      "Industrious",
+      "Communal",
+      "Sweet",
+      "Devoted"
+    ],
+    "lore": [
+      "Agrippa gives the bee no clear planet; the app places it under the Sun, after the Egyptian myth of Ra’s tears.",
+      "In Egyptian myth, bees were born from the tears of Ra.",
+      "Pindar calls the Pythia at Delphi the “Delphic Bee.”",
+      "Priestesses called Melissae (“bees”) served Demeter; bees marked the coins of Ephesus, Artemis’s city.",
+      "Kama, god of love, strings his bow with honeybees."
+    ],
+    "traditionNote": "The planet is Agrippa's (Three Books of Occult Philosophy, I.23–29), and sets the day, hour, colors, metal, stones, herbs and number. The lore is the animal's attested place in myth and religion. The characteristics are the app's summary of what the animal has been taken to signify."
+  }
+]

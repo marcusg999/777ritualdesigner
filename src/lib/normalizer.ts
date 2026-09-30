@@ -12,6 +12,7 @@ import ifaCorrespondencesData from '@/data/correspondences_ifa_yoruba.json';
 import worldCorrespondencesData from '@/data/correspondences_world.json';
 import hiphopCorrespondencesData from '@/data/correspondences_hiphop.json';
 import modernCorrespondencesData from '@/data/correspondences_modern.json';
+import animalCorrespondencesData from '@/data/correspondences_animals.json';
 import { getOfferingsByEntityId } from './offerings';
 
 const correspondences: Correspondence[] = [
@@ -20,6 +21,7 @@ const correspondences: Correspondence[] = [
   ...(worldCorrespondencesData as Correspondence[]),
   ...(hiphopCorrespondencesData as Correspondence[]),
   ...(modernCorrespondencesData as Correspondence[]),
+  ...(animalCorrespondencesData as Correspondence[]),
 ];
 
 const IFA_TRADITION = 'Ifá/Yorùbá';

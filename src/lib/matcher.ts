@@ -169,10 +169,17 @@ export function matchQuery(
     scored.push({ entity, score, name: nameSim, matchedName: matched });
   }
 
+  // A query that is exactly an intent's name means that intent, unless it is
+  // also exactly an entity's name — a near-miss spelling doesn't count, so
+  // "money" is Money, not the Monkey.
+  const namesIntent = intents.some(
+    (i) => normalizeText(i.id.replace(/_/g, ' ')) === q || normalizeText(i.label.split('&')[0]) === q
+  );
+
   // Entities the user explicitly named always outrank thematic tag matches, so
   // "Kanye West" is never displaced by an archangel tagged "west".
   const named = scored
-    .filter((s) => s.name >= NAMED_THRESHOLD)
+    .filter((s) => s.name >= NAMED_THRESHOLD && (!namesIntent || s.name >= 0.97))
     .sort((a, b) => b.name - a.name || b.score - a.score);
 
   let topEntities: Entity[];

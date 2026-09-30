@@ -1095,5 +1095,237 @@
     "sphere": "Saturn",
     "aliases": ["Jobs"],
     "reasonsToInvoke": ["Vision and focus", "Simplicity in design", "Bold innovation"]
+  },
+  {
+    "id": "zodiac-rat", "name": "Rat", "tradition": "Chinese Zodiac", "type": "archetype", "category": "Zodiac animal",
+    "description": "The first of the twelve animals of the Chinese zodiac — earthly branch 子 (zǐ), yang Water, the animal of midwinter and of the hours 11 pm – 1 am. Traditionally quick-witted, resourceful and charming.",
+    "tags": ["chinese zodiac", "zodiac animal", "rat", "water", "yang", "quick-witted", "resourceful", "charming"],
+    "sphere": "Mercury",
+    "aliases": ["Year of the Rat", "Mouse"],
+    "reasonsToInvoke": ["Drawing on the Rat’s quick-witted and resourceful nature", "Workings in a Year of the Rat", "Those born in a Year of the Rat"]
+  },
+  {
+    "id": "zodiac-ox", "name": "Ox", "tradition": "Chinese Zodiac", "type": "archetype", "category": "Zodiac animal",
+    "description": "The second of the twelve animals of the Chinese zodiac — earthly branch 丑 (chǒu), yin Earth, the animal of late winter and of the hours 1 – 3 am. Traditionally diligent, dependable and patient.",
+    "tags": ["chinese zodiac", "zodiac animal", "ox", "earth", "yin", "diligent", "dependable", "patient"],
+    "sphere": "Saturn",
+    "aliases": ["Year of the Ox"],
+    "reasonsToInvoke": ["Drawing on the Ox’s diligent and dependable nature", "Workings in a Year of the Ox", "Those born in a Year of the Ox"]
+  },
+  {
+    "id": "zodiac-tiger", "name": "Tiger", "tradition": "Chinese Zodiac", "type": "archetype", "category": "Zodiac animal",
+    "description": "The third of the twelve animals of the Chinese zodiac — earthly branch 寅 (yín), yang Wood, the animal of early spring and of the hours 3 – 5 am. Traditionally brave, confident and competitive.",
+    "tags": ["chinese zodiac", "zodiac animal", "tiger", "wood", "yang", "brave", "confident", "competitive"],
+    "sphere": "Jupiter",
+    "aliases": ["Year of the Tiger"],
+    "reasonsToInvoke": ["Drawing on the Tiger’s brave and confident nature", "Workings in a Year of the Tiger", "Those born in a Year of the Tiger"]
+  },
+  {
+    "id": "zodiac-rabbit", "name": "Rabbit", "tradition": "Chinese Zodiac", "type": "archetype", "category": "Zodiac animal",
+    "description": "The fourth of the twelve animals of the Chinese zodiac — earthly branch 卯 (mǎo), yin Wood, the animal of mid-spring and of the hours 5 – 7 am. Traditionally gentle, elegant and kind.",
+    "tags": ["chinese zodiac", "zodiac animal", "rabbit", "wood", "yin", "gentle", "elegant", "kind"],
+    "sphere": "Jupiter",
+    "aliases": ["Year of the Rabbit"],
+    "reasonsToInvoke": ["Drawing on the Rabbit’s gentle and elegant nature", "Workings in a Year of the Rabbit", "Those born in a Year of the Rabbit"]
+  },
+  {
+    "id": "zodiac-dragon", "name": "Dragon", "tradition": "Chinese Zodiac", "type": "archetype", "category": "Zodiac animal",
+    "description": "The fifth of the twelve animals of the Chinese zodiac — earthly branch 辰 (chén), yang Earth, the animal of late spring and of the hours 7 – 9 am. Traditionally confident, ambitious and charismatic.",
+    "tags": ["chinese zodiac", "zodiac animal", "dragon", "earth", "yang", "confident", "ambitious", "charismatic"],
+    "sphere": "Saturn",
+    "aliases": ["Year of the Dragon"],
+    "reasonsToInvoke": ["Drawing on the Dragon’s confident and ambitious nature", "Workings in a Year of the Dragon", "Those born in a Year of the Dragon"]
+  },
+  {
+    "id": "zodiac-snake", "name": "Snake", "tradition": "Chinese Zodiac", "type": "archetype", "category": "Zodiac animal",
+    "description": "The sixth of the twelve animals of the Chinese zodiac — earthly branch 巳 (sì), yin Fire, the animal of early summer and of the hours 9 – 11 am. Traditionally wise, intuitive and enigmatic.",
+    "tags": ["chinese zodiac", "zodiac animal", "snake", "fire", "yin", "wise", "intuitive", "enigmatic"],
+    "sphere": "Mars",
+    "aliases": ["Year of the Snake"],
+    "reasonsToInvoke": ["Drawing on the Snake’s wise and intuitive nature", "Workings in a Year of the Snake", "Those born in a Year of the Snake"]
+  },
+  {
+    "id": "zodiac-horse", "name": "Horse", "tradition": "Chinese Zodiac", "type": "archetype", "category": "Zodiac animal",
+    "description": "The seventh of the twelve animals of the Chinese zodiac — earthly branch 午 (wǔ), yang Fire, the animal of midsummer and of the hours 11 am – 1 pm. Traditionally energetic, free-spirited and warm.",
+    "tags": ["chinese zodiac", "zodiac animal", "horse", "fire", "yang", "energetic", "free-spirited", "warm"],
+    "sphere": "Mars",
+    "aliases": ["Year of the Horse"],
+    "reasonsToInvoke": ["Drawing on the Horse’s energetic and free-spirited nature", "Workings in a Year of the Horse", "Those born in a Year of the Horse"]
+  },
+  {
+    "id": "zodiac-goat", "name": "Goat", "tradition": "Chinese Zodiac", "type": "archetype", "category": "Zodiac animal",
+    "description": "The eighth of the twelve animals of the Chinese zodiac — earthly branch 未 (wèi), yin Earth, the animal of late summer and of the hours 1 – 3 pm. Traditionally gentle, artistic and compassionate.",
+    "tags": ["chinese zodiac", "zodiac animal", "goat", "earth", "yin", "gentle", "artistic", "compassionate"],
+    "sphere": "Saturn",
+    "aliases": ["Year of the Goat", "Sheep", "Ram"],
+    "reasonsToInvoke": ["Drawing on the Goat’s gentle and artistic nature", "Workings in a Year of the Goat", "Those born in a Year of the Goat"]
+  },
+  {
+    "id": "zodiac-monkey", "name": "Monkey", "tradition": "Chinese Zodiac", "type": "archetype", "category": "Zodiac animal",
+    "description": "The ninth of the twelve animals of the Chinese zodiac — earthly branch 申 (shēn), yang Metal, the animal of early autumn and of the hours 3 – 5 pm. Traditionally clever, curious and playful.",
+    "tags": ["chinese zodiac", "zodiac animal", "monkey", "metal", "yang", "clever", "curious", "playful"],
+    "sphere": "Venus",
+    "aliases": ["Year of the Monkey"],
+    "reasonsToInvoke": ["Drawing on the Monkey’s clever and curious nature", "Workings in a Year of the Monkey", "Those born in a Year of the Monkey"]
+  },
+  {
+    "id": "zodiac-rooster", "name": "Rooster", "tradition": "Chinese Zodiac", "type": "archetype", "category": "Zodiac animal",
+    "description": "The tenth of the twelve animals of the Chinese zodiac — earthly branch 酉 (yǒu), yin Metal, the animal of mid-autumn and of the hours 5 – 7 pm. Traditionally observant, hardworking and confident.",
+    "tags": ["chinese zodiac", "zodiac animal", "rooster", "metal", "yin", "observant", "hardworking", "confident"],
+    "sphere": "Venus",
+    "aliases": ["Year of the Rooster", "Chicken"],
+    "reasonsToInvoke": ["Drawing on the Rooster’s observant and hardworking nature", "Workings in a Year of the Rooster", "Those born in a Year of the Rooster"]
+  },
+  {
+    "id": "zodiac-dog", "name": "Dog", "tradition": "Chinese Zodiac", "type": "archetype", "category": "Zodiac animal",
+    "description": "The eleventh of the twelve animals of the Chinese zodiac — earthly branch 戌 (xū), yang Earth, the animal of late autumn and of the hours 7 – 9 pm. Traditionally loyal, honest and protective.",
+    "tags": ["chinese zodiac", "zodiac animal", "dog", "earth", "yang", "loyal", "honest", "protective"],
+    "sphere": "Saturn",
+    "aliases": ["Year of the Dog"],
+    "reasonsToInvoke": ["Drawing on the Dog’s loyal and honest nature", "Workings in a Year of the Dog", "Those born in a Year of the Dog"]
+  },
+  {
+    "id": "zodiac-pig", "name": "Pig", "tradition": "Chinese Zodiac", "type": "archetype", "category": "Zodiac animal",
+    "description": "The twelfth of the twelve animals of the Chinese zodiac — earthly branch 亥 (hài), yin Water, the animal of early winter and of the hours 9 – 11 pm. Traditionally generous, sincere and easygoing.",
+    "tags": ["chinese zodiac", "zodiac animal", "pig", "water", "yin", "generous", "sincere", "easygoing"],
+    "sphere": "Mercury",
+    "aliases": ["Year of the Pig"],
+    "reasonsToInvoke": ["Drawing on the Pig’s generous and sincere nature", "Workings in a Year of the Pig", "Those born in a Year of the Pig"]
+  },
+  {
+    "id": "animal-wolf", "name": "Wolf", "tradition": "Animal Kingdom", "type": "archetype", "category": "Mammal",
+    "description": "The wild hunter of the pack: companion of Odin, nurse of Rome's founders, and in Rome the sacred animal of Mars.",
+    "tags": ["animal", "mammal", "wild", "loyalty", "instinct", "pack", "courage", "protection"],
+    "sphere": "Mars",
+    "reasonsToInvoke": ["Loyalty to your people", "Trusting your instincts", "Courage and ferocity"]
+  },
+  {
+    "id": "animal-hound", "name": "Hound", "tradition": "Animal Kingdom", "type": "archetype", "category": "Mammal",
+    "description": "The guardian and guide at the threshold: Hecate's hounds at the crossroads, Cerberus at the gate of Hades, jackal-headed Anubis leading the dead.",
+    "tags": ["animal", "mammal", "guardian", "guide", "loyalty", "threshold", "protection", "crossroads"],
+    "sphere": "Moon",
+    "reasonsToInvoke": ["Protection and guarding", "Guidance through transitions", "Faithfulness"]
+  },
+  {
+    "id": "animal-fox", "name": "Fox", "tradition": "Animal Kingdom", "type": "archetype", "category": "Mammal",
+    "description": "The clever trickster who slips every trap: Inari's messenger in Japan, the uncatchable Teumessian fox of Greek myth, Reynard of medieval fable.",
+    "tags": ["animal", "mammal", "cunning", "trickster", "cleverness", "adaptability", "quick wits"],
+    "sphere": "Mercury",
+    "reasonsToInvoke": ["Quick wits and cleverness", "Adapting to circumstances", "Finding a way out"]
+  },
+  {
+    "id": "animal-bear", "name": "Bear", "tradition": "Animal Kingdom", "type": "archetype", "category": "Mammal",
+    "description": "The great protector who sleeps through winter and wakes renewed: Artemis's 'little bears' at Brauron, Callisto in the stars, the Norse berserkers' fury.",
+    "tags": ["animal", "mammal", "strength", "protection", "solitude", "renewal", "hibernation", "wilderness"],
+    "sphere": "Saturn",
+    "reasonsToInvoke": ["Strength and protection", "Rest and renewal", "Solitude and inner work"]
+  },
+  {
+    "id": "animal-stag", "name": "Stag", "tradition": "Animal Kingdom", "type": "archetype", "category": "Mammal",
+    "description": "The antlered lord of the forest, whose crown falls and grows again each year: Cernunnos, Artemis's hind, the stag on Valhalla's roof.",
+    "tags": ["animal", "mammal", "nobility", "renewal", "forest", "wilderness", "grace", "sovereignty"],
+    "sphere": "Jupiter",
+    "aliases": ["Deer", "Hart"],
+    "reasonsToInvoke": ["Dignity and nobility", "Renewal and regrowth", "Connection to the wild"]
+  },
+  {
+    "id": "animal-boar", "name": "Boar", "tradition": "Animal Kingdom", "type": "archetype", "category": "Mammal",
+    "description": "The fearless charger with the golden bristles: Freyr's mount, Vishnu's avatar who raised the earth, the crest of Celtic and Anglo-Saxon warriors.",
+    "tags": ["animal", "mammal", "courage", "fearlessness", "fertility", "tenacity", "warrior"],
+    "sphere": "Sun",
+    "reasonsToInvoke": ["Fearless courage", "Tenacity", "Fertility and abundance"]
+  },
+  {
+    "id": "animal-lion", "name": "Lion", "tradition": "Animal Kingdom", "type": "archetype", "category": "Mammal",
+    "description": "The king of beasts and the Sun's own animal: Sekhmet the Eye of Ra, the Nemean lion's hide on Heracles, Ishtar's lions on Babylon's Processional Way, Durga's mount.",
+    "tags": ["animal", "mammal", "courage", "royalty", "sun", "strength", "pride", "leadership"],
+    "sphere": "Sun",
+    "reasonsToInvoke": ["Courage and heart", "Leadership and presence", "Radiance and confidence"]
+  },
+  {
+    "id": "animal-bull", "name": "Bull", "tradition": "Animal Kingdom", "type": "archetype", "category": "Mammal",
+    "description": "The strength and fertility of the earth: Apis of Memphis, Nandi at Shiva's door, the Bull of Heaven, Taurus ruled by Venus.",
+    "tags": ["animal", "mammal", "strength", "fertility", "steadfastness", "earth", "abundance"],
+    "sphere": "Venus",
+    "reasonsToInvoke": ["Steadfast strength", "Fertility and abundance", "Grounding"]
+  },
+  {
+    "id": "animal-cat", "name": "Cat", "tradition": "Animal Kingdom", "type": "archetype", "category": "Mammal",
+    "description": "The independent night-watcher whose eyes follow the Moon: Bastet of Bubastis, and the pair of cats that draw Freyja's chariot.",
+    "tags": ["animal", "mammal", "independence", "mystery", "night", "grace", "intuition", "moon"],
+    "sphere": "Moon",
+    "reasonsToInvoke": ["Independence", "Intuition and mystery", "Protection of the home"]
+  },
+  {
+    "id": "animal-raven", "name": "Raven", "tradition": "Animal Kingdom", "type": "archetype", "category": "Bird",
+    "description": "The black messenger of thought and memory: Odin's Huginn and Muninn, Apollo's bird, the Morrígan's form over the battlefield.",
+    "tags": ["animal", "bird", "prophecy", "messenger", "thought", "memory", "intelligence", "mystery"],
+    "sphere": "Saturn",
+    "reasonsToInvoke": ["Insight and prophecy", "Thought and memory", "Messages between worlds"]
+  },
+  {
+    "id": "animal-owl", "name": "Owl", "tradition": "Animal Kingdom", "type": "archetype", "category": "Bird",
+    "description": "The silent seer of the night: Athena's little owl on the coins of Athens, the owl of Minerva that flies at dusk.",
+    "tags": ["animal", "bird", "wisdom", "night", "insight", "perception", "silence", "mystery"],
+    "sphere": "Saturn",
+    "reasonsToInvoke": ["Wisdom and insight", "Seeing in the dark", "Discernment"]
+  },
+  {
+    "id": "animal-eagle", "name": "Eagle", "tradition": "Animal Kingdom", "type": "archetype", "category": "Bird",
+    "description": "The sovereign of the sky, bearer of Jupiter's thunderbolts: the eagle atop Yggdrasil, the standard of Rome's legions, the emblem of St John.",
+    "tags": ["animal", "bird", "sovereignty", "vision", "justice", "sky", "power", "perspective"],
+    "sphere": "Jupiter",
+    "reasonsToInvoke": ["Seeing the big picture", "Sovereignty and justice", "Rising above"]
+  },
+  {
+    "id": "animal-falcon", "name": "Falcon", "tradition": "Animal Kingdom", "type": "archetype", "category": "Bird",
+    "description": "The swift, far-seeing bird of the rising Sun: Horus of the sky and of kingship, Ra-Horakhty, and Freyja's falcon-feather cloak.",
+    "tags": ["animal", "bird", "vision", "focus", "swiftness", "kingship", "sky", "sun"],
+    "sphere": "Sun",
+    "aliases": ["Hawk"],
+    "reasonsToInvoke": ["Focus and precision", "Vision", "Swift action"]
+  },
+  {
+    "id": "animal-swan", "name": "Swan", "tradition": "Animal Kingdom", "type": "archetype", "category": "Bird",
+    "description": "The graceful shape-changer: Apollo's swans, Zeus coming to Leda, the Children of Lir, and the hamsa of Saraswati.",
+    "tags": ["animal", "bird", "grace", "beauty", "love", "transformation", "fidelity", "music"],
+    "sphere": "Venus",
+    "reasonsToInvoke": ["Grace and beauty", "Faithful love", "Transformation"]
+  },
+  {
+    "id": "animal-dove", "name": "Dove", "tradition": "Animal Kingdom", "type": "archetype", "category": "Bird",
+    "description": "The bird of love and of peace: Aphrodite's doves, Ishtar's bird, the dove with the olive leaf, the Spirit descending.",
+    "tags": ["animal", "bird", "love", "peace", "hope", "gentleness", "spirit"],
+    "sphere": "Venus",
+    "reasonsToInvoke": ["Love and tenderness", "Peace and reconciliation", "Hope"]
+  },
+  {
+    "id": "animal-ibis", "name": "Ibis", "tradition": "Animal Kingdom", "type": "archetype", "category": "Bird",
+    "description": "The bird of Thoth, god of writing, wisdom and reckoning — the Hermes of the Egyptians.",
+    "tags": ["animal", "bird", "wisdom", "writing", "knowledge", "magic", "learning", "thoth"],
+    "sphere": "Mercury",
+    "reasonsToInvoke": ["Study and learning", "Writing and eloquence", "Wisdom and magic"]
+  },
+  {
+    "id": "animal-serpent", "name": "Serpent", "tradition": "Animal Kingdom", "type": "archetype", "category": "Reptile",
+    "description": "The ancient power that sheds its skin and is renewed: the rod of Asclepius, the uraeus of the pharaohs, the Ouroboros, the world-serpent.",
+    "tags": ["animal", "reptile", "renewal", "healing", "wisdom", "transformation", "rebirth", "mystery"],
+    "sphere": "Saturn",
+    "reasonsToInvoke": ["Renewal and rebirth", "Healing", "Hidden wisdom"]
+  },
+  {
+    "id": "animal-scarab", "name": "Scarab", "tradition": "Animal Kingdom", "type": "archetype", "category": "Insect",
+    "description": "The sacred beetle that rolls the Sun into the sky each dawn: Khepri, 'he who comes into being.'",
+    "tags": ["animal", "insect", "rebirth", "sun", "renewal", "self-creation", "transformation", "egypt"],
+    "sphere": "Sun",
+    "aliases": ["Scarab beetle", "Beetle"],
+    "reasonsToInvoke": ["Rebirth and new beginnings", "Persistence", "Self-creation"]
+  },
+  {
+    "id": "animal-bee", "name": "Bee", "tradition": "Animal Kingdom", "type": "archetype", "category": "Insect",
+    "description": "The tireless maker of honey and of community: born from the Sun god's tears in Egyptian myth, the 'Delphic Bee' of the oracle, the Melissae who served the goddess.",
+    "tags": ["animal", "insect", "community", "industry", "sweetness", "devotion", "abundance", "cooperation"],
+    "sphere": "Sun",
+    "reasonsToInvoke": ["Community and cooperation", "Diligent work", "Sweetness and abundance"]
   }
 ]

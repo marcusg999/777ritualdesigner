@@ -81,7 +81,7 @@ export default function CorrespondenceCard({ correspondences: c, basis, enrichme
   const is777 = !!(c.divineName || c.magicalWeapon || c.magicalPowers || c.virtue || c.vice || c.alchemicalProcess || c.bodyPart);
   const hasFigure = !!(
     c.eleke || c.birthDate || c.festival || c.feastDay || c.sacredPlaces?.length || c.tools?.length ||
-    c.offerings?.length || c.lore?.length || c.temperament?.length || c.syncretism?.length ||
+    c.offerings?.length || c.lore?.length || c.temperament?.length || c.syncretism?.length || c.characteristics?.length ||
     c.sacredNumbers?.length || c.traditionNote
   );
 

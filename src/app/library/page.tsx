@@ -26,6 +26,8 @@ const traditions = [
   'Pop Culture',
   'HipHop',
   'Modern',
+  'Chinese Zodiac',
+  'Animal Kingdom',
 ];
 
 export default function LibraryPage() {

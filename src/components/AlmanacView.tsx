@@ -191,6 +191,9 @@ function DayDetail({ day, today, location }: { day: AlmanacDay; today: Date; loc
             {day.lunarDay ? `${ordinal(day.lunarDay)} day (Athenian reckoning)` : '—'}
           </p>
           <p className="text-sm text-foreground/80">Tithi {tithiName(day.tithi)} at sunrise</p>
+          <p className="text-sm text-foreground/80">
+            Day of the {day.cycleDay.animal} · {day.cycleDay.name}
+          </p>
         </div>
       </div>
 

@@ -24,6 +24,7 @@ import {
 import type { Correspondence, Entity } from './types';
 import entitiesData from '@/data/entities.json';
 import { hinduFestivals, type HinduFestival, type Place } from './panchang';
+import { sexagenaryDay, ZODIAC_ANIMALS } from './chinese';
 
 export type Planet = 'Sun' | 'Moon' | 'Mars' | 'Mercury' | 'Jupiter' | 'Venus' | 'Saturn';
 export type MoonPreference = 'new' | 'dark' | 'waxing' | 'full' | 'waning';
@@ -48,7 +49,7 @@ const PLANET_RE = '(?:Sun|Moon|Mars|Mercury|Jupiter|Venus|Saturn)';
 // Traditions whose workings are timed by Western astrology, where the
 // void-of-course moon applies. Religions with sacred calendars of their own —
 // Lucumí, Greek, Egyptian, Norse, Celtic, Hindu — keep their days as they are.
-const ASTROLOGICAL_TRADITIONS = new Set(['Kabbalistic', 'Abrahamic', 'Goetia', 'HipHop', 'Modern', 'Pop Culture']);
+const ASTROLOGICAL_TRADITIONS = new Set(['Kabbalistic', 'Abrahamic', 'Goetia', 'HipHop', 'Modern', 'Animal Kingdom', 'Pop Culture']);
 const TRADITION = new Map((entitiesData as Entity[]).map((e) => [e.id, e.tradition]));
 const ENTITY_NAME = new Map((entitiesData as Entity[]).map((e) => [e.id, e.name]));
 
@@ -65,6 +66,8 @@ export interface TimingPlan {
   monthDays: number[];
   /** Days of the lunar month ("the 4th day of each lunar month"), counted from the noumenia. */
   lunarDays: number[];
+  /** Chinese zodiac animals (0 = Rat) whose days in the sixty-day cycle suit the working. */
+  branches: number[];
   /** Acceptable moon phases; empty means any phase. */
   moon: MoonPreference[];
   /** Planets whose hours suit the working; empty when the tradition doesn't use them. */
@@ -115,6 +118,9 @@ export function parseTiming(c: Correspondence): TimingPlan {
     const d = Number(m[1]);
     if (d >= 1 && d <= 30 && !lunarDays.includes(d)) lunarDays.push(d);
   }
+
+  const branchMatch = text.match(new RegExp(`day of the (${ZODIAC_ANIMALS.join('|')}) in the sixty-day cycle`));
+  const branches = branchMatch ? [ZODIAC_ANIMALS.indexOf(branchMatch[1])] : [];
 
   const moon = new Set<MoonPreference>();
   for (const seg of segments) {
@@ -173,6 +179,7 @@ export function parseTiming(c: Correspondence): TimingPlan {
     weekdays,
     monthDays,
     lunarDays,
+    branches,
     moon: [...moon],
     hourPlanets,
     fixedEvents,
@@ -609,6 +616,13 @@ function suggestFromTiming(
       reasons.push(`The ${ordinal(lunar)} day of the lunar month`);
     }
 
+    const cycle = plan.branches.length > 0 ? sexagenaryDay(day) : undefined;
+    const branchHit = !!cycle && plan.branches.includes(cycle.branch);
+    if (branchHit) {
+      score += 3;
+      reasons.push(`Day of the ${cycle.animal} · ${cycle.name}`);
+    }
+
     const moonHit = plan.moon.some((p) => moonMatches(moon.angle, p));
     if (moonHit) {
       score += 2;
@@ -624,10 +638,11 @@ function suggestFromTiming(
 
     const sign = sunSign(atHour(day, 12));
     const dayOk =
-      (plan.weekdays.length === 0 && plan.monthDays.length === 0 && plan.lunarDays.length === 0) ||
+      (plan.weekdays.length === 0 && plan.monthDays.length === 0 && plan.lunarDays.length === 0 && plan.branches.length === 0) ||
       wd >= 0 ||
       monthDayHit ||
-      lunarDayHit;
+      lunarDayHit ||
+      branchHit;
     const moonOk = plan.moon.length === 0 || moonHit || !!bonus;
     // The zodiac season is extra colour, never a reason on its own.
     if (score > 0 && plan.signs.includes(sign)) reasons.push(`Sun in ${sign}`);
