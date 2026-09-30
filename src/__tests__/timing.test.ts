@@ -276,6 +276,15 @@ describe('Hindu festivals in suggestions', () => {
     expect(list(s)).toEqual(['Thu Feb 11 2027 · Vasant Panchami']);
   });
 
+  it('gives Kali her three nights', () => {
+    const s = suggestDates(parseTiming(hindu('kali')), TUE_SEP_29_2026, { place: DELHI });
+    expect(list(s).filter((x) => x.includes(' · '))).toEqual([
+      'Sat Nov 07 2026 · Kali Chaudas',
+      'Sun Nov 08 2026 · Kali Puja',
+      'Thu Feb 04 2027 · Ratanti Kali Puja',
+    ]);
+  });
+
   it('leaves other traditions alone', () => {
     expect(parseTiming(record('ogun')).hinduDeity).toBeUndefined();
     expect(parseTiming(record('justice')).hinduDeity).toBeUndefined();

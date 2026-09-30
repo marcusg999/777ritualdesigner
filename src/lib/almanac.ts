@@ -21,6 +21,7 @@ import {
 } from 'astronomy-engine';
 import type { Correspondence, Entity } from './types';
 import { hinduFestivals, sunriseOn, tithiAt, type Place } from './panchang';
+import { lunarNewYear, sexagenaryDay, yearAnimal, type SexagenaryDay } from './chinese';
 import {
   DAY_RULER,
   SIGNS,
@@ -66,6 +67,8 @@ export interface AlmanacDay {
   lunarDay?: number;
   /** The Hindu lunar day (1–30) in force at sunrise. */
   tithi: number;
+  /** The day in the Chinese sixty-day cycle, and its animal. */
+  cycleDay: SexagenaryDay;
   /** The moon as it stands at 9 pm local time. */
   moon: MoonInfo;
   moonSign: string;
@@ -269,6 +272,7 @@ export function monthAlmanac(year: number, month: number, place?: Place | null):
       ruler: DAY_RULER[d.getDay()],
       retrograde: retrogradePlanets(noon),
       tithi: tithiAt(sunriseOn(d, place)),
+      cycleDay: sexagenaryDay(d),
       voids: [],
       events: [],
     };
@@ -315,6 +319,17 @@ export function monthAlmanac(year: number, month: number, place?: Place | null):
     if (cq.month === month) {
       push(new Date(year, month, cq.day), { kind: 'sabbat', title: cq.sabbat, detail: cq.detail, query: cq.query });
     }
+  }
+
+  const newYear = lunarNewYear(year);
+  if (newYear.getMonth() === month) {
+    const { animal, element } = yearAnimal(year);
+    push(newYear, {
+      kind: 'holy-day',
+      title: `Lunar New Year · Year of the ${element} ${animal}`,
+      detail: 'Spring Festival — the new moon that begins the Chinese year (dated in Beijing)',
+      query: animal,
+    });
   }
 
   for (const f of hinduFestivals(first, next, place)) {

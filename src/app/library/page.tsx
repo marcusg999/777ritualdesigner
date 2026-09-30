@@ -25,6 +25,9 @@ const traditions = [
   'Ifá/Yorùbá',
   'Pop Culture',
   'HipHop',
+  'Modern',
+  'Chinese Zodiac',
+  'Animal Kingdom',
 ];
 
 export default function LibraryPage() {
@@ -46,6 +49,7 @@ export default function LibraryPage() {
         has(e.name) ||
         (e.aliases ?? []).some(has) ||
         has(e.tradition) ||
+        (e.category !== undefined && has(e.category)) ||
         e.tags.some(has) ||
         has(e.description);
 
@@ -182,7 +186,7 @@ export default function LibraryPage() {
                       )}
                     </div>
                     <p className="eyebrow text-foreground/40 mt-1">
-                      {entity.tradition} · {entity.type}
+                      {entity.tradition} · {entity.category ?? entity.type}
                     </p>
                   </div>
 

@@ -857,5 +857,475 @@
       "higher_self",
       "wisdom"
     ]
+  },
+  {
+    "id": "frida-kahlo", "name": "Frida Kahlo", "tradition": "Modern", "type": "archetype", "category": "Artist",
+    "description": "Mexican painter who turned lifelong pain — polio as a child, a near-fatal bus accident at eighteen — into unflinching self-portraits, many painted from a mirror fixed above her bed. The archetype of the wounded artist who makes her own body the altar.",
+    "tags": ["artist", "art", "self-portrait", "pain", "resilience", "identity", "mexico", "passion", "transformation"],
+    "sphere": "Venus",
+    "aliases": ["Frida"],
+    "reasonsToInvoke": ["Turning pain into creative work", "Claiming your own image and identity", "Courage to be seen as you are"]
+  },
+  {
+    "id": "basquiat", "name": "Jean-Michel Basquiat", "tradition": "Modern", "type": "archetype", "category": "Artist",
+    "description": "Brooklyn-born painter who went from the SAMO© graffiti of lower Manhattan to international acclaim before his death at twenty-seven. His crowned, word-crossed canvases confront race, power and history. The archetype of the self-crowned genius burning fast and bright.",
+    "tags": ["artist", "art", "graffiti", "crown", "genius", "new york", "expression", "rebellion", "legacy"],
+    "sphere": "Sun",
+    "aliases": ["Basquiat", "SAMO"],
+    "reasonsToInvoke": ["Raw, unfiltered creative expression", "Claiming your crown", "Speaking truth about power"]
+  },
+  {
+    "id": "van-gogh", "name": "Vincent van Gogh", "tradition": "Modern", "type": "archetype", "category": "Artist",
+    "description": "Dutch painter who made some 860 oil paintings in a decade, most in his last two years, and sold almost nothing in his lifetime. His letters to his brother Theo record a devotion to light, color and humble things. The archetype of the ardent visionary misunderstood in his own time.",
+    "tags": ["artist", "art", "color", "light", "devotion", "vision", "perseverance", "nature", "sunflowers"],
+    "sphere": "Sun",
+    "aliases": ["Van Gogh"],
+    "reasonsToInvoke": ["Devotion to your craft through obscurity", "Seeing beauty in ordinary things", "Carrying on through inner turmoil"]
+  },
+  {
+    "id": "nina-simone", "name": "Nina Simone", "tradition": "Modern", "type": "archetype", "category": "Artist",
+    "description": "Classically trained pianist from Tryon, North Carolina, who fused Bach with jazz, blues and gospel and turned her voice on the civil rights struggle. “I'll tell you what freedom is to me: no fear.” The archetype of the uncompromising artist whose art is her protest.",
+    "tags": ["artist", "music", "voice", "protest", "justice", "soul", "piano", "freedom", "courage"],
+    "sphere": "Mars",
+    "aliases": ["High Priestess of Soul", "Eunice Waymon"],
+    "reasonsToInvoke": ["Courage to speak out through art", "Turning anger into power", "Freedom from fear"]
+  },
+  {
+    "id": "prince", "name": "Prince", "tradition": "Modern", "type": "archetype", "category": "Artist",
+    "description": "Minneapolis multi-instrumentalist who wrote, produced and played much of his own music across funk, rock, pop and gospel, and fought for ownership of his work — changing his name to an unpronounceable symbol in 1993. The archetype of the androgynous, prolific creative sovereign.",
+    "tags": ["artist", "music", "funk", "creativity", "sensuality", "freedom", "purple", "virtuosity", "independence"],
+    "sphere": "Venus",
+    "aliases": ["Prince Rogers Nelson", "The Artist Formerly Known as Prince"],
+    "reasonsToInvoke": ["Creative freedom and ownership", "Sensual self-expression", "Mastery across many crafts"]
+  },
+  {
+    "id": "nietzsche", "name": "Friedrich Nietzsche", "tradition": "Modern", "type": "archetype", "category": "Philosopher",
+    "description": "German philosopher who proclaimed the death of God, the will to power and the eternal return, and asked how life can be affirmed without borrowed values; he thought much of his work out walking the Alps around Sils-Maria. The archetype of the iconoclast who breaks idols to make room for new values.",
+    "tags": ["philosopher", "philosophy", "iconoclasm", "will", "self-overcoming", "solitude", "affirmation", "transformation", "courage"],
+    "sphere": "Mars",
+    "aliases": ["Nietzsche"],
+    "reasonsToInvoke": ["Breaking with inherited values", "Self-overcoming", "Amor fati — loving your fate"]
+  },
+  {
+    "id": "simone-de-beauvoir", "name": "Simone de Beauvoir", "tradition": "Modern", "type": "archetype", "category": "Philosopher",
+    "description": "French existentialist philosopher and novelist whose The Second Sex argued that “one is not born, but rather becomes, a woman.” She wrote at the café tables of Saint-Germain-des-Prés. The archetype of the free woman who makes her own ethics.",
+    "tags": ["philosopher", "philosophy", "freedom", "feminism", "existentialism", "writing", "independence", "ethics", "paris"],
+    "sphere": "Mercury",
+    "aliases": ["Beauvoir", "de Beauvoir"],
+    "reasonsToInvoke": ["Claiming freedom and responsibility", "Becoming who you choose to be", "Clear thinking about your situation"]
+  },
+  {
+    "id": "camus", "name": "Albert Camus", "tradition": "Modern", "type": "archetype", "category": "Philosopher",
+    "description": "French-Algerian writer and Nobel laureate who faced the absurd — a world silent to our longing for meaning — and answered with revolt, freedom and passion rather than despair. “One must imagine Sisyphus happy.” The archetype of the rebel who finds an invincible summer within.",
+    "tags": ["philosopher", "philosophy", "absurd", "rebellion", "meaning", "sun", "freedom", "resilience", "algeria"],
+    "sphere": "Sun",
+    "aliases": ["Camus"],
+    "reasonsToInvoke": ["Finding meaning in absurdity", "Revolt against despair", "Joy in the present"]
+  },
+  {
+    "id": "hannah-arendt", "name": "Hannah Arendt", "tradition": "Modern", "type": "archetype", "category": "Philosopher",
+    "description": "German-American political theorist who fled Nazi Germany and wrote on totalitarianism, action and responsibility; reporting on the Eichmann trial, she named “the banality of evil.” She called her method “thinking without a banister.” The archetype of the independent mind that judges for itself.",
+    "tags": ["philosopher", "philosophy", "politics", "judgment", "responsibility", "freedom", "thinking", "courage", "truth"],
+    "sphere": "Saturn",
+    "aliases": ["Arendt"],
+    "reasonsToInvoke": ["Independent judgment", "Moral courage", "Understanding power and responsibility"]
+  },
+  {
+    "id": "alan-watts", "name": "Alan Watts", "tradition": "Modern", "type": "archetype", "category": "Philosopher",
+    "description": "British-born interpreter of Zen, Taoism and Vedanta whose radio talks and books made Eastern thought playful and plain for the West. He lived on the ferryboat Vallejo in Sausalito and died at Druid Heights on Mount Tamalpais. The archetype of the laughing mystic.",
+    "tags": ["philosopher", "zen", "taoism", "meditation", "presence", "play", "mysticism", "wisdom", "flow"],
+    "sphere": "Moon",
+    "aliases": ["Watts"],
+    "reasonsToInvoke": ["Letting go of control", "Presence and play", "Seeing through the separate self"]
+  },
+  {
+    "id": "tesla", "name": "Nikola Tesla", "tradition": "Modern", "type": "archetype", "category": "Scientist",
+    "description": "Serbian-American inventor who pioneered alternating-current power, the induction motor and the Tesla coil, and dreamed of wireless energy for the world at Wardenclyffe. He died alone in room 3327 of the Hotel New Yorker. The archetype of the solitary visionary ahead of his time.",
+    "tags": ["scientist", "invention", "electricity", "vision", "innovation", "energy", "genius", "solitude", "future"],
+    "sphere": "Mercury",
+    "aliases": ["Tesla"],
+    "reasonsToInvoke": ["Visionary invention", "Focused mental energy", "Persisting when you are ahead of your time"]
+  },
+  {
+    "id": "marie-curie", "name": "Marie Curie", "tradition": "Modern", "type": "archetype", "category": "Scientist",
+    "description": "Polish-French physicist and chemist who, with Pierre Curie, discovered polonium and radium in a leaking shed in Paris, and coined the word “radioactivity.” The first person to win Nobel Prizes in two sciences. The archetype of the tireless pioneer who illuminates the unseen.",
+    "tags": ["scientist", "science", "discovery", "persistence", "radiance", "research", "pioneering", "rigor", "courage"],
+    "sphere": "Saturn",
+    "aliases": ["Madame Curie", "Maria Sklodowska"],
+    "reasonsToInvoke": ["Perseverance through long work", "Discovery and research", "Courage in a field that shuts you out"]
+  },
+  {
+    "id": "einstein", "name": "Albert Einstein", "tradition": "Modern", "type": "archetype", "category": "Scientist",
+    "description": "German-born physicist who, as a patent clerk in Bern, published in 1905 the papers on light quanta, Brownian motion and special relativity, and in 1915 completed general relativity. He held imagination more important than knowledge. The archetype of the playful genius who thinks in pictures.",
+    "tags": ["scientist", "physics", "imagination", "relativity", "genius", "curiosity", "cosmos", "play", "wisdom"],
+    "sphere": "Jupiter",
+    "aliases": ["Einstein"],
+    "reasonsToInvoke": ["Imaginative breakthroughs", "Curiosity and wonder", "Seeing a problem anew"]
+  },
+  {
+    "id": "carl-sagan", "name": "Carl Sagan", "tradition": "Modern", "type": "archetype", "category": "Scientist",
+    "description": "American astronomer who helped design the Pioneer plaque and the Voyager Golden Record, persuaded NASA to turn Voyager 1's camera back for the Pale Blue Dot, and carried the cosmos to millions through television. The archetype of wonder joined to skepticism.",
+    "tags": ["scientist", "cosmos", "science", "wonder", "skepticism", "astronomy", "communication", "curiosity", "stars"],
+    "sphere": "Moon",
+    "aliases": ["Sagan"],
+    "reasonsToInvoke": ["Wonder at the universe", "Clear, skeptical thinking", "Sharing knowledge"]
+  },
+  {
+    "id": "rosalind-franklin", "name": "Rosalind Franklin", "tradition": "Modern", "type": "archetype", "category": "Scientist",
+    "description": "English chemist whose X-ray diffraction image, Photo 51, revealed the helical structure of DNA; it was shown to Watson and Crick without her knowledge. She went on to map the structure of viruses. The archetype of exacting brilliance too long overlooked.",
+    "tags": ["scientist", "science", "dna", "precision", "discovery", "recognition", "perseverance", "research", "clarity"],
+    "sphere": "Mercury",
+    "reasonsToInvoke": ["Rigor and precision", "Recognition for your work", "Perseverance where you are overlooked"]
+  },
+  {
+    "id": "martin-luther-king-jr", "name": "Martin Luther King Jr.", "tradition": "Modern", "type": "archetype", "category": "Leader",
+    "description": "Baptist minister who led the American civil rights movement through nonviolent resistance — Montgomery, Birmingham, Selma — and dreamed aloud at the Lincoln Memorial in 1963. Awarded the Nobel Peace Prize in 1964; assassinated in 1968. The archetype of the prophetic dreamer of justice.",
+    "tags": ["leader", "justice", "nonviolence", "courage", "dream", "civil rights", "faith", "leadership", "equality"],
+    "sphere": "Jupiter",
+    "aliases": ["MLK", "Martin Luther King", "Dr. King"],
+    "reasonsToInvoke": ["Justice and courage", "Nonviolent strength", "Holding a vision for others"]
+  },
+  {
+    "id": "mahatma-gandhi", "name": "Mahatma Gandhi", "tradition": "Modern", "type": "archetype", "category": "Leader",
+    "description": "Indian lawyer who led India's independence movement through satyagraha — truth-force, nonviolent mass resistance — from the Salt March to spinning his own cloth. The archetype of the ascetic who moves empires by self-discipline.",
+    "tags": ["leader", "nonviolence", "truth", "discipline", "simplicity", "freedom", "fasting", "leadership", "independence"],
+    "sphere": "Saturn",
+    "aliases": ["Gandhi", "Mohandas Gandhi", "Bapu"],
+    "reasonsToInvoke": ["Discipline and simplicity", "Truth and nonviolence", "Change through personal example"]
+  },
+  {
+    "id": "nelson-mandela", "name": "Nelson Mandela", "tradition": "Modern", "type": "archetype", "category": "Leader",
+    "description": "South African anti-apartheid leader imprisoned for twenty-seven years, eighteen of them on Robben Island, who emerged to negotiate the end of apartheid and became his country's first democratically elected president. The archetype of endurance transfigured into reconciliation.",
+    "tags": ["leader", "freedom", "endurance", "reconciliation", "forgiveness", "leadership", "justice", "resilience", "dignity"],
+    "sphere": "Sun",
+    "aliases": ["Mandela", "Madiba"],
+    "reasonsToInvoke": ["Endurance through hardship", "Forgiveness and reconciliation", "Dignified leadership"]
+  },
+  {
+    "id": "malcolm-x", "name": "Malcolm X", "tradition": "Modern", "type": "archetype", "category": "Leader",
+    "description": "Self-educated in a prison library, he became the most incisive voice of Black self-determination in 1960s America; after his pilgrimage to Mecca he broadened his vision toward universal human rights. Assassinated at the Audubon Ballroom in 1965. The archetype of radical self-transformation.",
+    "tags": ["leader", "transformation", "truth", "self-determination", "courage", "justice", "education", "leadership", "conviction"],
+    "sphere": "Mars",
+    "aliases": ["El-Hajj Malik El-Shabazz", "Malcolm Little"],
+    "reasonsToInvoke": ["Radical self-transformation", "Speaking hard truths", "Self-education and discipline"]
+  },
+  {
+    "id": "eleanor-roosevelt", "name": "Eleanor Roosevelt", "tradition": "Modern", "type": "archetype", "category": "Leader",
+    "description": "First Lady who remade the role into a platform for social justice, wrote the “My Day” column for more than a quarter-century, and chaired the UN commission that drafted the Universal Declaration of Human Rights. “You must do the thing you think you cannot do.” The archetype of compassion turned into tireless public work.",
+    "tags": ["leader", "compassion", "human rights", "service", "courage", "leadership", "justice", "diplomacy", "advocacy"],
+    "sphere": "Venus",
+    "reasonsToInvoke": ["Compassionate service", "Courage to do what you think you cannot", "Advocacy for others"]
+  },
+  {
+    "id": "maya-angelou", "name": "Maya Angelou", "tradition": "Modern", "type": "archetype", "category": "Author",
+    "description": "Poet, memoirist and performer who wrote of surviving trauma and silence in I Know Why the Caged Bird Sings, and read “On the Pulse of Morning” at the 1993 presidential inauguration. She wrote in rented hotel rooms with a Bible, a thesaurus, a deck of cards and a bottle of sherry. The archetype of the voice that rises.",
+    "tags": ["author", "poetry", "resilience", "voice", "dignity", "healing", "courage", "storytelling", "rising"],
+    "sphere": "Venus",
+    "aliases": ["Angelou"],
+    "reasonsToInvoke": ["Finding your voice after silence", "Resilience and dignity", "Healing through words"]
+  },
+  {
+    "id": "james-baldwin", "name": "James Baldwin", "tradition": "Modern", "type": "archetype", "category": "Author",
+    "description": "Harlem-born novelist and essayist who wrote about race, sexuality and love with prophetic clarity, much of it from abroad in France. The archetype of the witness who tells the truth with love.",
+    "tags": ["author", "writing", "truth", "witness", "love", "race", "prophecy", "courage", "identity"],
+    "sphere": "Mercury",
+    "aliases": ["Baldwin", "Jimmy Baldwin"],
+    "reasonsToInvoke": ["Telling the truth with love", "Bearing witness", "Courage in your identity"]
+  },
+  {
+    "id": "octavia-butler", "name": "Octavia E. Butler", "tradition": "Modern", "type": "archetype", "category": "Author",
+    "description": "Science-fiction writer from Pasadena whose novels of power, survival and adaptation — and the Earthseed verses of the Parable books, “God is Change” — now read as prophecy. The first science-fiction writer awarded a MacArthur Fellowship. The archetype of the visionary who writes the future into being.",
+    "tags": ["author", "writing", "prophecy", "vision", "adaptation", "survival", "future", "discipline", "change"],
+    "sphere": "Jupiter",
+    "aliases": ["Octavia Butler"],
+    "reasonsToInvoke": ["Envisioning the future", "Adapting to change", "Discipline toward a goal"]
+  },
+  {
+    "id": "kafka", "name": "Franz Kafka", "tradition": "Modern", "type": "archetype", "category": "Author",
+    "description": "Prague insurance official who wrote by night of transformation, guilt and labyrinthine authority, and asked that his manuscripts be burned; his friend Max Brod published them instead. The archetype of the anxious dreamer who maps the absurd.",
+    "tags": ["author", "writing", "absurd", "transformation", "anxiety", "dreams", "bureaucracy", "solitude", "night"],
+    "sphere": "Saturn",
+    "aliases": ["Kafka"],
+    "reasonsToInvoke": ["Facing the absurd", "Transformation", "Writing through anxiety"]
+  },
+  {
+    "id": "garcia-marquez", "name": "Gabriel García Márquez", "tradition": "Modern", "type": "archetype", "category": "Author",
+    "description": "Colombian novelist and journalist whose magical realism, born of his grandmother's deadpan storytelling in Aracataca, created the town of Macondo; awarded the Nobel Prize in 1982. The archetype of the storyteller for whom the marvelous is everyday.",
+    "tags": ["author", "storytelling", "magic", "memory", "love", "solitude", "imagination", "writing", "latin america"],
+    "sphere": "Moon",
+    "aliases": ["Gabo", "García Márquez"],
+    "reasonsToInvoke": ["Imagination and storytelling", "Honoring memory and ancestry", "Love that endures"]
+  },
+  {
+    "id": "bruce-lee", "name": "Bruce Lee", "tradition": "Modern", "type": "archetype", "category": "Personality",
+    "description": "San Francisco–born, Hong Kong–raised martial artist, actor and philosopher who founded Jeet Kune Do, “the style of no style,” and broke Hollywood's barriers for Asian actors. The archetype of disciplined fluidity: “Be water, my friend.”",
+    "tags": ["icon", "martial arts", "discipline", "flow", "strength", "philosophy", "focus", "adaptability", "mastery"],
+    "sphere": "Mars",
+    "aliases": ["Lee Jun-fan"],
+    "reasonsToInvoke": ["Discipline and focus", "Adaptability — be water", "Mastery of body and mind"]
+  },
+  {
+    "id": "muhammad-ali", "name": "Muhammad Ali", "tradition": "Modern", "type": "archetype", "category": "Personality",
+    "description": "Three-time heavyweight champion who floated like a butterfly and stung like a bee, refused the Vietnam draft on principle at the cost of his title, and turned boasting into poetry. The archetype of the Greatest — brash, joyful and unbowed.",
+    "tags": ["icon", "courage", "conviction", "strength", "confidence", "poetry", "justice", "resilience", "victory"],
+    "sphere": "Sun",
+    "aliases": ["Ali", "Cassius Clay", "The Greatest"],
+    "reasonsToInvoke": ["Confidence and self-belief", "Standing on principle", "Resilience in the fight"]
+  },
+  {
+    "id": "bob-marley", "name": "Bob Marley", "tradition": "Modern", "type": "archetype", "category": "Personality",
+    "description": "Jamaican singer-songwriter who carried reggae and the Rastafari message of redemption and One Love to the world, and in 1978 brought two rival political leaders together on stage at the One Love Peace Concert. The archetype of the spiritual rebel who unites.",
+    "tags": ["icon", "music", "unity", "peace", "rebellion", "spirituality", "redemption", "love", "freedom"],
+    "sphere": "Jupiter",
+    "aliases": ["Marley", "Tuff Gong"],
+    "reasonsToInvoke": ["Unity and peace", "Spiritual freedom", "Redemption and hope"]
+  },
+  {
+    "id": "amelia-earhart", "name": "Amelia Earhart", "tradition": "Modern", "type": "archetype", "category": "Personality",
+    "description": "Aviator who in 1932 became the first woman to fly solo across the Atlantic, and vanished over the Pacific in 1937 while attempting to circle the globe. The archetype of daring independence and the open horizon.",
+    "tags": ["icon", "courage", "adventure", "flight", "independence", "freedom", "pioneering", "air", "horizons"],
+    "sphere": "Mercury",
+    "aliases": ["Earhart"],
+    "reasonsToInvoke": ["Courage for bold ventures", "Independence", "Breaking barriers"]
+  },
+  {
+    "id": "steve-jobs", "name": "Steve Jobs", "tradition": "Modern", "type": "archetype", "category": "Personality",
+    "description": "Co-founder of Apple who, from his parents' garage in Los Altos, helped bring the personal computer, the Macintosh, Pixar's films, the iPod and the iPhone to the world, driven by an obsession with simplicity and design. The archetype of the perfectionist visionary.",
+    "tags": ["icon", "innovation", "vision", "design", "simplicity", "technology", "focus", "perfection", "creativity"],
+    "sphere": "Saturn",
+    "aliases": ["Jobs"],
+    "reasonsToInvoke": ["Vision and focus", "Simplicity in design", "Bold innovation"]
+  },
+  {
+    "id": "zodiac-rat", "name": "Rat", "tradition": "Chinese Zodiac", "type": "archetype", "category": "Zodiac animal",
+    "description": "The first of the twelve animals of the Chinese zodiac — earthly branch 子 (zǐ), yang Water, the animal of midwinter and of the hours 11 pm – 1 am. Traditionally quick-witted, resourceful and charming.",
+    "tags": ["chinese zodiac", "zodiac animal", "rat", "water", "yang", "quick-witted", "resourceful", "charming"],
+    "sphere": "Mercury",
+    "aliases": ["Year of the Rat", "Mouse"],
+    "reasonsToInvoke": ["Drawing on the Rat’s quick-witted and resourceful nature", "Workings in a Year of the Rat", "Those born in a Year of the Rat"]
+  },
+  {
+    "id": "zodiac-ox", "name": "Ox", "tradition": "Chinese Zodiac", "type": "archetype", "category": "Zodiac animal",
+    "description": "The second of the twelve animals of the Chinese zodiac — earthly branch 丑 (chǒu), yin Earth, the animal of late winter and of the hours 1 – 3 am. Traditionally diligent, dependable and patient.",
+    "tags": ["chinese zodiac", "zodiac animal", "ox", "earth", "yin", "diligent", "dependable", "patient"],
+    "sphere": "Saturn",
+    "aliases": ["Year of the Ox"],
+    "reasonsToInvoke": ["Drawing on the Ox’s diligent and dependable nature", "Workings in a Year of the Ox", "Those born in a Year of the Ox"]
+  },
+  {
+    "id": "zodiac-tiger", "name": "Tiger", "tradition": "Chinese Zodiac", "type": "archetype", "category": "Zodiac animal",
+    "description": "The third of the twelve animals of the Chinese zodiac — earthly branch 寅 (yín), yang Wood, the animal of early spring and of the hours 3 – 5 am. Traditionally brave, confident and competitive.",
+    "tags": ["chinese zodiac", "zodiac animal", "tiger", "wood", "yang", "brave", "confident", "competitive"],
+    "sphere": "Jupiter",
+    "aliases": ["Year of the Tiger"],
+    "reasonsToInvoke": ["Drawing on the Tiger’s brave and confident nature", "Workings in a Year of the Tiger", "Those born in a Year of the Tiger"]
+  },
+  {
+    "id": "zodiac-rabbit", "name": "Rabbit", "tradition": "Chinese Zodiac", "type": "archetype", "category": "Zodiac animal",
+    "description": "The fourth of the twelve animals of the Chinese zodiac — earthly branch 卯 (mǎo), yin Wood, the animal of mid-spring and of the hours 5 – 7 am. Traditionally gentle, elegant and kind.",
+    "tags": ["chinese zodiac", "zodiac animal", "rabbit", "wood", "yin", "gentle", "elegant", "kind"],
+    "sphere": "Jupiter",
+    "aliases": ["Year of the Rabbit"],
+    "reasonsToInvoke": ["Drawing on the Rabbit’s gentle and elegant nature", "Workings in a Year of the Rabbit", "Those born in a Year of the Rabbit"]
+  },
+  {
+    "id": "zodiac-dragon", "name": "Dragon", "tradition": "Chinese Zodiac", "type": "archetype", "category": "Zodiac animal",
+    "description": "The fifth of the twelve animals of the Chinese zodiac — earthly branch 辰 (chén), yang Earth, the animal of late spring and of the hours 7 – 9 am. Traditionally confident, ambitious and charismatic.",
+    "tags": ["chinese zodiac", "zodiac animal", "dragon", "earth", "yang", "confident", "ambitious", "charismatic"],
+    "sphere": "Saturn",
+    "aliases": ["Year of the Dragon"],
+    "reasonsToInvoke": ["Drawing on the Dragon’s confident and ambitious nature", "Workings in a Year of the Dragon", "Those born in a Year of the Dragon"]
+  },
+  {
+    "id": "zodiac-snake", "name": "Snake", "tradition": "Chinese Zodiac", "type": "archetype", "category": "Zodiac animal",
+    "description": "The sixth of the twelve animals of the Chinese zodiac — earthly branch 巳 (sì), yin Fire, the animal of early summer and of the hours 9 – 11 am. Traditionally wise, intuitive and enigmatic.",
+    "tags": ["chinese zodiac", "zodiac animal", "snake", "fire", "yin", "wise", "intuitive", "enigmatic"],
+    "sphere": "Mars",
+    "aliases": ["Year of the Snake"],
+    "reasonsToInvoke": ["Drawing on the Snake’s wise and intuitive nature", "Workings in a Year of the Snake", "Those born in a Year of the Snake"]
+  },
+  {
+    "id": "zodiac-horse", "name": "Horse", "tradition": "Chinese Zodiac", "type": "archetype", "category": "Zodiac animal",
+    "description": "The seventh of the twelve animals of the Chinese zodiac — earthly branch 午 (wǔ), yang Fire, the animal of midsummer and of the hours 11 am – 1 pm. Traditionally energetic, free-spirited and warm.",
+    "tags": ["chinese zodiac", "zodiac animal", "horse", "fire", "yang", "energetic", "free-spirited", "warm"],
+    "sphere": "Mars",
+    "aliases": ["Year of the Horse"],
+    "reasonsToInvoke": ["Drawing on the Horse’s energetic and free-spirited nature", "Workings in a Year of the Horse", "Those born in a Year of the Horse"]
+  },
+  {
+    "id": "zodiac-goat", "name": "Goat", "tradition": "Chinese Zodiac", "type": "archetype", "category": "Zodiac animal",
+    "description": "The eighth of the twelve animals of the Chinese zodiac — earthly branch 未 (wèi), yin Earth, the animal of late summer and of the hours 1 – 3 pm. Traditionally gentle, artistic and compassionate.",
+    "tags": ["chinese zodiac", "zodiac animal", "goat", "earth", "yin", "gentle", "artistic", "compassionate"],
+    "sphere": "Saturn",
+    "aliases": ["Year of the Goat", "Sheep", "Ram"],
+    "reasonsToInvoke": ["Drawing on the Goat’s gentle and artistic nature", "Workings in a Year of the Goat", "Those born in a Year of the Goat"]
+  },
+  {
+    "id": "zodiac-monkey", "name": "Monkey", "tradition": "Chinese Zodiac", "type": "archetype", "category": "Zodiac animal",
+    "description": "The ninth of the twelve animals of the Chinese zodiac — earthly branch 申 (shēn), yang Metal, the animal of early autumn and of the hours 3 – 5 pm. Traditionally clever, curious and playful.",
+    "tags": ["chinese zodiac", "zodiac animal", "monkey", "metal", "yang", "clever", "curious", "playful"],
+    "sphere": "Venus",
+    "aliases": ["Year of the Monkey"],
+    "reasonsToInvoke": ["Drawing on the Monkey’s clever and curious nature", "Workings in a Year of the Monkey", "Those born in a Year of the Monkey"]
+  },
+  {
+    "id": "zodiac-rooster", "name": "Rooster", "tradition": "Chinese Zodiac", "type": "archetype", "category": "Zodiac animal",
+    "description": "The tenth of the twelve animals of the Chinese zodiac — earthly branch 酉 (yǒu), yin Metal, the animal of mid-autumn and of the hours 5 – 7 pm. Traditionally observant, hardworking and confident.",
+    "tags": ["chinese zodiac", "zodiac animal", "rooster", "metal", "yin", "observant", "hardworking", "confident"],
+    "sphere": "Venus",
+    "aliases": ["Year of the Rooster", "Chicken"],
+    "reasonsToInvoke": ["Drawing on the Rooster’s observant and hardworking nature", "Workings in a Year of the Rooster", "Those born in a Year of the Rooster"]
+  },
+  {
+    "id": "zodiac-dog", "name": "Dog", "tradition": "Chinese Zodiac", "type": "archetype", "category": "Zodiac animal",
+    "description": "The eleventh of the twelve animals of the Chinese zodiac — earthly branch 戌 (xū), yang Earth, the animal of late autumn and of the hours 7 – 9 pm. Traditionally loyal, honest and protective.",
+    "tags": ["chinese zodiac", "zodiac animal", "dog", "earth", "yang", "loyal", "honest", "protective"],
+    "sphere": "Saturn",
+    "aliases": ["Year of the Dog"],
+    "reasonsToInvoke": ["Drawing on the Dog’s loyal and honest nature", "Workings in a Year of the Dog", "Those born in a Year of the Dog"]
+  },
+  {
+    "id": "zodiac-pig", "name": "Pig", "tradition": "Chinese Zodiac", "type": "archetype", "category": "Zodiac animal",
+    "description": "The twelfth of the twelve animals of the Chinese zodiac — earthly branch 亥 (hài), yin Water, the animal of early winter and of the hours 9 – 11 pm. Traditionally generous, sincere and easygoing.",
+    "tags": ["chinese zodiac", "zodiac animal", "pig", "water", "yin", "generous", "sincere", "easygoing"],
+    "sphere": "Mercury",
+    "aliases": ["Year of the Pig"],
+    "reasonsToInvoke": ["Drawing on the Pig’s generous and sincere nature", "Workings in a Year of the Pig", "Those born in a Year of the Pig"]
+  },
+  {
+    "id": "animal-wolf", "name": "Wolf", "tradition": "Animal Kingdom", "type": "archetype", "category": "Mammal",
+    "description": "The wild hunter of the pack: companion of Odin, nurse of Rome's founders, and in Rome the sacred animal of Mars.",
+    "tags": ["animal", "mammal", "wild", "loyalty", "instinct", "pack", "courage", "protection"],
+    "sphere": "Mars",
+    "reasonsToInvoke": ["Loyalty to your people", "Trusting your instincts", "Courage and ferocity"]
+  },
+  {
+    "id": "animal-hound", "name": "Hound", "tradition": "Animal Kingdom", "type": "archetype", "category": "Mammal",
+    "description": "The guardian and guide at the threshold: Hecate's hounds at the crossroads, Cerberus at the gate of Hades, jackal-headed Anubis leading the dead.",
+    "tags": ["animal", "mammal", "guardian", "guide", "loyalty", "threshold", "protection", "crossroads"],
+    "sphere": "Moon",
+    "reasonsToInvoke": ["Protection and guarding", "Guidance through transitions", "Faithfulness"]
+  },
+  {
+    "id": "animal-fox", "name": "Fox", "tradition": "Animal Kingdom", "type": "archetype", "category": "Mammal",
+    "description": "The clever trickster who slips every trap: Inari's messenger in Japan, the uncatchable Teumessian fox of Greek myth, Reynard of medieval fable.",
+    "tags": ["animal", "mammal", "cunning", "trickster", "cleverness", "adaptability", "quick wits"],
+    "sphere": "Mercury",
+    "reasonsToInvoke": ["Quick wits and cleverness", "Adapting to circumstances", "Finding a way out"]
+  },
+  {
+    "id": "animal-bear", "name": "Bear", "tradition": "Animal Kingdom", "type": "archetype", "category": "Mammal",
+    "description": "The great protector who sleeps through winter and wakes renewed: Artemis's 'little bears' at Brauron, Callisto in the stars, the Norse berserkers' fury.",
+    "tags": ["animal", "mammal", "strength", "protection", "solitude", "renewal", "hibernation", "wilderness"],
+    "sphere": "Saturn",
+    "reasonsToInvoke": ["Strength and protection", "Rest and renewal", "Solitude and inner work"]
+  },
+  {
+    "id": "animal-stag", "name": "Stag", "tradition": "Animal Kingdom", "type": "archetype", "category": "Mammal",
+    "description": "The antlered lord of the forest, whose crown falls and grows again each year: Cernunnos, Artemis's hind, the stag on Valhalla's roof.",
+    "tags": ["animal", "mammal", "nobility", "renewal", "forest", "wilderness", "grace", "sovereignty"],
+    "sphere": "Jupiter",
+    "aliases": ["Deer", "Hart"],
+    "reasonsToInvoke": ["Dignity and nobility", "Renewal and regrowth", "Connection to the wild"]
+  },
+  {
+    "id": "animal-boar", "name": "Boar", "tradition": "Animal Kingdom", "type": "archetype", "category": "Mammal",
+    "description": "The fearless charger with the golden bristles: Freyr's mount, Vishnu's avatar who raised the earth, the crest of Celtic and Anglo-Saxon warriors.",
+    "tags": ["animal", "mammal", "courage", "fearlessness", "fertility", "tenacity", "warrior"],
+    "sphere": "Sun",
+    "reasonsToInvoke": ["Fearless courage", "Tenacity", "Fertility and abundance"]
+  },
+  {
+    "id": "animal-lion", "name": "Lion", "tradition": "Animal Kingdom", "type": "archetype", "category": "Mammal",
+    "description": "The king of beasts and the Sun's own animal: Sekhmet the Eye of Ra, the Nemean lion's hide on Heracles, Ishtar's lions on Babylon's Processional Way, Durga's mount.",
+    "tags": ["animal", "mammal", "courage", "royalty", "sun", "strength", "pride", "leadership"],
+    "sphere": "Sun",
+    "reasonsToInvoke": ["Courage and heart", "Leadership and presence", "Radiance and confidence"]
+  },
+  {
+    "id": "animal-bull", "name": "Bull", "tradition": "Animal Kingdom", "type": "archetype", "category": "Mammal",
+    "description": "The strength and fertility of the earth: Apis of Memphis, Nandi at Shiva's door, the Bull of Heaven, Taurus ruled by Venus.",
+    "tags": ["animal", "mammal", "strength", "fertility", "steadfastness", "earth", "abundance"],
+    "sphere": "Venus",
+    "reasonsToInvoke": ["Steadfast strength", "Fertility and abundance", "Grounding"]
+  },
+  {
+    "id": "animal-cat", "name": "Cat", "tradition": "Animal Kingdom", "type": "archetype", "category": "Mammal",
+    "description": "The independent night-watcher whose eyes follow the Moon: Bastet of Bubastis, and the pair of cats that draw Freyja's chariot.",
+    "tags": ["animal", "mammal", "independence", "mystery", "night", "grace", "intuition", "moon"],
+    "sphere": "Moon",
+    "reasonsToInvoke": ["Independence", "Intuition and mystery", "Protection of the home"]
+  },
+  {
+    "id": "animal-raven", "name": "Raven", "tradition": "Animal Kingdom", "type": "archetype", "category": "Bird",
+    "description": "The black messenger of thought and memory: Odin's Huginn and Muninn, Apollo's bird, the Morrígan's form over the battlefield.",
+    "tags": ["animal", "bird", "prophecy", "messenger", "thought", "memory", "intelligence", "mystery"],
+    "sphere": "Saturn",
+    "reasonsToInvoke": ["Insight and prophecy", "Thought and memory", "Messages between worlds"]
+  },
+  {
+    "id": "animal-owl", "name": "Owl", "tradition": "Animal Kingdom", "type": "archetype", "category": "Bird",
+    "description": "The silent seer of the night: Athena's little owl on the coins of Athens, the owl of Minerva that flies at dusk.",
+    "tags": ["animal", "bird", "wisdom", "night", "insight", "perception", "silence", "mystery"],
+    "sphere": "Saturn",
+    "reasonsToInvoke": ["Wisdom and insight", "Seeing in the dark", "Discernment"]
+  },
+  {
+    "id": "animal-eagle", "name": "Eagle", "tradition": "Animal Kingdom", "type": "archetype", "category": "Bird",
+    "description": "The sovereign of the sky, bearer of Jupiter's thunderbolts: the eagle atop Yggdrasil, the standard of Rome's legions, the emblem of St John.",
+    "tags": ["animal", "bird", "sovereignty", "vision", "justice", "sky", "power", "perspective"],
+    "sphere": "Jupiter",
+    "reasonsToInvoke": ["Seeing the big picture", "Sovereignty and justice", "Rising above"]
+  },
+  {
+    "id": "animal-falcon", "name": "Falcon", "tradition": "Animal Kingdom", "type": "archetype", "category": "Bird",
+    "description": "The swift, far-seeing bird of the rising Sun: Horus of the sky and of kingship, Ra-Horakhty, and Freyja's falcon-feather cloak.",
+    "tags": ["animal", "bird", "vision", "focus", "swiftness", "kingship", "sky", "sun"],
+    "sphere": "Sun",
+    "aliases": ["Hawk"],
+    "reasonsToInvoke": ["Focus and precision", "Vision", "Swift action"]
+  },
+  {
+    "id": "animal-swan", "name": "Swan", "tradition": "Animal Kingdom", "type": "archetype", "category": "Bird",
+    "description": "The graceful shape-changer: Apollo's swans, Zeus coming to Leda, the Children of Lir, and the hamsa of Saraswati.",
+    "tags": ["animal", "bird", "grace", "beauty", "love", "transformation", "fidelity", "music"],
+    "sphere": "Venus",
+    "reasonsToInvoke": ["Grace and beauty", "Faithful love", "Transformation"]
+  },
+  {
+    "id": "animal-dove", "name": "Dove", "tradition": "Animal Kingdom", "type": "archetype", "category": "Bird",
+    "description": "The bird of love and of peace: Aphrodite's doves, Ishtar's bird, the dove with the olive leaf, the Spirit descending.",
+    "tags": ["animal", "bird", "love", "peace", "hope", "gentleness", "spirit"],
+    "sphere": "Venus",
+    "reasonsToInvoke": ["Love and tenderness", "Peace and reconciliation", "Hope"]
+  },
+  {
+    "id": "animal-ibis", "name": "Ibis", "tradition": "Animal Kingdom", "type": "archetype", "category": "Bird",
+    "description": "The bird of Thoth, god of writing, wisdom and reckoning — the Hermes of the Egyptians.",
+    "tags": ["animal", "bird", "wisdom", "writing", "knowledge", "magic", "learning", "thoth"],
+    "sphere": "Mercury",
+    "reasonsToInvoke": ["Study and learning", "Writing and eloquence", "Wisdom and magic"]
+  },
+  {
+    "id": "animal-serpent", "name": "Serpent", "tradition": "Animal Kingdom", "type": "archetype", "category": "Reptile",
+    "description": "The ancient power that sheds its skin and is renewed: the rod of Asclepius, the uraeus of the pharaohs, the Ouroboros, the world-serpent.",
+    "tags": ["animal", "reptile", "renewal", "healing", "wisdom", "transformation", "rebirth", "mystery"],
+    "sphere": "Saturn",
+    "reasonsToInvoke": ["Renewal and rebirth", "Healing", "Hidden wisdom"]
+  },
+  {
+    "id": "animal-scarab", "name": "Scarab", "tradition": "Animal Kingdom", "type": "archetype", "category": "Insect",
+    "description": "The sacred beetle that rolls the Sun into the sky each dawn: Khepri, 'he who comes into being.'",
+    "tags": ["animal", "insect", "rebirth", "sun", "renewal", "self-creation", "transformation", "egypt"],
+    "sphere": "Sun",
+    "aliases": ["Scarab beetle", "Beetle"],
+    "reasonsToInvoke": ["Rebirth and new beginnings", "Persistence", "Self-creation"]
+  },
+  {
+    "id": "animal-bee", "name": "Bee", "tradition": "Animal Kingdom", "type": "archetype", "category": "Insect",
+    "description": "The tireless maker of honey and of community: born from the Sun god's tears in Egyptian myth, the 'Delphic Bee' of the oracle, the Melissae who served the goddess.",
+    "tags": ["animal", "insect", "community", "industry", "sweetness", "devotion", "abundance", "cooperation"],
+    "sphere": "Sun",
+    "reasonsToInvoke": ["Community and cooperation", "Diligent work", "Sweetness and abundance"]
   }
 ]

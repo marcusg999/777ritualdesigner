@@ -81,7 +81,7 @@ export default function CorrespondenceCard({ correspondences: c, basis, enrichme
   const is777 = !!(c.divineName || c.magicalWeapon || c.magicalPowers || c.virtue || c.vice || c.alchemicalProcess || c.bodyPart);
   const hasFigure = !!(
     c.eleke || c.birthDate || c.festival || c.feastDay || c.sacredPlaces?.length || c.tools?.length ||
-    c.offerings?.length || c.lore?.length || c.temperament?.length || c.syncretism?.length ||
+    c.offerings?.length || c.lore?.length || c.temperament?.length || c.syncretism?.length || c.characteristics?.length ||
     c.sacredNumbers?.length || c.traditionNote
   );
 
@@ -167,6 +167,11 @@ export default function CorrespondenceCard({ correspondences: c, basis, enrichme
             </div>
           )}
 
+          {c.characteristics && c.characteristics.length > 0 && (
+            <Section label="Defining Characteristics">
+              <TagList items={c.characteristics} />
+            </Section>
+          )}
           {c.sacredPlaces && c.sacredPlaces.length > 0 && (
             <Section label={kind === 'orisha' ? 'Sacred Places in Nature' : kind === 'biography' ? 'Places' : 'Sacred Places'}>
               <TagList items={c.sacredPlaces} />
