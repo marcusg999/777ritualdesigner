@@ -43,6 +43,7 @@ describe('Hindu festivals (New Delhi, as published)', () => {
     // 2024: Amavasya covered Pradosh on both evenings, and the second was kept.
     'Diwali · Lakshmi Puja': { 2024: 'Fri Nov 01', 2025: 'Mon Oct 20', 2026: 'Sun Nov 08' },
     'Kali Puja': { 2025: 'Mon Oct 20', 2026: 'Sun Nov 08' },
+    'Kali Chaudas': { 2025: 'Sun Oct 19', 2026: 'Sat Nov 07' },
   };
   for (const year of [2024, 2025, 2026]) {
     it(`keeps each festival on its published day in ${year}`, () => {
@@ -52,6 +53,10 @@ describe('Hindu festivals (New Delhi, as published)', () => {
       }
     });
   }
+
+  it('keeps Ratanti Kali Puja on its published night', () => {
+    expect(keptOn(2027)('Ratanti Kali Puja')).toEqual(['Thu Feb 04 2027']);
+  });
 
   it('gives the puja windows Drik Panchang publishes', () => {
     const f = hinduFestivals(new Date(2026, 0, 1), new Date(2027, 0, 1), DELHI);

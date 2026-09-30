@@ -185,6 +185,7 @@ interface FestivalRule {
 const MAGHA = 10;
 const BHADRAPADA = 5;
 const ASHVIN = 6;
+const PAUSHA = 9;
 
 const FESTIVALS: FestivalRule[] = [
   { name: 'Chaitra Navaratri begins', deity: 'Durga', month: 0, tithi: 1, kaal: 'morning', detail: 'Ghatasthapana — the spring Navaratri of Durga' },
@@ -193,7 +194,10 @@ const FESTIVALS: FestivalRule[] = [
   { name: 'Durga Ashtami', deity: 'Durga', month: ASHVIN, tithi: 8, kaal: 'morning', detail: 'Maha Ashtami of Navaratri' },
   { name: 'Vijayadashami', deity: 'Durga', month: ASHVIN, tithi: 10, kaal: 'aparahna', detail: 'Dussehra — the victory of Durga, kept in the afternoon' },
   { name: 'Diwali · Lakshmi Puja', deity: 'Lakshmi', month: ASHVIN, tithi: 30, kaal: 'pradosh', preferLater: true, detail: 'Lakshmi worshipped in the evening twilight (Pradosh) of the new moon' },
+  { name: 'Kali Chaudas', deity: 'Kali', month: ASHVIN, tithi: 29, kaal: 'nishita', detail: 'the night before Diwali, when Kali is worshipped at midnight' },
   { name: 'Kali Puja', deity: 'Kali', month: ASHVIN, tithi: 30, kaal: 'nishita', detail: 'Shyama Puja, at midnight on the new moon of Diwali' },
+  // Called Magha's in Bengal, whose months run full moon to full moon (purnimanta).
+  { name: 'Ratanti Kali Puja', deity: 'Kali', month: PAUSHA, tithi: 29, kaal: 'nishita', detail: 'Ratanti Chaturdashi, kept at night — above all in Bengal' },
   { name: 'Vasant Panchami', deity: 'Saraswati', month: MAGHA, tithi: 5, kaal: 'purvahna', detail: 'Saraswati Puja in the forenoon; yellow is worn' },
   { name: 'Maha Shivaratri', deity: 'Shiva', month: MAGHA, tithi: 29, kaal: 'nishita', detail: 'The great night of Shiva, worshipped at midnight (Nishita)' },
   { name: 'Masik Shivaratri', deity: 'Shiva', tithi: 29, kaal: 'nishita', except: [MAGHA], detail: 'The monthly night of Shiva, at midnight' },
