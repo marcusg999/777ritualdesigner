@@ -2,6 +2,7 @@ import { matchQuery, normalizeText } from '@/lib/matcher';
 import { normalizeResult } from '@/lib/normalizer';
 import { getOfferingsByEntityId } from '@/lib/offerings';
 import { getSigilByEntityId } from '@/lib/sigils';
+import { sunSign } from '@/lib/timing';
 import intentsData from '@/data/intents.json';
 import entitiesData from '@/data/entities.json';
 import correspondencesData from '@/data/correspondences.json';
@@ -108,6 +109,48 @@ describe('deity-name searches', () => {
     expect(dilla.traditionNote).toMatch(/interpretation, not an established tradition/);
     // Madlib was born the day after the Sun entered Scorpio.
     expect(search('Madlib').result.correspondences.natalSun).toBe('Scorpio');
+  });
+
+  describe('modern archetypes', () => {
+    const modern = entities.filter((e) => e.tradition === 'Modern');
+    const RULER: Record<string, string> = {
+      Aries: 'Mars', Taurus: 'Venus', Gemini: 'Mercury', Cancer: 'Moon', Leo: 'Sun', Virgo: 'Mercury',
+      Libra: 'Venus', Scorpio: 'Mars', Sagittarius: 'Jupiter', Capricorn: 'Saturn', Aquarius: 'Saturn', Pisces: 'Jupiter',
+    };
+
+    it('covers six kinds of figure, five of each', () => {
+      const counts: Record<string, number> = {};
+      for (const e of modern) counts[e.category!] = (counts[e.category!] ?? 0) + 1;
+      expect(counts).toEqual({ Artist: 5, Philosopher: 5, Scientist: 5, Leader: 5, Author: 5, Personality: 5 });
+    });
+
+    it('derives each natal Sun from the birth date, and the planet from its ruler', () => {
+      for (const e of modern) {
+        const c = search(e.name).result.correspondences;
+        const born = new Date(`${c.birthDate!.split(' · ')[0]} 12:00 UTC`);
+        expect({ id: e.id, sun: c.natalSun, planet: c.planet }).toEqual({
+          id: e.id, sun: sunSign(born), planet: RULER[sunSign(born)],
+        });
+        expect(c.characteristics!.length).toBeGreaterThan(0);
+        expect(c.signatureWorks!.length).toBeGreaterThan(0);
+        expect(c.traditionNote).toMatch(/interpretation, not an established tradition/);
+      }
+    });
+
+    it('answers to the names people use', () => {
+      const cases: Array<[string, string]> = [
+        ['MLK', 'martin-luther-king-jr'], ['Gandhi', 'mahatma-gandhi'], ['Madiba', 'nelson-mandela'],
+        ['Gabo', 'garcia-marquez'], ['Garcia Marquez', 'garcia-marquez'], ['Madame Curie', 'marie-curie'],
+        ['Cassius Clay', 'muhammad-ali'], ['El-Hajj Malik El-Shabazz', 'malcolm-x'], ['Tesla', 'tesla'],
+      ];
+      for (const [query, id] of cases) expect({ query, id: search(query).match.entities[0]?.id }).toEqual({ query, id });
+    });
+
+    it('surfaces a kind of figure by its category', () => {
+      const found = search('philosopher').match.entities;
+      expect(found.length).toBeGreaterThan(0);
+      expect(found.every((e) => e.category === 'Philosopher')).toBe(true);
+    });
   });
 
   it('finds every intent by its own id and name', () => {

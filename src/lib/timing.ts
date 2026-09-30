@@ -48,7 +48,7 @@ const PLANET_RE = '(?:Sun|Moon|Mars|Mercury|Jupiter|Venus|Saturn)';
 // Traditions whose workings are timed by Western astrology, where the
 // void-of-course moon applies. Religions with sacred calendars of their own —
 // Lucumí, Greek, Egyptian, Norse, Celtic, Hindu — keep their days as they are.
-const ASTROLOGICAL_TRADITIONS = new Set(['Kabbalistic', 'Abrahamic', 'Goetia', 'HipHop', 'Pop Culture']);
+const ASTROLOGICAL_TRADITIONS = new Set(['Kabbalistic', 'Abrahamic', 'Goetia', 'HipHop', 'Modern', 'Pop Culture']);
 const TRADITION = new Map((entitiesData as Entity[]).map((e) => [e.id, e.tradition]));
 const ENTITY_NAME = new Map((entitiesData as Entity[]).map((e) => [e.id, e.name]));
 

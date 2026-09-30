@@ -167,6 +167,11 @@ export default function CorrespondenceCard({ correspondences: c, basis, enrichme
             </div>
           )}
 
+          {c.characteristics && c.characteristics.length > 0 && (
+            <Section label="Defining Characteristics">
+              <TagList items={c.characteristics} />
+            </Section>
+          )}
           {c.sacredPlaces && c.sacredPlaces.length > 0 && (
             <Section label={kind === 'orisha' ? 'Sacred Places in Nature' : kind === 'biography' ? 'Places' : 'Sacred Places'}>
               <TagList items={c.sacredPlaces} />

@@ -11,6 +11,8 @@ export interface Entity {
   name: string;
   tradition: string;
   type: 'deity' | 'angel' | 'demon' | 'spirit' | 'archetype' | 'pop-culture';
+  /** What a modern archetype was: Artist, Philosopher, Scientist, Leader, Author or Personality. */
+  category?: string;
   description: string;
   tags: string[];
   isPopCulture?: boolean;
@@ -74,11 +76,13 @@ export interface Correspondence {
   festival?: string;
   /** Short attested facts: rank, epithets, myths. */
   lore?: string[];
-  // Biography (HipHop figures)
+  // Biography (HipHop and modern figures)
   birthDate?: string;
   deathDate?: string;
   natalSun?: string;
   signatureWorks?: string[];
+  /** The traits a modern figure is remembered for (the app's summary). */
+  characteristics?: string[];
   /** Which lineage's conventions the record follows, and caveats. */
   traditionNote?: string;
 }
