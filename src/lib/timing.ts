@@ -23,6 +23,7 @@ import {
 } from 'astronomy-engine';
 import type { Correspondence, Entity } from './types';
 import entitiesData from '@/data/entities.json';
+import { hinduFestivals, type HinduFestival, type Place } from './panchang';
 
 export type Planet = 'Sun' | 'Moon' | 'Mars' | 'Mercury' | 'Jupiter' | 'Venus' | 'Saturn';
 export type MoonPreference = 'new' | 'dark' | 'waxing' | 'full' | 'waning';
@@ -49,6 +50,7 @@ const PLANET_RE = '(?:Sun|Moon|Mars|Mercury|Jupiter|Venus|Saturn)';
 // Lucumí, Greek, Egyptian, Norse, Celtic, Hindu — keep their days as they are.
 const ASTROLOGICAL_TRADITIONS = new Set(['Kabbalistic', 'Abrahamic', 'Goetia', 'HipHop', 'Pop Culture']);
 const TRADITION = new Map((entitiesData as Entity[]).map((e) => [e.id, e.tradition]));
+const ENTITY_NAME = new Map((entitiesData as Entity[]).map((e) => [e.id, e.name]));
 
 type FixedEvent =
   | { kind: 'dec-solstice' | 'jun-solstice' | 'mar-equinox' | 'sep-equinox' }
@@ -80,6 +82,8 @@ export interface TimingPlan {
    * own sacred calendars (Lucumí times a working by the Orisha's day).
    */
   observesVoidMoon: boolean;
+  /** A Hindu deity, whose Panchang festivals join the suggestions. */
+  hinduDeity?: string;
 }
 
 // ─── Parsing ────────────────────────────────────────────────────────────────
@@ -92,7 +96,10 @@ export function parseTiming(c: Correspondence): TimingPlan {
   const segments = text.split(',').map((s) => s.trim());
 
   const weekdays: number[] = [];
-  for (const m of text.matchAll(/\b(Sunday|Monday|Tuesday|Wednesday|Thursday|Friday|Saturday)\b/g)) {
+  // "also Tuesday for Angaraki Chaturthi" names a weekday only when it brings
+  // a particular observance, whose dates come from the calendar instead.
+  const dayText = text.replace(/\balso \w+day for [^;,]+/g, ' ');
+  for (const m of dayText.matchAll(/\b(Sunday|Monday|Tuesday|Wednesday|Thursday|Friday|Saturday)\b/g)) {
     const idx = WEEKDAYS.indexOf(m[1]);
     if (!weekdays.includes(idx)) weekdays.push(idx);
   }
@@ -174,6 +181,7 @@ export function parseTiming(c: Correspondence): TimingPlan {
     timeOfDay: tod ? (tod[1] as TimeOfDay) : undefined,
     dayNote,
     observesVoidMoon: !c.eleke && (!c.entityId || ASTROLOGICAL_TRADITIONS.has(TRADITION.get(c.entityId) ?? '')),
+    hinduDeity: c.entityId && TRADITION.get(c.entityId) === 'Hindu' ? ENTITY_NAME.get(c.entityId) : undefined,
   };
 }
 
@@ -485,6 +493,8 @@ export interface DateSuggestion {
   voids: VoidOfCourse[];
   /** The moon is void at the working's usual time — only where the date can't move (a holy day) or is a near-miss. */
   voidAtWorking?: boolean;
+  /** A Hindu festival of the deity kept on this day. */
+  festival?: HinduFestival;
 }
 
 /** Void-of-course periods overlapping a local day, and whether one covers the working's time. */
@@ -503,10 +513,58 @@ function evaluationTime(day: Date, tod?: TimeOfDay): Date {
   return atHour(day, 21);
 }
 
+/**
+ * The next favourable days for a working. For a Hindu deity, the next time
+ * each of its festivals is kept (within a year) joins them, reckoned from
+ * sunrise at `place` as the Almanac does.
+ */
 export function suggestDates(
   plan: TimingPlan,
   from: Date,
-  { days = 180, count = 3 }: { days?: number; count?: number } = {}
+  options: { days?: number; count?: number; place?: Place | null } = {}
+): DateSuggestion[] {
+  if (!plan.hinduDeity) return suggestFromTiming(plan, from, options);
+  // With no day or moon of its own ("no weekday is universal"), every day
+  // would qualify, so a Hindu deity is then offered its festivals alone.
+  const unconditioned =
+    plan.weekdays.length + plan.monthDays.length + plan.lunarDays.length + plan.moon.length +
+      plan.fixedEvents.length + plan.seasonalBonus.length === 0;
+  const base = unconditioned ? [] : suggestFromTiming(plan, from, options);
+  return withFestivals(base, plan, localDay(from), options.place);
+}
+
+function withFestivals(base: DateSuggestion[], plan: TimingPlan, start: Date, place?: Place | null): DateSuggestion[] {
+  const next = new Map<string, HinduFestival>();
+  for (const f of hinduFestivals(start, addDays(start, 366), place, plan.hinduDeity)) {
+    // Sankashti is called Angaraki on a Tuesday; either is the next Sankashti.
+    const key = f.name.replace(/^Angaraki /, '');
+    if (!next.has(key)) next.set(key, f);
+  }
+  const out = [...base];
+  for (const festival of next.values()) {
+    const same = out.findIndex((s) => s.date.getTime() === festival.date.getTime());
+    if (same >= 0) {
+      const s = out[same];
+      out[same] = { ...s, festival, score: s.score + 5, reasons: [festival.name, ...s.reasons] };
+    } else {
+      out.push({
+        date: festival.date,
+        score: 5,
+        reasons: [festival.name],
+        moon: moonInfo(evaluationTime(festival.date, plan.timeOfDay)),
+        sign: sunSign(atHour(festival.date, 12)),
+        voids: [],
+        festival,
+      });
+    }
+  }
+  return out.sort((a, b) => a.date.getTime() - b.date.getTime());
+}
+
+function suggestFromTiming(
+  plan: TimingPlan,
+  from: Date,
+  { days = 180, count = 3 }: { days?: number; count?: number }
 ): DateSuggestion[] {
   const start = localDay(from);
 

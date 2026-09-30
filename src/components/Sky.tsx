@@ -13,6 +13,11 @@ function sameDay(a: Date, b: Date) {
   return a.getFullYear() === b.getFullYear() && a.getMonth() === b.getMonth() && a.getDate() === b.getDate();
 }
 
+/** A time, prefixed with its weekday when it falls on a different day than `day`. */
+export function timeOn(t: Date, day: Date): string {
+  return sameDay(t, day) ? formatTime(t) : `${t.toLocaleDateString(undefined, { weekday: 'short' })} ${formatTime(t)}`;
+}
+
 /** How a void-of-course period reads on one day: a range, or where it starts or ends. */
 export function voidOnDay(v: VoidOfCourse, day: Date): string {
   const starts = sameDay(v.start, day);
@@ -70,7 +75,30 @@ export function HoursFor({ hours, planets, voids = [] }: { hours: PlanetaryHour[
   );
 }
 
-export function LocationControls({ location }: { location: SavedLocation | null }) {
+// What the location is for: planetary hours, Hindu festival days, or both.
+type LocationPurpose = 'hours' | 'festivals' | 'both';
+
+const LOCATION_SAVED: Record<LocationPurpose, string> = {
+  hours: 'Hours calculated for',
+  festivals: 'Festival days reckoned for',
+  both: 'Hours and festival days calculated for',
+};
+
+const LOCATION_WHY: Record<LocationPurpose, string> = {
+  hours:
+    'Planetary hours are unequal divisions of each day and night, so they depend on your local sunrise and sunset.',
+  festivals:
+    'A Hindu festival is kept on the day its lunar day holds at its appointed hour, reckoned from local sunrise, so the day can depend on where you are.',
+  both: 'Planetary hours and Hindu festival days both follow your local sunrise and sunset, so they depend on where you are.',
+};
+
+export function LocationControls({
+  location,
+  purpose = 'hours',
+}: {
+  location: SavedLocation | null;
+  purpose?: LocationPurpose;
+}) {
   const [status, setStatus] = useState('');
   const [lat, setLat] = useState('');
   const [lon, setLon] = useState('');
@@ -105,7 +133,7 @@ export function LocationControls({ location }: { location: SavedLocation | null 
   if (location) {
     return (
       <p className="text-xs text-foreground/50">
-        Hours calculated for {location.lat.toFixed(2)}°, {location.lon.toFixed(2)}° from local sunrise and sunset ·{' '}
+        {LOCATION_SAVED[purpose]} {location.lat.toFixed(2)}°, {location.lon.toFixed(2)}° from local sunrise and sunset ·{' '}
         <button type="button" onClick={() => setLocation(null)} className="underline hover:text-gold">
           forget location
         </button>
@@ -116,8 +144,7 @@ export function LocationControls({ location }: { location: SavedLocation | null 
   return (
     <div className="notice p-4 space-y-3">
       <p className="notice-text text-sm leading-relaxed">
-        Planetary hours are unequal divisions of each day and night, so they depend on your local sunrise and
-        sunset. Share an approximate location to see them — it is rounded to about a kilometre and stays in this
+        {LOCATION_WHY[purpose]} Share an approximate location — it is rounded to about a kilometre and stays in this
         browser.
       </p>
       <div className="flex flex-wrap items-center gap-3">
